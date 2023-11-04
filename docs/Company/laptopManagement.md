@@ -21,7 +21,7 @@ At OET, as a startup, we operate with a lean administrative team. To accommodate
 
 As we foster a global team, there may be instances where OET is unable to directly order the laptop on your behalf. In such cases, OET will assist you in the procurement process of laptops.
 
-For more details, please refer to the procurement guidelines in the [Candidate Laptop Procurement Section](section-on-page).
+For more details, please refer to the procurement guidelines in the [Candidate Laptop Procurement](#candidate-laptop-procurement-process).
 
 ## Important Considerations
 
@@ -93,6 +93,23 @@ If your laptop needs repair:
 For extensive and costly repairs, where you have no backup laptop, replacing the laptop may be the best option. In such cases, open an issue to replace the laptop following the provided guidelines.
 
 When you receive your new laptop, we will arrange for the old one to be sent to our reseller.
+
+## Candidate Laptop Procurement Process
+
+In the event that OET is unable to directly order a laptop, candidates are authorized to select a similar model to those listed in our [Models](#new-hire-laptop-ordering-process) from a local vendor. The process is as follows:
+
+1. Obtain quotes from at least two authentic dealers.
+2. Take screenshots of the prices from the dealer's websites.
+3. Forward the quotes and price screenshots to the procurement team at OET for review.
+
+Once the laptop is finalized:
+
+- OET will arrange the transfer of funds necessary for the purchase.
+- If the fund transfer is scheduled to occur after the next payment cycle:
+  - Candidates may proceed to purchase the laptop post confirmation from the OET team.
+  - Candidates will be reimbursed for the purchase in the following payment cycle.
+
+Please ensure that all purchases adhere to the conditions outlined in our [Ownership Policy](#important-considerations).
 
 ## Laptop Buy Back Policy
 
