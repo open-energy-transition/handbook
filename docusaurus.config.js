@@ -1,15 +1,13 @@
-// https://docusaurus.io/docs/api/docusaurus-config
+const organizationName = "open-energy-transition";
+const projectName = "handbook";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Handbook",
   favicon: "img/favicon.ico",
 
-  // Set the production url of your site here
-  url: "https://your-docusaurus-site.example.com",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  url: `https://${organizationName}.github.io`,
+  baseUrl: `/${projectName}/`,
 
   organizationName: "facebook", // Usually your GitHub org/user name.
   projectName: "docusaurus", // Usually your repo name.
@@ -41,8 +39,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: "img/docusaurus-social-card.jpg",
+      image: "img/oet-logo-red.png",
       navbar: {
         title: "Handbook",
         logo: {
@@ -52,7 +49,7 @@ const config = {
         items: [
           {
             // to do
-            href: "https://github.com/open-energy-transition/oet-handbook",
+            href: "https://github.com/open-energy-transition/handbook",
             label: "GitHub",
             position: "right",
           },
