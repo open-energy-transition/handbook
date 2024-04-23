@@ -3,7 +3,7 @@ name: Google Cloud Run Deploy
 on:
   push:
     branches:
-      - main
+      - cloud-deploy
 
 env:
   PROJECT_ID: ${{ secrets.GCR_PROJECT }}
