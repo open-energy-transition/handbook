@@ -6,6 +6,7 @@ package-lock.json
 
 output.json
 folder_list.json
+team.yaml
 
 # Generated files
 .docusaurus

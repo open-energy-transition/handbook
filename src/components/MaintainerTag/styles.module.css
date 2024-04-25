@@ -1,0 +1,25 @@
+
+.tag_container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin-left: 0.5rem;
+  margin-bottom: 1rem;
+  padding: auto;
+  max-width: 80%;
+}
+
+.tag_image{
+  width: 4vh;
+  height: 4vh;
+  border-radius: 50%; 
+  overflow: hidden; 
+  object-fit: cover;
+  margin: 0.5rem;
+}
+
+.maintainer{
+  font-weight: 500;
+}

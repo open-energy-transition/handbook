@@ -26,7 +26,6 @@ const PageLinkTable = ({ key, title, items }) => {
       <thead>
         <tr>
           <th className={styles.column_width}>
-            {/* {title} */}
             <Link to={pageLink}>{title}</Link>
           </th>
         </tr>
