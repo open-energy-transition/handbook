@@ -31,7 +31,7 @@ const config = {
           routeBasePath: "/home",
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+            "https://github.com/open-energy-transition/handbook/tree/main/",
         },
         blog: false,
         theme: {
