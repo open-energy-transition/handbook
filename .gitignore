@@ -4,6 +4,9 @@ package-lock.json
 # Production
 /build
 
+output.json
+folder_list.json
+
 # Generated files
 .docusaurus
 .cache-loader

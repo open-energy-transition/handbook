@@ -1,8 +1,4 @@
----
-sidebar_position: 3
----
-
-# Open Source
+# WEB DEV IS BEST
 
 ## teeeeemp
 
@@ -29,7 +25,3 @@ Employees may be permitted to work remotely on a case-by-case basis, subject to 
 ## Social Media
 
 Employees are expected to use social media responsibly and in a manner that does not reflect poorly on the company. Any posts or comments that could be considered offensive or inappropriate may result in disciplinary action.
-
-## Conclusion
-
-We take our commitment to providing a safe and inclusive workplace seriously. Any violations of this policy may result in disciplinary action, up to and including termination of employment.

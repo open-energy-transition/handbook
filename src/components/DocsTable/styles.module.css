@@ -1,0 +1,36 @@
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+.component {
+  margin: 1%;
+  border-radius: 5px;
+  margin-bottom: 2%;
+}
+
+.my_table {
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+
+.column_width{
+  width: 25vw;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.column_width{
+  width: 80vw;
+}
+}
