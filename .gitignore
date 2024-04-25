@@ -1,12 +1,13 @@
 # Dependencies
 /node_modules
-package-lock.json
 # Production
 /build
 
 output.json
 folder_list.json
-team.yaml
+team.json
+package-lock.json
+
 
 # Generated files
 .docusaurus
