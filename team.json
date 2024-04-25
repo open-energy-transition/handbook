@@ -1,0 +1,98 @@
+[
+  {
+    "name": "akshat mittal",
+    "designation": "wvgevwvwv",
+    "description": "afnewfew wefenvwv ewenewiv eiewnii4gv4 4fgi4jg4g4g wffwfgewgieg ewgw ew egwnge weigoegwe weofwe ewgwgwegweg weiwfjefef fwefwefwe ewfewfw",
+    "image_link": "https://placehold.co/600x400/orange/black?text=akshat+mittal",
+    "mail_id": "afnefefeefe@oet.com",
+    "redirect_link": "https://www.example.com/akshat_mittal"
+  },
+  {
+    "name": "another_name",
+    "designation": "another_designation",
+    "description": "another_description",
+    "image_link": "https://placehold.co/600x400/orange/black?text=another_name",
+    "mail_id": "another_mail@domain.com",
+    "redirect_link": "https://www.example.com/another_name"
+  },
+  {
+    "name": "John Doe",
+    "designation": "Senior Engineer",
+    "description": "A highly skilled engineer with expertise in various programming languages.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=John+Doe",
+    "mail_id": "john.doe@example.com",
+    "redirect_link": "https://www.example.com/john_doe"
+  },
+  {
+    "name": "Jane Smith",
+    "designation": "Marketing Manager",
+    "description": "Experienced marketing professional with a proven track record of successful campaigns.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Jane+Smith",
+    "mail_id": "jane.smith@example.com",
+    "redirect_link": "https://www.example.com/jane_smith"
+  },
+  {
+    "name": "Michael Johnson",
+    "designation": "Financial Analyst",
+    "description": "Detail-oriented financial analyst with expertise in financial modeling and forecasting.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Michael+Johnson",
+    "mail_id": "michael.johnson@example.com",
+    "redirect_link": "https://www.example.com/michael_johnson"
+  },
+  {
+    "name": "Emily Wang",
+    "designation": "HR Manager",
+    "description": "HR professional with extensive experience in recruitment and employee relations.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Emily+Wang",
+    "mail_id": "emily.wang@example.com",
+    "redirect_link": "https://www.example.com/emily_wang"
+  },
+  {
+    "name": "Alex Brown",
+    "designation": "Product Manager",
+    "description": "Product management expert with a passion for innovation and customer satisfaction.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Alex+Brown",
+    "mail_id": "alex.brown@example.com",
+    "redirect_link": "https://www.example.com/alex_brown"
+  },
+  {
+    "name": "Sophia Garcia",
+    "designation": "Graphic Designer",
+    "description": "Creative graphic designer with a keen eye for detail and a strong aesthetic sense.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Sophia+Garcia",
+    "mail_id": "sophia.garcia@example.com",
+    "redirect_link": "https://www.example.com/sophia_garcia"
+  },
+  {
+    "name": "William Lee",
+    "designation": "Sales Executive",
+    "description": "Results-driven sales executive with a proven ability to exceed targets and drive revenue growth.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=William+Lee",
+    "mail_id": "william.lee@example.com",
+    "redirect_link": "https://www.example.com/william_lee"
+  },
+  {
+    "name": "Olivia Martinez",
+    "designation": "Project Coordinator",
+    "description": "Organized project coordinator with excellent communication and coordination skills.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Olivia+Martinez",
+    "mail_id": "olivia.martinez@example.com",
+    "redirect_link": "https://www.example.com/olivia_martinez"
+  },
+  {
+    "name": "Daniel Kim",
+    "designation": "Software Developer",
+    "description": "Skilled software developer with expertise in full-stack web development.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Daniel+Kim",
+    "mail_id": "daniel.kim@example.com",
+    "redirect_link": "https://www.example.com/daniel_kim"
+  },
+  {
+    "name": "Michelle Chen",
+    "designation": "Content Writer",
+    "description": "Creative content writer with a passion for storytelling and digital marketing.",
+    "image_link": "https://placehold.co/600x400/orange/black?text=Michelle+Chen",
+    "mail_id": "michelle.chen@example.com",
+    "redirect_link": "https://www.example.com/michelle_chen"
+  }
+]
