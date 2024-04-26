@@ -28,7 +28,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
-          routeBasePath: "/home",
+          routeBasePath: "/docs",
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/open-energy-transition/handbook/tree/main/",
@@ -46,6 +46,10 @@ const config = {
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
         hashed: true,
+        indexDocs: true,
+        indexBlog: false,
+        indexPages: false,
+        language: "en",
       }),
     ],
   ],
@@ -60,7 +64,7 @@ const config = {
           src: "img/oet-logo-red.png",
         },
         items: [
-          { to: "/home", label: "Home", position: "left" },
+          { to: "/docs", label: "Home", position: "left" },
           {
             href: "https://github.com/open-energy-transition/handbook",
             label: "GitHub",
@@ -76,7 +80,7 @@ const config = {
             items: [
               {
                 label: "handbook",
-                to: "/home",
+                to: "/docs",
               },
             ],
           },
