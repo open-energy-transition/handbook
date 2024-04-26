@@ -15,9 +15,12 @@ generate_json() {
             # Loop through files and directories in the folder
             for item in "$folder"/*; do
                 item_name=$(basename "$item")
-                # Remove file extension
-                item_name_no_ext="${item_name%.*}"
-                json="$json\"$item_name_no_ext\", "
+                # Check if the item is a file and not named "index.md" or "index.mdx"
+                if [ -f "$item" ] && [ "$item_name" != "index.md" ] && [ "$item_name" != "index.mdx" ]; then
+                    # Remove file extension
+                    item_name_no_ext="${item_name%.*}"
+                    json="$json\"$item_name_no_ext\", "
+                fi
             done
 
             # Remove the trailing comma and close the array
@@ -29,6 +32,7 @@ generate_json() {
     json="${json%, }}"
     echo "$json"
 }
+
 
 # Get the relative path to the directory
 # directory="/home/akshat/oet-handbook/docs"
