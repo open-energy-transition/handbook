@@ -1,26 +1,60 @@
-# Website
+# Open Energy Transition Handbook
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+Welcome to the Open Energy Transition Handbook repository!
+
+This repository serves as a centralized hub for managing and tracking policies company-wide for Open Energy Transition. 
+
+## Getting Started
+
+### Website
+
+The Open Energy Transition website is built on Docusaurus.
 
 ### Installation
 
-```
-$ npm install
-```
+To get started with development, follow these steps:
 
-### Local Development
-
-```
-$ npm run start
+Install dependencies:
+```bash
+npm install
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### Data Synchronization
 
-### Build
-
+To fetch dependencies, execute:
+```bash
+bash sync-data.sh
 ```
-$ npm run build
+
+### Generating Website Structure JSON
+
+To generate JSON for the website structure, run:
+```bash
+bash generate-table-json.sh
 ```
 
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
+### Development
 
+To run the development server, use the following command:
+```bash
+npm start
+```
+
+### Building
+
+To build the project, run:
+```bash
+npm run build
+```
+
+## Contributing
+
+We welcome contributions from the community. To contribute, please follow these steps:
+
+1. Fork this repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Open a pull request.
+
+Thank you for contributing to the Open Energy Transition Handbook!

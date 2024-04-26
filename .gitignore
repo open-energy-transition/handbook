@@ -5,7 +5,7 @@
 
 output.json
 folder_list.json
-team*
+team.json
 package-lock.json
 
 
