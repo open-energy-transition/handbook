@@ -1,9 +1,12 @@
-name: Deploy to Pages
+name: Build and Deploy to Pages
 
 on:
   push:
     branches:
       - main
+  pull_request:
+    branches:
+      - '**'
 
   workflow_dispatch:
 
@@ -13,38 +16,59 @@ permissions:
   id-token: write
 
 concurrency:
-  group: "pages"
-  cancel-in-progress: false
+  group: "pages-${{ github.ref }}"
+  cancel-in-progress: true
 
 defaults:
   run:
     shell: bash
 
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      # 👇 Build steps
+
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 20.5.0
       - name: Install dependencies
         run: npm install 
-      - name: generate json of file structure
+      - name: Generate JSON of file structure
         run: bash generate-table-json.sh
-      - name: fetch team json
-        run : bash sync-data.sh 
+      - name: Fetch team JSON
+        run: bash sync-data.sh 
       - name: Build
         run: npm run build
-      - name: show build size
-        run : du -sh build
-      # 👆 Build steps
+      - name: Show build size
+        run: du -sh build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20.5.0
+      - name: Install dependencies
+        run: npm install
+      - name: Generate JSON of file structure
+        run: bash generate-table-json.sh
+      - name: Fetch team JSON
+        run: bash sync-data.sh
+      - name: Build
+        run: npm run build
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
