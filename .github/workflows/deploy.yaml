@@ -34,16 +34,27 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 20.5.0
+
       - name: Install dependencies
         run: npm install 
+
       - name: Generate JSON of file structure
         run: bash generate-table-json.sh
+
       - name: Fetch team JSON
         run: bash sync-data.sh 
+
       - name: Build
         run: npm run build
+
       - name: Show build size
         run: du -sh build
+
+      - name: Upload Build Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-artifacts
+          path: build
 
   deploy:
     needs: build
@@ -56,25 +67,20 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
+      - name: Download Build Artifacts
+        uses: actions/download-artifact@v3
         with:
-          node-version: 20.5.0
-      - name: Install dependencies
-        run: npm install
-      - name: Generate JSON of file structure
-        run: bash generate-table-json.sh
-      - name: Fetch team JSON
-        run: bash sync-data.sh
-      - name: Build
-        run: npm run build
+          name: build-artifacts
+          path: build
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
           path: ./build
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
