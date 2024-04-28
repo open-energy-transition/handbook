@@ -35,3 +35,11 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.controlled_document_bg {
+  background-color: rgb(233, 233, 233);
+}
+
+[data-theme='dark'] .controlled_document_bg {
+  background-color: rgb(36, 36, 36); 
+}

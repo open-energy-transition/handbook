@@ -1,0 +1,19 @@
+.controlled_document_banner {
+  border-left: 4px solid red;
+  padding: 10px;
+  margin: 10px 0;
+  font-family: Arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.controlled_document_header {
+  color: red;
+  font-weight: bold;
+  margin: 0 0 5px 0;
+}
+
+.controlled_document_link {
+  color: #d63031;
+  cursor: pointer;
+  text-decoration: underline;
+}
