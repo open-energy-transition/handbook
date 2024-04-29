@@ -39,10 +39,10 @@ jobs:
         run: npm install 
 
       - name: Generate JSON of file structure
-        run: bash generate-table-json.sh
+        run: bash scripts/generate-table-json.sh
 
       - name: Fetch team JSON
-        run: bash sync-data.sh 
+        run: bash scripts/sync-data.sh 
 
       - name: Build
         run: npm run build
