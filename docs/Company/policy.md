@@ -13,7 +13,8 @@ At our company, we are committed to providing a safe and inclusive workplace for
 
 All employees are expected to adhere to the following code of conduct:
 
-- Treat all colleagues with respect and professionalism
+- Treat all colleagues with respect and professionalism at all times
+- **line added*
 - Avoid any behavior that could be considered discriminatory or harassing
 - Maintain confidentiality of company and client information
 - Follow all company policies and procedures
