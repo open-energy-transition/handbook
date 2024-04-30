@@ -8,6 +8,9 @@ folder_list.json
 team.json
 package-lock.json
 
+/temp
+folder-stru.yaml
+temp-py.py
 
 # Generated files
 .docusaurus
