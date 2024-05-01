@@ -9,22 +9,27 @@ import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 <MaintainerTag maintainerEmails={["jane.smith@example.com", "john.doe@example.com", "michael.johnson@example.com"]} />
 
 # Contribution Guide
-this should be same as sidebar_label and folder name
+
+This document serves as the base for contributions to the handbook.
 
 <ControlledDocBanner />
 
-should be present on every controlled document.
+## Adding New Pages and Sections
 
-## Sub Heading
+The handbook uses Docusaurus's documentation functionality as the foundation for its folder and content structure. You can learn more about Docusaurus at [Docusaurus Docs](https://docusaurus.io/docs).
 
-At our company, we are committed to providing a safe and inclusive workplace for all employees. This policy outlines our expectations for behavior and conduct in the workplace.
-
-## Another Sub Heading
-
-All employees are expected to adhere to the following code of conduct:
-
-- Treat all colleagues with respect and professionalism
-- Avoid any behavior that could be considered discriminatory or harassing
-- Maintain confidentiality of company and client information
-- Follow all company policies and procedures
-- Report any violations of this code of conduct to management
+- Every folder must contain an `index.mdx` file. This file will be rendered as the homepage for that section of the handbook.
+- Refer to this template for the index page: [Index Template](https://github.com/open-energy-transition/handbook/blob/main/templates/index-template-folder.mdx).
+- Although Docusaurus supports both `.md` and `.mdx` file extensions, we recommend using `.mdx` to maintain uniformity across the project.
+- Maintainer tags should be present on every page. See all available team members here: [Team JSON](https://github.com/open-energy-transition/oet-data-bank/blob/master/team.json). We use email as a unique identifier.
+- All pages must include the following metadata:
+```
+sidebar_position: 3.7
+sidebar_label: "Contribution Guide"
+```
+- The sidebar position is determined by the parent folder's index page. It should be a single digit for index pages and two digits for other pages in the same directory.
+- `sidebar_label` is the name that will appear in the sidebar and other navigation elements. It is best practice to keep it the same as the main heading on the page.
+- For best practices, folders should be named using camelCase. For example, the folder for this page should be named `ContributionGuide.mdx`.
+- Documents that fall under the controlled category should have the Controlled Document Banner present.
+- For implementing navigation, refer to [Docusaurus Navigation](https://docusaurus.io/docs/markdown-features/links).
+- Here is also a link to the template for non-index pages: [Page Template](https://github.com/open-energy-transition/handbook/blob/main/templates/page-template.mdx).
