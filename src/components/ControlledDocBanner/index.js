@@ -15,7 +15,7 @@ const ControlledDocBanner = () => {
         This is a Controlled Document
       </p>
       <p>
-        In line with GitLab’s regulatory obligations, changes to
+        In line with OET’s regulatory obligations, changes to
         <span> </span>
         <Link to={pageLink}>controlled documents</Link>
         <span> </span>
