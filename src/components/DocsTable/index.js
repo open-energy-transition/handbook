@@ -17,6 +17,18 @@ const DocsTable = () => {
   );
 };
 
+function camelCaseToNormalText(camelCase) {
+  let spacedText = camelCase.replace(/([A-Z])/g, " $1").trim();
+
+  let normalText = spacedText
+    .toLowerCase()
+    .replace(/(^|\s)(\S)/g, function (match) {
+      return match.toUpperCase();
+    });
+
+  return normalText;
+}
+
 const PageLinkTable = ({ key, title, items }) => {
   const { siteConfig } = useDocusaurusContext();
   const docsBasePath = siteConfig.presets[0].at(1).docs.routeBasePath;
@@ -26,7 +38,7 @@ const PageLinkTable = ({ key, title, items }) => {
       <thead>
         <tr>
           <th className={styles.column_width}>
-            <Link to={pageLink}>{title}</Link>
+            <Link to={pageLink}>{camelCaseToNormalText(title)}</Link>
           </th>
         </tr>
       </thead>
@@ -34,7 +46,9 @@ const PageLinkTable = ({ key, title, items }) => {
         {items.map((item, index) => (
           <tr key={index}>
             <td className={styles.column_width}>
-              <Link to={`${pageLink}/${item}`}>{item}</Link>
+              <Link to={`${pageLink}/${item}`}>
+                {camelCaseToNormalText(item)}
+              </Link>
             </td>
           </tr>
         ))}
