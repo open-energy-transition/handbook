@@ -34,26 +34,28 @@ const PageLinkTable = ({ key, title, items }) => {
   const docsBasePath = siteConfig.presets[0].at(1).docs.routeBasePath;
   const pageLink = `${docsBasePath}/${title}`;
   return (
-    <table className={styles.my_table} key={key}>
-      <thead>
-        <tr>
-          <th className={styles.column_width}>
-            <Link to={pageLink}>{camelCaseToNormalText(title)}</Link>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        {items.map((item, index) => (
-          <tr key={index}>
-            <td className={styles.column_width}>
-              <Link to={`${pageLink}/${item}`}>
-                {camelCaseToNormalText(item)}
-              </Link>
-            </td>
+    <div className={styles.table_container}>
+      <table className={styles.my_table} key={key}>
+        <thead>
+          <tr>
+            <th className={styles.column_width}>
+              <Link to={pageLink}>{camelCaseToNormalText(title)}</Link>
+            </th>
           </tr>
-        ))}
-      </tbody>
-    </table>
+        </thead>
+        <tbody>
+          {items.map((item, index) => (
+            <tr key={index}>
+              <td className={styles.column_width}>
+                <Link to={`${pageLink}/${item}`}>
+                  {camelCaseToNormalText(item)}
+                </Link>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 };
 
