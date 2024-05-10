@@ -26,15 +26,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    font-size: 40px; /* Big font size */
+    height: 35vh;
+    font-size: 35px; /* Big font size */
     text-align: center;
     /* color: rgb(227,24,55); */
-    font-weight: 600;
+    font-weight: 500;
+    background: linear-gradient(160deg, #E31937, #f16b98, #4c5bad);
 }
 
 .subcontainer{
-  margin: 10vw;
-  margin-top: 0;
+  margin: 8vw;
+  margin-top: 4vh;
   margin-bottom: 0;
 }
