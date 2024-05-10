@@ -2,8 +2,10 @@
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.7vw;
   flex-wrap: wrap;
+  font-size: 3vw;
 }
 
 
@@ -16,21 +18,17 @@
 .my_table {
   table-layout: fixed;
   border-collapse: collapse;
+  font-size: 1.3vw;
 }
 
 .column_width{
-  width: 25vw;
+  width: 18vw;
+  font-size: 1.2vw;
 }
 
 @media screen and (max-width: 767px) {
-  .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
 .column_width{
-  width: 80vw;
+  width: 40vw;
+  font-size: 2vw;
 }
 }
