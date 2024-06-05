@@ -6,7 +6,7 @@
 output.json
 folder_list.json
 team.json
-package-lock.json
+# package-lock.json
 
 /temp
 folder-stru.yaml
@@ -26,3 +26,26 @@ temp-py.py
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Ignore cached data directories and files
+CachedData/
+CachedProfilesData/
+
+# Ignore cookies and related files
+Cookies
+Cookies-journal
+
+# Ignore network persistent state and preferences
+Network Persistent State
+Preferences
+
+# Ignore transport security and user-specific data
+TransportSecurity
+User/
+
+# Ignore language packs and logs
+languagepacks.json
+logs/
+
+# Ignore machine-specific ID
+machineid
