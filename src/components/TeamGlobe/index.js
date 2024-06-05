@@ -175,6 +175,18 @@ function GlobeComponent() {
     return returnHTML;
   };
 
+  function hoverHeight({ properties: d }){
+    let height = 0.06
+
+    team_data.forEach(i => {
+      if (d.ADMIN === i.country) {
+        console.log('match')
+        height = 0.12
+      }
+    });
+
+    return height
+  }
   const renderGlobe = () => {
     if (loaded !== 'loaded') {
       return <div>Loading...</div>;
@@ -202,7 +214,7 @@ function GlobeComponent() {
         arcsTransitionDuration={0.3}
         arcAltitudeAutoScale={1.2}
         polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
-        polygonAltitude={d => d === hoverD ? 0.12 : 0.06}
+        polygonAltitude={d => d === hoverD ? hoverHeight(d) : 0.06}
         polygonCapColor={d => d === hoverD ? 'steelblue':countryColor(d)}
         polygonSideColor={() => 'rgba(0, 100, 0, 0.15)'}
         polygonStrokeColor={() => '#111'}
