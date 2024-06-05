@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from "react";
 import * as XLSX from 'xlsx';
-import { countries } from './countries';
-
-import EarthNightUrl from '@site/static/img/earth-night-light.jpg';
-import NightSkyUrl from '@site/static/img/night-sky-light.png';
+import EarthNightUrl from '@site/static/img/earth-night.jpg';
+import NightSkyUrl from '@site/static/img/night-sky.png';
 import Dataset from '@site/static/datasets/worldcities.xlsx';
 import GeoDataset from '@site/static/datasets/countries.json';
 import team_data from "../../../team.json";
@@ -16,10 +14,33 @@ function GlobeComponent() {
   const [loaded, setLoaded] = useState(initialState);
   const [places, setPlaces] = useState([]);
   const [arcs, setArcs] = useState([]);
-  const [volcanoes, setVolcanoes] = useState([]);
-  const [dimensions, setDimensions] = useState({ width: window.innerWidth, height: window.innerHeight });
+  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const [countries, setCountries] = useState(GeoDataset);
   const [hoverD, setHoverD] = useState();
+
+  useEffect(() => {
+    if (ExecutionEnvironment.canUseDOM) {
+      
+      const handleResize = () => {
+        if(window.innerWidth<1000)
+          {
+            setDimensions({ width: window.innerWidth/1.1, height: window.innerHeight/1.3});
+          }
+          else
+          {
+            setDimensions({ width: window.innerWidth/1.73, height: window.innerHeight/1.3 });
+          }
+      };
+      handleResize();
+  
+      window.addEventListener('resize', handleResize);
+  
+      return () => {
+        window.removeEventListener('resize', handleResize);
+      };
+    }
+  }, []);
+
 
   const fetchData = async () => {
     try {
@@ -27,19 +48,12 @@ function GlobeComponent() {
       let json = await response.arrayBuffer();
       return { success: true, data: json };
     } catch (error) {
-      console.log(error);
       return { success: false };
     }
   };
 
   const loadData = async () => {
-    team_data.forEach(e => {
-      e.randomAltitude = getRandomAltitude();
-      e.randomColor = generateRandomHexColor();
-    });
-
-    setVolcanoes(team_data);
-
+    
     let res = await fetchData();
     if (res.success) {
       const wb = XLSX.read(res.data, { type: "array" });
@@ -120,32 +134,46 @@ function GlobeComponent() {
     if (loaded === "unloaded" && ExecutionEnvironment.canUseDOM) {
       loadData();
     }
-
-    const handleResize = () => {
-      setDimensions({ width: window.innerWidth, height: window.innerHeight });
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
   }, [loaded]);
 
-  function generateRandomHexColor() {
-    const hexColor = '#' + Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0');
-    return hexColor;
+  function countryColor({ properties: d }){
+    let color = 'grey'
+
+    team_data.forEach(i => {
+      if (d.ADMIN === i.country) {
+        console.log('match')
+        color = 'yellow'
+      }
+    });
+
+    return color
   }
 
-  const getRandomAltitude = () => 0.2 + Math.random() * 0.3;
+  const getTooltip = ({ properties: d }) => {
 
-  const getTooltip = d => `
-    <div style="text-align: center">
-      <div><b>${d.name}</b></div>
-      <div>(${d.designation})</div>
-      <img src="${d.image_link}" alt="${d.name}" style="width: 100px; height: auto;" />
-    </div>
-  `;
+    let returnHTML = `
+      <b>${d.ADMIN} (${d.ISO_A2}):</b>`;
+  
+    let membersHTML = '';
+  
+    team_data.forEach(i => {
+      if (d.ADMIN === i.country) {
+        membersHTML += `
+          <div style="text-align: center; margin-top: 10px; ">
+            <div><b>${i.name}</b></div>
+            <div>(${i.designation})</div>
+            <img src="${i.image_link}" alt="${i.name}" style="width: 100px; height: auto;" />
+          </div>
+        `;
+      }
+    });
+  
+    if (membersHTML) {
+      returnHTML += `<div>${membersHTML}</div>`;
+    }
+  
+    return returnHTML;
+  };
 
   const renderGlobe = () => {
     if (loaded !== 'loaded') {
@@ -156,73 +184,31 @@ function GlobeComponent() {
 
     return (
       <Globe
-        width={dimensions.width/1.35}
-        height={dimensions.height/1.35}
+        width={dimensions.width}
+        height={dimensions.height}
         globeImageUrl={EarthNightUrl}
         backgroundImageUrl={NightSkyUrl}
-        // arcsData={arcs}
-        // arcStartLat={d => +d.startlat}
-        // arcStartLng={d => +d.startlng}
-        // arcEndLat={d => +d.endlat}
-        // arcEndLng={d => +d.endlng}
-        // arcDashLength={0.25}
-        // arcDashGap={1}
-        // arcLabel={d => d.label}
-        // arcDashInitialGap={() => Math.random()}
-        // arcDashAnimateTime={3000}
-        // arcColor={() => "#9cff00"}
-        // arcsTransitionDuration={0.3}
-        // arcAltitudeAutoScale={1.2}
-        // hexPolygonsData={countries.features}
-        // hexPolygonResolutio={3}
-        // hexPolygonMargin={0.7}
-        // hexPolygonColor={() => "rgba(255,255,255, 1)"}
-        // showAtmosphere={false}
-        // pointsData={volcanoes}
-        // pointLat="lat"
-        // pointLng="lon"
-        // // pointAltitude={d => d.randomAltitude}
-        // polygonAltitude={0}
-        // pointColor={d => d.randomColor}
-        // pointRadius={0.9}
-        // pointLabel={getTooltip}
-        // labelsData={volcanoes}
-        // labelLat="lat"
-        // labelLng="lon"
-        // labelAltitude={d => d.randomAltitude}
-        // labelAltitude={0}
-        // labelColor={d => d.randomColor}
-        // labelDotOrientation={() => 'bottom'}
-        // labelIncludeDot={true}
-        // labelDotRadius={2}
-        // labelText="name"
-        // labelSize={3}
-        // labelResolution={1}
-        // labelLabel={getTooltip}
-
+        arcsData={arcs}
+        arcStartLat={d => +d.startlat}
+        arcStartLng={d => +d.startlng}
+        arcEndLat={d => +d.endlat}
+        arcEndLng={d => +d.endlng}
+        arcDashLength={0.25}
+        arcDashGap={1}
+        arcLabel={d => d.label}
+        arcDashInitialGap={() => Math.random()}
+        arcDashAnimateTime={3000}
+        arcColor={() => "#9cff00"}
+        arcsTransitionDuration={0.3}
+        arcAltitudeAutoScale={1.2}
         polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
         polygonAltitude={d => d === hoverD ? 0.12 : 0.06}
-        polygonCapColor={d => d === hoverD ? 'steelblue' : 'red'}
+        polygonCapColor={d => d === hoverD ? 'steelblue':countryColor(d)}
         polygonSideColor={() => 'rgba(0, 100, 0, 0.15)'}
         polygonStrokeColor={() => '#111'}
-        polygonLabel={({ properties: d }) => `
-          <b>${d.ADMIN} (${d.ISO_A2}):</b> <br />
-          GDP: <i>${d.GDP_MD_EST}</i> M$<br/>
-          Population: <i>${d.POP_EST}</i>
-        `}
+        polygonLabel={getTooltip}
         onPolygonHover={setHoverD}
         polygonsTransitionDuration={300}
-
-
-        // hexPolygonsData={countries.features}
-        // hexPolygonResolution={3}
-        // hexPolygonMargin={0.3}
-        // // hexPolygonUseDots={true}
-        // hexPolygonColor={() => `#${Math.round(Math.random() * Math.pow(2, 24)).toString(16).padStart(6, '0')}`}
-        // hexPolygonLabel={({ properties: d }) => `
-        //   <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-        //   Population: <i>${d.POP_EST}</i>
-        // `}
       />
     );
   };
