@@ -151,25 +151,26 @@ function GlobeComponent() {
 
   const getTooltip = ({ properties: d }) => {
 
-    let returnHTML = `
-      <b>${d.ADMIN} (${d.ISO_A2}):</b>`;
+    // let returnHTML = `
+    //   <b>${d.ADMIN} (${d.ISO_A2}):</b>`;
+
+    let returnHTML=''
   
     let membersHTML = '';
   
     team_data.forEach(i => {
       if (d.ADMIN === i.country) {
         membersHTML += `
-          <div style="text-align: center; margin-top: 10px; ">
-            <div><b>${i.name}</b></div>
-            <div>(${i.designation})</div>
+          <div style="padding:5px">
+            <div><b>${i.name}</b></div>      
             <img src="${i.image_link}" alt="${i.name}" style="width: 100px; height: auto;" />
           </div>
         `;
       }
     });
-  
+  // <div>(${i.designation})</div>
     if (membersHTML) {
-      returnHTML += `<div>${membersHTML}</div>`;
+      returnHTML += `<div style="text-align: center; margin-top: 10px; border: 1px solid white; background-color: gray; padding:10px; display:flex  ">${membersHTML}</div>`;
     }
   
     return returnHTML;
