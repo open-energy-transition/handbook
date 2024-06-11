@@ -16,21 +16,21 @@ To get started with development, follow these steps:
 
 Install dependencies:
 ```bash
-npm install
-```
-
-### Data Synchronization
-
-To fetch dependencies, execute:
-```bash
-bash sync-data.sh
+npm ci
 ```
 
 ### Generating Website Structure JSON
 
 To generate JSON for the website structure, run:
 ```bash
-bash generate-table-json.sh
+bash scripts/generate-table-json.sh
+```
+
+### Data Synchronization
+
+To fetch dependencies, execute:
+```bash
+bash scripts/sync-data.sh
 ```
 
 ### Development
