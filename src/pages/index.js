@@ -14,7 +14,7 @@ export default function index() {
       description="Description will go into a meta tag in <head />"
     >
       <main>
-        <div class={styles.centered_text}>The OET Handbook
+        <div class={styles.centered_text}>The Open Energy Transition Handbook
         <ParticlesSection />
         </div>
         <DocsTable />
