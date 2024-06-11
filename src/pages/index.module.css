@@ -26,12 +26,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 35vh;
-    font-size: 35px; /* Big font size */
+    height: 65vh;
+    font-family: "Poppins", sans-serif;
+    font-size: 3.4vw;
+    font-weight: 600;
+    line-height: 56px;
     text-align: center;
-    /* color: rgb(227,24,55); */
-    font-weight: 500;
+    color: white;
     background: linear-gradient(160deg, #E31937, #f16b98, #4c5bad);
+    margin-bottom: 3vh;
 }
 
 .subcontainer{
