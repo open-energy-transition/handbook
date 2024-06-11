@@ -66,6 +66,11 @@ const config = {
         items: [
           { to: "/docs", label: "Home", position: "left" },
           {
+            href: "https://openenergytransition.org/",
+            label: "Website",
+            position: "right",
+          },
+          {
             href: "https://github.com/open-energy-transition/handbook",
             label: "GitHub",
             position: "right",
@@ -79,7 +84,7 @@ const config = {
             title: "Home",
             items: [
               {
-                label: "handbook",
+                label: "Handbook",
                 to: "/docs",
               },
             ],
@@ -102,6 +107,19 @@ const config = {
             ],
           },
           {
+            title: "Website",
+            items: [
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
+              {
+                label: "Website",
+                href: "https://openenergytransition.org/",
+              },
+            ],
+          },
+          {
             title: "More",
             items: [
               // {
@@ -115,7 +133,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} handbook, OET. Built with Docusaurus.`,
+        copyright: `© Copyright ${new Date().getFullYear()} Handbook, Open Energy Transition. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
