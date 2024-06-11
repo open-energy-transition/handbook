@@ -41,7 +41,7 @@ const handleSearch = (email) => {
 const MaintainerTag = ({ maintainerEmails }) => {
   return (
     <div className={styles.tag_container}>
-      <span className={styles.maintainer}>maintainers -</span>
+      <span className={styles.maintainer}>Maintainers -</span>
       {maintainerEmails.map((email, index) => (
         <React.Fragment key={email}>
           <GenerateTags maintainerEmail={email} />
