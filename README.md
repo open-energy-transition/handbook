@@ -6,9 +6,9 @@ This repository serves as a centralized hub for managing and tracking policies c
 
 ## Getting Started
 
-### Website
+### Handbook
 
-The Open Energy Transition website is built on Docusaurus.
+The Open Energy Transition handbook is built on Docusaurus.
 
 ### Installation
 
@@ -19,9 +19,9 @@ Install dependencies:
 npm ci
 ```
 
-### Generating Website Structure JSON
+### Generating handbook Structure JSON
 
-To generate JSON for the website structure, run:
+To generate the JSON for the handbook structure, run:
 ```bash
 bash scripts/generate-table-json.sh
 ```
