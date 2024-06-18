@@ -3,7 +3,7 @@ import * as XLSX from 'xlsx';
 import EarthNightUrl from '@site/static/img/earth-night.jpg';
 import NightSkyUrl from '@site/static/img/night-sky.png';
 import Dataset from '@site/static/datasets/worldcities.xlsx';
-import GeoDataset from '@site/static/datasets/countries_new.json';
+import GeoDataset from '@site/static/datasets/countries.json';
 import team_data from "../../../team.json";
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
