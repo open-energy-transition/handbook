@@ -3,7 +3,7 @@ import * as XLSX from 'xlsx';
 import EarthNightUrl from '@site/static/img/earth-night.jpg';
 import NightSkyUrl from '@site/static/img/night-sky.png';
 import Dataset from '@site/static/datasets/worldcities.xlsx';
-import GeoDataset from '@site/static/datasets/countries.json';
+import GeoDataset from '@site/static/datasets/countries_new.json';
 import team_data from "../../../team.json";
 import BrowserOnly from '@docusaurus/BrowserOnly';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
@@ -136,41 +136,73 @@ function GlobeComponent() {
     }
   }, [loaded]);
 
-  function countryColor({ properties: d }){
-    let color = 'grey'
-
+  const paleColors = [
+    '#d3d3d3', // Light Grey
+    '#dcdcdc', // Gainsboro
+    '#f5f5f5', // White Smoke
+    '#e0e0e0', // Light Grey 2
+    // '#f8f8ff', // Ghost White
+    // '#f0f8ff', // Alice Blue
+    // '#f0fff0', // Honeydew
+    // '#e6e6fa', // Lavender
+    // '#f0ffff', // Azure
+    // '#faf0e6', // Linen
+    // '#fffafa', // Snow
+    // '#e0ffff', // Light Cyan
+    // '#f5f5dc', // Beige
+    // '#ffe4e1', // Misty Rose
+    // '#fdf5e6', // Old Lace
+    // '#fafad2', // Light Goldenrod Yellow
+    // '#e9ecef', // Very Light Grey
+    // '#e6e6e6', // Light Grey 3
+    // '#f7f7f7', // Very Pale Grey
+    // '#ffebcd'  // Blanched Almond
+  ];
+  
+  function getPaleColor(country) {
+    let sum = 0;
+    for (let i = 0; i < country.length; i++) {
+      sum += country.charCodeAt(i);
+    }
+    return paleColors[sum % paleColors.length];
+  }
+  
+  function countryColor({ properties: d }) {
+    let color = getPaleColor(d.ADMIN); 
+  
     team_data.forEach(i => {
       if (d.ADMIN === i.country) {
-        console.log('match')
-        color = 'yellow'
+        console.log('match');
+        color =  'rgb(227,24,55)'; 
       }
     });
-
-    return color
+  
+    return color;
   }
 
   const getTooltip = ({ properties: d }) => {
 
-    // let returnHTML = `
-    //   <b>${d.ADMIN} (${d.ISO_A2}):</b>`;
-
     let returnHTML=''
   
     let membersHTML = '';
-  
     team_data.forEach(i => {
       if (d.ADMIN === i.country) {
         membersHTML += `
-          <div style="padding:5px">
-            <div><b>${i.name}</b></div>      
-            <img src="${i.image_link}" alt="${i.name}" style="width: 100px; height: auto;" />
+          <div style="position: relative; border: 1px solid #ccc; padding: 10px;">
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(160deg, #E31937, #f16b98, #4c5bad); opacity: 0.95; z-index: 1;"></div>
+            <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center;">
+              <div><b>${i.name}</b></div>
+              <img src="${i.image_link}" alt="${i.name}" style="max-width: 100%; height: auto; margin-top:5px" />
+            </div>
           </div>
         `;
       }
     });
-  // <div>(${i.designation})</div>
+    
     if (membersHTML) {
-      returnHTML += `<div style="text-align: center; margin-top: 10px; border: 1px solid white; background-color: gray; padding:10px; display:flex  ">${membersHTML}</div>`;
+      returnHTML += `<div style="display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      gap: 10px;">${membersHTML}</div>`;
     }
   
     return returnHTML;
@@ -188,6 +220,7 @@ function GlobeComponent() {
 
     return height
   }
+
   const renderGlobe = () => {
     if (loaded !== 'loaded') {
       return <div>Loading...</div>;
@@ -221,7 +254,7 @@ function GlobeComponent() {
         polygonStrokeColor={() => '#111'}
         polygonLabel={getTooltip}
         onPolygonHover={setHoverD}
-        polygonsTransitionDuration={300}
+        polygonsTransitionDuration={350}
       />
     );
   };
