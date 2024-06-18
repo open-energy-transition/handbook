@@ -49,12 +49,6 @@ npm run build
 
 ## Contributing
 
-We welcome contributions from the community. To contribute, please follow these steps:
-
-1. Fork this repository.
-2. Create a new branch for your feature or bug fix.
-3. Make your changes and commit them.
-4. Push your changes to your fork.
-5. Open a pull request.
+We welcome contributions from the community. To contribute, please follow the instructions available in [Editing the Handbook](docs/Handbook/EditingTheHandbook.mdx)
 
 Thank you for contributing to the Open Energy Transition Handbook!
