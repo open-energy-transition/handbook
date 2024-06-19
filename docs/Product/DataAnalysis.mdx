@@ -9,23 +9,17 @@ import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 <MaintainerTag maintainerEmails={["mario.dzamarija@openenergytransition.org", "fabrizio.finozzi@openenergytransition.org"]} />
 
 # Data Analysis
-Data analysis performed by OET revolves around gathering the data required for modeling the power systems, from various aspects.
+Data analysis performed by us revolves around gathering the data required for modeling the power systems, from various aspects.
 
-- It is both the technical and market data, utilized as a backbone for the power system expansion, unit commitment/economic dispatch, and the power flow calculation.
-- Data analysis plays a crucial role, prior the computer simulation, as the correct input data is the foundation for all the other work done by OET.
+- It is both the technical and the market data, utilized as a backbone for the power system expansion, unit commitment/economic dispatch, and the power flow calculation.
+- Data analysis plays a crucial role, prior the computer simulation, as the correct input data is the foundation for the work that follows.
 
 <ControlledDocBanner />
 
 ## Data Validation
 
-The way to go around inspecting the validity of the input data is by examining the historically recorded results At our company, we are committed to providing a safe and inclusive workplace for all employees. This policy outlines our expectations for behavior and conduct in the workplace.
+The way to go around inspecting the validity of the input data is by examining the historically recorded results, against the output results. It is a known [backcasting](https://www.semcommittee.com/publications/sem-21-086-sem-plexos-model-validation-2021-2029-and-backcast-report), the standard used by the industry.
 
-## Another Sub Heading
+_It operates on the principle of the feedback loop, where the input data is tuned, until the recorded historical prices match the output, to the best of ability, rendering the input valid._
 
-All employees are expected to adhere to the following code of conduct:
-
-- Treat all colleagues with respect and professionalism
-- Avoid any behavior that could be considered discriminatory or harassing
-- Maintain confidentiality of company and client information
-- Follow all company policies and procedures
-- Report any violations of this code of conduct to management
+`Backcast` complements the `forecast`, considering the focus is placed on identifying the correct input, to be used for the further calculations. That said, a successful backcast precedes every forecast, providing validity to the entire process.
