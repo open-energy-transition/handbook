@@ -6,7 +6,7 @@
 output.json
 folder_list.json
 team.json
-# package-lock.json
+package-lock.json
 
 /temp
 folder-stru.yaml

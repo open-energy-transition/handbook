@@ -1,14 +1,4 @@
----
-sidebar_position: 3.4
-sidebar_label: "Handbook Changelog"
----
-
-import MaintainerTag from "@site/src/components/MaintainerTag";
-import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
-
-<MaintainerTag maintainerEmails={["fabrizio.finozzi@openenergytransition.org", "akshat.mittal@openenergytransition.org"]} />
-
-# Handbook Changelog
+# Changelog
 
 ## [Unreleased](https://github.com/open-energy-transition/handbook/tree/HEAD)
 
