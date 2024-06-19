@@ -16,7 +16,7 @@ To get started with development, follow these steps:
 
 Install dependencies:
 ```bash
-npm ci
+npm install 
 ```
 
 ### Generating handbook Structure JSON
