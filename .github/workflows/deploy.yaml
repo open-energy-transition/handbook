@@ -33,7 +33,7 @@ jobs:
       - name: "Generate release changelog"
         uses: heinrichreimer/action-github-changelog-generator@v2.3
         with:
-          repo: open-energy-transition/demo-linopy
+          repo: open-energy-transition/handbook
       
       - name: update change log mdx
         run: bash scripts/sync-changelog.sh 
