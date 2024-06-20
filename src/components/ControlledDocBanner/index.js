@@ -12,7 +12,7 @@ const ControlledDocBanner = () => {
       className={`${styles.controlled_document_banner} controlled_document_bg`}
     >
       <p className={styles.controlled_document_header}>
-        This is a Controlled Document
+        This is a controlled document
       </p>
       <p>
         In line with Open Energy Transition regulatory obligations, changes to
