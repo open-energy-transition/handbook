@@ -13,15 +13,17 @@ import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
 ## Data analysis
 
-Data analysis performed by us revolves around gathering the data required for modeling the power systems, from various aspects.
+Data analysis performed by us revolves around gathering the data, required for modeling the power systems, in various aspects.
 
-- It is both the technical and the market data, utilized as a backbone for the power system expansion, unit commitment/economic dispatch, and the power flow calculation.
-- Data analysis plays a crucial role, prior the computer simulation, as the correct input data is the foundation for the work that follows.
+- It is both the technical and the market data, used as the backbone for the power system expansion, unit commitment/economic dispatch, and the power flow simulation.
+- Data analysis has a crucial role, prior the computer simulation, as the correct input data is the foundation of the work that follows.
 
 ## Data validation
 
 The way to go around inspecting the validity of the input data is by examining the historically recorded results, against the output results. It is a known [backcasting](https://www.semcommittee.com/publications/sem-21-086-sem-plexos-model-validation-2021-2029-and-backcast-report), the standard used by the industry.
 
-_It operates on the principle of the feedback loop, where the input data is tuned, until the recorded historical prices match the output, to the best of ability, rendering the input valid._
+_It operates on the principle of the feedback loop, where the input data is tuned, until the output matches the recorded historical values, to the best of ability, rendering the input data valid._
 
-`Backcast` complements the `forecast`, considering the focus is placed on identifying the correct input, to be used for the further calculations. That said, a successful backcast precedes every forecast, providing validity to the entire process.
+`Backcast` complements the `forecast`, considering the focus of the former is placed on identifying the correct input, to be used for the further calculation.
+
+_That said, a successful backcast precedes every forecast, providing validity to the entire process._
