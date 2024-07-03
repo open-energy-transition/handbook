@@ -1,0 +1,35 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+  base = "/"
+  environment = { NODE_VERSION = "18.19.1" }
+
+[context.production]
+  command = "bash scripts/sync-changelog.sh && bash scripts/generate-table-json.sh && bash scripts/sync-data.sh && npm ci"
+
+[context.deploy-preview]
+  command = "bash scripts/sync-changelog.sh && bash scripts/generate-table-json.sh && bash scripts/sync-data.sh && npm ci"
+
+[[plugins]]
+  package = "@netlify/plugin-github-changelog-generator"
+  inputs = { repo = "open-energy-transition/handbook" }
+
+[[plugins]]
+  package = "@netlify/plugin-deploy-github-pages"
+  inputs = { target_branch = "main", build_output = "build" }
+
+[[plugins]]
+  package = "@netlify/plugin-env"
+  inputs = { permissions = { contents = "read", pages = "write", id-token = "write" } }
+
+[[plugins]]
+  package = "@netlify/plugin-shell"
+  inputs = { commands = ["du -sh build"] }
+
+[[plugins]]
+  package = "@netlify/plugin-artifact"
+  inputs = { name = "build-artifacts", path = "build" }
+
+[[plugins]]
+  package = "@netlify/plugin-fetch-team-json"
+  inputs = { path = "bash scripts/sync-data.sh" }
