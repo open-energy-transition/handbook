@@ -1,7 +1,7 @@
 [build]
   command = "npm run build"
   publish = "build"
-  base = "/handbook"
+  base = "/docs"
   environment = { NODE_VERSION = "18.19.1" }
 
 [context.production]
