@@ -6,25 +6,90 @@ sidebar_label: "PyPSA"
 import MaintainerTag from "@site/src/components/MaintainerTag";
 import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
-<MaintainerTag maintainerEmails={["akshat.mittal@openenergytransition.org", "fabrizio.finozzi@openenergytransition.org"]} />
+<MaintainerTag maintainerEmails={["daniele.lerede@openenergytransition.org"]} />
 
 # PyPSA
-this should be same as sidebar_label and folder name
 
-<ControlledDocBanner />
+PyPSA stands for “Python for Power System Analysis”. It is pronounced “pipes-ah”.
+PyPSA is an open source toolbox for simulating and optimising modern power and energy systems that include features such as conventional generators with unit commitment, variable wind and solar generation, storage units, coupling to other energy sectors, and mixed alternating and direct current networks. PyPSA is designed to scale well with large networks and long time series.
 
-should be present on every controlled document.
+## Functionality
 
-## Sub Heading
+PyPSA can calculate:
 
-At our company, we are committed to providing a safe and inclusive workplace for all employees. This policy outlines our expectations for behavior and conduct in the workplace.
+- static power flow (using both the full non-linear network equations and the linearised network equations)
+- linear optimal power flow (least-cost optimisation of power plant and storage dispatch within network constraints, using the linear network equations, over several snapshots)
+security-constrained linear optimal power flow
+- total electricity/energy system least-cost investment optimisation (using linear network equations, over several snapshots and investment periods simultaneously for optimisation of generation and storage dispatch and investment in the capacities of generation, storage, transmission and other infrastructure)
 
-## Another Sub Heading
+It has models for:
 
-All employees are expected to adhere to the following code of conduct:
+- meshed multiply-connected AC and DC networks, with controllable converters between AC and DC networks
+- standard types for lines and transformers following the implementation in pandapower
+- conventional dispatchable generators and links with unit commitment
+- generators with time-varying power availability, such as wind and solar generators
+- storage units with efficiency losses
+- simple hydroelectricity with inflow and spillage
+- coupling with other energy carriers (e.g. resistive Power-to-Heat (P2H), Power-to-Gas (P2G), battery electric vehicles (BEVs), Fischer-Tropsch, direct air capture (DAC))
+- basic components out of which more complicated assets can be built, such as Combined Heat and Power (CHP) units and heat pumps.
 
-- Treat all colleagues with respect and professionalism
-- Avoid any behavior that could be considered discriminatory or harassing
-- Maintain confidentiality of company and client information
-- Follow all company policies and procedures
-- Report any violations of this code of conduct to management
+## Useful links
+
+- [PyPSA Website](https://pypsa.org/)
+- [PyPSA documentation](https://pypsa.readthedocs.io/en/latest/#documentation)
+- [PyPSA Github repository](https://github.com/PyPSA/PyPSA)
+
+## Contributing and Support
+
+We strongly welcome anyone interested in contributing to this project. If you have any ideas, suggestions or encounter problems, feel invited to file issues or make pull requests on GitHub.
+
+- In case of code-related questions, please post on [stack overflow](https://stackoverflow.com/questions/tagged/pypsa).
+- For non-programming related and more general questions please refer to the [mailing list](https://groups.google.com/g/pypsa).
+- To discuss with other PyPSA users, organise projects, share news, and get in touch with the community you can use the [Discord server](https://discord.com/invite/AnuJBk23FU).
+- For bugs and feature requests, please use the [PyPSA Github Issues page](https://github.com/PyPSA/PyPSA/issues).
+- For troubleshooting, please check the [troubleshooting](https://pypsa.readthedocs.io/en/latest/troubleshooting.html) in the documentation.
+
+Detailed guidelines can be found in the [Contributing](https://pypsa.readthedocs.io/en/latest/contributing.html) section of our documentation.
+
+## Code of Conduct
+
+Please respect our [code of conduct](https://github.com/PyPSA/PyPSA/blob/master/CODE_OF_CONDUCT.md).
+
+## Citing PyPSA
+
+If you use PyPSA for your research, we would appreciate it if you would cite the following paper:
+
+- T. Brown, J. Hörsch, D. Schlachtberger, [PyPSA: Python for Power System Analysis](https://arxiv.org/abs/1707.09913), 2018, [Journal of Open Research Software](https://openresearchsoftware.metajnl.com/), 6(1), [arXiv:1707.09913](https://arxiv.org/abs/1707.09913), [DOI:10.5334/jors.188](https://doi.org/10.5334/jors.188)
+
+Please use the following BibTeX:
+
+```
+
+@article{PyPSA,
+   author = {T. Brown and J. H\"orsch and D. Schlachtberger},
+   title = {{PyPSA: Python for Power System Analysis}},
+   journal = {Journal of Open Research Software},
+   volume = {6},
+   issue = {1},
+   number = {4},
+   year = {2018},
+   eprint = {1707.09913},
+   url = {https://doi.org/10.5334/jors.188},
+   doi = {10.5334/jors.188}
+}
+
+```
+
+If you want to cite a specific PyPSA version, each release of PyPSA is stored on [Zenodo](https://zenodo.org/) with a release-specific DOI. The release-specific DOIs can be found linked from the overall PyPSA Zenodo DOI for Version 0.17.1 and onwards:
+
+[![image](https://zenodo.org/badge/DOI/10.5281/zenodo.3946412.svg)](https://doi.org/10.5281/zenodo.3946412)
+
+or from the overall PyPSA Zenodo DOI for Versions up to 0.17.0:
+
+[![image](https://zenodo.org/badge/DOI/10.5281/zenodo.786605.svg)](https://doi.org/10.5281/zenodo.786605)
+
+# Licence
+
+Copyright 2015-2024 [PyPSA Developers](https://pypsa.readthedocs.io/en/latest/developers.html)
+
+PyPSA is licensed under the open source [MIT License](https://github.com/PyPSA/PyPSA/blob/master/LICENSE.txt).
