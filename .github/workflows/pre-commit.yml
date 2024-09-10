@@ -7,8 +7,12 @@ on:
   pull_request:
     branches:
       - '**'
+
 permissions:
   contents: write
+  actions: write
+  pull-requests: write
+  id-token: write
 
 jobs:
   pre-commit:
