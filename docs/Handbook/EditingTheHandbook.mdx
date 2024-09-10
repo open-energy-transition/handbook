@@ -6,7 +6,12 @@ sidebar_label: "Edit This Website Locally"
 import MaintainerTag from "@site/src/components/MaintainerTag";
 import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
-<MaintainerTag maintainerEmails={["fabrizio.finozzi@openenergytransition.org", "akshat.mittal@openenergytransition.org"]} />
+<MaintainerTag
+  maintainerEmails={[
+    "fabrizio.finozzi@openenergytransition.org",
+    "akshat.mittal@openenergytransition.org",
+  ]}
+/>
 
 # Editing the handbook
 
@@ -21,10 +26,12 @@ The handbook uses Docusaurus's documentation functionality as the foundation for
 - Although Docusaurus supports both `.md` and `.mdx` file extensions, we recommend using `.mdx` to maintain uniformity across the project.
 - Maintainer tags should be present on every page. See all available team members here: [Team](docs/Company/Team.mdx). We use email as a unique identifier.
 - All pages must include the following metadata:
+
 ```
 sidebar_position: 3.7
 sidebar_label: "Contribution Guide"
 ```
+
 - The sidebar position is determined by the parent folder's index page. It should be a single digit for index pages and two digits for other pages in the same directory.
 - `sidebar_label` is the name that will appear in the sidebar and other navigation elements. It is best practice to keep it the same as the main heading on the page.
 - For best practices, folders should be named using camelCase. For example, the folder for this page should be named `ContributionGuide.mdx`.
@@ -37,7 +44,9 @@ sidebar_label: "Contribution Guide"
 There are two possibilities to modify the Open Energy Transition (OET) Handbook. This section covers how to modify it locally. The [README](https://github.com/open-energy-transition/handbook/blob/main/README.md) details how to install and fetch locally the necessary dependencies, generate the JSON for the handbook structure and run a local development server.
 
 ### Open Energy Transition (internal) contributors
+
 If you belong to the Open Energy Transition team, you can contribute by following these steps:
+
 - Clone the repository.
 - Create a new branch for your feature or bug fix.
 - Make your changes and commit them.
@@ -45,7 +54,9 @@ If you belong to the Open Energy Transition team, you can contribute by followin
 - Open a pull request.
 
 ### External contributors
+
 Open Energy Transition welcomes contributions also from the wider community. If you are external to Open Energy Transition, you can contribute as detailed below:
+
 - Fork the repository.
 - Create a new branch for your feature or bug fix.
 - Make your changes and commit them.

@@ -6,7 +6,7 @@ on:
       - main
   pull_request:
     branches:
-      - '**'
+      - "**"
 
   workflow_dispatch:
 
@@ -30,14 +30,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: "Generate release changelog"
+      - name: Generate release changelog
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: heinrichreimer/action-github-changelog-generator@v2.3
         with:
           repo: open-energy-transition/handbook
           token: ${{ github.token }}
-      
+
       - name: update change log mdx
-        run: bash scripts/sync-changelog.sh 
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: bash scripts/sync-changelog.sh
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
@@ -51,7 +53,7 @@ jobs:
         run: bash scripts/generate-table-json.sh
 
       - name: Fetch team JSON
-        run: bash scripts/sync-data.sh 
+        run: bash scripts/sync-data.sh
 
       - name: Build
         run: npm run build
