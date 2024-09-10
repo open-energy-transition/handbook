@@ -5,7 +5,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import ParticlesSection from "../components/Particles";
 
-
 export default function index() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -14,8 +13,9 @@ export default function index() {
       description="Description will go into a meta tag in <head />"
     >
       <main>
-        <div class={styles.centered_text}>The Open Energy Transition Handbook
-        <ParticlesSection />
+        <div class={styles.centered_text}>
+          The Open Energy Transition Handbook
+          <ParticlesSection />
         </div>
         <DocsTable />
       </main>

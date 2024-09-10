@@ -9,4 +9,3 @@
 
 [context.deploy-preview]
   command = "bash scripts/change-base-url.sh && bash scripts/generate-table-json.sh && bash scripts/sync-data.sh && npm ci && npm run build"
-
