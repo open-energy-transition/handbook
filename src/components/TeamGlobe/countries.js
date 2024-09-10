@@ -1,24 +1,24 @@
-export let countries={
-  "type": "FeatureCollection",
-  "features": [
+export let countries = {
+  type: "FeatureCollection",
+  features: [
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 34124811,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "AF",
-        "ISO_A3": "AFG",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 34124811,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "AF",
+        ISO_A3: "AFG",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [60.52843, 29.318572, 75.158028, 38.486282],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [60.52843, 29.318572, 75.158028, 38.486282],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [61.210817, 35.650072],
             [62.230651, 35.270664],
@@ -88,29 +88,29 @@ export let countries={
             [60.9637, 33.528832],
             [60.52843, 33.676446],
             [60.803193, 34.404102],
-            [61.210817, 35.650072]
-          ]
-        ]
-      }
+            [61.210817, 35.650072],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 29310273,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "AO",
-        "ISO_A3": "AGO",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 29310273,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "AO",
+        ISO_A3: "AGO",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [11.640096, -17.930636, 24.079905, -4.438023],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [11.640096, -17.930636, 24.079905, -4.438023],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [23.904154, -11.722282],
@@ -178,8 +178,8 @@ export let countries={
               [23.456791, -10.867863],
               [23.912215, -10.926826],
               [24.017894, -11.237298],
-              [23.904154, -11.722282]
-            ]
+              [23.904154, -11.722282],
+            ],
           ],
           [
             [
@@ -191,30 +191,30 @@ export let countries={
               [12.631612, -4.991271],
               [12.468004, -5.248362],
               [12.436688, -5.684304],
-              [12.182337, -5.789931]
-            ]
-          ]
-        ]
-      }
+              [12.182337, -5.789931],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3047987,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "AL",
-        "ISO_A3": "ALB",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 3047987,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "AL",
+        ISO_A3: "ALB",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [19.304486, 39.624998, 21.02004, 42.688247],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [19.304486, 39.624998, 21.02004, 42.688247],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [21.02004, 40.842727],
             [20.99999, 40.580004],
@@ -239,29 +239,29 @@ export let countries={
             [20.590247, 41.855404],
             [20.463175, 41.515089],
             [20.605182, 41.086226],
-            [21.02004, 40.842727]
-          ]
-        ]
-      }
+            [21.02004, 40.842727],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6072475,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "AE",
-        "ISO_A3": "ARE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 6072475,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "AE",
+        ISO_A3: "ARE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [51.579519, 22.496948, 56.396847, 26.055464],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [51.579519, 22.496948, 56.396847, 26.055464],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [51.579519, 24.245497],
             [51.757441, 24.294073],
@@ -284,29 +284,29 @@ export let countries={
             [55.006803, 22.496948],
             [52.000733, 23.001154],
             [51.617708, 24.014219],
-            [51.579519, 24.245497]
-          ]
-        ]
-      }
+            [51.579519, 24.245497],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 44293293,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "AR",
-        "ISO_A3": "ARG",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 44293293,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "AR",
+        ISO_A3: "ARG",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [-73.415436, -55.25, -53.628349, -21.83231],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-73.415436, -55.25, -53.628349, -21.83231],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [-66.95992, -54.89681],
@@ -319,8 +319,8 @@ export let countries={
               [-65.05, -54.7],
               [-65.5, -55.2],
               [-66.45, -55.25],
-              [-66.95992, -54.89681]
-            ]
+              [-66.95992, -54.89681],
+            ],
           ],
           [
             [
@@ -433,30 +433,30 @@ export let countries={
               [-69.138539, -50.73251],
               [-68.815561, -51.771104],
               [-68.149995, -52.349983],
-              [-68.571545, -52.299444]
-            ]
-          ]
-        ]
-      }
+              [-68.571545, -52.299444],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3045191,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "AM",
-        "ISO_A3": "ARM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 3045191,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "AM",
+        ISO_A3: "ARM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [43.582746, 38.741201, 46.50572, 41.248129],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [43.582746, 38.741201, 46.50572, 41.248129],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [43.582746, 41.092143],
             [44.97248, 41.248129],
@@ -477,29 +477,29 @@ export let countries={
             [44.400009, 40.005],
             [43.656436, 40.253564],
             [43.752658, 40.740201],
-            [43.582746, 41.092143]
-          ]
-        ]
-      }
+            [43.582746, 41.092143],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4050,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "AQ",
-        "ISO_A3": "ATA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 4050,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "AQ",
+        ISO_A3: "ATA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-180, -90, 180, -63.27066],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-180, -90, 180, -63.27066],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [-59.572095, -80.040179],
@@ -514,8 +514,8 @@ export let countries={
               [-61.883246, -80.39287],
               [-61.138976, -79.981371],
               [-60.610119, -79.628679],
-              [-59.572095, -80.040179]
-            ]
+              [-59.572095, -80.040179],
+            ],
           ],
           [
             [
@@ -530,8 +530,8 @@ export let countries={
               [-161.245113, -78.380176],
               [-160.246208, -78.693645],
               [-159.482405, -79.046338],
-              [-159.208184, -79.497059]
-            ]
+              [-159.208184, -79.497059],
+            ],
           ],
           [
             [
@@ -556,8 +556,8 @@ export let countries={
               [-48.660616, -78.047019],
               [-48.151396, -78.04707],
               [-46.662857, -77.831476],
-              [-45.154758, -78.04707]
-            ]
+              [-45.154758, -78.04707],
+            ],
           ],
           [
             [
@@ -570,8 +570,8 @@ export let countries={
               [-122.621735, -73.657778],
               [-122.621735, -73.657777],
               [-122.406245, -73.324619],
-              [-121.211511, -73.50099]
-            ]
+              [-121.211511, -73.50099],
+            ],
           ],
           [
             [
@@ -582,8 +582,8 @@ export let countries={
               [-127.28313, -73.461769],
               [-127.28313, -73.461768],
               [-126.558472, -73.246226],
-              [-125.559566, -73.481353]
-            ]
+              [-125.559566, -73.481353],
+            ],
           ],
           [
             [
@@ -600,8 +600,8 @@ export let countries={
               [-102.330725, -71.894164],
               [-101.703967, -71.717792],
               [-100.430919, -71.854993],
-              [-98.98155, -71.933334]
-            ]
+              [-98.98155, -71.933334],
+            ],
           ],
           [
             [
@@ -630,8 +630,8 @@ export let countries={
               [-69.489422, -69.623346],
               [-69.058518, -70.074016],
               [-68.725541, -70.505153],
-              [-68.451346, -70.955823]
-            ]
+              [-68.451346, -70.955823],
+            ],
           ],
           [
             [
@@ -1190,30 +1190,30 @@ export let countries={
               [-57.811143, -63.27066],
               [-57.223582, -63.525425],
               [-57.59573, -63.858532],
-              [-58.614143, -64.152467]
-            ]
-          ]
-        ]
-      }
+              [-58.614143, -64.152467],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 140,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "TF",
-        "ISO_A3": "ATF",
-        "TINY": 2,
-        "HOMEPART": -99,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 140,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "TF",
+        ISO_A3: "ATF",
+        TINY: 2,
+        HOMEPART: -99,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [68.72, -49.775, 70.56, -48.625],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [68.72, -49.775, 70.56, -48.625],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [68.935, -48.625],
             [69.58, -48.94],
@@ -1223,29 +1223,29 @@ export let countries={
             [68.745, -49.775],
             [68.72, -49.2425],
             [68.8675, -48.83],
-            [68.935, -48.625]
-          ]
-        ]
-      }
+            [68.935, -48.625],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 23232413,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "AU",
-        "ISO_A3": "AUS",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 5.7
+      type: "Feature",
+      properties: {
+        POP_EST: 23232413,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "AU",
+        ISO_A3: "AUS",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 5.7,
       },
-      "bbox": [113.338953, -43.634597, 153.569469, -10.668186],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [113.338953, -43.634597, 153.569469, -10.668186],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [145.397978, -40.792549],
@@ -1264,8 +1264,8 @@ export let countries={
               [145.29509, -42.03361],
               [144.718071, -41.162552],
               [144.743755, -40.703975],
-              [145.397978, -40.792549]
-            ]
+              [145.397978, -40.792549],
+            ],
           ],
           [
             [
@@ -1492,30 +1492,30 @@ export let countries={
               [143.158632, -12.325656],
               [143.522124, -12.834358],
               [143.597158, -13.400422],
-              [143.561811, -13.763656]
-            ]
-          ]
-        ]
-      }
+              [143.561811, -13.763656],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 8754413,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "AT",
-        "ISO_A3": "AUT",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 8754413,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "AT",
+        ISO_A3: "AUT",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [9.47997, 46.431817, 16.979667, 49.039074],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [9.47997, 46.431817, 16.979667, 49.039074],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [16.979667, 48.123497],
             [16.903754, 47.714866],
@@ -1553,29 +1553,29 @@ export let countries={
             [16.499283, 48.785808],
             [16.960288, 48.596982],
             [16.879983, 48.470013],
-            [16.979667, 48.123497]
-          ]
-        ]
-      }
+            [16.979667, 48.123497],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 9961396,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "AZ",
-        "ISO_A3": "AZE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 9961396,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "AZ",
+        ISO_A3: "AZE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [44.79399, 38.270378, 50.392821, 41.860675],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [44.79399, 38.270378, 50.392821, 41.860675],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [46.50572, 38.770605],
@@ -1612,8 +1612,8 @@ export let countries={
               [48.355529, 39.288765],
               [48.060095, 39.582235],
               [47.685079, 39.508364],
-              [46.50572, 38.770605]
-            ]
+              [46.50572, 38.770605],
+            ],
           ],
           [
             [
@@ -1625,30 +1625,30 @@ export let countries={
               [46.143623, 38.741201],
               [45.457722, 38.874139],
               [44.952688, 39.335765],
-              [44.79399, 39.713003]
-            ]
-          ]
-        ]
-      }
+              [44.79399, 39.713003],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 11466756,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "BI",
-        "ISO_A3": "BDI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 11466756,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "BI",
+        ISO_A3: "BDI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [29.024926, -4.499983, 30.75224, -2.348487],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [29.024926, -4.499983, 30.75224, -2.348487],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [29.339998, -4.499983],
             [29.276384, -3.293907],
@@ -1662,29 +1662,29 @@ export let countries={
             [30.50554, -3.56858],
             [30.11632, -4.09012],
             [29.753512, -4.452389],
-            [29.339998, -4.499983]
-          ]
-        ]
-      }
+            [29.339998, -4.499983],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 11491346,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "BE",
-        "ISO_A3": "BEL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 11491346,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "BE",
+        ISO_A3: "BEL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [2.513573, 49.529484, 6.156658, 51.475024],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [2.513573, 49.529484, 6.156658, 51.475024],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [4.047071, 51.267259],
             [4.973991, 51.475024],
@@ -1702,29 +1702,29 @@ export let countries={
             [3.314971, 51.345781],
             [3.315011, 51.345777],
             [3.314971, 51.345755],
-            [4.047071, 51.267259]
-          ]
-        ]
-      }
+            [4.047071, 51.267259],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 11038805,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "BJ",
-        "ISO_A3": "BEN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 11038805,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "BJ",
+        ISO_A3: "BEN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [0.772336, 6.142158, 3.797112, 12.235636],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [0.772336, 6.142158, 3.797112, 12.235636],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [2.691702, 6.258817],
             [1.865241, 6.142158],
@@ -1750,29 +1750,29 @@ export let countries={
             [2.912308, 9.137608],
             [2.723793, 8.506845],
             [2.749063, 7.870734],
-            [2.691702, 6.258817]
-          ]
-        ]
-      }
+            [2.691702, 6.258817],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 20107509,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "BF",
-        "ISO_A3": "BFA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 20107509,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "BF",
+        ISO_A3: "BFA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-5.470565, 9.610835, 2.177108, 15.116158],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-5.470565, 9.610835, 2.177108, 15.116158],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [2.154474, 11.94015],
             [1.935986, 11.64115],
@@ -1812,29 +1812,29 @@ export let countries={
             [0.993046, 13.33575],
             [1.024103, 12.851826],
             [2.177108, 12.625018],
-            [2.154474, 11.94015]
-          ]
-        ]
-      }
+            [2.154474, 11.94015],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 157826578,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "BD",
-        "ISO_A3": "BGD",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 157826578,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "BD",
+        ISO_A3: "BGD",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [88.084422, 20.670883, 92.672721, 26.446526],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [88.084422, 20.670883, 92.672721, 26.446526],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [92.672721, 22.041239],
             [92.652257, 21.324048],
@@ -1871,29 +1871,29 @@ export let countries={
             [91.706475, 22.985264],
             [91.869928, 23.624346],
             [92.146035, 23.627499],
-            [92.672721, 22.041239]
-          ]
-        ]
-      }
+            [92.672721, 22.041239],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 7101510,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "BG",
-        "ISO_A3": "BGR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 7101510,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "BG",
+        ISO_A3: "BGR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [22.380526, 41.234486, 28.558081, 44.234923],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [22.380526, 41.234486, 28.558081, 44.234923],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [22.65715, 44.234923],
             [22.944832, 43.823785],
@@ -1922,29 +1922,29 @@ export let countries={
             [22.986019, 43.211161],
             [22.500157, 43.642814],
             [22.410446, 44.008063],
-            [22.65715, 44.234923]
-          ]
-        ]
-      }
+            [22.65715, 44.234923],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 329988,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "BS",
-        "ISO_A3": "BHS",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 329988,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "BS",
+        ISO_A3: "BHS",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-78.98, 23.71, -77, 27.04],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-78.98, 23.71, -77, 27.04],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [-77.53466, 23.75975],
@@ -1954,8 +1954,8 @@ export let countries={
               [-78.19087, 25.2103],
               [-77.89, 25.17],
               [-77.54, 24.34],
-              [-77.53466, 23.75975]
-            ]
+              [-77.53466, 23.75975],
+            ],
           ],
           [
             [
@@ -1964,8 +1964,8 @@ export let countries={
               [-78.98, 26.79],
               [-78.51, 26.87],
               [-77.85, 26.84],
-              [-77.82, 26.58]
-            ]
+              [-77.82, 26.58],
+            ],
           ],
           [
             [
@@ -1975,30 +1975,30 @@ export let countries={
               [-77.34, 26.53],
               [-77.78802, 26.92516],
               [-77.79, 27.04],
-              [-77, 26.59]
-            ]
-          ]
-        ]
-      }
+              [-77, 26.59],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3856181,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "BA",
-        "ISO_A3": "BIH",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9.5
+      type: "Feature",
+      properties: {
+        POP_EST: 3856181,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "BA",
+        ISO_A3: "BIH",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9.5,
       },
-      "bbox": [15.750026, 42.65, 19.59976, 45.233777],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [15.750026, 42.65, 19.59976, 45.233777],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [19.36803, 44.863],
             [19.11761, 44.42307],
@@ -2022,29 +2022,29 @@ export let countries={
             [18.553214, 45.08159],
             [19.005485, 44.860234],
             [19.00548, 44.86023],
-            [19.36803, 44.863]
-          ]
-        ]
-      }
+            [19.36803, 44.863],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 9549747,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "BY",
-        "ISO_A3": "BLR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 9549747,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "BY",
+        ISO_A3: "BLR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [23.199494, 51.319503, 32.693643, 56.16913],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [23.199494, 51.319503, 32.693643, 56.16913],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [23.484128, 53.912498],
             [24.450684, 53.905702],
@@ -2090,29 +2090,29 @@ export let countries={
             [23.799199, 52.691099],
             [23.804935, 53.089731],
             [23.527536, 53.470122],
-            [23.484128, 53.912498]
-          ]
-        ]
-      }
+            [23.484128, 53.912498],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 360346,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "BZ",
-        "ISO_A3": "BLZ",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 360346,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "BZ",
+        ISO_A3: "BLZ",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [-89.229122, 15.886938, -88.106813, 18.499982],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-89.229122, 15.886938, -88.106813, 18.499982],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-89.14308, 17.808319],
             [-89.150909, 17.955468],
@@ -2133,29 +2133,29 @@ export let countries={
             [-88.930613, 15.887273],
             [-89.229122, 15.886938],
             [-89.150806, 17.015577],
-            [-89.14308, 17.808319]
-          ]
-        ]
-      }
+            [-89.14308, 17.808319],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 11138234,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "BO",
-        "ISO_A3": "BOL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7.5
+      type: "Feature",
+      properties: {
+        POP_EST: 11138234,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "BO",
+        ISO_A3: "BOL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7.5,
       },
-      "bbox": [-69.590424, -22.872919, -57.498371, -9.761988],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-69.590424, -22.872919, -57.498371, -9.761988],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-62.685057, -22.249029],
             [-62.846468, -22.034985],
@@ -2216,29 +2216,29 @@ export let countries={
             [-61.786326, -19.633737],
             [-62.265961, -20.513735],
             [-62.291179, -21.051635],
-            [-62.685057, -22.249029]
-          ]
-        ]
-      }
+            [-62.685057, -22.249029],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 207353391,
-        "ECONOMY": "3. Emerging region: BRIC",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "BR",
-        "ISO_A3": "BRA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 5.7
+      type: "Feature",
+      properties: {
+        POP_EST: 207353391,
+        ECONOMY: "3. Emerging region: BRIC",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "BR",
+        ISO_A3: "BRA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 5.7,
       },
-      "bbox": [-73.987235, -33.768378, -34.729993, 5.244486],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-73.987235, -33.768378, -34.729993, 5.244486],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-57.625133, -30.216295],
             [-56.2909, -28.852761],
@@ -2442,29 +2442,29 @@ export let countries={
             [-55.60151, -30.853879],
             [-55.973245, -30.883076],
             [-56.976026, -30.109686],
-            [-57.625133, -30.216295]
-          ]
-        ]
-      }
+            [-57.625133, -30.216295],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 443593,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "BN",
-        "ISO_A3": "BRN",
-        "TINY": 2,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 443593,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "BN",
+        ISO_A3: "BRN",
+        TINY: 2,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [114.204017, 4.007637, 115.45071, 5.44773],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [114.204017, 4.007637, 115.45071, 5.44773],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [114.204017, 4.525874],
             [114.599961, 4.900011],
@@ -2473,29 +2473,29 @@ export let countries={
             [115.347461, 4.316636],
             [114.869557, 4.348314],
             [114.659596, 4.007637],
-            [114.204017, 4.525874]
-          ]
-        ]
-      }
+            [114.204017, 4.525874],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 758288,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "BT",
-        "ISO_A3": "BTN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 758288,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "BT",
+        ISO_A3: "BTN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [88.814248, 26.719403, 92.103712, 28.296439],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [88.814248, 26.719403, 92.103712, 28.296439],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [91.696657, 27.771742],
             [92.103712, 27.452614],
@@ -2509,29 +2509,29 @@ export let countries={
             [90.015829, 28.296439],
             [90.730514, 28.064954],
             [91.258854, 28.040614],
-            [91.696657, 27.771742]
-          ]
-        ]
-      }
+            [91.696657, 27.771742],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2214858,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "BW",
-        "ISO_A3": "BWA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 2214858,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "BW",
+        ISO_A3: "BWA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [19.895458, -26.828543, 29.432188, -17.661816],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [19.895458, -26.828543, 29.432188, -17.661816],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [29.432188, -22.091313],
             [28.017236, -22.827754],
@@ -2572,29 +2572,29 @@ export let countries={
             [27.727228, -20.851802],
             [28.02137, -21.485975],
             [28.794656, -21.639454],
-            [29.432188, -22.091313]
-          ]
-        ]
-      }
+            [29.432188, -22.091313],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5625118,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "CF",
-        "ISO_A3": "CAF",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 5625118,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "CF",
+        ISO_A3: "CAF",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [14.459407, 2.26764, 27.374226, 11.142395],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [14.459407, 2.26764, 27.374226, 11.142395],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [15.27946, 7.421925],
             [16.106232, 7.497088],
@@ -2657,29 +2657,29 @@ export let countries={
             [14.459407, 5.451761],
             [14.53656, 6.226959],
             [14.776545, 6.408498],
-            [15.27946, 7.421925]
-          ]
-        ]
-      }
+            [15.27946, 7.421925],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 35623680,
-        "ECONOMY": "1. Developed region: G7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "CA",
-        "ISO_A3": "CAN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 5.7
+      type: "Feature",
+      properties: {
+        POP_EST: 35623680,
+        ECONOMY: "1. Developed region: G7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "CA",
+        ISO_A3: "CAN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 5.7,
       },
-      "bbox": [-140.99778, 41.675105, -52.648099, 83.23324],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-140.99778, 41.675105, -52.648099, 83.23324],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [-63.6645, 46.55001],
@@ -2690,8 +2690,8 @@ export let countries={
               [-64.1428, 46.39265],
               [-64.39261, 46.72747],
               [-64.01486, 47.03601],
-              [-63.6645, 46.55001]
-            ]
+              [-63.6645, 46.55001],
+            ],
           ],
           [
             [
@@ -2702,8 +2702,8 @@ export let countries={
               [-64.17322, 49.95718],
               [-62.85829, 49.70641],
               [-61.835585, 49.28855],
-              [-61.806305, 49.10506]
-            ]
+              [-61.806305, 49.10506],
+            ],
           ],
           [
             [
@@ -2722,8 +2722,8 @@ export let countries={
               [-125.415002, 49.950001],
               [-124.920768, 49.475275],
               [-123.922509, 49.062484],
-              [-123.510002, 48.510011]
-            ]
+              [-123.510002, 48.510011],
+            ],
           ],
           [
             [
@@ -2759,8 +2759,8 @@ export let countries={
               [-55.870977, 51.632094],
               [-55.406974, 51.588273],
               [-55.600218, 51.317075],
-              [-56.134036, 50.68701]
-            ]
+              [-56.134036, 50.68701],
+            ],
           ],
           [
             [
@@ -2774,8 +2774,8 @@ export let countries={
               [-132.549992, 53.100015],
               [-133.054611, 53.411469],
               [-133.239664, 53.85108],
-              [-133.180004, 54.169975]
-            ]
+              [-133.180004, 54.169975],
+            ],
           ],
           [
             [
@@ -2786,8 +2786,8 @@ export let countries={
               [-80.315395, 62.085565],
               [-79.92939, 62.3856],
               [-79.52002, 62.36371],
-              [-79.26582, 62.158675]
-            ]
+              [-79.26582, 62.158675],
+            ],
           ],
           [
             [
@@ -2797,8 +2797,8 @@ export let countries={
               [-83.99367, 62.4528],
               [-83.25048, 62.91409],
               [-81.87699, 62.90458],
-              [-81.89825, 62.7108]
-            ]
+              [-81.89825, 62.7108],
+            ],
           ],
           [
             [
@@ -2821,8 +2821,8 @@ export let countries={
               [-86.35276, 64.035833],
               [-86.224886, 64.822917],
               [-85.883848, 65.738778],
-              [-85.161308, 65.657285]
-            ]
+              [-85.161308, 65.657285],
+            ],
           ],
           [
             [
@@ -2834,8 +2834,8 @@ export let countries={
               [-75.1145, 68.01036],
               [-75.10333, 67.58202],
               [-75.21597, 67.44425],
-              [-75.86588, 67.14886]
-            ]
+              [-75.86588, 67.14886],
+            ],
           ],
           [
             [
@@ -2849,8 +2849,8 @@ export let countries={
               [-97.157401, 69.86003],
               [-96.557401, 69.68003],
               [-96.257401, 69.49003],
-              [-95.647681, 69.10769]
-            ]
+              [-95.647681, 69.10769],
+            ],
           ],
           [
             [
@@ -3127,8 +3127,8 @@ export let countries={
               [-67.13741, 45.13753],
               [-67.79134, 45.70281],
               [-67.79046, 47.06636],
-              [-68.23444, 47.35486]
-            ]
+              [-68.23444, 47.35486],
+            ],
           ],
           [
             [
@@ -3176,8 +3176,8 @@ export let countries={
               [-118.56267, 72.30785],
               [-117.86642, 72.70594],
               [-115.18909, 73.31459],
-              [-114.16717, 73.12145]
-            ]
+              [-114.16717, 73.12145],
+            ],
           ],
           [
             [
@@ -3186,8 +3186,8 @@ export let countries={
               [-106.94, 73.46],
               [-106.6, 73.6],
               [-105.26, 73.64],
-              [-104.5, 73.42]
-            ]
+              [-104.5, 73.42],
+            ],
           ],
           [
             [
@@ -3201,8 +3201,8 @@ export let countries={
               [-80.833885, 73.693184],
               [-80.353058, 73.75972],
               [-78.064438, 73.651932],
-              [-76.34, 73.102685]
-            ]
+              [-76.34, 73.102685],
+            ],
           ],
           [
             [
@@ -3278,8 +3278,8 @@ export let countries={
               [-89.436577, 73.129464],
               [-88.408242, 73.537889],
               [-85.826151, 73.803816],
-              [-86.562179, 73.157447]
-            ]
+              [-86.562179, 73.157447],
+            ],
           ],
           [
             [
@@ -3297,8 +3297,8 @@ export let countries={
               [-102.48, 72.83],
               [-100.43836, 72.70588],
               [-101.54, 73.36],
-              [-100.35642, 73.84389]
-            ]
+              [-100.35642, 73.84389],
+            ],
           ],
           [
             [
@@ -3312,8 +3312,8 @@ export let countries={
               [-92.420012, 74.100025],
               [-90.509793, 73.856732],
               [-92.003965, 72.966244],
-              [-93.196296, 72.771992]
-            ]
+              [-93.196296, 72.771992],
+            ],
           ],
           [
             [
@@ -3333,8 +3333,8 @@ export let countries={
               [-116.76794, 73.22292],
               [-119.22, 72.52],
               [-120.46, 71.82],
-              [-120.46, 71.383602]
-            ]
+              [-120.46, 71.383602],
+            ],
           ],
           [
             [
@@ -3345,8 +3345,8 @@ export let countries={
               [-96.288587, 75.377828],
               [-94.85082, 75.647218],
               [-93.977747, 75.29649],
-              [-93.612756, 74.979997]
-            ]
+              [-93.612756, 74.979997],
+            ],
           ],
           [
             [
@@ -3362,8 +3362,8 @@ export let countries={
               [-101.48973, 76.30537],
               [-99.98349, 76.64634],
               [-98.57699, 76.58859],
-              [-98.5, 76.72]
-            ]
+              [-98.5, 76.72],
+            ],
           ],
           [
             [
@@ -3388,8 +3388,8 @@ export let countries={
               [-110.49726, 76.42982],
               [-109.5811, 76.79417],
               [-108.54859, 76.67832],
-              [-108.21141, 76.20168]
-            ]
+              [-108.21141, 76.20168],
+            ],
           ],
           [
             [
@@ -3420,8 +3420,8 @@ export let countries={
               [-95.962457, 76.441381],
               [-97.121379, 76.751078],
               [-96.745123, 77.161389],
-              [-94.684086, 77.097878]
-            ]
+              [-94.684086, 77.097878],
+            ],
           ],
           [
             [
@@ -3436,8 +3436,8 @@ export let countries={
               [-121.157535, 76.864508],
               [-119.103939, 77.51222],
               [-117.570131, 77.498319],
-              [-116.198587, 77.645287]
-            ]
+              [-116.198587, 77.645287],
+            ],
           ],
           [
             [
@@ -3447,8 +3447,8 @@ export let countries={
               [-96.436304, 77.834629],
               [-94.422577, 77.820005],
               [-93.720656, 77.634331],
-              [-93.840003, 77.519997]
-            ]
+              [-93.840003, 77.519997],
+            ],
           ],
           [
             [
@@ -3458,8 +3458,8 @@ export let countries={
               [-112.724587, 78.05105],
               [-111.264443, 78.152956],
               [-109.854452, 77.996325],
-              [-110.186938, 77.697015]
-            ]
+              [-110.186938, 77.697015],
+            ],
           ],
           [
             [
@@ -3469,8 +3469,8 @@ export let countries={
               [-112.525891, 78.550555],
               [-111.50001, 78.849994],
               [-110.963661, 78.804441],
-              [-109.663146, 78.601973]
-            ]
+              [-109.663146, 78.601973],
+            ],
           ],
           [
             [
@@ -3482,8 +3482,8 @@ export let countries={
               [-97.337231, 78.831984],
               [-96.754399, 78.765813],
               [-95.559278, 78.418315],
-              [-95.830295, 78.056941]
-            ]
+              [-95.830295, 78.056941],
+            ],
           ],
           [
             [
@@ -3497,8 +3497,8 @@ export let countries={
               [-105.492289, 79.301594],
               [-103.529282, 79.165349],
               [-100.825158, 78.800462],
-              [-100.060192, 78.324754]
-            ]
+              [-100.060192, 78.324754],
+            ],
           ],
           [
             [
@@ -3522,8 +3522,8 @@ export let countries={
               [-91.13289, 80.72345],
               [-89.45, 80.509322],
               [-87.81, 80.32],
-              [-87.02, 79.66]
-            ]
+              [-87.02, 79.66],
+            ],
           ],
           [
             [
@@ -3591,30 +3591,30 @@ export let countries={
               [-75.71878, 83.06404],
               [-72.83153, 83.23324],
               [-70.665765, 83.169781],
-              [-68.5, 83.106322]
-            ]
-          ]
-        ]
-      }
+              [-68.5, 83.106322],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 8236303,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "CH",
-        "ISO_A3": "CHE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 8236303,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "CH",
+        ISO_A3: "CHE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [6.022609, 45.776948, 10.442701, 47.830828],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [6.022609, 45.776948, 10.442701, 47.830828],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [9.594226, 47.525058],
             [9.632932, 47.347601],
@@ -3639,29 +3639,29 @@ export let countries={
             [7.466759, 47.620582],
             [8.317301, 47.61358],
             [8.522612, 47.830828],
-            [9.594226, 47.525058]
-          ]
-        ]
-      }
+            [9.594226, 47.525058],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 17789267,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "CL",
-        "ISO_A3": "CHL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 17789267,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "CL",
+        ISO_A3: "CHL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [-75.644395, -55.61183, -66.95992, -17.580012],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-75.644395, -55.61183, -66.95992, -17.580012],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [-68.63401, -52.63637],
@@ -3683,8 +3683,8 @@ export let countries={
               [-70.59178, -53.61583],
               [-70.26748, -52.93123],
               [-69.34565, -52.5183],
-              [-68.63401, -52.63637]
-            ]
+              [-68.63401, -52.63637],
+            ],
           ],
           [
             [
@@ -3781,30 +3781,30 @@ export let countries={
               [-68.757167, -20.372658],
               [-68.219913, -21.494347],
               [-67.82818, -22.872919],
-              [-67.106674, -22.735925]
-            ]
-          ]
-        ]
-      }
+              [-67.106674, -22.735925],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1379302771,
-        "ECONOMY": "3. Emerging region: BRIC",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "CN",
-        "ISO_A3": "CHN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 5.7
+      type: "Feature",
+      properties: {
+        POP_EST: 1379302771,
+        ECONOMY: "3. Emerging region: BRIC",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "CN",
+        ISO_A3: "CHN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 5.7,
       },
-      "bbox": [73.675379, 18.197701, 135.026311, 53.4588],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [73.675379, 18.197701, 135.026311, 53.4588],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [75.158028, 37.133031],
@@ -4036,8 +4036,8 @@ export let countries={
               [77.837451, 35.49401],
               [76.192848, 35.898403],
               [75.896897, 36.666806],
-              [75.158028, 37.133031]
-            ]
+              [75.158028, 37.133031],
+            ],
           ],
           [
             [
@@ -4050,30 +4050,30 @@ export let countries={
               [110.786551, 20.077534],
               [111.010051, 19.69593],
               [110.570647, 19.255879],
-              [110.339188, 18.678395]
-            ]
-          ]
-        ]
-      }
+              [110.339188, 18.678395],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 24184810,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "CI",
-        "ISO_A3": "CIV",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 24184810,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "CI",
+        ISO_A3: "CIV",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-8.60288, 4.338288, -2.56219, 10.524061],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-8.60288, 4.338288, -2.56219, 10.524061],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-5.404342, 10.370737],
             [-4.954653, 10.152714],
@@ -4120,29 +4120,29 @@ export let countries={
             [-6.205223, 10.524061],
             [-6.050452, 10.096361],
             [-5.816926, 10.222555],
-            [-5.404342, 10.370737]
-          ]
-        ]
-      }
+            [-5.404342, 10.370737],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 24994885,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "CM",
-        "ISO_A3": "CMR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 24994885,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "CM",
+        ISO_A3: "CMR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [8.488816, 1.727673, 16.012852, 12.859396],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [8.488816, 1.727673, 16.012852, 12.859396],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [15.27946, 7.421925],
             [14.776545, 6.408498],
@@ -4204,29 +4204,29 @@ export let countries={
             [14.979996, 8.796104],
             [15.120866, 8.38215],
             [15.436092, 7.692812],
-            [15.27946, 7.421925]
-          ]
-        ]
-      }
+            [15.27946, 7.421925],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 83301151,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "CD",
-        "ISO_A3": "COD",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 83301151,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "CD",
+        ISO_A3: "COD",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [12.182337, -13.257227, 31.174149, 5.256088],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [12.182337, -13.257227, 31.174149, 5.256088],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [23.912215, -10.926826],
             [23.456791, -10.867863],
@@ -4351,29 +4351,29 @@ export let countries={
             [24.78317, -11.238694],
             [24.314516, -11.262826],
             [24.257155, -10.951993],
-            [23.912215, -10.926826]
-          ]
-        ]
-      }
+            [23.912215, -10.926826],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4954674,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "CG",
-        "ISO_A3": "COG",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 4954674,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "CG",
+        ISO_A3: "COG",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [11.093773, -5.037987, 18.453065, 3.728197],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [11.093773, -5.037987, 18.453065, 3.728197],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [12.995517, -4.781103],
             [12.62076, -4.438023],
@@ -4423,29 +4423,29 @@ export let countries={
             [14.144956, -4.510009],
             [13.600235, -4.500138],
             [13.25824, -4.882957],
-            [12.995517, -4.781103]
-          ]
-        ]
-      }
+            [12.995517, -4.781103],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 47698524,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "CO",
-        "ISO_A3": "COL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 47698524,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "CO",
+        ISO_A3: "COL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [-78.990935, -4.298187, -66.876326, 12.437303],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-78.990935, -4.298187, -66.876326, 12.437303],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-66.876326, 1.253361],
             [-67.065048, 1.130112],
@@ -4546,29 +4546,29 @@ export let countries={
             [-67.809938, 2.820655],
             [-67.447092, 2.600281],
             [-67.181294, 2.250638],
-            [-66.876326, 1.253361]
-          ]
-        ]
-      }
+            [-66.876326, 1.253361],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4930258,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "CR",
-        "ISO_A3": "CRI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 4930258,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "CR",
+        ISO_A3: "CRI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-85.941725, 8.225028, -82.546196, 11.217119],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-85.941725, 8.225028, -82.546196, 11.217119],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-82.965783, 8.225028],
             [-83.508437, 8.446927],
@@ -4605,29 +4605,29 @@ export let countries={
             [-82.868657, 8.807266],
             [-82.829771, 8.626295],
             [-82.913176, 8.423517],
-            [-82.965783, 8.225028]
-          ]
-        ]
-      }
+            [-82.965783, 8.225028],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 11147407,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "CU",
-        "ISO_A3": "CUB",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 11147407,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "CU",
+        ISO_A3: "CUB",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-84.974911, 19.855481, -74.178025, 23.188611],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-84.974911, 19.855481, -74.178025, 23.188611],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-82.268151, 23.188611],
             [-81.404457, 23.117271],
@@ -4670,29 +4670,29 @@ export let countries={
             [-83.77824, 22.788118],
             [-83.267548, 22.983042],
             [-82.510436, 23.078747],
-            [-82.268151, 23.188611]
-          ]
-        ]
-      }
+            [-82.268151, 23.188611],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 265100,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "-99",
-        "ISO_A3": "-99",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 6,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 265100,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "-99",
+        ISO_A3: "-99",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 6,
+        MAX_LABEL: 10,
       },
-      "bbox": [32.73178, 35.000345, 34.576474, 35.671596],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [32.73178, 35.000345, 34.576474, 35.671596],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [32.73178, 35.140026],
             [32.802474, 35.145504],
@@ -4709,29 +4709,29 @@ export let countries={
             [33.383833, 35.162712],
             [33.190977, 35.173125],
             [32.919572, 35.087833],
-            [32.73178, 35.140026]
-          ]
-        ]
-      }
+            [32.73178, 35.140026],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1221549,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "CY",
-        "ISO_A3": "CYP",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9.5
+      type: "Feature",
+      properties: {
+        POP_EST: 1221549,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "CY",
+        ISO_A3: "CYP",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9.5,
       },
-      "bbox": [32.256667, 34.571869, 34.004881, 35.173125],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [32.256667, 34.571869, 34.004881, 35.173125],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [32.73178, 35.140026],
             [32.919572, 35.087833],
@@ -4747,29 +4747,29 @@ export let countries={
             [32.979827, 34.571869],
             [32.490296, 34.701655],
             [32.256667, 35.103232],
-            [32.73178, 35.140026]
-          ]
-        ]
-      }
+            [32.73178, 35.140026],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 10674723,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "CZ",
-        "ISO_A3": "CZE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 10674723,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "CZ",
+        ISO_A3: "CZE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [12.240111, 48.555305, 18.853144, 51.117268],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [12.240111, 48.555305, 18.853144, 51.117268],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [16.960288, 48.596982],
             [16.499283, 48.785808],
@@ -4805,29 +4805,29 @@ export let countries={
             [17.886485, 48.903475],
             [17.545007, 48.800019],
             [17.101985, 48.816969],
-            [16.960288, 48.596982]
-          ]
-        ]
-      }
+            [16.960288, 48.596982],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 80594017,
-        "ECONOMY": "1. Developed region: G7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "DE",
-        "ISO_A3": "DEU",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 80594017,
+        ECONOMY: "1. Developed region: G7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "DE",
+        ISO_A3: "DEU",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [5.988658, 47.302488, 15.016996, 54.983104],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [5.988658, 47.302488, 15.016996, 54.983104],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [13.595946, 48.877172],
             [13.243357, 48.416115],
@@ -4886,29 +4886,29 @@ export let countries={
             [12.415191, 49.969121],
             [12.521024, 49.547415],
             [13.031329, 49.307068],
-            [13.595946, 48.877172]
-          ]
-        ]
-      }
+            [13.595946, 48.877172],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 865267,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "DJ",
-        "ISO_A3": "DJI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 865267,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "DJ",
+        ISO_A3: "DJI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [41.66176, 10.926879, 43.317852, 12.699639],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [41.66176, 10.926879, 43.317852, 12.699639],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [43.081226, 12.699639],
             [43.317852, 12.390148],
@@ -4924,29 +4924,29 @@ export let countries={
             [42, 12.1],
             [42.35156, 12.54223],
             [42.779642, 12.455416],
-            [43.081226, 12.699639]
-          ]
-        ]
-      }
+            [43.081226, 12.699639],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5605948,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "DK",
-        "ISO_A3": "DNK",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 5605948,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "DK",
+        ISO_A3: "DNK",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [8.089977, 54.800015, 12.690006, 57.730017],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [8.089977, 54.800015, 12.690006, 57.730017],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [9.921906, 54.983104],
@@ -4966,8 +4966,8 @@ export let countries={
               [10.667804, 56.081383],
               [10.369993, 56.190007],
               [9.649985, 55.469999],
-              [9.921906, 54.983104]
-            ]
+              [9.921906, 54.983104],
+            ],
           ],
           [
             [
@@ -4976,30 +4976,30 @@ export let countries={
               [11.043543, 55.364864],
               [10.903914, 55.779955],
               [12.370904, 56.111407],
-              [12.690006, 55.609991]
-            ]
-          ]
-        ]
-      }
+              [12.690006, 55.609991],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 10734247,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "DO",
-        "ISO_A3": "DOM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9.5
+      type: "Feature",
+      properties: {
+        POP_EST: 10734247,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "DO",
+        ISO_A3: "DOM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9.5,
       },
-      "bbox": [-71.945112, 17.598564, -68.317943, 19.884911],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-71.945112, 17.598564, -68.317943, 19.884911],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-71.712361, 19.714456],
             [-71.587304, 19.884911],
@@ -5026,29 +5026,29 @@ export let countries={
             [-71.945112, 18.6169],
             [-71.701303, 18.785417],
             [-71.624873, 19.169838],
-            [-71.712361, 19.714456]
-          ]
-        ]
-      }
+            [-71.712361, 19.714456],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 40969443,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "DZ",
-        "ISO_A3": "DZA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 40969443,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "DZ",
+        ISO_A3: "DZA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [-8.6844, 19.057364, 11.999506, 37.118381],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-8.6844, 19.057364, 11.999506, 37.118381],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [4.267419, 19.155265],
             [3.158133, 19.057364],
@@ -5111,29 +5111,29 @@ export let countries={
             [11.999506, 23.471668],
             [8.572893, 21.565661],
             [5.677566, 19.601207],
-            [4.267419, 19.155265]
-          ]
-        ]
-      }
+            [4.267419, 19.155265],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 16290913,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "EC",
-        "ISO_A3": "ECU",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 16290913,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "EC",
+        ISO_A3: "ECU",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-80.967765, -4.959129, -75.233723, 1.380924],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-80.967765, -4.959129, -75.233723, 1.380924],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-78.855259, 1.380924],
             [-77.855061, 0.809925],
@@ -5167,29 +5167,29 @@ export let countries={
             [-80.020898, 0.36034],
             [-80.09061, 0.768429],
             [-79.542762, 0.982938],
-            [-78.855259, 1.380924]
-          ]
-        ]
-      }
+            [-78.855259, 1.380924],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 97041072,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "EG",
-        "ISO_A3": "EGY",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 97041072,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "EG",
+        ISO_A3: "EGY",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [24.70007, 22, 36.86623, 31.58568],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [24.70007, 22, 36.86623, 31.58568],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [36.86623, 22],
             [32.9, 22],
@@ -5234,29 +5234,29 @@ export let countries={
             [35.49372, 23.75237],
             [35.52598, 23.10244],
             [36.69069, 22.20485],
-            [36.86623, 22]
-          ]
-        ]
-      }
+            [36.86623, 22],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5918919,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "ER",
-        "ISO_A3": "ERI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 5918919,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "ER",
+        ISO_A3: "ERI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [36.32322, 12.455416, 43.081226, 17.998307],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [36.32322, 12.455416, 43.081226, 17.998307],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [43.081226, 12.699639],
             [42.779642, 12.455416],
@@ -5285,29 +5285,29 @@ export let countries={
             [41.734952, 13.921037],
             [42.276831, 13.343992],
             [42.589576, 13.000421],
-            [43.081226, 12.699639]
-          ]
-        ]
-      }
+            [43.081226, 12.699639],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 48958159,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "ES",
-        "ISO_A3": "ESP",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 48958159,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "ES",
+        ISO_A3: "ESP",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [-9.392884, 35.94685, 3.039484, 43.748338],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-9.392884, 35.94685, 3.039484, 43.748338],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-9.034818, 41.880571],
             [-8.984433, 42.592775],
@@ -5359,29 +5359,29 @@ export let countries={
             [-8.013175, 41.790886],
             [-8.263857, 42.280469],
             [-8.671946, 42.134689],
-            [-9.034818, 41.880571]
-          ]
-        ]
-      }
+            [-9.034818, 41.880571],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1251581,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "EE",
-        "ISO_A3": "EST",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 1251581,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "EE",
+        ISO_A3: "EST",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [23.339795, 57.474528, 28.131699, 59.61109],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [23.339795, 57.474528, 28.131699, 59.61109],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [24.312863, 57.793424],
             [24.428928, 58.383413],
@@ -5401,29 +5401,29 @@ export let countries={
             [26.463532, 57.476389],
             [25.60281, 57.847529],
             [25.164594, 57.970157],
-            [24.312863, 57.793424]
-          ]
-        ]
-      }
+            [24.312863, 57.793424],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 105350020,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "ET",
-        "ISO_A3": "ETH",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 105350020,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "ET",
+        ISO_A3: "ETH",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [32.95418, 3.42206, 47.78942, 14.95943],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [32.95418, 3.42206, 47.78942, 14.95943],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [42.35156, 12.54223],
             [42, 12.1],
@@ -5483,29 +5483,29 @@ export let countries={
             [41.1552, 13.77333],
             [41.59856, 13.45209],
             [42.00975, 12.86582],
-            [42.35156, 12.54223]
-          ]
-        ]
-      }
+            [42.35156, 12.54223],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5491218,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "FI",
-        "ISO_A3": "FIN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 5491218,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "FI",
+        ISO_A3: "FIN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [20.645593, 59.846373, 31.516092, 70.164193],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [20.645593, 59.846373, 31.516092, 70.164193],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [23.903379, 66.006927],
             [23.56588, 66.396051],
@@ -5546,29 +5546,29 @@ export let countries={
             [24.730512, 64.902344],
             [25.398068, 65.111427],
             [25.294043, 65.534346],
-            [23.903379, 66.006927]
-          ]
-        ]
-      }
+            [23.903379, 66.006927],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 920938,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "FJ",
-        "ISO_A3": "FJI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 920938,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "FJ",
+        ISO_A3: "FJI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-180, -18.28799, 180, -16.020882],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-180, -18.28799, 180, -16.020882],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [178.3736, -17.33992],
@@ -5579,8 +5579,8 @@ export let countries={
               [177.28504, -17.72465],
               [177.67087, -17.38114],
               [178.12557, -17.50481],
-              [178.3736, -17.33992]
-            ]
+              [178.3736, -17.33992],
+            ],
           ],
           [
             [
@@ -5591,8 +5591,8 @@ export let countries={
               [179.413509, -16.379054],
               [180, -16.067133],
               [180, -16.555217],
-              [179.364143, -16.801354]
-            ]
+              [179.364143, -16.801354],
+            ],
           ],
           [
             [
@@ -5600,30 +5600,30 @@ export let countries={
               [-180, -16.555217],
               [-180, -16.067133],
               [-179.79332, -16.020882],
-              [-179.917369, -16.501783]
-            ]
-          ]
-        ]
-      }
+              [-179.917369, -16.501783],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2931,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "FK",
-        "ISO_A3": "FLK",
-        "TINY": -99,
-        "HOMEPART": -99,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 2931,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "FK",
+        ISO_A3: "FLK",
+        TINY: -99,
+        HOMEPART: -99,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9,
       },
-      "bbox": [-61.2, -52.3, -57.75, -51.1],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-61.2, -52.3, -57.75, -51.1],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-61.2, -51.85],
             [-60, -51.25],
@@ -5634,29 +5634,29 @@ export let countries={
             [-59.4, -52.2],
             [-59.85, -51.85],
             [-60.7, -52.3],
-            [-61.2, -51.85]
-          ]
-        ]
-      }
+            [-61.2, -51.85],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 67106161,
-        "ECONOMY": "1. Developed region: G7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "-99",
-        "ISO_A3": "-99",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 67106161,
+        ECONOMY: "1. Developed region: G7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "-99",
+        ISO_A3: "-99",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [-54.524754, 2.053389, 9.560016, 51.148506],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-54.524754, 2.053389, 9.560016, 51.148506],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [2.513573, 51.148506],
@@ -5706,8 +5706,8 @@ export let countries={
               [-0.989469, 49.347376],
               [1.338761, 50.127173],
               [1.639001, 50.946606],
-              [2.513573, 51.148506]
-            ]
+              [2.513573, 51.148506],
+            ],
           ],
           [
             [
@@ -5729,8 +5729,8 @@ export let countries={
               [-53.618453, 5.646529],
               [-52.882141, 5.409851],
               [-51.823343, 4.565768],
-              [-51.657797, 4.156232]
-            ]
+              [-51.657797, 4.156232],
+            ],
           ],
           [
             [
@@ -5740,30 +5740,30 @@ export let countries={
               [8.544213, 42.256517],
               [8.746009, 42.628122],
               [9.390001, 43.009985],
-              [9.560016, 42.152492]
-            ]
-          ]
-        ]
-      }
+              [9.560016, 42.152492],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1772255,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "GA",
-        "ISO_A3": "GAB",
-        "TINY": 3,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 1772255,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "GA",
+        ISO_A3: "GAB",
+        TINY: 3,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [8.797996, -3.978827, 14.425456, 2.326758],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [8.797996, -3.978827, 14.425456, 2.326758],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [11.276449, 2.261051],
             [11.751665, 2.326758],
@@ -5795,29 +5795,29 @@ export let countries={
             [9.492889, 1.01012],
             [9.830284, 1.067894],
             [11.285079, 1.057662],
-            [11.276449, 2.261051]
-          ]
-        ]
-      }
+            [11.276449, 2.261051],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 64769452,
-        "ECONOMY": "1. Developed region: G7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "GB",
-        "ISO_A3": "GBR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 64769452,
+        ECONOMY: "1. Developed region: G7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "GB",
+        ISO_A3: "GBR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [-7.572168, 49.96, 1.681531, 58.635],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-7.572168, 49.96, 1.681531, 58.635],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [-6.197885, 53.867565],
@@ -5827,8 +5827,8 @@ export let countries={
               [-7.572168, 55.131622],
               [-6.733847, 55.17286],
               [-5.661949, 54.554603],
-              [-6.197885, 53.867565]
-            ]
+              [-6.197885, 53.867565],
+            ],
           ],
           [
             [
@@ -5879,30 +5879,30 @@ export let countries={
               [-5.786825, 57.818848],
               [-5.009999, 58.630013],
               [-4.211495, 58.550845],
-              [-3.005005, 58.635]
-            ]
-          ]
-        ]
-      }
+              [-3.005005, 58.635],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4926330,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "GE",
-        "ISO_A3": "GEO",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 4926330,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "GE",
+        ISO_A3: "GEO",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [39.955009, 41.064445, 46.637908, 43.553104],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [39.955009, 41.064445, 46.637908, 43.553104],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [44.97248, 41.248129],
             [43.582746, 41.092143],
@@ -5927,29 +5927,29 @@ export let countries={
             [46.501637, 41.064445],
             [45.962601, 41.123873],
             [45.217426, 41.411452],
-            [44.97248, 41.248129]
-          ]
-        ]
-      }
+            [44.97248, 41.248129],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 27499924,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "GH",
-        "ISO_A3": "GHA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 27499924,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "GH",
+        ISO_A3: "GHA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-3.24437, 4.710462, 1.060122, 11.098341],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-3.24437, 4.710462, 1.060122, 11.098341],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-2.827496, 9.642461],
             [-2.963896, 10.395335],
@@ -5975,29 +5975,29 @@ export let countries={
             [-3.24437, 6.250472],
             [-2.983585, 7.379705],
             [-2.56219, 8.219628],
-            [-2.827496, 9.642461]
-          ]
-        ]
-      }
+            [-2.827496, 9.642461],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 12413867,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "GN",
-        "ISO_A3": "GIN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 12413867,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "GN",
+        ISO_A3: "GIN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-15.130311, 7.309037, -7.8321, 12.586183],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-15.130311, 7.309037, -7.8321, 12.586183],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-8.029944, 10.206535],
             [-8.229337, 10.12902],
@@ -6068,29 +6068,29 @@ export let countries={
             [-8.407311, 10.909257],
             [-8.282357, 10.792597],
             [-8.335377, 10.494812],
-            [-8.029944, 10.206535]
-          ]
-        ]
-      }
+            [-8.029944, 10.206535],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2051363,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "GM",
-        "ISO_A3": "GMB",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 2051363,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "GM",
+        ISO_A3: "GMB",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [-16.841525, 13.130284, -13.844963, 13.876492],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-16.841525, 13.130284, -13.844963, 13.876492],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-16.841525, 13.151394],
             [-16.713729, 13.594959],
@@ -6107,29 +6107,29 @@ export let countries={
             [-15.511813, 13.27857],
             [-15.691001, 13.270353],
             [-15.931296, 13.130284],
-            [-16.841525, 13.151394]
-          ]
-        ]
-      }
+            [-16.841525, 13.151394],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1792338,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "GW",
-        "ISO_A3": "GNB",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 1792338,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "GW",
+        ISO_A3: "GNB",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [-16.677452, 11.040412, -13.700476, 12.62817],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-16.677452, 11.040412, -13.700476, 12.62817],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-13.700476, 12.586183],
             [-13.718744, 12.247186],
@@ -6149,29 +6149,29 @@ export let countries={
             [-16.147717, 12.547762],
             [-15.816574, 12.515567],
             [-15.548477, 12.62817],
-            [-13.700476, 12.586183]
-          ]
-        ]
-      }
+            [-13.700476, 12.586183],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 778358,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "GQ",
-        "ISO_A3": "GNQ",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 778358,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "GQ",
+        ISO_A3: "GNQ",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [9.305613, 1.01012, 11.285079, 2.283866],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [9.305613, 1.01012, 11.285079, 2.283866],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [9.649158, 2.283866],
             [11.276449, 2.261051],
@@ -6179,29 +6179,29 @@ export let countries={
             [9.830284, 1.067894],
             [9.492889, 1.01012],
             [9.305613, 1.160911],
-            [9.649158, 2.283866]
-          ]
-        ]
-      }
+            [9.649158, 2.283866],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 10768477,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "GR",
-        "ISO_A3": "GRC",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 10768477,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "GR",
+        ISO_A3: "GRC",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [20.150016, 34.919988, 26.604196, 41.826905],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [20.150016, 34.919988, 26.604196, 41.826905],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [20.150016, 39.624998],
@@ -6246,8 +6246,8 @@ export let countries={
               [21.120034, 38.310323],
               [20.730032, 38.769985],
               [20.217712, 39.340235],
-              [20.150016, 39.624998]
-            ]
+              [20.150016, 39.624998],
+            ],
           ],
           [
             [
@@ -6261,30 +6261,30 @@ export let countries={
               [24.724982, 34.919988],
               [24.735007, 35.084991],
               [23.514978, 35.279992],
-              [23.69998, 35.705004]
-            ]
-          ]
-        ]
-      }
+              [23.69998, 35.705004],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 57713,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "GL",
-        "ISO_A3": "GRL",
-        "TINY": -99,
-        "HOMEPART": -99,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 57713,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "GL",
+        ISO_A3: "GRL",
+        TINY: -99,
+        HOMEPART: -99,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [-73.297, 60.03676, -12.20855, 83.64513],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-73.297, 60.03676, -12.20855, 83.64513],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-46.76379, 82.62796],
             [-43.40644, 83.22516],
@@ -6417,29 +6417,29 @@ export let countries={
             [-46.59984, 81.985945],
             [-44.523, 81.6607],
             [-46.9007, 82.19979],
-            [-46.76379, 82.62796]
-          ]
-        ]
-      }
+            [-46.76379, 82.62796],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 15460732,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "GT",
-        "ISO_A3": "GTM",
-        "TINY": 4,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 15460732,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "GT",
+        ISO_A3: "GTM",
+        TINY: 4,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-92.229249, 13.735338, -88.225023, 17.819326],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-92.229249, 13.735338, -88.225023, 17.819326],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-89.14308, 17.808319],
             [-89.150806, 17.015577],
@@ -6475,29 +6475,29 @@ export let countries={
             [-91.002269, 17.254658],
             [-91.00152, 17.817595],
             [-90.067934, 17.819326],
-            [-89.14308, 17.808319]
-          ]
-        ]
-      }
+            [-89.14308, 17.808319],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 737718,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "GY",
-        "ISO_A3": "GUY",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 737718,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "GY",
+        ISO_A3: "GUY",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-61.410303, 1.268088, -56.539386, 8.367035],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-61.410303, 1.268088, -56.539386, 8.367035],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-56.539386, 1.899523],
             [-56.782704, 1.863711],
@@ -6538,29 +6538,29 @@ export let countries={
             [-57.601569, 3.334655],
             [-57.281433, 3.333492],
             [-57.150098, 2.768927],
-            [-56.539386, 1.899523]
-          ]
-        ]
-      }
+            [-56.539386, 1.899523],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 9038741,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "HN",
-        "ISO_A3": "HND",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9.5
+      type: "Feature",
+      properties: {
+        POP_EST: 9038741,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "HN",
+        ISO_A3: "HND",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9.5,
       },
-      "bbox": [-89.353326, 12.984686, -83.147219, 16.005406],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-89.353326, 12.984686, -83.147219, 16.005406],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-89.353326, 14.424133],
             [-89.145535, 14.678019],
@@ -6618,29 +6618,29 @@ export let countries={
             [-88.541231, 13.980155],
             [-88.843073, 14.140507],
             [-89.058512, 14.340029],
-            [-89.353326, 14.424133]
-          ]
-        ]
-      }
+            [-89.353326, 14.424133],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4292095,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "HR",
-        "ISO_A3": "HRV",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 4292095,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "HR",
+        ISO_A3: "HRV",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [13.656976, 42.479991, 19.390476, 46.503751],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [13.656976, 42.479991, 19.390476, 46.503751],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [19.005485, 44.860234],
             [18.553214, 45.08159],
@@ -6684,29 +6684,29 @@ export let countries={
             [18.829825, 45.908872],
             [19.072769, 45.521511],
             [19.390476, 45.236516],
-            [19.005485, 44.860234]
-          ]
-        ]
-      }
+            [19.005485, 44.860234],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 10646714,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "HT",
-        "ISO_A3": "HTI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 10646714,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "HT",
+        ISO_A3: "HTI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-74.458034, 18.030993, -71.624873, 19.915684],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-74.458034, 18.030993, -71.624873, 19.915684],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-71.712361, 19.714456],
             [-71.624873, 19.169838],
@@ -6728,29 +6728,29 @@ export let countries={
             [-73.415022, 19.639551],
             [-73.189791, 19.915684],
             [-72.579673, 19.871501],
-            [-71.712361, 19.714456]
-          ]
-        ]
-      }
+            [-71.712361, 19.714456],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 9850845,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "HU",
-        "ISO_A3": "HUN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 9850845,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "HU",
+        ISO_A3: "HUN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [16.202298, 45.759481, 22.710531, 48.623854],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [16.202298, 45.759481, 22.710531, 48.623854],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [16.202298, 46.852386],
             [16.534268, 47.496171],
@@ -6783,29 +6783,29 @@ export let countries={
             [16.882515, 46.380632],
             [16.564808, 46.503751],
             [16.370505, 46.841327],
-            [16.202298, 46.852386]
-          ]
-        ]
-      }
+            [16.202298, 46.852386],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 260580739,
-        "ECONOMY": "4. Emerging region: MIKT",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "ID",
-        "ISO_A3": "IDN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 260580739,
+        ECONOMY: "4. Emerging region: MIKT",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "ID",
+        ISO_A3: "IDN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [95.293026, -10.359987, 141.033852, 5.479821],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [95.293026, -10.359987, 141.033852, 5.479821],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [120.715609, -10.239581],
@@ -6814,8 +6814,8 @@ export let countries={
               [119.90031, -9.36134],
               [120.425756, -9.665921],
               [120.775502, -9.969675],
-              [120.715609, -10.239581]
-            ]
+              [120.715609, -10.239581],
+            ],
           ],
           [
             [
@@ -6827,8 +6827,8 @@ export let countries={
               [123.459989, -10.239995],
               [123.550009, -9.900016],
               [123.980009, -9.290027],
-              [124.968682, -8.89279]
-            ]
+              [124.968682, -8.89279],
+            ],
           ],
           [
             [
@@ -6841,8 +6841,8 @@ export let countries={
               [116.740141, -9.032937],
               [117.083737, -8.457158],
               [117.632024, -8.449303],
-              [117.900018, -8.095681]
-            ]
+              [117.900018, -8.095681],
+            ],
           ],
           [
             [
@@ -6854,8 +6854,8 @@ export let countries={
               [120.715092, -8.236965],
               [121.341669, -8.53674],
               [122.007365, -8.46062],
-              [122.903537, -8.094234]
-            ]
+              [122.903537, -8.094234],
+            ],
           ],
           [
             [
@@ -6881,8 +6881,8 @@ export let countries={
               [107.265009, -5.954985],
               [108.072091, -6.345762],
               [108.486846, -6.421985],
-              [108.623479, -6.777674]
-            ]
+              [108.623479, -6.777674],
+            ],
           ],
           [
             [
@@ -6892,8 +6892,8 @@ export let countries={
               [134.290336, -5.783058],
               [134.499625, -5.445042],
               [134.727002, -5.737582],
-              [134.724624, -6.214401]
-            ]
+              [134.724624, -6.214401],
+            ],
           ],
           [
             [
@@ -6902,8 +6902,8 @@ export let countries={
               [126.183802, -3.607376],
               [125.989034, -3.177273],
               [127.000651, -3.129318],
-              [127.249215, -3.459065]
-            ]
+              [127.249215, -3.459065],
+            ],
           ],
           [
             [
@@ -6915,8 +6915,8 @@ export let countries={
               [127.898891, -3.393436],
               [128.135879, -2.84365],
               [129.370998, -2.802154],
-              [130.471344, -3.093764]
-            ]
+              [130.471344, -3.093764],
+            ],
           ],
           [
             [
@@ -6957,8 +6957,8 @@ export let countries={
               [138.329727, -1.702686],
               [139.184921, -2.051296],
               [139.926684, -2.409052],
-              [141.00021, -2.600151]
-            ]
+              [141.00021, -2.600151],
+            ],
           ],
           [
             [
@@ -7006,8 +7006,8 @@ export let countries={
               [122.927567, 0.875192],
               [124.077522, 0.917102],
               [125.065989, 1.643259],
-              [125.240501, 1.419836]
-            ]
+              [125.240501, 1.419836],
+            ],
           ],
           [
             [
@@ -7023,8 +7023,8 @@ export let countries={
               [127.932378, 2.174596],
               [128.004156, 1.628531],
               [128.594559, 1.540811],
-              [128.688249, 1.132386]
-            ]
+              [128.688249, 1.132386],
+            ],
           ],
           [
             [
@@ -7066,8 +7066,8 @@ export let countries={
               [109.091874, -0.459507],
               [108.952658, 0.415375],
               [109.069136, 1.341934],
-              [109.66326, 2.006467]
-            ]
+              [109.66326, 2.006467],
+            ],
           ],
           [
             [
@@ -7105,30 +7105,30 @@ export let countries={
               [105.622111, -2.428844],
               [106.108593, -3.061777],
               [105.857446, -4.305525],
-              [105.817655, -5.852356]
-            ]
-          ]
-        ]
-      }
+              [105.817655, -5.852356],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1281935911,
-        "ECONOMY": "3. Emerging region: BRIC",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "IN",
-        "ISO_A3": "IND",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 1281935911,
+        ECONOMY: "3. Emerging region: BRIC",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "IN",
+        ISO_A3: "IND",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [68.176645, 7.965535, 97.402561, 35.49401],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [68.176645, 7.965535, 97.402561, 35.49401],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [92.672721, 22.041239],
             [92.146035, 23.627499],
@@ -7265,29 +7265,29 @@ export let countries={
             [93.286327, 23.043658],
             [93.060294, 22.703111],
             [93.166128, 22.27846],
-            [92.672721, 22.041239]
-          ]
-        ]
-      }
+            [92.672721, 22.041239],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5011102,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "IE",
-        "ISO_A3": "IRL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 5011102,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "IE",
+        ISO_A3: "IRL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-9.977086, 51.669301, -6.032985, 55.131622],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-9.977086, 51.669301, -6.032985, 55.131622],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-7.572168, 55.131622],
             [-7.366031, 54.595841],
@@ -7301,29 +7301,29 @@ export let countries={
             [-9.166283, 52.864629],
             [-9.688525, 53.881363],
             [-8.327987, 54.664519],
-            [-7.572168, 55.131622]
-          ]
-        ]
-      }
+            [-7.572168, 55.131622],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 82021564,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "IR",
-        "ISO_A3": "IRN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2.5,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 82021564,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "IR",
+        ISO_A3: "IRN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2.5,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [44.109225, 25.078237, 63.316632, 39.713003],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [44.109225, 25.078237, 63.316632, 39.713003],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [61.210817, 35.650072],
             [60.803193, 34.404102],
@@ -7400,29 +7400,29 @@ export let countries={
             [59.234762, 37.412988],
             [60.377638, 36.527383],
             [61.123071, 36.491597],
-            [61.210817, 35.650072]
-          ]
-        ]
-      }
+            [61.210817, 35.650072],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 39192111,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "IQ",
-        "ISO_A3": "IRQ",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7.5
+      type: "Feature",
+      properties: {
+        POP_EST: 39192111,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "IQ",
+        ISO_A3: "IRQ",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7.5,
       },
-      "bbox": [38.792341, 29.099025, 48.567971, 37.385264],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [38.792341, 29.099025, 48.567971, 37.385264],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [44.772677, 37.170437],
             [45.420618, 35.977546],
@@ -7453,29 +7453,29 @@ export let countries={
             [42.779126, 37.385264],
             [43.942259, 37.256228],
             [44.293452, 37.001514],
-            [44.772677, 37.170437]
-          ]
-        ]
-      }
+            [44.772677, 37.170437],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 339747,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "IS",
-        "ISO_A3": "ISL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 339747,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "IS",
+        ISO_A3: "ISL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [-24.326184, 63.496383, -13.609732, 66.526792],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-24.326184, 63.496383, -13.609732, 66.526792],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-14.508695, 66.455892],
             [-14.739637, 65.808748],
@@ -7496,29 +7496,29 @@ export let countries={
             [-19.056842, 66.276601],
             [-17.798624, 65.993853],
             [-16.167819, 66.526792],
-            [-14.508695, 66.455892]
-          ]
-        ]
-      }
+            [-14.508695, 66.455892],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 8299706,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "IL",
-        "ISO_A3": "ISR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 8299706,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "IL",
+        ISO_A3: "ISR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [34.265433, 29.501326, 35.836397, 33.277426],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [34.265433, 29.501326, 35.836397, 33.277426],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [34.823243, 29.761081],
             [34.26544, 31.21936],
@@ -7545,29 +7545,29 @@ export let countries={
             [35.397561, 31.489086],
             [35.420918, 31.100066],
             [34.922603, 29.501326],
-            [34.823243, 29.761081]
-          ]
-        ]
-      }
+            [34.823243, 29.761081],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 62137802,
-        "ECONOMY": "1. Developed region: G7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "IT",
-        "ISO_A3": "ITA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 62137802,
+        ECONOMY: "1. Developed region: G7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "IT",
+        ISO_A3: "ITA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [6.749955, 36.619987, 18.480247, 47.115393],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [6.749955, 36.619987, 18.480247, 47.115393],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [10.442701, 46.893546],
@@ -7635,8 +7635,8 @@ export let countries={
               [9.182882, 46.440215],
               [9.922837, 46.314899],
               [10.363378, 46.483571],
-              [10.442701, 46.893546]
-            ]
+              [10.442701, 46.893546],
+            ],
           ],
           [
             [
@@ -7650,8 +7650,8 @@ export let countries={
               [12.570944, 38.126381],
               [13.741156, 38.034966],
               [14.761249, 38.143874],
-              [15.520376, 38.231155]
-            ]
+              [15.520376, 38.231155],
+            ],
           ],
           [
             [
@@ -7664,30 +7664,30 @@ export let countries={
               [8.388253, 40.378311],
               [8.159998, 40.950007],
               [8.709991, 40.899984],
-              [9.210012, 41.209991]
-            ]
-          ]
-        ]
-      }
+              [9.210012, 41.209991],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2990561,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "JM",
-        "ISO_A3": "JAM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 2990561,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "JM",
+        ISO_A3: "JAM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-78.337719, 17.701116, -76.199659, 18.524218],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-78.337719, 17.701116, -76.199659, 18.524218],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-77.569601, 18.490525],
             [-76.896619, 18.400867],
@@ -7699,29 +7699,29 @@ export let countries={
             [-78.337719, 18.225968],
             [-78.217727, 18.454533],
             [-77.797365, 18.524218],
-            [-77.569601, 18.490525]
-          ]
-        ]
-      }
+            [-77.569601, 18.490525],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 10248069,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "JO",
-        "ISO_A3": "JOR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 10248069,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "JO",
+        ISO_A3: "JOR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [34.922603, 29.197495, 39.195468, 33.378686],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [34.922603, 29.197495, 39.195468, 33.378686],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [38.792341, 33.378686],
             [39.195468, 32.161009],
@@ -7741,29 +7741,29 @@ export let countries={
             [35.545665, 32.393992],
             [35.719918, 32.709192],
             [36.834062, 32.312938],
-            [38.792341, 33.378686]
-          ]
-        ]
-      }
+            [38.792341, 33.378686],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 126451398,
-        "ECONOMY": "1. Developed region: G7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "JP",
-        "ISO_A3": "JPN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 126451398,
+        ECONOMY: "1. Developed region: G7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "JP",
+        ISO_A3: "JPN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 7,
       },
-      "bbox": [129.408463, 31.029579, 145.543137, 45.551483],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [129.408463, 31.029579, 145.543137, 45.551483],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [134.638428, 34.149234],
@@ -7777,8 +7777,8 @@ export let countries={
               [132.924373, 34.060299],
               [133.492968, 33.944621],
               [133.904106, 34.364931],
-              [134.638428, 34.149234]
-            ]
+              [134.638428, 34.149234],
+            ],
           ],
           [
             [
@@ -7818,8 +7818,8 @@ export let countries={
               [141.914263, 39.991616],
               [141.884601, 39.180865],
               [140.959489, 38.174001],
-              [140.976388, 37.142074]
-            ]
+              [140.976388, 37.142074],
+            ],
           ],
           [
             [
@@ -7838,30 +7838,30 @@ export let countries={
               [141.671952, 44.772125],
               [141.967645, 45.551483],
               [143.14287, 44.510358],
-              [143.910162, 44.1741]
-            ]
-          ]
-        ]
-      }
+              [143.910162, 44.1741],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 18556698,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "KZ",
-        "ISO_A3": "KAZ",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 18556698,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "KZ",
+        ISO_A3: "KAZ",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [46.466446, 40.662325, 87.35997, 55.38525],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [46.466446, 40.662325, 87.35997, 55.38525],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [87.35997, 49.214981],
             [86.598776, 48.549182],
@@ -7974,29 +7974,29 @@ export let countries={
             [85.11556, 50.117303],
             [85.54127, 49.692859],
             [86.829357, 49.826675],
-            [87.35997, 49.214981]
-          ]
-        ]
-      }
+            [87.35997, 49.214981],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 47615739,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "KE",
-        "ISO_A3": "KEN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 47615739,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "KE",
+        ISO_A3: "KEN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [33.893569, -4.67677, 41.855083, 5.506],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [33.893569, -4.67677, 41.855083, 5.506],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [35.298007, 5.506],
             [35.817448, 5.338232],
@@ -8034,29 +8034,29 @@ export let countries={
             [34.47913, 3.5556],
             [34.005, 4.249885],
             [34.620196, 4.847123],
-            [35.298007, 5.506]
-          ]
-        ]
-      }
+            [35.298007, 5.506],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5789122,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "KG",
-        "ISO_A3": "KGZ",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 5789122,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "KG",
+        ISO_A3: "KGZ",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [69.464887, 39.279463, 80.25999, 43.298339],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [69.464887, 39.279463, 80.25999, 43.298339],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [80.25999, 42.349999],
             [80.11943, 42.123941],
@@ -8092,29 +8092,29 @@ export let countries={
             [77.658392, 42.960686],
             [79.142177, 42.856092],
             [79.643645, 42.496683],
-            [80.25999, 42.349999]
-          ]
-        ]
-      }
+            [80.25999, 42.349999],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 16204486,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "KH",
-        "ISO_A3": "KHM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 16204486,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "KH",
+        ISO_A3: "KHM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [102.348099, 10.486544, 107.614548, 14.570584],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [102.348099, 10.486544, 107.614548, 14.570584],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [102.584932, 12.186595],
             [102.348099, 13.394247],
@@ -8132,29 +8132,29 @@ export let countries={
             [104.334335, 10.486544],
             [103.49728, 10.632555],
             [103.09069, 11.153661],
-            [102.584932, 12.186595]
-          ]
-        ]
-      }
+            [102.584932, 12.186595],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 51181299,
-        "ECONOMY": "4. Emerging region: MIKT",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "KR",
-        "ISO_A3": "KOR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 51181299,
+        ECONOMY: "4. Emerging region: MIKT",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "KR",
+        ISO_A3: "KOR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [126.117398, 34.390046, 129.468304, 38.612243],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [126.117398, 34.390046, 129.468304, 38.612243],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [128.349716, 38.612243],
             [129.21292, 37.432392],
@@ -8174,29 +8174,29 @@ export let countries={
             [127.073309, 38.256115],
             [127.780035, 38.304536],
             [128.205746, 38.370397],
-            [128.349716, 38.612243]
-          ]
-        ]
-      }
+            [128.349716, 38.612243],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1895250,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "XK",
-        "ISO_A3": "-99",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 1895250,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "XK",
+        ISO_A3: "-99",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [20.0707, 41.84711, 21.77505, 43.27205],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [20.0707, 41.84711, 21.77505, 43.27205],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [20.590247, 41.855409],
             [20.52295, 42.21787],
@@ -8218,29 +8218,29 @@ export let countries={
             [21.3527, 42.2068],
             [20.76216, 42.05186],
             [20.71731, 41.84711],
-            [20.590247, 41.855409]
-          ]
-        ]
-      }
+            [20.590247, 41.855409],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2875422,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "KW",
-        "ISO_A3": "KWT",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 2875422,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "KW",
+        ISO_A3: "KWT",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [46.568713, 28.526063, 48.416094, 30.05907],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [46.568713, 28.526063, 48.416094, 30.05907],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [46.568713, 29.099025],
             [47.302622, 30.05907],
@@ -8250,29 +8250,29 @@ export let countries={
             [48.416094, 28.552004],
             [47.708851, 28.526063],
             [47.459822, 29.002519],
-            [46.568713, 29.099025]
-          ]
-        ]
-      }
+            [46.568713, 29.099025],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 7126706,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "LA",
-        "ISO_A3": "LAO",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 7126706,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "LA",
+        ISO_A3: "LAO",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [100.115988, 13.881091, 107.564525, 22.464753],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [100.115988, 13.881091, 107.564525, 22.464753],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [101.180005, 21.436573],
             [101.270026, 21.201652],
@@ -8310,29 +8310,29 @@ export let countries={
             [100.548881, 20.109238],
             [100.115988, 20.41785],
             [100.329101, 20.786122],
-            [101.180005, 21.436573]
-          ]
-        ]
-      }
+            [101.180005, 21.436573],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6229794,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "LB",
-        "ISO_A3": "LBN",
-        "TINY": 4,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 6229794,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "LB",
+        ISO_A3: "LBN",
+        TINY: 4,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [35.126053, 33.08904, 36.61175, 34.644914],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [35.126053, 33.08904, 36.61175, 34.644914],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [35.821101, 33.277426],
             [35.552797, 33.264275],
@@ -8344,29 +8344,29 @@ export let countries={
             [36.448194, 34.593935],
             [36.61175, 34.201789],
             [36.06646, 33.824912],
-            [35.821101, 33.277426]
-          ]
-        ]
-      }
+            [35.821101, 33.277426],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4689021,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "LR",
-        "ISO_A3": "LBR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 4689021,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "LR",
+        ISO_A3: "LBR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-11.438779, 4.355755, -7.539715, 8.541055],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-11.438779, 4.355755, -7.539715, 8.541055],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-8.439298, 7.686043],
             [-8.485446, 7.395208],
@@ -8394,29 +8394,29 @@ export let countries={
             [-9.208786, 7.313921],
             [-8.926065, 7.309037],
             [-8.722124, 7.711674],
-            [-8.439298, 7.686043]
-          ]
-        ]
-      }
+            [-8.439298, 7.686043],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6653210,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "LY",
-        "ISO_A3": "LBY",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 6653210,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "LY",
+        ISO_A3: "LBY",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [9.319411, 19.58047, 25.16482, 33.136996],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [9.319411, 19.58047, 25.16482, 33.136996],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [11.999506, 23.471668],
             [11.560669, 24.097909],
@@ -8473,29 +8473,29 @@ export let countries={
             [14.8513, 22.86295],
             [14.143871, 22.491289],
             [13.581425, 23.040506],
-            [11.999506, 23.471668]
-          ]
-        ]
-      }
+            [11.999506, 23.471668],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 22409381,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "LK",
-        "ISO_A3": "LKA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 22409381,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "LK",
+        ISO_A3: "LKA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [79.695167, 5.96837, 81.787959, 9.824078],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [79.695167, 5.96837, 81.787959, 9.824078],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [81.787959, 7.523055],
             [81.637322, 6.481775],
@@ -8506,29 +8506,29 @@ export let countries={
             [80.147801, 9.824078],
             [80.838818, 9.268427],
             [81.304319, 8.564206],
-            [81.787959, 7.523055]
-          ]
-        ]
-      }
+            [81.787959, 7.523055],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1958042,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "LS",
-        "ISO_A3": "LSO",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 1958042,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "LS",
+        ISO_A3: "LSO",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [26.999262, -30.645106, 29.325166, -28.647502],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [26.999262, -30.645106, 29.325166, -28.647502],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [28.978263, -28.955597],
             [29.325166, -29.257387],
@@ -8541,29 +8541,29 @@ export let countries={
             [27.532511, -29.242711],
             [28.074338, -28.851469],
             [28.5417, -28.647502],
-            [28.978263, -28.955597]
-          ]
-        ]
-      }
+            [28.978263, -28.955597],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2823859,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "LT",
-        "ISO_A3": "LTU",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 2823859,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "LT",
+        ISO_A3: "LTU",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [21.0558, 53.905702, 26.588279, 56.372528],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [21.0558, 53.905702, 26.588279, 56.372528],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [26.494331, 55.615107],
             [26.588279, 55.167176],
@@ -8583,29 +8583,29 @@ export let countries={
             [24.860684, 56.372528],
             [25.000934, 56.164531],
             [25.533047, 56.100297],
-            [26.494331, 55.615107]
-          ]
-        ]
-      }
+            [26.494331, 55.615107],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 594130,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "LU",
-        "ISO_A3": "LUX",
-        "TINY": 5,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5.7,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 594130,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "LU",
+        ISO_A3: "LUX",
+        TINY: 5,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5.7,
+        MAX_LABEL: 10,
       },
-      "bbox": [5.674052, 49.442667, 6.242751, 50.128052],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [5.674052, 49.442667, 6.242751, 50.128052],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [5.674052, 49.529484],
             [5.782417, 50.090328],
@@ -8613,29 +8613,29 @@ export let countries={
             [6.242751, 49.902226],
             [6.18632, 49.463803],
             [5.897759, 49.442667],
-            [5.674052, 49.529484]
-          ]
-        ]
-      }
+            [5.674052, 49.529484],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1944643,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "LV",
-        "ISO_A3": "LVA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 1944643,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "LV",
+        ISO_A3: "LVA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [21.0558, 55.615107, 28.176709, 57.970157],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [21.0558, 55.615107, 28.176709, 57.970157],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [28.176709, 56.16913],
             [27.10246, 55.783314],
@@ -8658,29 +8658,29 @@ export let countries={
             [27.288185, 57.474528],
             [27.770016, 57.244258],
             [27.855282, 56.759326],
-            [28.176709, 56.16913]
-          ]
-        ]
-      }
+            [28.176709, 56.16913],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 33986655,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "MA",
-        "ISO_A3": "MAR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 33986655,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "MA",
+        ISO_A3: "MAR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-17.020428, 21.420734, -1.124551, 35.759988],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-17.020428, 21.420734, -1.124551, 35.759988],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-2.169914, 35.168396],
             [-1.792986, 34.527919],
@@ -8744,29 +8744,29 @@ export let countries={
             [-4.591006, 35.330712],
             [-3.640057, 35.399855],
             [-2.604306, 35.179093],
-            [-2.169914, 35.168396]
-          ]
-        ]
-      }
+            [-2.169914, 35.168396],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3474121,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "MD",
-        "ISO_A3": "MDA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 3474121,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "MD",
+        ISO_A3: "MDA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [26.619337, 45.488283, 30.024659, 48.467119],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [26.619337, 45.488283, 30.024659, 48.467119],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [26.619337, 48.220726],
             [26.857824, 48.368211],
@@ -8794,29 +8794,29 @@ export let countries={
             [27.551166, 47.405117],
             [27.233873, 47.826771],
             [26.924176, 48.123264],
-            [26.619337, 48.220726]
-          ]
-        ]
-      }
+            [26.619337, 48.220726],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 25054161,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "MG",
-        "ISO_A3": "MDG",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 25054161,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "MG",
+        ISO_A3: "MDG",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [43.254187, -25.601434, 50.476537, -12.040557],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [43.254187, -25.601434, 50.476537, -12.040557],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [49.543519, -12.469833],
             [49.808981, -12.895285],
@@ -8866,29 +8866,29 @@ export let countries={
             [48.84506, -13.089175],
             [48.863509, -12.487868],
             [49.194651, -12.040557],
-            [49.543519, -12.469833]
-          ]
-        ]
-      }
+            [49.543519, -12.469833],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 124574795,
-        "ECONOMY": "4. Emerging region: MIKT",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "MX",
-        "ISO_A3": "MEX",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 124574795,
+        ECONOMY: "4. Emerging region: MIKT",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "MX",
+        ISO_A3: "MEX",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [-117.12776, 14.538829, -86.811982, 32.72083],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-117.12776, 14.538829, -86.811982, 32.72083],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-88.300031, 18.499982],
             [-88.490123, 18.486831],
@@ -9059,29 +9059,29 @@ export let countries={
             [-87.58656, 19.04013],
             [-87.837191, 18.259816],
             [-88.090664, 18.516648],
-            [-88.300031, 18.499982]
-          ]
-        ]
-      }
+            [-88.300031, 18.499982],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2103721,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "MK",
-        "ISO_A3": "MKD",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 2103721,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "MK",
+        ISO_A3: "MKD",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [20.463175, 40.842727, 22.952377, 42.32026],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [20.463175, 40.842727, 22.952377, 42.32026],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [21.02004, 40.842727],
             [20.605182, 41.086226],
@@ -9100,29 +9100,29 @@ export let countries={
             [22.597308, 41.130487],
             [22.055378, 41.149866],
             [21.674161, 40.931275],
-            [21.02004, 40.842727]
-          ]
-        ]
-      }
+            [21.02004, 40.842727],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 17885245,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "ML",
-        "ISO_A3": "MLI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 17885245,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "ML",
+        ISO_A3: "MLI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [-12.17075, 10.096361, 4.27021, 24.974574],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-12.17075, 10.096361, 4.27021, 24.974574],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [0.374892, 14.928908],
             [-0.266257, 14.924309],
@@ -9199,29 +9199,29 @@ export let countries={
             [2.749993, 15.409525],
             [1.385528, 15.323561],
             [1.015783, 14.968182],
-            [0.374892, 14.928908]
-          ]
-        ]
-      }
+            [0.374892, 14.928908],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 55123814,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "MM",
-        "ISO_A3": "MMR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 55123814,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "MM",
+        ISO_A3: "MMR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [92.303234, 9.93296, 101.180005, 28.335945],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [92.303234, 9.93296, 101.180005, 28.335945],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [92.368554, 20.670883],
             [92.303234, 21.475485],
@@ -9292,29 +9292,29 @@ export let countries={
             [93.540988, 19.366493],
             [93.663255, 19.726962],
             [93.078278, 19.855145],
-            [92.368554, 20.670883]
-          ]
-        ]
-      }
+            [92.368554, 20.670883],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 642550,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "ME",
-        "ISO_A3": "MNE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 642550,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "ME",
+        ISO_A3: "MNE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [18.450017, 41.877551, 20.3398, 43.52384],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [18.450017, 41.877551, 20.3398, 43.52384],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [20.0707, 42.58863],
             [19.801613, 42.500093],
@@ -9333,29 +9333,29 @@ export let countries={
             [19.95857, 43.10604],
             [20.3398, 42.89852],
             [20.25758, 42.81275],
-            [20.0707, 42.58863]
-          ]
-        ]
-      }
+            [20.0707, 42.58863],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3068243,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "MN",
-        "ISO_A3": "MNG",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 3068243,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "MN",
+        ISO_A3: "MNG",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [87.751264, 41.59741, 119.772824, 52.047366],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [87.751264, 41.59741, 119.772824, 52.047366],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [116.678801, 49.888531],
             [116.191802, 49.134598],
@@ -9431,29 +9431,29 @@ export let countries={
             [114.362456, 50.248303],
             [114.96211, 50.140247],
             [115.485695, 49.805177],
-            [116.678801, 49.888531]
-          ]
-        ]
-      }
+            [116.678801, 49.888531],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 26573706,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "MZ",
-        "ISO_A3": "MOZ",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 26573706,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "MZ",
+        ISO_A3: "MOZ",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [30.179481, -26.742192, 40.775475, -10.317096],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [30.179481, -26.742192, 40.775475, -10.317096],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [34.559989, -11.52002],
             [35.312398, -11.439146],
@@ -9533,29 +9533,29 @@ export let countries={
             [34.907151, -13.565425],
             [34.559989, -13.579998],
             [34.280006, -12.280025],
-            [34.559989, -11.52002]
-          ]
-        ]
-      }
+            [34.559989, -11.52002],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3758571,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "MR",
-        "ISO_A3": "MRT",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 3758571,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "MR",
+        ISO_A3: "MRT",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-17.063423, 14.616834, -4.923337, 27.395744],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-17.063423, 14.616834, -4.923337, 27.395744],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-8.6844, 27.395744],
             [-4.923337, 24.974574],
@@ -9595,29 +9595,29 @@ export let countries={
             [-11.937224, 23.374594],
             [-11.969419, 25.933353],
             [-8.687294, 25.881056],
-            [-8.6844, 27.395744]
-          ]
-        ]
-      }
+            [-8.6844, 27.395744],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 19196246,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "MW",
-        "ISO_A3": "MWI",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 19196246,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "MW",
+        ISO_A3: "MWI",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [32.688165, -16.8013, 35.771905, -9.230599],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [32.688165, -16.8013, 35.771905, -9.230599],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [34.559989, -11.52002],
             [34.280006, -12.280025],
@@ -9646,29 +9646,29 @@ export let countries={
             [33.73972, -9.41715],
             [33.940838, -9.693674],
             [34.28, -10.16],
-            [34.559989, -11.52002]
-          ]
-        ]
-      }
+            [34.559989, -11.52002],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 31381992,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "MY",
-        "ISO_A3": "MYS",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 31381992,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "MY",
+        ISO_A3: "MYS",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [100.085757, 0.773131, 119.181904, 6.928053],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [100.085757, 0.773131, 119.181904, 6.928053],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [114.204017, 4.525874],
@@ -9707,8 +9707,8 @@ export let countries={
               [111.796928, 2.885897],
               [112.995615, 3.102395],
               [113.712935, 3.893509],
-              [114.204017, 4.525874]
-            ]
+              [114.204017, 4.525874],
+            ],
           ],
           [
             [
@@ -9736,30 +9736,30 @@ export let countries={
               [101.075516, 6.204867],
               [101.154219, 5.691384],
               [101.814282, 5.810808],
-              [102.141187, 6.221636]
-            ]
-          ]
-        ]
-      }
+              [102.141187, 6.221636],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2484780,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "NA",
-        "ISO_A3": "NAM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7.5
+      type: "Feature",
+      properties: {
+        POP_EST: 2484780,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "NA",
+        ISO_A3: "NAM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7.5,
       },
-      "bbox": [11.734199, -29.045462, 25.084443, -16.941343],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [11.734199, -29.045462, 25.084443, -16.941343],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [11.734199, -17.301889],
             [12.215461, -17.111668],
@@ -9804,29 +9804,29 @@ export let countries={
             [12.826845, -19.673166],
             [12.608564, -19.045349],
             [11.794919, -18.069129],
-            [11.734199, -17.301889]
-          ]
-        ]
-      }
+            [11.734199, -17.301889],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 279070,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "NC",
-        "ISO_A3": "NCL",
-        "TINY": -99,
-        "HOMEPART": -99,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4.6,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 279070,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "NC",
+        ISO_A3: "NCL",
+        TINY: -99,
+        HOMEPART: -99,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4.6,
+        MAX_LABEL: 8,
       },
-      "bbox": [164.029606, -22.399976, 167.120011, -20.105646],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [164.029606, -22.399976, 167.120011, -20.105646],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [165.77999, -21.080005],
             [166.599991, -21.700019],
@@ -9840,29 +9840,29 @@ export let countries={
             [164.459967, -20.120012],
             [165.020036, -20.459991],
             [165.460009, -20.800022],
-            [165.77999, -21.080005]
-          ]
-        ]
-      }
+            [165.77999, -21.080005],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 19245344,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "NE",
-        "ISO_A3": "NER",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 19245344,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "NE",
+        ISO_A3: "NER",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [0.295646, 11.660167, 15.903247, 23.471668],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [0.295646, 11.660167, 15.903247, 23.471668],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [3.61118, 11.660167],
             [2.848643, 12.235636],
@@ -9921,29 +9921,29 @@ export let countries={
             [4.107946, 13.531216],
             [3.967283, 12.956109],
             [3.680634, 12.552903],
-            [3.61118, 11.660167]
-          ]
-        ]
-      }
+            [3.61118, 11.660167],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 190632261,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "NG",
-        "ISO_A3": "NGA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 190632261,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "NG",
+        ISO_A3: "NGA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [2.691702, 4.240594, 14.577178, 13.865924],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [2.691702, 4.240594, 14.577178, 13.865924],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [2.691702, 6.258817],
             [2.749063, 7.870734],
@@ -10002,29 +10002,29 @@ export let countries={
             [5.033574, 5.611802],
             [4.325607, 6.270651],
             [3.57418, 6.2583],
-            [2.691702, 6.258817]
-          ]
-        ]
-      }
+            [2.691702, 6.258817],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6025951,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "NI",
-        "ISO_A3": "NIC",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 6025951,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "NI",
+        ISO_A3: "NIC",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-87.668493, 10.726839, -83.147219, 15.016267],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-87.668493, 10.726839, -83.147219, 15.016267],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-83.655612, 10.938764],
             [-83.895054, 10.726839],
@@ -10077,29 +10077,29 @@ export let countries={
             [-83.650858, 11.629032],
             [-83.85547, 11.373311],
             [-83.808936, 11.103044],
-            [-83.655612, 10.938764]
-          ]
-        ]
-      }
+            [-83.655612, 10.938764],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 17084719,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "NL",
-        "ISO_A3": "NLD",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 17084719,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "NL",
+        ISO_A3: "NLD",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [3.314971, 50.803721, 7.092053, 53.510403],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [3.314971, 50.803721, 7.092053, 53.510403],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [6.156658, 50.803721],
             [5.606976, 51.037298],
@@ -10115,29 +10115,29 @@ export let countries={
             [6.84287, 52.22844],
             [6.589397, 51.852029],
             [5.988658, 51.851616],
-            [6.156658, 50.803721]
-          ]
-        ]
-      }
+            [6.156658, 50.803721],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5320045,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "-99",
-        "ISO_A3": "-99",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 5320045,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "-99",
+        ISO_A3: "-99",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [4.992078, 58.078884, 31.293418, 80.657144],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [4.992078, 58.078884, 31.293418, 80.657144],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [28.59193, 69.064777],
@@ -10189,8 +10189,8 @@ export let countries={
               [30.005435, 70.186259],
               [31.101042, 69.558101],
               [29.39955, 69.15692],
-              [28.59193, 69.064777]
-            ]
+              [28.59193, 69.064777],
+            ],
           ],
           [
             [
@@ -10201,8 +10201,8 @@ export let countries={
               [20.8119, 78.25463],
               [22.88426, 78.45494],
               [23.28134, 78.07954],
-              [24.72412, 77.85385]
-            ]
+              [24.72412, 77.85385],
+            ],
           ],
           [
             [
@@ -10223,8 +10223,8 @@ export let countries={
               [15.14282, 79.67431],
               [15.52255, 80.01608],
               [16.99085, 80.05086],
-              [18.25183, 79.70175]
-            ]
+              [18.25183, 79.70175],
+            ],
           ],
           [
             [
@@ -10239,30 +10239,30 @@ export let countries={
               [20.455992, 80.598156],
               [21.907945, 80.357679],
               [22.919253, 80.657144],
-              [25.447625, 80.40734]
-            ]
-          ]
-        ]
-      }
+              [25.447625, 80.40734],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 29384297,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "NP",
-        "ISO_A3": "NPL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 29384297,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "NP",
+        ISO_A3: "NPL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [80.088425, 26.397898, 88.174804, 30.422717],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [80.088425, 26.397898, 88.174804, 30.422717],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [81.111256, 30.183481],
             [81.525804, 30.422717],
@@ -10286,29 +10286,29 @@ export let countries={
             [81.057203, 28.416095],
             [80.088425, 28.79447],
             [80.476721, 29.729865],
-            [81.111256, 30.183481]
-          ]
-        ]
-      }
+            [81.111256, 30.183481],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4510327,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "NZ",
-        "ISO_A3": "NZL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 4510327,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "NZ",
+        ISO_A3: "NZL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [166.509144, -46.641235, 178.517094, -34.450662],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [166.509144, -46.641235, 178.517094, -34.450662],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [173.020375, -40.919052],
@@ -10340,8 +10340,8 @@ export let countries={
               [171.948709, -41.514417],
               [172.097227, -40.956104],
               [172.79858, -40.493962],
-              [173.020375, -40.919052]
-            ]
+              [173.020375, -40.919052],
+            ],
           ],
           [
             [
@@ -10380,30 +10380,30 @@ export let countries={
               [173.007042, -34.450662],
               [173.551298, -35.006183],
               [174.32939, -35.265496],
-              [174.612009, -36.156397]
-            ]
-          ]
-        ]
-      }
+              [174.612009, -36.156397],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3424386,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "OM",
-        "ISO_A3": "OMN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 3424386,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "OM",
+        ISO_A3: "OMN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [52.00001, 16.651051, 59.80806, 26.395934],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [52.00001, 16.651051, 59.80806, 26.395934],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [56.261042, 25.714606],
@@ -10411,8 +10411,8 @@ export let countries={
               [56.362017, 26.395934],
               [56.485679, 26.309118],
               [56.391421, 25.895991],
-              [56.261042, 25.714606]
-            ]
+              [56.261042, 25.714606],
+            ],
           ],
           [
             [
@@ -10456,30 +10456,30 @@ export let countries={
               [52.00001, 19.000003],
               [54.999982, 19.999994],
               [55.666659, 22.000001],
-              [55.208341, 22.70833]
-            ]
-          ]
-        ]
-      }
+              [55.208341, 22.70833],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 204924861,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "PK",
-        "ISO_A3": "PAK",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 204924861,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "PK",
+        ISO_A3: "PAK",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [60.874248, 23.691965, 77.837451, 37.133031],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [60.874248, 23.691965, 77.837451, 37.133031],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [60.874248, 29.829239],
             [62.549857, 29.318572],
@@ -10546,29 +10546,29 @@ export let countries={
             [62.72783, 28.259645],
             [61.771868, 28.699334],
             [61.369309, 29.303276],
-            [60.874248, 29.829239]
-          ]
-        ]
-      }
+            [60.874248, 29.829239],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3753142,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "PA",
-        "ISO_A3": "PAN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 3753142,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "PA",
+        ISO_A3: "PAN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-82.965783, 7.220541, -77.242566, 9.61161],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-82.965783, 7.220541, -77.242566, 9.61161],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-77.353361, 8.670505],
             [-77.474723, 8.524286],
@@ -10621,29 +10621,29 @@ export let countries={
             [-78.500888, 9.420459],
             [-78.055928, 9.24773],
             [-77.729514, 8.946844],
-            [-77.353361, 8.670505]
-          ]
-        ]
-      }
+            [-77.353361, 8.670505],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 31036656,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "PE",
-        "ISO_A3": "PER",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 31036656,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "PE",
+        ISO_A3: "PER",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [-81.410943, -18.347975, -68.66508, -0.057205],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-81.410943, -18.347975, -68.66508, -0.057205],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-69.529678, -10.951734],
             [-68.66508, -12.5613],
@@ -10720,29 +10720,29 @@ export let countries={
             [-70.481894, -9.490118],
             [-70.548686, -11.009147],
             [-70.093752, -11.123972],
-            [-69.529678, -10.951734]
-          ]
-        ]
-      }
+            [-69.529678, -10.951734],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 104256076,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "PH",
-        "ISO_A3": "PHL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 104256076,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "PH",
+        ISO_A3: "PHL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [117.174275, 5.581003, 126.537424, 18.505227],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [117.174275, 5.581003, 126.537424, 18.505227],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [126.376814, 8.414706],
@@ -10771,8 +10771,8 @@ export let countries={
               [125.412118, 9.760335],
               [126.222714, 9.286074],
               [126.306637, 8.782487],
-              [126.376814, 8.414706]
-            ]
+              [126.376814, 8.414706],
+            ],
           ],
           [
             [
@@ -10787,8 +10787,8 @@ export let countries={
               [123.49885, 10.940624],
               [123.337774, 10.267384],
               [124.077936, 11.232726],
-              [123.982438, 10.278779]
-            ]
+              [123.982438, 10.278779],
+            ],
           ],
           [
             [
@@ -10800,8 +10800,8 @@ export let countries={
               [119.511496, 11.369668],
               [119.689677, 10.554291],
               [119.029458, 10.003653],
-              [118.504581, 9.316383]
-            ]
+              [118.504581, 9.316383],
+            ],
           ],
           [
             [
@@ -10813,8 +10813,8 @@ export let countries={
               [122.00261, 10.441017],
               [121.967367, 10.905691],
               [122.03837, 11.415841],
-              [121.883548, 11.891755]
-            ]
+              [121.883548, 11.891755],
+            ],
           ],
           [
             [
@@ -10831,8 +10831,8 @@ export let countries={
               [124.87799, 11.79419],
               [124.266762, 12.557761],
               [125.227116, 12.535721],
-              [125.502552, 12.162695]
-            ]
+              [125.502552, 12.162695],
+            ],
           ],
           [
             [
@@ -10841,8 +10841,8 @@ export let countries={
               [120.833896, 12.704496],
               [120.323436, 13.466413],
               [121.180128, 13.429697],
-              [121.527394, 13.06959]
-            ]
+              [121.527394, 13.06959],
+            ],
           ],
           [
             [
@@ -10878,30 +10878,30 @@ export let countries={
               [120.286488, 16.034629],
               [120.390047, 17.599081],
               [120.715867, 18.505227],
-              [121.321308, 18.504065]
-            ]
-          ]
-        ]
-      }
+              [121.321308, 18.504065],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6909701,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "PG",
-        "ISO_A3": "PNG",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2.5,
-        "MAX_LABEL": 7.5
+      type: "Feature",
+      properties: {
+        POP_EST: 6909701,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "PG",
+        ISO_A3: "PNG",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2.5,
+        MAX_LABEL: 7.5,
       },
-      "bbox": [141.00021, -10.652476, 156.019965, -2.500002],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [141.00021, -10.652476, 156.019965, -2.500002],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [141.033852, -9.117893],
@@ -10937,8 +10937,8 @@ export let countries={
               [143.413913, -8.983069],
               [142.628431, -9.326821],
               [142.068259, -9.159596],
-              [141.033852, -9.117893]
-            ]
+              [141.033852, -9.117893],
+            ],
           ],
           [
             [
@@ -10952,8 +10952,8 @@ export let countries={
               [155.062918, -5.566792],
               [155.547746, -6.200655],
               [156.019965, -6.540014],
-              [155.880026, -6.819997]
-            ]
+              [155.880026, -6.819997],
+            ],
           ],
           [
             [
@@ -10978,8 +10978,8 @@ export let countries={
               [152.136792, -4.14879],
               [152.338743, -4.312966],
               [152.318693, -4.867661],
-              [151.982796, -5.478063]
-            ]
+              [151.982796, -5.478063],
+            ],
           ],
           [
             [
@@ -10996,30 +10996,30 @@ export let countries={
               [152.239989, -3.240009],
               [152.640017, -3.659983],
               [153.019994, -3.980015],
-              [153.140038, -4.499983]
-            ]
-          ]
-        ]
-      }
+              [153.140038, -4.499983],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 38476269,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "PL",
-        "ISO_A3": "POL",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 38476269,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "PL",
+        ISO_A3: "POL",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [14.074521, 49.027395, 24.029986, 54.851536],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [14.074521, 49.027395, 24.029986, 54.851536],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [23.484128, 53.912498],
             [23.527536, 53.470122],
@@ -11065,29 +11065,29 @@ export let countries={
             [20.892245, 54.312525],
             [22.731099, 54.327537],
             [23.243987, 54.220567],
-            [23.484128, 53.912498]
-          ]
-        ]
-      }
+            [23.484128, 53.912498],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3351827,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "PR",
-        "ISO_A3": "PRI",
-        "TINY": -99,
-        "HOMEPART": -99,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 3351827,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "PR",
+        ISO_A3: "PRI",
+        TINY: -99,
+        HOMEPART: -99,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-67.242428, 17.946553, -65.591004, 18.520601],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-67.242428, 17.946553, -65.591004, 18.520601],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-66.282434, 18.514762],
             [-65.771303, 18.426679],
@@ -11097,29 +11097,29 @@ export let countries={
             [-67.184162, 17.946553],
             [-67.242428, 18.37446],
             [-67.100679, 18.520601],
-            [-66.282434, 18.514762]
-          ]
-        ]
-      }
+            [-66.282434, 18.514762],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 25248140,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "KP",
-        "ISO_A3": "PRK",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 25248140,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "KP",
+        ISO_A3: "PRK",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [124.265625, 37.669071, 130.780007, 42.985387],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [124.265625, 37.669071, 130.780007, 42.985387],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [124.265625, 39.928493],
@@ -11165,38 +11165,38 @@ export let countries={
               [125.38659, 39.387958],
               [125.321116, 39.551385],
               [124.737482, 39.660344],
-              [124.265625, 39.928493]
-            ]
+              [124.265625, 39.928493],
+            ],
           ],
           [
             [
               [130.780005, 42.22001],
               [130.780007, 42.220007],
               [130.780004, 42.220008],
-              [130.780005, 42.22001]
-            ]
-          ]
-        ]
-      }
+              [130.780005, 42.22001],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 10839514,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "PT",
-        "ISO_A3": "PRT",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 10839514,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "PT",
+        ISO_A3: "PRT",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-9.526571, 36.838269, -6.389088, 42.280469],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-9.526571, 36.838269, -6.389088, 42.280469],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-9.034818, 41.880571],
             [-8.671946, 42.134689],
@@ -11230,29 +11230,29 @@ export let countries={
             [-8.768684, 40.760639],
             [-8.790853, 41.184334],
             [-8.990789, 41.543459],
-            [-9.034818, 41.880571]
-          ]
-        ]
-      }
+            [-9.034818, 41.880571],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6943739,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "PY",
-        "ISO_A3": "PRY",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 6943739,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "PY",
+        ISO_A3: "PRY",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-62.685057, -27.548499, -54.29296, -19.342747],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-62.685057, -27.548499, -54.29296, -19.342747],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-54.625291, -25.739255],
             [-54.788795, -26.621786],
@@ -11286,29 +11286,29 @@ export let countries={
             [-54.29296, -24.021014],
             [-54.293476, -24.5708],
             [-54.428946, -25.162185],
-            [-54.625291, -25.739255]
-          ]
-        ]
-      }
+            [-54.625291, -25.739255],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 4543126,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "PS",
-        "ISO_A3": "PSE",
-        "TINY": -99,
-        "HOMEPART": -99,
-        "MIN_ZOOM": 7,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9.5
+      type: "Feature",
+      properties: {
+        POP_EST: 4543126,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "PS",
+        ISO_A3: "PSE",
+        TINY: -99,
+        HOMEPART: -99,
+        MIN_ZOOM: 7,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9.5,
       },
-      "bbox": [34.927408, 31.353435, 35.545665, 32.532511],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [34.927408, 31.353435, 35.545665, 32.532511],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [35.397561, 31.489086],
             [34.927408, 31.353435],
@@ -11318,29 +11318,29 @@ export let countries={
             [35.18393, 32.532511],
             [35.545665, 32.393992],
             [35.545252, 31.782505],
-            [35.397561, 31.489086]
-          ]
-        ]
-      }
+            [35.397561, 31.489086],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 2314307,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "QA",
-        "ISO_A3": "QAT",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 2314307,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "QA",
+        ISO_A3: "QAT",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [50.743911, 24.556331, 51.6067, 26.114582],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [50.743911, 24.556331, 51.6067, 26.114582],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [50.810108, 24.754743],
             [50.743911, 25.482424],
@@ -11350,29 +11350,29 @@ export let countries={
             [51.6067, 25.21567],
             [51.389608, 24.627386],
             [51.112415, 24.556331],
-            [50.810108, 24.754743]
-          ]
-        ]
-      }
+            [50.810108, 24.754743],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 21529967,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "RO",
-        "ISO_A3": "ROU",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 21529967,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "RO",
+        ISO_A3: "ROU",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [20.220192, 43.688445, 29.626543, 48.220881],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [20.220192, 43.688445, 29.626543, 48.220881],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [28.558081, 43.707462],
             [27.970107, 43.812468],
@@ -11417,29 +11417,29 @@ export let countries={
             [29.626543, 45.035391],
             [29.141612, 44.82021],
             [28.837858, 44.913874],
-            [28.558081, 43.707462]
-          ]
-        ]
-      }
+            [28.558081, 43.707462],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 142257519,
-        "ECONOMY": "3. Emerging region: BRIC",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "RU",
-        "ISO_A3": "RUS",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 5.2
+      type: "Feature",
+      properties: {
+        POP_EST: 142257519,
+        ECONOMY: "3. Emerging region: BRIC",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "RU",
+        ISO_A3: "RUS",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 5.2,
       },
-      "bbox": [-180, 41.151416, 180, 81.2504],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-180, 41.151416, 180, 81.2504],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [48.584353, 41.808869],
@@ -11897,8 +11897,8 @@ export let countries={
               [47.59094, 43.66016],
               [47.49252, 42.98658],
               [48.58437, 41.80888],
-              [48.584353, 41.808869]
-            ]
+              [48.584353, 41.808869],
+            ],
           ],
           [
             [
@@ -11910,8 +11910,8 @@ export let countries={
               [20.892245, 54.312525],
               [19.66064, 54.426084],
               [19.888481, 54.86616],
-              [21.268449, 55.190482]
-            ]
+              [21.268449, 55.190482],
+            ],
           ],
           [
             [
@@ -11932,8 +11932,8 @@ export let countries={
               [32.454174, 45.327466],
               [32.630804, 45.519186],
               [33.588162, 45.851569],
-              [33.435988, 45.971917]
-            ]
+              [33.435988, 45.971917],
+            ],
           ],
           [
             [
@@ -11958,8 +11958,8 @@ export let countries={
               [142.914616, 53.704578],
               [143.260848, 52.74076],
               [143.235268, 51.75666],
-              [143.648007, 50.7476]
-            ]
+              [143.648007, 50.7476],
+            ],
           ],
           [
             [
@@ -11986,8 +11986,8 @@ export let countries={
               [-180, 68.963636],
               [-177.55, 68.2],
               [-174.92825, 67.20589],
-              [-175.01425, 66.58435]
-            ]
+              [-175.01425, 66.58435],
+            ],
           ],
           [
             [
@@ -11995,8 +11995,8 @@ export let countries={
               [178.903425, 70.78114],
               [178.7253, 71.0988],
               [180, 71.515714],
-              [180, 70.832199]
-            ]
+              [180, 70.832199],
+            ],
           ],
           [
             [
@@ -12007,8 +12007,8 @@ export let countries={
               [-179.02433, 71.55553],
               [-177.577945, 71.26948],
               [-177.663575, 71.13277],
-              [-178.69378, 70.89302]
-            ]
+              [-178.69378, 70.89302],
+            ],
           ],
           [
             [
@@ -12019,8 +12019,8 @@ export let countries={
               [140.81171, 73.76506],
               [142.06207, 73.85758],
               [143.48283, 73.47525],
-              [143.60385, 73.21244]
-            ]
+              [143.60385, 73.21244],
+            ],
           ],
           [
             [
@@ -12030,8 +12030,8 @@ export let countries={
               [146.11919, 75.17298],
               [146.358485, 75.49682],
               [148.22223, 75.345845],
-              [150.73167, 75.08406]
-            ]
+              [150.73167, 75.08406],
+            ],
           ],
           [
             [
@@ -12043,8 +12043,8 @@ export let countries={
               [137.51176, 75.94917],
               [138.831075, 76.13676],
               [141.471615, 76.09289],
-              [145.086285, 75.562625]
-            ]
+              [145.086285, 75.562625],
+            ],
           ],
           [
             [
@@ -12073,8 +12073,8 @@ export let countries={
               [56.986786, 73.333044],
               [55.419336, 72.371268],
               [55.622838, 71.540595],
-              [57.535693, 70.720464]
-            ]
+              [57.535693, 70.720464],
+            ],
           ],
           [
             [
@@ -12084,8 +12084,8 @@ export let countries={
               [102.08635, 79.34641],
               [102.837815, 79.28129],
               [105.37243, 78.71334],
-              [105.07547, 78.30689]
-            ]
+              [105.07547, 78.30689],
+            ],
           ],
           [
             [
@@ -12103,8 +12103,8 @@ export let countries={
               [49.09719, 80.753986],
               [50.039768, 80.918885],
               [51.522933, 80.699726],
-              [51.136187, 80.54728]
-            ]
+              [51.136187, 80.54728],
+            ],
           ],
           [
             [
@@ -12118,30 +12118,30 @@ export let countries={
               [95.940895, 81.2504],
               [97.88385, 80.746975],
               [100.186655, 79.780135],
-              [99.93976, 78.88094]
-            ]
-          ]
-        ]
-      }
+              [99.93976, 78.88094],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 11901484,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "RW",
-        "ISO_A3": "RWA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 11901484,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "RW",
+        ISO_A3: "RWA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [29.024926, -2.917858, 30.816135, -1.134659],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [29.024926, -2.917858, 30.816135, -1.134659],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [30.469674, -2.413855],
             [29.938359, -2.348487],
@@ -12156,29 +12156,29 @@ export let countries={
             [30.816135, -1.698914],
             [30.758309, -2.28725],
             [30.46967, -2.41383],
-            [30.469674, -2.413855]
-          ]
-        ]
-      }
+            [30.469674, -2.413855],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 603253,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "EH",
-        "ISO_A3": "ESH",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 4.7,
-        "MIN_LABEL": 6,
-        "MAX_LABEL": 11
+      type: "Feature",
+      properties: {
+        POP_EST: 603253,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "EH",
+        ISO_A3: "ESH",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 4.7,
+        MIN_LABEL: 6,
+        MAX_LABEL: 11,
       },
-      "bbox": [-17.063423, 20.999752, -8.665124, 27.656426],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-17.063423, 20.999752, -8.665124, 27.656426],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-8.66559, 27.656426],
             [-8.665124, 27.589479],
@@ -12207,29 +12207,29 @@ export let countries={
             [-9.413037, 27.088476],
             [-8.794884, 27.120696],
             [-8.817828, 27.656426],
-            [-8.66559, 27.656426]
-          ]
-        ]
-      }
+            [-8.66559, 27.656426],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 28571770,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "SA",
-        "ISO_A3": "SAU",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2.7,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 28571770,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "SA",
+        ISO_A3: "SAU",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2.7,
+        MAX_LABEL: 7,
       },
-      "bbox": [34.632336, 16.347891, 55.666659, 32.161009],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [34.632336, 16.347891, 55.666659, 32.161009],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [51.579519, 24.245497],
             [51.617708, 24.014219],
@@ -12306,29 +12306,29 @@ export let countries={
             [50.810108, 24.754743],
             [51.112415, 24.556331],
             [51.389608, 24.627386],
-            [51.579519, 24.245497]
-          ]
-        ]
-      }
+            [51.579519, 24.245497],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 37345935,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "SD",
-        "ISO_A3": "SDN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 37345935,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "SD",
+        ISO_A3: "SDN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [21.93681, 8.229188, 38.41009, 22],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [21.93681, 8.229188, 38.41009, 22],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [24.567369, 8.229188],
             [23.805813, 8.666319],
@@ -12410,29 +12410,29 @@ export let countries={
             [24.537415, 8.917538],
             [24.194068, 8.728696],
             [23.88698, 8.61973],
-            [24.567369, 8.229188]
-          ]
-        ]
-      }
+            [24.567369, 8.229188],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 13026129,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "SS",
-        "ISO_A3": "SSD",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 13026129,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "SS",
+        ISO_A3: "SSD",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [23.88698, 3.509172, 35.298007, 12.248008],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [23.88698, 3.509172, 35.298007, 12.248008],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [27.374226, 5.233944],
             [27.213409, 5.550953],
@@ -12496,29 +12496,29 @@ export let countries={
             [28.696678, 4.455077],
             [28.428994, 4.287155],
             [27.979977, 4.408413],
-            [27.374226, 5.233944]
-          ]
-        ]
-      }
+            [27.374226, 5.233944],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 14668522,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "SN",
-        "ISO_A3": "SEN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 14668522,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "SN",
+        ISO_A3: "SEN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-17.625043, 12.33209, -11.467899, 16.598264],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-17.625043, 12.33209, -11.467899, 16.598264],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-11.513943, 12.442988],
             [-11.658301, 12.386583],
@@ -12563,29 +12563,29 @@ export let countries={
             [-11.927716, 13.422075],
             [-11.553398, 13.141214],
             [-11.467899, 12.754519],
-            [-11.513943, 12.442988]
-          ]
-        ]
-      }
+            [-11.513943, 12.442988],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 647581,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "SB",
-        "ISO_A3": "SLB",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 647581,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "SB",
+        ISO_A3: "SLB",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [156.491358, -10.826367, 162.398646, -6.599338],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [156.491358, -10.826367, 162.398646, -6.599338],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [162.119025, -10.482719],
@@ -12593,8 +12593,8 @@ export let countries={
               [161.700032, -10.820011],
               [161.319797, -10.204751],
               [161.917383, -10.446701],
-              [162.119025, -10.482719]
-            ]
+              [162.119025, -10.482719],
+            ],
           ],
           [
             [
@@ -12605,8 +12605,8 @@ export let countries={
               [159.702945, -9.24295],
               [160.362956, -9.400304],
               [160.688518, -9.610162],
-              [160.852229, -9.872937]
-            ]
+              [160.852229, -9.872937],
+            ],
           ],
           [
             [
@@ -12616,8 +12616,8 @@ export let countries={
               [160.579997, -8.320009],
               [160.920028, -8.320009],
               [161.280006, -9.120011],
-              [161.679982, -9.599982]
-            ]
+              [161.679982, -9.599982],
+            ],
           ],
           [
             [
@@ -12629,8 +12629,8 @@ export let countries={
               [158.359978, -7.320018],
               [158.820001, -7.560003],
               [159.640003, -8.020027],
-              [159.875027, -8.33732]
-            ]
+              [159.875027, -8.33732],
+            ],
           ],
           [
             [
@@ -12640,30 +12640,30 @@ export let countries={
               [156.491358, -6.765943],
               [156.542828, -6.599338],
               [157.14, -7.021638],
-              [157.538426, -7.34782]
-            ]
-          ]
-        ]
-      }
+              [157.538426, -7.34782],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6163195,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "SL",
-        "ISO_A3": "SLE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 6163195,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "SL",
+        ISO_A3: "SLE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-13.24655, 6.785917, -10.230094, 10.046984],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-13.24655, 6.785917, -10.230094, 10.046984],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-13.24655, 8.903049],
             [-12.711958, 9.342712],
@@ -12686,29 +12686,29 @@ export let countries={
             [-12.428099, 7.262942],
             [-12.949049, 7.798646],
             [-13.124025, 8.163946],
-            [-13.24655, 8.903049]
-          ]
-        ]
-      }
+            [-13.24655, 8.903049],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 6172011,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "SV",
-        "ISO_A3": "SLV",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 6172011,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "SV",
+        ISO_A3: "SLV",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [-90.095555, 13.149017, -87.723503, 14.424133],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-90.095555, 13.149017, -87.723503, 14.424133],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-90.095555, 13.735338],
             [-90.064678, 13.88197],
@@ -12729,29 +12729,29 @@ export let countries={
             [-88.843228, 13.259734],
             [-89.256743, 13.458533],
             [-89.812394, 13.520622],
-            [-90.095555, 13.735338]
-          ]
-        ]
-      }
+            [-90.095555, 13.735338],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3500000,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "-99",
-        "ISO_A3": "-99",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 4,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 3500000,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "-99",
+        ISO_A3: "-99",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 4,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9,
       },
-      "bbox": [42.55876, 7.99688, 48.948206, 11.46204],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [42.55876, 7.99688, 48.948206, 11.46204],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [42.776852, 10.926879],
             [43.145305, 11.46204],
@@ -12778,29 +12778,29 @@ export let countries={
             [43.29699, 9.54048],
             [42.92812, 10.02194],
             [42.55876, 10.57258],
-            [42.776852, 10.926879]
-          ]
-        ]
-      }
+            [42.776852, 10.926879],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 7531386,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "SO",
-        "ISO_A3": "SOM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 7531386,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "SO",
+        ISO_A3: "SOM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [40.98105, -1.68325, 51.13387, 12.02464],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [40.98105, -1.68325, 51.13387, 12.02464],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [41.855083, 3.918912],
             [42.12861, 4.23413],
@@ -12838,29 +12838,29 @@ export let countries={
             [41.58513, -1.68325],
             [40.993, -0.85829],
             [40.98105, 2.78452],
-            [41.855083, 3.918912]
-          ]
-        ]
-      }
+            [41.855083, 3.918912],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 7111024,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "RS",
-        "ISO_A3": "SRB",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 7111024,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "RS",
+        ISO_A3: "SRB",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 7,
       },
-      "bbox": [18.829825, 42.245224, 22.986019, 46.17173],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [18.829825, 42.245224, 22.986019, 46.17173],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [22.65715, 44.234923],
             [22.410446, 44.008063],
@@ -12909,29 +12909,29 @@ export let countries={
             [22.459022, 44.702517],
             [22.705726, 44.578003],
             [22.474008, 44.409228],
-            [22.65715, 44.234923]
-          ]
-        ]
-      }
+            [22.65715, 44.234923],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 591919,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "SR",
-        "ISO_A3": "SUR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 591919,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "SR",
+        ISO_A3: "SUR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [-58.044694, 1.817667, -53.958045, 6.025291],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-58.044694, 1.817667, -53.958045, 6.025291],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-54.524754, 2.311849],
             [-55.097587, 2.523748],
@@ -12958,29 +12958,29 @@ export let countries={
             [-54.011504, 3.62257],
             [-54.184284, 3.194172],
             [-54.27123, 2.738748],
-            [-54.524754, 2.311849]
-          ]
-        ]
-      }
+            [-54.524754, 2.311849],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5445829,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "SK",
-        "ISO_A3": "SVK",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 5445829,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "SK",
+        ISO_A3: "SVK",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [16.879983, 47.758429, 22.558138, 49.571574],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [16.879983, 47.758429, 22.558138, 49.571574],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [16.979667, 48.123497],
             [16.879983, 48.470013],
@@ -13014,29 +13014,29 @@ export let countries={
             [18.696513, 47.880954],
             [17.857133, 47.758429],
             [17.488473, 47.867466],
-            [16.979667, 48.123497]
-          ]
-        ]
-      }
+            [16.979667, 48.123497],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1972126,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "SI",
-        "ISO_A3": "SVN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 1972126,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "SI",
+        ISO_A3: "SVN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [13.69811, 45.452316, 16.564808, 46.852386],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [13.69811, 45.452316, 16.564808, 46.852386],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [13.806475, 46.509306],
             [14.632472, 46.431817],
@@ -13055,29 +13055,29 @@ export let countries={
             [13.71506, 45.500324],
             [13.93763, 45.591016],
             [13.69811, 46.016778],
-            [13.806475, 46.509306]
-          ]
-        ]
-      }
+            [13.806475, 46.509306],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 9960487,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "SE",
-        "ISO_A3": "SWE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 9960487,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "SE",
+        ISO_A3: "SWE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [11.027369, 55.361737, 23.903379, 69.106247],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [11.027369, 55.361737, 23.903379, 69.106247],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [20.645593, 69.106247],
             [21.978535, 68.616846],
@@ -13118,29 +13118,29 @@ export let countries={
             [17.993868, 68.567391],
             [19.87856, 68.407194],
             [20.025269, 69.065139],
-            [20.645593, 69.106247]
-          ]
-        ]
-      }
+            [20.645593, 69.106247],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1467152,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "SZ",
-        "ISO_A3": "SWZ",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 1467152,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "SZ",
+        ISO_A3: "SWZ",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [30.676609, -27.285879, 32.071665, -25.660191],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [30.676609, -27.285879, 32.071665, -25.660191],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [31.837778, -25.843332],
             [31.985779, -26.29178],
@@ -13152,29 +13152,29 @@ export let countries={
             [30.949667, -26.022649],
             [31.04408, -25.731452],
             [31.333158, -25.660191],
-            [31.837778, -25.843332]
-          ]
-        ]
-      }
+            [31.837778, -25.843332],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 18028549,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "SY",
-        "ISO_A3": "SYR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 18028549,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "SY",
+        ISO_A3: "SYR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [35.700798, 32.312938, 42.349591, 37.229873],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [35.700798, 32.312938, 42.349591, 37.229873],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [42.349591, 37.229873],
             [41.837064, 36.605854],
@@ -13202,29 +13202,29 @@ export let countries={
             [39.52258, 36.716054],
             [40.673259, 37.091276],
             [41.212089, 37.074352],
-            [42.349591, 37.229873]
-          ]
-        ]
-      }
+            [42.349591, 37.229873],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 12075985,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "TD",
-        "ISO_A3": "TCD",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 12075985,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "TD",
+        ISO_A3: "TCD",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [13.540394, 7.421925, 23.88689, 23.40972],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [13.540394, 7.421925, 23.88689, 23.40972],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [22.864165, 11.142395],
             [22.231129, 10.971889],
@@ -13283,29 +13283,29 @@ export let countries={
             [22.49762, 12.26024],
             [22.50869, 11.67936],
             [22.87622, 11.38461],
-            [22.864165, 11.142395]
-          ]
-        ]
-      }
+            [22.864165, 11.142395],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 7965055,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "TG",
-        "ISO_A3": "TGO",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 5,
-        "MAX_LABEL": 10
+      type: "Feature",
+      properties: {
+        POP_EST: 7965055,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "TG",
+        ISO_A3: "TGO",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 5,
+        MAX_LABEL: 10,
       },
-      "bbox": [-0.049785, 5.928837, 1.865241, 11.018682],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-0.049785, 5.928837, 1.865241, 11.018682],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [0.899563, 10.997339],
             [0.772336, 10.470808],
@@ -13325,29 +13325,29 @@ export let countries={
             [0.36758, 10.191213],
             [-0.049785, 10.706918],
             [0.023803, 11.018682],
-            [0.899563, 10.997339]
-          ]
-        ]
-      }
+            [0.899563, 10.997339],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 68414135,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "TH",
-        "ISO_A3": "THA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 68414135,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "TH",
+        ISO_A3: "THA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [97.375896, 5.691384, 105.589039, 20.41785],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [97.375896, 5.691384, 105.589039, 20.41785],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [105.218777, 14.273212],
             [104.281418, 14.416743],
@@ -13412,29 +13412,29 @@ export let countries={
             [104.779321, 16.441865],
             [105.589039, 15.570316],
             [105.544338, 14.723934],
-            [105.218777, 14.273212]
-          ]
-        ]
-      }
+            [105.218777, 14.273212],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 8468555,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "TJ",
-        "ISO_A3": "TJK",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 8468555,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "TJ",
+        ISO_A3: "TJK",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [67.44222, 36.738171, 74.980002, 40.960213],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [67.44222, 36.738171, 74.980002, 40.960213],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [74.980002, 37.41999],
             [73.948696, 37.421566],
@@ -13476,29 +13476,29 @@ export let countries={
             [74.257514, 38.606507],
             [74.864816, 38.378846],
             [74.829986, 37.990007],
-            [74.980002, 37.41999]
-          ]
-        ]
-      }
+            [74.980002, 37.41999],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 5351277,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "TM",
-        "ISO_A3": "TKM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 5351277,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "TM",
+        ISO_A3: "TKM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [52.50246, 35.270664, 66.54615, 42.751551],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [52.50246, 35.270664, 66.54615, 42.751551],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [66.518607, 37.362784],
             [66.217385, 37.39379],
@@ -13553,29 +13553,29 @@ export let countries={
             [64.170223, 38.892407],
             [65.215999, 38.402695],
             [66.54615, 37.974685],
-            [66.518607, 37.362784]
-          ]
-        ]
-      }
+            [66.518607, 37.362784],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1291358,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "TL",
-        "ISO_A3": "TLS",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 1291358,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "TL",
+        ISO_A3: "TLS",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [124.968682, -9.393173, 127.335928, -8.273345],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [124.968682, -9.393173, 127.335928, -8.273345],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [125.08852, -9.393173],
             [125.07002, -9.089987],
@@ -13587,29 +13587,29 @@ export let countries={
             [127.335928, -8.397317],
             [126.967992, -8.668256],
             [125.925885, -9.106007],
-            [125.08852, -9.393173]
-          ]
-        ]
-      }
+            [125.08852, -9.393173],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 1218208,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "TT",
-        "ISO_A3": "TTO",
-        "TINY": 2,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4.5,
-        "MAX_LABEL": 9.5
+      type: "Feature",
+      properties: {
+        POP_EST: 1218208,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "TT",
+        ISO_A3: "TTO",
+        TINY: 2,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4.5,
+        MAX_LABEL: 9.5,
       },
-      "bbox": [-61.95, 10, -60.895, 10.89],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-61.95, 10, -60.895, 10.89],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-61.68, 10.76],
             [-61.105, 10.89],
@@ -13618,29 +13618,29 @@ export let countries={
             [-61.77, 10],
             [-61.95, 10.09],
             [-61.66, 10.365],
-            [-61.68, 10.76]
-          ]
-        ]
-      }
+            [-61.68, 10.76],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 11403800,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "TN",
-        "ISO_A3": "TUN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 11403800,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "TN",
+        ISO_A3: "TUN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [7.524482, 30.307556, 11.488787, 37.349994],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [7.524482, 30.307556, 11.488787, 37.349994],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [9.48214, 30.307556],
             [9.055603, 32.102692],
@@ -13672,29 +13672,29 @@ export let countries={
             [9.950225, 31.37607],
             [10.056575, 30.961831],
             [9.970017, 30.539325],
-            [9.48214, 30.307556]
-          ]
-        ]
-      }
+            [9.48214, 30.307556],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 80845215,
-        "ECONOMY": "4. Emerging region: MIKT",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "TR",
-        "ISO_A3": "TUR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 80845215,
+        ECONOMY: "4. Emerging region: MIKT",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "TR",
+        ISO_A3: "TUR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [26.043351, 35.821535, 44.79399, 42.141485],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [26.043351, 35.821535, 44.79399, 42.141485],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [43.582746, 41.092143],
@@ -13750,8 +13750,8 @@ export let countries={
               [40.373433, 41.013673],
               [41.554084, 41.535656],
               [42.619549, 41.583173],
-              [43.582746, 41.092143]
-            ]
+              [43.582746, 41.092143],
+            ],
           ],
           [
             [
@@ -13768,30 +13768,30 @@ export let countries={
               [26.056942, 40.824123],
               [26.294602, 40.936261],
               [26.604196, 41.562115],
-              [26.117042, 41.826905]
-            ]
-          ]
-        ]
-      }
+              [26.117042, 41.826905],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 23508428,
-        "ECONOMY": "2. Developed region: nonG7",
-        "INCOME_GRP": "2. High income: nonOECD",
-        "ISO_A2": "TW",
-        "ISO_A3": "TWN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 23508428,
+        ECONOMY: "2. Developed region: nonG7",
+        INCOME_GRP: "2. High income: nonOECD",
+        ISO_A2: "TW",
+        ISO_A3: "TWN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [120.106189, 21.970571, 121.951244, 25.295459],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [120.106189, 21.970571, 121.951244, 25.295459],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [121.777818, 24.394274],
             [121.175632, 22.790857],
@@ -13801,29 +13801,29 @@ export let countries={
             [120.69468, 24.538451],
             [121.495044, 25.295459],
             [121.951244, 24.997596],
-            [121.777818, 24.394274]
-          ]
-        ]
-      }
+            [121.777818, 24.394274],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 53950935,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "TZ",
-        "ISO_A3": "TZA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 53950935,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "TZ",
+        ISO_A3: "TZA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [29.339998, -11.720938, 40.31659, -0.95],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [29.339998, -11.720938, 40.31659, -0.95],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [29.339998, -4.499983],
             [29.753512, -4.452389],
@@ -13876,29 +13876,29 @@ export let countries={
             [29.620032, -6.520015],
             [29.419993, -5.939999],
             [29.519987, -5.419979],
-            [29.339998, -4.499983]
-          ]
-        ]
-      }
+            [29.339998, -4.499983],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 39570125,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "UG",
-        "ISO_A3": "UGA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 39570125,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "UG",
+        ISO_A3: "UGA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [29.579466, -1.443322, 35.03599, 4.249885],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [29.579466, -1.443322, 35.03599, 4.249885],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [29.579466, -1.341313],
             [29.587838, -0.587406],
@@ -13927,29 +13927,29 @@ export let countries={
             [30.76986, -1.01455],
             [30.419105, -1.134659],
             [29.821519, -1.443322],
-            [29.579466, -1.341313]
-          ]
-        ]
-      }
+            [29.579466, -1.341313],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 44033874,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "UA",
-        "ISO_A3": "UKR",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 44033874,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "UA",
+        ISO_A3: "UKR",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7,
       },
-      "bbox": [22.085608, 45.293308, 40.080789, 52.335075],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [22.085608, 45.293308, 40.080789, 52.335075],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [23.527071, 51.578454],
             [24.005078, 51.617444],
@@ -14043,29 +14043,29 @@ export let countries={
             [23.426508, 50.308506],
             [23.922757, 50.424881],
             [24.029986, 50.705407],
-            [23.527071, 51.578454]
-          ]
-        ]
-      }
+            [23.527071, 51.578454],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 3360148,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "UY",
-        "ISO_A3": "URY",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 3360148,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "UY",
+        ISO_A3: "URY",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [-58.427074, -34.952647, -53.209589, -30.109686],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-58.427074, -34.952647, -53.209589, -30.109686],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-58.427074, -33.909454],
             [-58.349611, -33.263189],
@@ -14087,29 +14087,29 @@ export let countries={
             [-56.215297, -34.859836],
             [-57.139685, -34.430456],
             [-57.817861, -34.462547],
-            [-58.427074, -33.909454]
-          ]
-        ]
-      }
+            [-58.427074, -33.909454],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 326625791,
-        "ECONOMY": "1. Developed region: G7",
-        "INCOME_GRP": "1. High income: OECD",
-        "ISO_A2": "US",
-        "ISO_A3": "USA",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 5.7
+      type: "Feature",
+      properties: {
+        POP_EST: 326625791,
+        ECONOMY: "1. Developed region: G7",
+        INCOME_GRP: "1. High income: OECD",
+        ISO_A2: "US",
+        ISO_A3: "USA",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 5.7,
       },
-      "bbox": [-171.791111, 18.91619, -66.96466, 71.357764],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [-171.791111, 18.91619, -66.96466, 71.357764],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [-122.84, 49],
@@ -14344,8 +14344,8 @@ export let countries={
               [-122.58736, 47.096],
               [-122.34, 47.36],
               [-122.5, 48.18],
-              [-122.84, 49]
-            ]
+              [-122.84, 49],
+            ],
           ],
           [
             [
@@ -14487,8 +14487,8 @@ export let countries={
               [-143.589446, 70.152514],
               [-142.07251, 69.851938],
               [-140.985988, 69.711998],
-              [-140.985988, 69.711998]
-            ]
+              [-140.985988, 69.711998],
+            ],
           ],
           [
             [
@@ -14508,8 +14508,8 @@ export let countries={
               [-154.80741, 19.50871],
               [-154.83147, 19.45328],
               [-155.22217, 19.23972],
-              [-155.54211, 19.08348]
-            ]
+              [-155.54211, 19.08348],
+            ],
           ],
           [
             [
@@ -14521,8 +14521,8 @@ export let countries={
               [-156.61258, 21.01249],
               [-156.25711, 20.91745],
               [-155.99566, 20.76404],
-              [-156.07926, 20.64397]
-            ]
+              [-156.07926, 20.64397],
+            ],
           ],
           [
             [
@@ -14530,8 +14530,8 @@ export let countries={
               [-156.78933, 21.06873],
               [-157.32521, 21.09777],
               [-157.25027, 21.21958],
-              [-156.75824, 21.17684]
-            ]
+              [-156.75824, 21.17684],
+            ],
           ],
           [
             [
@@ -14543,8 +14543,8 @@ export let countries={
               [-158.29265, 21.57912],
               [-158.0252, 21.71696],
               [-157.94161, 21.65272],
-              [-157.65283, 21.32217]
-            ]
+              [-157.65283, 21.32217],
+            ],
           ],
           [
             [
@@ -14554,8 +14554,8 @@ export let countries={
               [-159.74877, 22.1382],
               [-159.5962, 22.23618],
               [-159.36569, 22.21494],
-              [-159.34512, 21.982]
-            ]
+              [-159.34512, 21.982],
+            ],
           ],
           [
             [
@@ -14567,8 +14567,8 @@ export let countries={
               [-153.228729, 57.968968],
               [-152.564791, 57.901427],
               [-152.141147, 57.591059],
-              [-153.006314, 57.115842]
-            ]
+              [-153.006314, 57.115842],
+            ],
           ],
           [
             [
@@ -14578,8 +14578,8 @@ export let countries={
               [-167.455277, 60.213069],
               [-166.467792, 60.38417],
               [-165.67443, 60.293607],
-              [-165.579164, 59.909987]
-            ]
+              [-165.579164, 59.909987],
+            ],
           ],
           [
             [
@@ -14594,30 +14594,30 @@ export let countries={
               [-170.671386, 63.375822],
               [-171.553063, 63.317789],
               [-171.791111, 63.405846],
-              [-171.731657, 63.782515]
-            ]
-          ]
-        ]
-      }
+              [-171.731657, 63.782515],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 29748859,
-        "ECONOMY": "6. Developing region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "UZ",
-        "ISO_A3": "UZB",
-        "TINY": 5,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 29748859,
+        ECONOMY: "6. Developing region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "UZ",
+        ISO_A3: "UZB",
+        TINY: 5,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [55.928917, 37.144994, 73.055417, 45.586804],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [55.928917, 37.144994, 73.055417, 45.586804],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [67.83, 37.144994],
             [67.075782, 37.356144],
@@ -14672,29 +14672,29 @@ export let countries={
             [67.44222, 39.140144],
             [68.176025, 38.901553],
             [68.392033, 38.157025],
-            [67.83, 37.144994]
-          ]
-        ]
-      }
+            [67.83, 37.144994],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 31304016,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "VE",
-        "ISO_A3": "VEN",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 7.5
+      type: "Feature",
+      properties: {
+        POP_EST: 31304016,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "VE",
+        ISO_A3: "VEN",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 7.5,
       },
-      "bbox": [-73.304952, 0.724452, -59.758285, 12.162307],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [-73.304952, 0.724452, -59.758285, 12.162307],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [-60.733574, 5.200277],
             [-60.601179, 4.918098],
@@ -14787,29 +14787,29 @@ export let countries={
             [-61.159336, 6.696077],
             [-61.139415, 6.234297],
             [-61.410303, 5.959068],
-            [-60.733574, 5.200277]
-          ]
-        ]
-      }
+            [-60.733574, 5.200277],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 96160163,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "VN",
-        "ISO_A3": "VNM",
-        "TINY": 2,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 2,
-        "MAX_LABEL": 7
+      type: "Feature",
+      properties: {
+        POP_EST: 96160163,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "VN",
+        ISO_A3: "VNM",
+        TINY: 2,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 2,
+        MAX_LABEL: 7,
       },
-      "bbox": [102.170436, 8.59976, 109.33527, 23.352063],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [102.170436, 8.59976, 109.33527, 23.352063],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [102.170436, 22.464753],
             [102.706992, 22.708795],
@@ -14854,37 +14854,37 @@ export let countries={
             [104.435, 20.758733],
             [103.203861, 20.766562],
             [102.754896, 21.675137],
-            [102.170436, 22.464753]
-          ]
-        ]
-      }
+            [102.170436, 22.464753],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 282814,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "VU",
-        "ISO_A3": "VUT",
-        "TINY": 2,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 4,
-        "MAX_LABEL": 9
+      type: "Feature",
+      properties: {
+        POP_EST: 282814,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "VU",
+        ISO_A3: "VUT",
+        TINY: 2,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 4,
+        MAX_LABEL: 9,
       },
-      "bbox": [166.629137, -16.59785, 167.844877, -14.626497],
-      "geometry": {
-        "type": "MultiPolygon",
-        "coordinates": [
+      bbox: [166.629137, -16.59785, 167.844877, -14.626497],
+      geometry: {
+        type: "MultiPolygon",
+        coordinates: [
           [
             [
               [167.844877, -16.466333],
               [167.515181, -16.59785],
               [167.180008, -16.159995],
               [167.216801, -15.891846],
-              [167.844877, -16.466333]
-            ]
+              [167.844877, -16.466333],
+            ],
           ],
           [
             [
@@ -14894,30 +14894,30 @@ export let countries={
               [166.793158, -15.668811],
               [166.649859, -15.392704],
               [166.629137, -14.626497],
-              [167.107712, -14.93392]
-            ]
-          ]
-        ]
-      }
+              [167.107712, -14.93392],
+            ],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 28036829,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "YE",
-        "ISO_A3": "YEM",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 28036829,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "YE",
+        ISO_A3: "YEM",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [42.604873, 12.58595, 53.108573, 19.000003],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [42.604873, 12.58595, 53.108573, 19.000003],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [52.00001, 19.000003],
             [52.782184, 17.349742],
@@ -14962,29 +14962,29 @@ export let countries={
             [47.466695, 17.116682],
             [48.183344, 18.166669],
             [49.116672, 18.616668],
-            [52.00001, 19.000003]
-          ]
-        ]
-      }
+            [52.00001, 19.000003],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 54841552,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "3. Upper middle income",
-        "ISO_A2": "ZA",
-        "ISO_A3": "ZAF",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 1.7,
-        "MAX_LABEL": 6.7
+      type: "Feature",
+      properties: {
+        POP_EST: 54841552,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "3. Upper middle income",
+        ISO_A2: "ZA",
+        ISO_A3: "ZAF",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 1.7,
+        MAX_LABEL: 6.7,
       },
-      "bbox": [16.344977, -34.819166, 32.83012, -22.091313],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [16.344977, -34.819166, 32.83012, -22.091313],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [19.895768, -24.76779],
             [20.165726, -24.917962],
@@ -15067,7 +15067,7 @@ export let countries={
             [18.464899, -29.045462],
             [19.002127, -28.972443],
             [19.894734, -28.461105],
-            [19.895768, -24.76779]
+            [19.895768, -24.76779],
           ],
           [
             [28.978263, -28.955597],
@@ -15081,29 +15081,29 @@ export let countries={
             [28.8484, -30.070051],
             [29.018415, -29.743766],
             [29.325166, -29.257387],
-            [28.978263, -28.955597]
-          ]
-        ]
-      }
+            [28.978263, -28.955597],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 15972000,
-        "ECONOMY": "7. Least developed region",
-        "INCOME_GRP": "4. Lower middle income",
-        "ISO_A2": "ZM",
-        "ISO_A3": "ZMB",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 15972000,
+        ECONOMY: "7. Least developed region",
+        INCOME_GRP: "4. Lower middle income",
+        ISO_A2: "ZM",
+        ISO_A3: "ZMB",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [21.887843, -17.961229, 33.485688, -8.238257],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [21.887843, -17.961229, 33.485688, -8.238257],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [23.215048, -17.523116],
             [22.562478, -16.898451],
@@ -15165,29 +15165,29 @@ export let countries={
             [25.07695, -17.578823],
             [24.682349, -17.353411],
             [24.033862, -17.295843],
-            [23.215048, -17.523116]
-          ]
-        ]
-      }
+            [23.215048, -17.523116],
+          ],
+        ],
+      },
     },
     {
-      "type": "Feature",
-      "properties": {
-        "POP_EST": 13805084,
-        "ECONOMY": "5. Emerging region: G20",
-        "INCOME_GRP": "5. Low income",
-        "ISO_A2": "ZW",
-        "ISO_A3": "ZWE",
-        "TINY": -99,
-        "HOMEPART": 1,
-        "MIN_ZOOM": 0,
-        "MIN_LABEL": 3,
-        "MAX_LABEL": 8
+      type: "Feature",
+      properties: {
+        POP_EST: 13805084,
+        ECONOMY: "5. Emerging region: G20",
+        INCOME_GRP: "5. Low income",
+        ISO_A2: "ZW",
+        ISO_A3: "ZWE",
+        TINY: -99,
+        HOMEPART: 1,
+        MIN_ZOOM: 0,
+        MIN_LABEL: 3,
+        MAX_LABEL: 8,
       },
-      "bbox": [25.264226, -22.271612, 32.849861, -15.507787],
-      "geometry": {
-        "type": "Polygon",
-        "coordinates": [
+      bbox: [25.264226, -22.271612, 32.849861, -15.507787],
+      geometry: {
+        type: "Polygon",
+        coordinates: [
           [
             [29.432188, -22.091313],
             [28.794656, -21.639454],
@@ -15225,11 +15225,11 @@ export let countries={
             [30.659865, -22.151567],
             [30.322883, -22.271612],
             [29.839037, -22.102216],
-            [29.432188, -22.091313]
-          ]
-        ]
-      }
-    }
+            [29.432188, -22.091313],
+          ],
+        ],
+      },
+    },
   ],
-  "bbox": [-180, -90, 180, 83.64513]
-}
+  bbox: [-180, -90, 180, 83.64513],
+};

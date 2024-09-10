@@ -24,9 +24,9 @@ const ParticlesSection = () => {
         color: {
           value: "#0d47a1",
         },
-        opacity:{
-            value:0
-        }
+        opacity: {
+          value: 0,
+        },
       },
       fpsLimit: 120,
       interactivity: {

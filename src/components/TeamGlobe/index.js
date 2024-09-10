@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
-import * as XLSX from 'xlsx';
-import EarthNightUrl from '@site/static/img/earth-night.jpg';
-import NightSkyUrl from '@site/static/img/night-sky.png';
-import Dataset from '@site/static/datasets/worldcities.xlsx';
-import GeoDataset from '@site/static/datasets/countries.json';
+import * as XLSX from "xlsx";
+import EarthNightUrl from "@site/static/img/earth-night.jpg";
+import NightSkyUrl from "@site/static/img/night-sky.png";
+import Dataset from "@site/static/datasets/worldcities.xlsx";
+import GeoDataset from "@site/static/datasets/countries.json";
 import team_data from "../../../team.json";
-import BrowserOnly from '@docusaurus/BrowserOnly';
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
+import BrowserOnly from "@docusaurus/BrowserOnly";
+import ExecutionEnvironment from "@docusaurus/ExecutionEnvironment";
 
 const initialState = "unloaded";
 
@@ -20,27 +20,28 @@ function GlobeComponent() {
 
   useEffect(() => {
     if (ExecutionEnvironment.canUseDOM) {
-      
       const handleResize = () => {
-        if(window.innerWidth<1000)
-          {
-            setDimensions({ width: window.innerWidth/1.1, height: window.innerHeight/1.3});
-          }
-          else
-          {
-            setDimensions({ width: window.innerWidth/1.73, height: window.innerHeight/1.3 });
-          }
+        if (window.innerWidth < 1000) {
+          setDimensions({
+            width: window.innerWidth / 1.1,
+            height: window.innerHeight / 1.3,
+          });
+        } else {
+          setDimensions({
+            width: window.innerWidth / 1.73,
+            height: window.innerHeight / 1.3,
+          });
+        }
       };
       handleResize();
-  
-      window.addEventListener('resize', handleResize);
-  
+
+      window.addEventListener("resize", handleResize);
+
       return () => {
-        window.removeEventListener('resize', handleResize);
+        window.removeEventListener("resize", handleResize);
       };
     }
   }, []);
-
 
   const fetchData = async () => {
     try {
@@ -53,7 +54,6 @@ function GlobeComponent() {
   };
 
   const loadData = async () => {
-    
     let res = await fetchData();
     if (res.success) {
       const wb = XLSX.read(res.data, { type: "array" });
@@ -68,7 +68,7 @@ function GlobeComponent() {
       const cities = [];
       const places_ = [];
 
-      wc_data.forEach(data => {
+      wc_data.forEach((data) => {
         lon_.push(data[2]);
         lat_.push(data[1]);
         pop.push("0.25");
@@ -84,7 +84,7 @@ function GlobeComponent() {
           lat: lat_[index],
           lng: lon_[index],
           size: pop[index],
-          city: city
+          city: city,
         });
       });
 
@@ -96,7 +96,7 @@ function GlobeComponent() {
       const end_city = [];
       let _currentTransaction = "";
 
-      arcs_data.forEach(data => {
+      arcs_data.forEach((data) => {
         if (_currentTransaction === data[0]) {
           if (data[1] === "end") {
             end_city.push(data[2]);
@@ -120,13 +120,13 @@ function GlobeComponent() {
           startlng: arc_start_lon[index],
           endlat: arc_end_lat[index],
           endlng: arc_end_lon[index],
-          label: start_city[index] + " to " + city
+          label: start_city[index] + " to " + city,
         });
       });
 
       setArcs(transaction);
       setPlaces(places_);
-      setLoaded('loaded');
+      setLoaded("loaded");
     }
   };
 
@@ -137,10 +137,10 @@ function GlobeComponent() {
   }, [loaded]);
 
   const paleColors = [
-    '#d3d3d3', // Light Grey
-    '#dcdcdc', // Gainsboro
-    '#f5f5f5', // White Smoke
-    '#e0e0e0', // Light Grey 2
+    "#d3d3d3", // Light Grey
+    "#dcdcdc", // Gainsboro
+    "#f5f5f5", // White Smoke
+    "#e0e0e0", // Light Grey 2
     // '#f8f8ff', // Ghost White
     // '#f0f8ff', // Alice Blue
     // '#f0fff0', // Honeydew
@@ -158,7 +158,7 @@ function GlobeComponent() {
     // '#f7f7f7', // Very Pale Grey
     // '#ffebcd'  // Blanched Almond
   ];
-  
+
   function getPaleColor(country) {
     let sum = 0;
     for (let i = 0; i < country.length; i++) {
@@ -166,26 +166,25 @@ function GlobeComponent() {
     }
     return paleColors[sum % paleColors.length];
   }
-  
+
   function countryColor({ properties: d }) {
-    let color = getPaleColor(d.ADMIN); 
-  
-    team_data.forEach(i => {
+    let color = getPaleColor(d.ADMIN);
+
+    team_data.forEach((i) => {
       if (d.ADMIN === i.country) {
-        console.log('match');
-        color =  'rgb(227,24,55)'; 
+        console.log("match");
+        color = "rgb(227,24,55)";
       }
     });
-  
+
     return color;
   }
 
   const getTooltip = ({ properties: d }) => {
+    let returnHTML = "";
 
-    let returnHTML=''
-  
-    let membersHTML = '';
-    team_data.forEach(i => {
+    let membersHTML = "";
+    team_data.forEach((i) => {
       if (d.ADMIN === i.country) {
         membersHTML += `
           <div style="position: relative; border: 1px solid #ccc; padding: 10px;">
@@ -198,35 +197,35 @@ function GlobeComponent() {
         `;
       }
     });
-    
+
     if (membersHTML) {
       returnHTML += `<div style="display: grid;
       grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
       gap: 10px;">${membersHTML}</div>`;
     }
-  
+
     return returnHTML;
   };
 
-  function hoverHeight({ properties: d }){
-    let height = 0.06
+  function hoverHeight({ properties: d }) {
+    let height = 0.06;
 
-    team_data.forEach(i => {
+    team_data.forEach((i) => {
       if (d.ADMIN === i.country) {
-        console.log('match')
-        height = 0.12
+        console.log("match");
+        height = 0.12;
       }
     });
 
-    return height
+    return height;
   }
 
   const renderGlobe = () => {
-    if (loaded !== 'loaded') {
+    if (loaded !== "loaded") {
       return <div>Loading...</div>;
     }
 
-    const Globe = require('react-globe.gl').default;
+    const Globe = require("react-globe.gl").default;
 
     return (
       <Globe
@@ -235,23 +234,25 @@ function GlobeComponent() {
         globeImageUrl={EarthNightUrl}
         backgroundImageUrl={NightSkyUrl}
         arcsData={arcs}
-        arcStartLat={d => +d.startlat}
-        arcStartLng={d => +d.startlng}
-        arcEndLat={d => +d.endlat}
-        arcEndLng={d => +d.endlng}
+        arcStartLat={(d) => +d.startlat}
+        arcStartLng={(d) => +d.startlng}
+        arcEndLat={(d) => +d.endlat}
+        arcEndLng={(d) => +d.endlng}
         arcDashLength={0.25}
         arcDashGap={1}
-        arcLabel={d => d.label}
+        arcLabel={(d) => d.label}
         arcDashInitialGap={() => Math.random()}
         arcDashAnimateTime={3000}
         arcColor={() => "#9cff00"}
         arcsTransitionDuration={0.3}
         arcAltitudeAutoScale={1.2}
-        polygonsData={countries.features.filter(d => d.properties.ISO_A2 !== 'AQ')}
-        polygonAltitude={d => d === hoverD ? hoverHeight(d) : 0.06}
-        polygonCapColor={d => d === hoverD ? 'steelblue':countryColor(d)}
-        polygonSideColor={() => 'rgba(0, 100, 0, 0.15)'}
-        polygonStrokeColor={() => '#111'}
+        polygonsData={countries.features.filter(
+          (d) => d.properties.ISO_A2 !== "AQ",
+        )}
+        polygonAltitude={(d) => (d === hoverD ? hoverHeight(d) : 0.06)}
+        polygonCapColor={(d) => (d === hoverD ? "steelblue" : countryColor(d))}
+        polygonSideColor={() => "rgba(0, 100, 0, 0.15)"}
+        polygonStrokeColor={() => "#111"}
         polygonLabel={getTooltip}
         onPolygonHover={setHoverD}
         polygonsTransitionDuration={350}
