@@ -10,7 +10,6 @@ env:
   RUN_REGION: asia-southeast1
   SERVICE_NAME: oet-handbook-github
 
-
 jobs:
   build:
     name: Build React App
@@ -23,14 +22,14 @@ jobs:
       - name: Set up Node.js v18.12.1
         uses: actions/setup-node@v2
         with:
-          node-version: '18.12.1'
+          node-version: "18.12.1"
 
       - name: Install npm 8.19.2
         run: npm install -g npm@8.19.2
-      
+
       - name: Install dependencies
         run: npm install
-        
+
       - name: Build Development
         run: CI=false npm run build
 
@@ -57,9 +56,9 @@ jobs:
 
       - name: Setup GCloud Auth
         id: auth
-        uses: 'google-github-actions/auth@v0'
+        uses: "google-github-actions/auth@v0"
         with:
-          credentials_json: '${{ secrets.GCR_SA_KEY }}'
+          credentials_json: "${{ secrets.GCR_SA_KEY }}"
 
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0.2.1

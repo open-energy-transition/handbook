@@ -13,7 +13,7 @@ def generate_folder_list(directory):
             if file != 'index.mdx':
                 file_name, _ = os.path.splitext(file)
                 folder_dict[relative_path].append(file_name)
-        
+
         for dir in dirs:
             folder_dict[relative_path].append(dir)
 

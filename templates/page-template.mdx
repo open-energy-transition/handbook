@@ -1,23 +1,29 @@
 ---
 sidebar_position: 3.3
-# this should be refrenced from sibiling index.mdx so if index.mdx has sidebar_position: 5, this will then be 5.1, 5.2, 5.4 etc...  
+# this should be refrenced from sibiling index.mdx so if index.mdx has sidebar_position: 5, this will then be 5.1, 5.2, 5.4 etc...
 sidebar_label: Page Heading
 ---
 
 import MaintainerTag from "@site/src/components/MaintainerTag";
 import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
-{/* we use emails as unique identifier to generate maintainer tages*/}
-<MaintainerTag maintainerEmails={[
+{/* we use emails as unique identifier to generate maintainer tages */}
+
+<MaintainerTag
+  maintainerEmails={[
     "jane.smith@example.com",
     "john.doe@example.com",
-    "michael.johnson@example.com"]} />
+    "michael.johnson@example.com",
+  ]}
+/>
 
 # Page Heading
+
 this should be same as sidebar_label and folder name
 
 {/* this should only be present on controlled documents */}
 {/* please also remove the import statment if not in use */}
+
 <ControlledDocBanner />
 
 should be present on every controlled document.
