@@ -1,0 +1,21 @@
+name: pre-commit
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v3
+    - uses: actions/setup-python@v3
+    - name: Install pre-commit
+      run: |
+        pip install pre-commit
+    - name: Run pre-commit on changed files
+      run: |
+        BASE_REF=$(git merge-base origin/main HEAD)
+        pre-commit run --from-ref $BASE_REF --to-ref HEAD
