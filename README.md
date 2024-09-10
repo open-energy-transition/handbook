@@ -2,7 +2,7 @@
 
 Welcome to the Open Energy Transition Handbook repository!
 
-This repository serves as a centralized hub for managing and tracking policies company-wide for Open Energy Transition. 
+This repository serves as a centralized hub for managing and tracking policies company-wide for Open Energy Transition.
 
 ## Getting Started
 
@@ -15,13 +15,15 @@ The Open Energy Transition handbook is built on Docusaurus.
 To get started with development, follow these steps:
 
 Install dependencies:
+
 ```bash
-npm install 
+npm install
 ```
 
 ### Generating handbook Structure JSON
 
 To generate the JSON for the handbook structure, run:
+
 ```bash
 bash scripts/generate-table-json.sh
 ```
@@ -29,6 +31,7 @@ bash scripts/generate-table-json.sh
 ### Data Synchronization
 
 To fetch dependencies, execute:
+
 ```bash
 bash scripts/sync-data.sh
 ```
@@ -36,6 +39,7 @@ bash scripts/sync-data.sh
 ### Development
 
 To run the development server, use the following command:
+
 ```bash
 npm start
 ```
@@ -43,6 +47,7 @@ npm start
 ### Building
 
 To build the project, run:
+
 ```bash
 npm run build
 ```

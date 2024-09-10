@@ -6,7 +6,12 @@ sidebar_label: "Soft fork strategy"
 import MaintainerTag from "@site/src/components/MaintainerTag";
 import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
-<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org", "fabrizio.finozzi@openenergytransition.org"]} />
+<MaintainerTag
+  maintainerEmails={[
+    "siddharth.krishna@openenergytransition.org",
+    "fabrizio.finozzi@openenergytransition.org",
+  ]}
+/>
 
 # Soft fork strategy
 
@@ -17,6 +22,7 @@ This page describes the strategy Open Energy Transition (OET) uses to maintain "
 ## Problem and context
 
 Open Energy Transition often makes changes to [PyPSA-Eur](https://pypsa-eur.readthedocs.io/en/latest/) or [PyPSA-Earth](https://pypsa-earth.readthedocs.io/en/latest/index.html) that either:
+
 - need to be merged quickly so that it can be used for ongoing projects,
 - are experimental changes that are not ready for the OS upstream, or
 - are long-living changes that upstream maintainers do not want in the upstream.
@@ -26,6 +32,7 @@ OET's primary aim is to contribute as much as possible to the open source (OS) u
 If projects within OET need to use project-specific branches that contain code relevant to just their project, then these branches need to be kept up-to-date and compatible with the OET fork’s main branch. See the [Maintaining a long-living project branch](#maintaining-a-long-living-project-branch) section.
 
 ### Nomenclature
+
 - OS = open source
 - Upstream = the main open-source repo for [PyPSA-Eur](https://github.com/PyPSA/pypsa-eur/) or [PyPSA-Earth](https://github.com/pypsa-meets-earth/pypsa-earth/)
 - Soft fork = a fork that is kept constantly updated with upstream, and its changes as compatible with upstream as possible so that changes can be eventually contributed back upstream
@@ -39,33 +46,35 @@ If projects within OET need to use project-specific branches that contain code r
 ### Fork and branch structure
 
 We propose having forks `oet/pypsa-eur` and `oet/pypsa-earth`, with the following structure:
+
 - The fork’s main branch `oet/pypsa-x/main` is kept up-to-date and compatible with `upstream/pypsa-x/main` using the [Soft Fork Bot](https://github.com/open-energy-transition/soft-fork-bot) regularly.
 - When developing features that are not time-critical for OET projects and fit into the upstream repository, create branches from `upstream/pypsa-x/main` and open a pull request in the upstream repo to merge it back into `upstream/pypsa-x/main`.
 - Otherwise, OET developers should create branches from `oet/pypsa-x/main` for new features, and open a pull request to merge them into `oet/pypsa-x/main` when complete. After merging into OET's main branch, [contribute the changes to upstream](#contributing-oet-changes-to-upstream-via-cherry-picking).
-    - **Rationale**:
-        - OET reviews will be faster than upstream;
-        - team-mates can use the new features immediately; and
-        - our code benefits from extra tests/CI that we have on OET’s fork.
+  - **Rationale**:
+    - OET reviews will be faster than upstream;
+    - team-mates can use the new features immediately; and
+    - our code benefits from extra tests/CI that we have on OET’s fork.
 - When merging PRs into `oet/pypsa-x/main`, use [squash merging](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/configuring-pull-request-merges/about-merge-methods-on-github#squashing-your-merge-commits)
-    - **Rationale**: Not only does this keep the git history of the main branch linear and clean, this also allows one to easily cherry-pick this contribution and make a PR to upstream
+  - **Rationale**: Not only does this keep the git history of the main branch linear and clean, this also allows one to easily cherry-pick this contribution and make a PR to upstream
 - For a project, we might create a long-living branch `oet/pypsa-x/project-y`, but we treat this as:
-    - Project-specific features are committed/PR-ed into `oet/pypsa-x/project-y`, but other features are PR-ed into `oet/pypsa-x/main` as above
-    - The project branch `oet/pypsa-x/project-y` is kept up-to-date and compatible with `oet/pypsa-x/main` regularly (see [Maintaining a long-living project branch](#maintaining-a-long-living-project-branch) below)
-    - After the project, create PRs from the project branch back into `oet/pypsa-x/main` and `upstream/pypsa-x/main` as above, and then delete/archive the project branch
+  - Project-specific features are committed/PR-ed into `oet/pypsa-x/project-y`, but other features are PR-ed into `oet/pypsa-x/main` as above
+  - The project branch `oet/pypsa-x/project-y` is kept up-to-date and compatible with `oet/pypsa-x/main` regularly (see [Maintaining a long-living project branch](#maintaining-a-long-living-project-branch) below)
+  - After the project, create PRs from the project branch back into `oet/pypsa-x/main` and `upstream/pypsa-x/main` as above, and then delete/archive the project branch
 
 #### Why not have a branch `oet/pypsa-x/oet-main` for long running features, and keep `oet/pypsa-x/main` equal to `upstream/pypsa-x/main`?
 
-The benefits of having an *alias* branch to `upstream/pypsa-x/main` are unclear, and as explained in the next section, we want to use OET features such as unit tests when we develop new features. Thus, it makes more sense to have long-living features live in `oet/pypsa-x/main`, which is kept compatible with (but not equal to) `upstream/pypsa-x/main`.
+The benefits of having an _alias_ branch to `upstream/pypsa-x/main` are unclear, and as explained in the next section, we want to use OET features such as unit tests when we develop new features. Thus, it makes more sense to have long-living features live in `oet/pypsa-x/main`, which is kept compatible with (but not equal to) `upstream/pypsa-x/main`.
 
-The Soft Fork Bot anyway creates an *upstream* branch in `oet/pypsa-x` which it uses to track `upstream/pypsa-x/main.` This can be used to branch off-of, if for some reason we want a branch containing only upstream features but not OET features.
+The Soft Fork Bot anyway creates an _upstream_ branch in `oet/pypsa-x` which it uses to track `upstream/pypsa-x/main.` This can be used to branch off-of, if for some reason we want a branch containing only upstream features but not OET features.
 
 As explained below in [Contributing OET changes to upstream](#contributing-oet-changes-to-upstream-via-cherry-picking), you can make a branch in your own fork (and not the OET fork) when you want to open a PR to `upstream/pypsa-x/main`.
 
 ### Long-living features
+
 There are some changes, like adding unit tests, that might not be wanted (in the near future) by OS pypsa-x maintainers. However, these will be very useful for our projects, and will ensure that new OET features are more robust and easier to develop. We propose:
+
 - These features be developed in branches from `oet/pypsa-x/main` and PR-ed into `oet/pypsa-x/main` when ready
 - We do not want to keep them in a separate long-living branch, e.g. `oet/pypsa-x/unittests`, because then other OET branches and projects do not benefit from them and every additional long-living branch adds some maintenance overhead
-
 
 ### Contributing OET changes to upstream (via cherry-picking)
 
@@ -73,51 +82,51 @@ This section describes the steps needed to contribute an OET change back to the 
 For example, suppose you have successfully merged a PR from branch `oet/pypsa-eur/UA_sec_fixes` into `oet/pypsa-eur/main`, creating a squash-merged commit `810c25da5`, and want to contribute it to `pypsa/pypsa-eur`:
 
 - Set up 3 remotes in your local checkout of pypsa-eur as follows. Assuming the checkout was obtained by cloning https://github.com/open-energy-transition/pypsa-eur, then run the following commands:
-    ```bash
-    git remote add upstream https://github.com/pypsa/pypsa-eur.git
-    git remote add myfork https://github.com/martacki/pypsa-eur.git
-    ```
-    Your remotes should now look like:
-    ```
-    git remote -v
-    myfork	https://github.com/martacki/pypsa-eur.git (fetch)
-    myfork	https://github.com/martacki/pypsa-eur.git (push)
-    origin	https://github.com/open-energy-transition/pypsa-eur.git (fetch)
-    origin	https://github.com/open-energy-transition/pypsa-eur.git (push)
-    upstream	https://github.com/pypsa/pypsa-eur.git (fetch)
-    upstream	https://github.com/pypsa/pypsa-eur.git (push)
-    ```
-    (If your origin is different, you can modify it with `git remote set-url origin https://github.com/open-energy-transition/pypsa-eur.git`. Also, you might want to use the SSH URLs instead of the HTTPS URLs for the remotes above.)
+  ```bash
+  git remote add upstream https://github.com/pypsa/pypsa-eur.git
+  git remote add myfork https://github.com/martacki/pypsa-eur.git
+  ```
+  Your remotes should now look like:
+  ```
+  git remote -v
+  myfork	https://github.com/martacki/pypsa-eur.git (fetch)
+  myfork	https://github.com/martacki/pypsa-eur.git (push)
+  origin	https://github.com/open-energy-transition/pypsa-eur.git (fetch)
+  origin	https://github.com/open-energy-transition/pypsa-eur.git (push)
+  upstream	https://github.com/pypsa/pypsa-eur.git (fetch)
+  upstream	https://github.com/pypsa/pypsa-eur.git (push)
+  ```
+  (If your origin is different, you can modify it with `git remote set-url origin https://github.com/open-energy-transition/pypsa-eur.git`. Also, you might want to use the SSH URLs instead of the HTTPS URLs for the remotes above.)
 - Next, create a new branch for your PR to the open source upstream repository, off of the `upstream/master` branch:
-    ```
-    git fetch upstream
-    git checkout upstream/master
-    git checkout -b OS_UA_sec_fixes
-    ```
+  ```
+  git fetch upstream
+  git checkout upstream/master
+  git checkout -b OS_UA_sec_fixes
+  ```
 - Next, cherry-pick the squashed commit onto this branch:
-    ```
-    git cherry-pick 810c25da5
-    ```
+  ```
+  git cherry-pick 810c25da5
+  ```
 - At this point, if there are conflicts, you must resolve them and when done, run
-    ```
-    git add <path/to/conflicted/file>
-    git cherry-pick --continue
-    ```
+  ```
+  git add <path/to/conflicted/file>
+  git cherry-pick --continue
+  ```
 - Next, push this branch to myfork:
-    ```
-    git push --set-upstream myfork OS_UA_sec_fixes
-    ```
-You can now go to the website and open a PR from branch OS_UA_sec_fixes to `upstream/pypsa-eur` repository.
+  `     git push --set-upstream myfork OS_UA_sec_fixes
+    `
+  You can now go to the website and open a PR from branch OS_UA_sec_fixes to `upstream/pypsa-eur` repository.
 
 **Note**: It might be that the upstream PR ends up making slightly different changes to `upstream/pypsa-x/main` as compared to the equivalent commit in `oet/pypsa-x/main.` This will lead to merge conflicts when running the Soft Fork Bot. But it should be easy to review them and pick the appropriate version of the changes (most likely, the changes from upstream).
-
 
 ### Maintaining a long-living project branch
 
 The Soft Fork Bot does not yet support keeping one branch up-to-date with another. However, for now, we can keep project branches like `oet/pypsa-x/project-y` up to date with oet/pypsa-x/main by using the same strategy, manually, at regular intervals:
 Merge OET’s main branch into the project branch:
+
 ```
 git checkout oet/pypsa-x/project-y
 git merge oet/pypsa-x/main
 ```
+
 If there are conflicts, resolve them manually, while keeping in mind that “incoming” refers to changes on OET’s main branch and “HEAD” refers to changes in the project branch. Then run `git commit` to create a merge commit with the resolved conflicts and `git push` to push your changes to the fork.

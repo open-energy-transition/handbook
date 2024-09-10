@@ -23,21 +23,21 @@
 }
 
 .centered_text {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 65vh;
-    font-family: "Poppins", sans-serif;
-    font-size: 3.4vw;
-    font-weight: 600;
-    line-height: 56px;
-    text-align: center;
-    color: white;
-    background: linear-gradient(160deg, #E31937, #f16b98, #4c5bad);
-    margin-bottom: 3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.4vw;
+  font-weight: 600;
+  line-height: 56px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(160deg, #e31937, #f16b98, #4c5bad);
+  margin-bottom: 3vh;
 }
 
-.subcontainer{
+.subcontainer {
   margin: 8vw;
   margin-top: 4vh;
   margin-bottom: 0;

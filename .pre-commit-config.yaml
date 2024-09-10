@@ -11,7 +11,5 @@ repos:
     hooks:
       - id: prettier
         args: [--write]
-        additional_dependencies: ['prettier@3.0.0']
+        additional_dependencies: ["prettier@3.0.0"]
         files: \.(js|jsx|json|css|md|mdx|yaml|yml|html)$
-
-        
