@@ -1,0 +1,38 @@
+name: pre-commit
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - '**'
+
+permissions:
+  contents: write
+  actions: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  pre-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-python@v3
+      - uses: actions/setup-python@v3
+      - name: Install pre-commit
+        run: |
+          pip install pre-commit
+      - name: Run pre-commit on changed files
+        run: |
+          BASE_REF=$(git merge-base origin/main HEAD)
+          pre-commit run --from-ref $BASE_REF --to-ref HEAD || true
+      - name: Commit Prettier changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Apply formatting changes
+          branch: ${{ github.head_ref }}  

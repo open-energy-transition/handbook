@@ -30,13 +30,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: "Generate release changelog"
+      - name: Generate release changelog
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: heinrichreimer/action-github-changelog-generator@v2.3
         with:
           repo: open-energy-transition/handbook
           token: ${{ github.token }}
       
       - name: update change log mdx
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: bash scripts/sync-changelog.sh 
 
       - name: Set up Node.js
