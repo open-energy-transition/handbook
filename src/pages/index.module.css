@@ -33,7 +33,7 @@
     line-height: 56px;
     text-align: center;
     color: white;
-    background: linear-gradient(160deg, #E31937, #f16b98, #4c5bad);
+    background: linear-gradient(90deg, rgba(232,72,93,1) 20%, rgba(239,127,140,1) 45%, rgba(135,160,143,1) 80%);
     margin-bottom: 3vh;
 }
 
