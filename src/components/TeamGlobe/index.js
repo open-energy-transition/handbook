@@ -189,7 +189,7 @@ function GlobeComponent() {
       if (d.ADMIN === i.country) {
         membersHTML += `
           <div style="position: relative; border: 1px solid #ccc; padding: 10px;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(160deg, #E31937, #f16b98, #4c5bad); opacity: 0.95; z-index: 1;"></div>
+            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(90deg, rgba(232,72,93,1) 20%, rgba(239,127,140,1) 45%, rgba(135,160,143,1) 80%); opacity: 0.95; z-index: 1;"></div>
             <div style="position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; text-align: center;">
               <div><b>${i.name}</b></div>
               <img src="${i.image_link}" alt="${i.name}" style="max-width: 100%; height: auto; margin-top:5px" />
