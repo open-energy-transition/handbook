@@ -1,0 +1,25 @@
+---
+sidebar_position: 5.9
+sidebar_label: "Git good practices"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["sermisha.narayana@openenergytransition.org", "fabrizio.finozzi@openenergytransition.org"]} />
+
+# Git good practices
+<ControlledDocBanner />
+
+To present a clean and organized git log, the following keywords can be added to the commit message. 
+The keyword is usually indicative of the type of changes that have been made in that particular commit.
+
+The proposed keywords are as follows:
+1. "doc" - documentation related updates
+2. "data" - if a data file is being added / removed
+3. "config" - changes to the configuration files
+4. "feature" - Feature update to the model
+5. "code" - Updates to the code (For eg., a bug fix)
+6. "notebook" - Updates to the jupyter notebooks
+
+The commit message will be in the format \< keyword >:\< commit message >.
