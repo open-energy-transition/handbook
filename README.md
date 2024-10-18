@@ -2,7 +2,9 @@
 
 Welcome to the Open Energy Transition Handbook repository!
 
-This repository serves as a centralized hub for managing and tracking policies company-wide for Open Energy Transition. 
+This repository serves as a centralized hub for managing and tracking policies company-wide for Open Energy Transition.
+
+You can find and explore the current version of the handbook here: https://open-energy-transition.github.io/handbook/
 
 ## Getting Started
 
