@@ -15,16 +15,56 @@ this should be same as sidebar_label and folder name
 
 should be present on every controlled document.
 
-## Sub Heading
+## Creating an Invoice in Odoo
 
-At our company, we are committed to providing a safe and inclusive workplace for all employees. This policy outlines our expectations for behavior and conduct in the workplace.
+### 1. Navigate to Customer Invoices
+- Open the **Dashboard**.
+- Select **Accounting** from the menu.
+- Go to **Customer Invoices** on the left, and click **New Invoice**.
 
-## Another Sub Heading
+ ![img from static](/img/Odoo_new_invoice.png)
 
-All employees are expected to adhere to the following code of conduct:
+### 2. Select the Customer
+- Choose the **Customer** from the dropdown.
+- If the customer isn’t listed, add a new one and confirm all details, including **address** and **VAT number**.
 
-- Treat all colleagues with respect and professionalism
-- Avoid any behavior that could be considered discriminatory or harassing
-- Maintain confidentiality of company and client information
-- Follow all company policies and procedures
-- Report any violations of this code of conduct to management
+![img from static](/img/Odoo_add_detail.png)
+
+### 3. Set Invoice Date
+- Set the **Invoice Date** manually or click **Confirm** to default to today’s date.
+
+### 4. Add Products or Services
+- Click **Add a line** or **Add a section** to list items.
+   - Complete each field: 
+     - **Description**
+     - **Quantity** (typically 1 unless specified otherwise)
+     - **VAT %** (if applicable)
+     - **Unit Price**
+
+### 5. Specify Payment Reference and Due Date
+- **Payment Reference**: Enter the Order Number / Bestellung.
+- **Due Date**: Based on the contract or order form, enter **Payment Terms**.
+
+### 6. Add Additional Notes (Optional)
+- Include notes if necessary, such as VAT clarification or correction information, in the bottom-right notes section of the invoice.
+
+### 7. Preview and Confirm Invoice
+- Click **Preview** to review.
+- Confirm that all details, including the invoice number, are correct (cross-check with **List of invoices**).
+- Once verified, click **Confirm**.
+
+![img from static](img/Confirm_Odoo.png)
+
+### 8. Save the Invoice
+- For saving:
+   - Go to **Reset to Draft**, then **Confirm**, then **Preview**, and **Print**.
+   - In the print dialog, select **Microsoft Print to PDF** and **Print**.
+
+![img from static](img/Odoo_final.png)
+
+### 9. Send the Invoice by Email
+- To email the invoice:
+   - Click **Send by Email**.
+   - Confirm the correct recipient, edit the message as needed, and remove the default invoice attachment.
+   - Attach the saved invoice and click **Send**.
+
