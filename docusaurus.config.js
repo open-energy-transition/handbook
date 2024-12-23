@@ -56,12 +56,12 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/oet-logo-red.png",
+      image: "img/oet-no-text-logo.svg",
       navbar: {
         title: "Handbook",
         logo: {
           alt: "oet-handbook Logo",
-          src: "img/oet-logo-red.png",
+          src: "img/oet-no-text-logo.svg",
         },
         items: [
           { to: "/docs", label: "Home", position: "left" },
