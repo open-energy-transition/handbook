@@ -47,8 +47,8 @@ const PageLinkTable = ({ key, title, items }) => {
           {items.map((item, index) => (
             <tr key={index}>
               <td className={styles.column_width}>
-                <Link to={`${pageLink}/${item}`}>
-                  {camelCaseToNormalText(item)}
+                <Link to={`${pageLink}/${item.link}`}>
+                  {item.nice_name}
                 </Link>
               </td>
             </tr>
