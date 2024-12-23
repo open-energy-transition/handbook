@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Function to generate JSON for a directory
 generate_json() {
     local directory="$1"
     local json="{"
@@ -12,30 +11,41 @@ generate_json() {
             folder_name=$(basename "$folder")
             json="$json\"$folder_name\": ["
 
-            # Loop through files and directories in the folder
+            # Loop through files in this folder
             for item in "$folder"/*; do
                 item_name=$(basename "$item")
-                # Check if the item is a file and not named "index.md" or "index.mdx"
+
+                # Check if the item is a file and not index.md or index.mdx
                 if [ -f "$item" ] && [ "$item_name" != "index.md" ] && [ "$item_name" != "index.mdx" ]; then
-                    # Remove file extension
-                    item_name_no_ext="${item_name%.*}"
-                    json="$json\"$item_name_no_ext\", "
+                    
+                    # Attempt to extract the sidebar_label from the file's front matter
+                    # 1) grep the line that begins with 'sidebar_label:'
+                    # 2) use sed to capture the string in quotes
+                    sidebar_label=$(grep -m1 '^sidebar_label:' "$item" | sed -E 's/sidebar_label:\s*"(.*)"/\1/')
+
+                    # If the file has a sidebar_label, use it;
+                    # otherwise, fall back to the filename (optional)
+                    if [ -n "$sidebar_label" ]; then
+                        json="$json\"$sidebar_label\", "
+                    else
+                        # Optional fallback if there is no sidebar_label
+                        item_name_no_ext="${item_name%.*}"
+                        json="$json\"$item_name_no_ext\", "
+                    fi
                 fi
             done
 
-            # Remove the trailing comma and close the array
+            # Remove the trailing comma in the array and close it
             json="${json%, }], "
         fi
     done
 
-    # Remove the trailing comma and close the JSON object
+    # Remove the trailing comma in the final JSON string and close the object
     json="${json%, }}"
     echo "$json"
 }
 
 
-# Get the relative path to the directory
-# directory="/home/akshat/oet-handbook/docs"
 relative_directory="docs"
 directory="$(pwd)/$relative_directory"
 
