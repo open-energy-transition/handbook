@@ -12,6 +12,8 @@ package-lock.json
 folder-stru.yaml
 temp-py.py
 
+.idea/
+
 # Generated files
 .docusaurus
 .cache-loader
