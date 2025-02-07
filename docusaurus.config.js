@@ -32,6 +32,8 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             "https://github.com/open-energy-transition/handbook/tree/main/",
+            showLastUpdateAuthor: true,
+            showLastUpdateTime: true
         },
         blog: false,
         theme: {
