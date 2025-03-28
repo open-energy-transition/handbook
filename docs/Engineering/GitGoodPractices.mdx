@@ -9,15 +9,22 @@ import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
 # Git good practices
 
-To present a clean and organized git log, the following keywords can be added to the commit message. 
-The keyword is usually indicative of the type of changes that have been made in that particular commit.
+## Branch names
 
-The proposed keywords are as follows:
-1. "doc" - documentation related updates
-2. "data" - if a data file is being added / removed
-3. "config" - changes to the configuration files
-4. "feature" - Feature update to the model
-5. "code" - Updates to the code (For eg., a bug fix)
-6. "notebook" - Updates to the jupyter notebooks
+To present a clean and organized repository, the branch naming convention `<type>_<description>` shall be used. Both `<type>` and `<description>` are indicative of the kind of changes that will be made in the branch. The proposed types are:
+- **feature** - new functionality being added to the codebase
+- **bugfix** - fixing errors in existing functionality
+- **refactor** - code improvements without changing functionality
+- **docs** - documentation updates and improvements
+- **test** - adding or modifying test cases
 
-The commit message will be in the format \< keyword >:\< commit message >.
+
+## Commit messages
+
+To present a clean and organized `git log`, the commit message naming convention `<keyword>:<commit message>` shall be used. Both `<keyword>` and `<commit message>` are indicative of the kind of changes that are proposed in that particular commit. The proposed keywords are:
+- **doc** - documentation related updates
+- **data** - if a data file is being added / removed
+- **config** - changes to the configuration files
+- **feature** - feature update to the model
+- **code** - updates to the code (for eg., a bug fix)
+- **notebook** - updates to the jupyter notebooks
