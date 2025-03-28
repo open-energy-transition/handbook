@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Team member relations philosophy"
+sidebar_label: "Interpersonal Relations"
 ---
 
 import MaintainerTag from "@site/src/components/MaintainerTag";
@@ -7,18 +7,18 @@ import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
 <MaintainerTag maintainerEmails={["akshat.mittal@openenergytransition.org", "fabrizio.finozzi@openenergytransition.org"]} />
 
-# Team Member Relations Philosophy
+# Team member interpersonal relations philosophy
 this should be same as sidebar_label and folder name
 
 <ControlledDocBanner />
 
 should be present on every controlled document.
 
-## Sub Heading
+## Points to abide by
 
 At our company, we are committed to providing a safe and inclusive workplace for all employees. This policy outlines our expectations for behavior and conduct in the workplace.
 
-## Another Sub Heading
+## Other relevant information
 
 All employees are expected to adhere to the following code of conduct:
 
