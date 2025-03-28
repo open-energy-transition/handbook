@@ -1,0 +1,26 @@
+---
+sidebar_label: "Our Culture"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["quintin.coetzee@openenergytransition.org" />
+
+# The importance of a strong, healthy workplace culture
+
+
+# Culture at OET
+
+
+# Our core values
+
+OET follows a set of consistent core values, that inform everything we do, and how we interact with one another. These are our guiding principles, and they're very important to ensuring our success. In no particular order, they are:
+
+- 
+- 
+- 
+- 
+
+# Other information
+
