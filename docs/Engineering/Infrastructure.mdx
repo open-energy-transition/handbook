@@ -1,0 +1,35 @@
+---
+sidebar_label: "Infrastructure"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org","johannes.hampp@openenergytransition.org"]} />
+
+# Information about infrastructure we want to preserve
+
+We utilise different infrastructure for various purposes, below is some information that we want to preseve.
+This is not meant to be a comprehensive list or for everyday use, rather a reference for rare use cases in the future.
+
+
+## Discord bots
+
+Discord bots can provide additional information and functionality to Discord servers and channels.
+There's a variety of bots available, each with its own unique features and capabilities.
+When choosing a bot, consider the specific needs as well as the Term's of Service of the bot.
+
+### Connecting GitHub to a Discord channel
+
+To receive information from GitHub on events, e.g. releases in a repository or new issues, a bot can be used.
+Discord provides a simple bot that utilises webhooks to send messages to a channel.
+Find instructions on how to set this up [here](https://gist.github.com/jagrosh/5b1761213e33fc5b54ec7f6379034a22)
+
+We use this for our `#oet-handbook` channel to alert of major updates.
+Events to which the bot should respond are configured in the GitHub repository settings under ["Webhooks"](https://github.com/open-energy-transition/handbook/settings/hooks/538394245).
+Currently the `#oet-handbook` bot is configured to respond to the following events:
+- Release
+- Pull request
+
+If one requires more functionality, there are other bots for connecting GitHub available, [this one for example](https://github.com/NicPWNs/GitHub-Discord-Bot).
