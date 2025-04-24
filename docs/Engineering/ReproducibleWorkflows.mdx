@@ -11,7 +11,7 @@ import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
 This page outlines OET's recommended approach for setting up reproducible research projects using PyPSA-X repositories. 
 Rather than using a traditional [submodule-based structure](https://github.com/timtroendle/cookiecutter-reproducible-research), we've implemented a more streamlined approach that facilitates easier maintenance and upstream compatibility.
-We recommend investing in reproducibility from the beginning of your project as experiences have shown that it reduces the work needed to deliver reproducible deliverables. 
+We recommend investing in reproducibility from the beginning of your project, as experiences have shown that it reduces the amount of work required to deliver reproducible deliverables. 
 
 ## Motivation
 
@@ -19,9 +19,9 @@ Many studies in the scientific community lack full transparency and are difficul
 At OET, we believe open source and reproducibility are essential, and we aim to set a new standard.
 The benefits of fully reproducible research are plenty. It saves time and reduces manual effort while enabling easier validation and fostering collaboration. 
 Additionally, it allows others to build upon our work, which leads to acceleration in innovations. 
-Lastly, it encourages best practices and the use of standards which we aim for at OET.
+Lastly, it encourages best practices and the use of standards, which we aim for at OET.
 
-There are some excellent of reproducible research setups in the open-source community, including work by
+There are some excellent examples of reproducible research setups in the open-source community, including work by
 [Iegor Riepin](https://github.com/Irieo/247-procurement-paper), [Leon Schumm](https://github.com/energyLS/aldehyde), 
 [Fabian Neumann](https://github.com/fneum/broad-ranges), [Tim Tröndle](https://github.com/timtroendle/heat-mobility-preferences).
 
@@ -35,24 +35,24 @@ For more theoretical background on these different types of reproducibility feel
 
 ## General process
 
-The reproducible workflow structure is designed to align with our [Soft-Fork Strategy](docs/Engineering/SoftForkStrategy.mdx), allowing teams to independently develop projects while maintaining the ability to incorporate upstream changes and contribute improvements back to the community.
+The reproducible workflow structure is in line with our [Soft-Fork Strategy](docs/Engineering/SoftForkStrategy.mdx), allowing teams to develop projects independently while maintaining the ability to incorporate upstream changes and contribute improvements back to the community.
 
 ### Repository Structure
 
-For each new project, we recommend the following structure:
+We recommend the following structure for each new project:
 
 1. **Fork the OET/PyPSA-X repository**: Create a project-specific fork that maintains the exact same structure as our OET upstream repository.
 
 2. **Add reporting capabilities**: Each OET PyPSA-X fork includes:
-   - A new **`report`** folder containing project-specific documentation
-   - A new [Snakemake](https://snakemake.readthedocs.io/en/stable/) rule **`report.smk`** for generating a **`report.pdf`** file with project results
+   - A new **`report`** folder containing project-specific documentation,
+   - A new [Snakemake](https://snakemake.readthedocs.io/en/stable/) rule **`report.smk`** for generating a **`report.pdf`** file with project results.
 
-3. **Minimal CI**: Set up a minimal example CI that runs regularly to guarantee full reproducibility at any point in time (during and after the development) 
+3. **Minimal CI**: Set up a minimal example CI that runs regularly to guarantee full reproducibility at any point in time (during and after the development).
 
 4. **Final repository release**: When completing the report or reaching a significant milestone, publish a repository release that includes:
-   - The specific commit hash used to produce the study results
-   - A pinned environment.yaml file with exact package versions (provided for multiple operating systems)
-   - Permanently archived and DOI-referenced input data bundles using repositories such as Zenodo to facilitate continuous reproducibility with data retrieval (Alternative: OET internal server to store data)
+   - The specific commit hash used to produce the study results,
+   - A pinned environment.yaml file with exact package versions (provided for multiple operating systems),
+   - Permanently archived and DOI-referenced input data bundles using repositories such as Zenodo to facilitate continuous reproducibility with data retrieval (alternative: OET internal server to store data).
 
 ### Benefits
 
@@ -68,7 +68,7 @@ This approach offers several advantages over traditional submodule-based structu
 
 Our workflow leverages a powerful workflow management tool called **`Snakemake`**. 
 Snakemake allows you to execute the entire pipeline — from data processing to report generation — with a single command.
-For comprehensive documentation, visit [Snakemake's official documentation](https://snakemake.readthedocs.io/en/stable/).
+Full documentation can be found in the [official Snakemake documentation](https://snakemake.readthedocs.io/en/stable/).
 
 The workflow consists of six sequential stages that ensure complete reproducibility:
 
@@ -86,9 +86,9 @@ We recommend implementing each KPI calculation as a separate rule for modularity
 6. **Report generation**: A comprehensive report is automatically compiled, incorporating generated figures, tables, and interpretive text.
 This final stage delivers *interpretation reproducibility*.
 
-## Other useful recommendations:
+## Other useful recommendations
 
 - Add the project to Zenodo if the project does not include any other publication to create a citable DOI.
 - It could be useful to contain sensible data in an extra layer with open alternative data sources if the original input data is sensitive.
-- For being able to reproduce “throw-away” ideas, open a PR that you close later w/o merging it.
+- To be able to reproduce “throwaway” ideas, open a PR that you later close without merging it.
 
