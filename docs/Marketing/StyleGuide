@@ -1,0 +1,22 @@
+---
+sidebar_label: "Style Guide"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["charlotte.heikendorf@openenergytransition.org"]} />
+
+# OET's Style Guide
+<ControlledDocBanner />
+
+## Fonts
+
+
+## Colors
+
+
+## Logos
+
+
+## Other style-related items
