@@ -1,5 +1,5 @@
 ---
-sidebar_label: "Soft fork attribution"
+sidebar_label: "Copyright and attribution"
 ---
 
 import MaintainerTag from "@site/src/components/MaintainerTag";
@@ -7,89 +7,295 @@ import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
 <MaintainerTag maintainerEmails={["thomas.gilon@openenergytransition.org", "johannes.hampp@openenergytransition.org"]} />
 
-# Soft fork attribution
+# Copyright and attribution
 
-This page builds on the [Soft fork strategy](SoftForkStrategy) and provides generic guidelines for licensing and attributing both the original work (designated as `upstream`) and the work of a specific project that extends it using the soft-fork strategy. A soft fork extends the original work in various ways, including custom code, documentation, data, and configuration.
+This page describes how we
+* handle copyright notices, and 
+* attribution of work
 
-This page assumes you already have a fully functional soft fork from another project. For illustrative purposes, this page uses `PyPSA-Eur` as the upstream project and `Open-TYNDP` as the soft-fork project.
+in our work, our own repositories and soft forks of other projects.
 
-## Attribute the work
+It provides generic guidelines for licensing and attributing both for original work and the work done in a specific project.
+This page builds on the [Soft fork strategy](SoftForkStrategy) and covers also projects that are forked from another project (designated as `upstream` in the following) which is not owned by Open Energy Transition (OET).
 
-Your project needs to base its work on your upstream reference while also being differentiated. This section provides ways to achieve this, helping to increase your project's identity while correctly attributing the work of your upstream. These suggestions must be adapted to your specific context, project, and licenses.
+A soft fork extends the original work in various ways, including custom code, documentation, data, and configuration.
+This page assumes you already have a fully functional soft fork from another project.
+For illustrative purposes, this page uses `PyPSA-Eur` as the upstream project and `Open-TYNDP` as the soft-fork project.
+
+## About copyright
+
+Our work that we create as OET employees is usually protected by copyright law.
+This means that code and documentation that we write, or data and databases that we curate and create, can be protected through copyright law.
+In the context of copyright law, the term *work* is usually used to refer the code, documentation, data, databases, ... .
+
+Copyright laws are different in each country and may differ significantly.
+As a non-profit organisation that operates internationally, we need to keep this in mind when discussing details,
+because not all *work* may always be protectable by copyright law in all countries.
+
+Broadly speaking in simplified terms, copyright distinguishes between
+
+* *the author*, who created the *work*, and
+* *the copyright holder*, who controls usage and distribution of the *work*.
+
+The difference can be understood as *the author* owning the *moral rights* to the *work*,
+while *the copyright holder* owns the *economic rights* to the *work*.
+
+:::info
+
+    As an OET employee, you are the *author* of your work and retain the *moral rights* for the *work* you create.
+    Because of your contract with OET, OET is the *copyright holder* of your work and holds the *economic rights* to your work.
+
+:::
+
+When working in a project with multiple contributors, the *work* is usually created by multiple authors.
+If all authors are OET employees, OET is the sole copyright holder of the *work*.
+If some authors are not OET employees, their *work* is likely copyrighted by their employer or by themselves.
+We usually license the work as a whole, rather than individual contributions, and use the term *contributors* to refer to all authors of the *work*.
+
+### Differences between OET projects and contributions to other projects
+
+Because of how copyright works, there is a difference between how we handle our own projects and how we handle contributions to other projects.
+
+First we discuss how we handle copyright and attribution in our own projects, including new and stand-alone projects, as well as soft forks of other projects.
+At the end of this page, we discuss how we handle contributions to other projects, including upstream projects.
+
+## OET projects
+
+:::note
+
+    This section describes how we handle copyright and attribution in our own projects, including new and stand-alone projects, as well as soft forks of other projects.
+    It does not cover other aspects of a soft fork's README, documentation, or GitHub repository.
+
+:::
+
+There are mutliple components that work hand-in-hand to ensure that our projects correctly attribute the works and are properly licensed.
 
 ### README
 
-Your README is often the first document users will read about your project. This document is key to distinguishing your project from the original work while correctly attributing it to the original authors. Here are suggested modifications:
-* Update the project name, title, description and logo.
+The README file is often the first document users will read about your project.
+This document is key to listing the copyright information and license of a project.
+If you are working with a soft fork of another project, the README is also the place to explain how your project relates to the upstream project.
+
+From the licensing and attribution perspective, here are some recommended elements for your README:
+
+* A *Contributors* section listing the contributors to the project for smaller projects listing all contributors to the project.
+  For larger projects this section can be moved into the documentation.
+* A *License* section listing the license of the project and the copyright holders.
+  For larger projects, the copyright holders may be abridged as "The contributors to <project>" and the section then refer to a longer list of contributors in the documentation.
+  If your project uses multiple licenses in the same repository, e.g. for code, data and metadata, describe the licensing strategy in this section.
+* A *badge* showing the license of the project, e.g. [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/).
+  
+  ```md
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/license/mit/)
+  ```
+
+* If your project uses `REUSE` (see below), add a note that `REUSE` is used to manage the licensing of the project, e.g.
+    
+    ```md
+    This project uses [REUSE](https://reuse.software/) to manage its licensing.
+    ```
+  
+  and add a badge to show the compliance with REUSE, e.g. [![REUSE status](https://api.reuse.software/badge/github.com/open-energy-transition/open-tyndp)](https://api.reuse.software/info/github.com/open-energy-transition/open-tyndp).
+  
+  ```md
+  [![REUSE status](https://api.reuse.software/badge/github.com/open-energy-transition/open-tyndp)](https://api.reuse.software/info/github.com/open-energy-transition/open-tyndp)
+  ```
+  
+  The badge requires a one-time registration of the repository with REUSE [here](https://api.reuse.software/register).
+
+If you have a soft fork, make sure you to adjust the following parts in the README:
+
+* Update the project name, title, description and logo to avoid confusion with the upstream project.
 * Make the installation instructions specific to your project (see also [Documentation](#documentation) below).
 * Explain how to report issues and clearly differentiate between upstream and project-specific issues.
-* Update your contact information.
-* Provide a summary of your licensing strategy, and explain how it differs from the upstream strategy. Refer to the detailed version of your licensing strategy in your documentation (see also [Documentation](#documentation) below).
+* Update the contact information.
+* When you provide a short summary of your licensing strategy.
+    Describe whether it follows the same strategy as the *upstream* project or not, and explain how it differs from the upstream strategy.
+    Clearly indicate that this project is based on the upstream project and link to the licensing information of the upstream project.
+    Refer to the detailed version of your licensing strategy in your documentation (see also [Documentation](#documentation) below).
 * Use a badge to show how close your soft fork is to the upstream version (e.g., [demo badge](https://img.shields.io/github/commits-difference/open-energy-transition/open-tyndp?base=master&head=PyPSA:pypsa-eur:master&label=commits%20behind%20PyPSA-Eur) from Open-TYNDP).
-    ```md
-    # Generic code
-    ![Commits behind [UPSTREAM](https://img.shields.io/github/commits-difference/[ORGANISATION]/[REPOSITORY]?base=[BRANCH]&head=[UPSTREAM ORGANISATION]:[UPSTREAM REPOSITORY]:[UPSTREAM BRANCH]&label=commits%20behind%20[UPSTREAM])
+  This helps users understand how much your project has diverged from the upstream project.
 
-    # Example applied to Open-TYNDP (soft fork of PyPSA-Eur)
-    ![Commits behind PyPSA-Eur](https://img.shields.io/github/commits-difference/open-energy-transition/open-tyndp?base=master&head=PyPSA:pypsa-eur:master&label=commits%20behind%20PyPSA-Eur)
+    ```md
+    # Generic
+    ![Commits behind [<upstream project>](https://img.shields.io/github/commits-difference/<organisation>]/<repository>?base=<branch>&head=<upstream organisation>:<upstream repository>:<upstream branch>&label=commits%20behind%20<upstream project>)
+
+    # Example for Open-TYNDP (soft fork of PyPSA-Eur)
+    ![Commits behind PyPSA-Eur](https://img.shields.io/github/commits-difference/open-energy-transition/open-tyndp?base=master&head=PyPSA:pypsa-eur:master&label=commits%20behind%20PyPSA-Eur) 
     ```
 
-If you would like to see how these recommendations can be applied to a README, you can refer to the [Open-TYNDP README](https://github.com/open-energy-transition/open-tyndp/blob/master/README.md).
+:::tip
+
+    To see how these recommendations can be applied to a README, you can refer to the [Open-TYNDP README](https://github.com/open-energy-transition/open-tyndp/blob/master/README.md).
+
+:::
 
 ### Documentation
-The project documentation is equally important to the README and requires careful revision. This page focuses on soft fork attribution and does not discuss changes to methodology, assumptions, data, or workflow. These changes must, of course, be documented too. Here are suggested modifications:
-* Ensure the `readthedocs` documentation configuration reflects your project. Adapt the `doc/config.py` file:
-    - Adjust the project name in: `project`, `html_title` and `html_short_title`.
-    - Add the relevant names to the list of copyright owners and authors in: `copyright` and `authors`.
-    - Update the version number in: `version`. In PyPSA-Eur, the version number is also defined in `config/config.default.yaml`.
-    - Change the repository URL in: `html_theme_options:repository_url`.
-* Reflect the content of your README in `doc/index.rst`. You can keep part of the original upstream text as background information if this is relevant.
-* Provide an updated version of the installation guidelines in `doc/installation.rst`. This expands on the [README](#readme) summary.
-* Provide an extensive description of the license strategy for both your repository and the upstream one in `doc/licenses.rst`. This should expand on the [README](#readme) summary (e.g. [Licenses](https://open-tyndp.readthedocs.io/en/latest/licenses.html) from Open-TYNDP).
+
+The project documentation is equally important to the README and requires careful revision.
+A proper documentation should contain the following sections:
+
+* A *license* section with the licensing terms of the project and the copyright holders.
+  This can be the same version as in the README or a more detailed version.
+  Note that any redundant information given here and in the README must be kept in sync with the reality in the project, so try to avoid redundancy.
+  E.g. by linking to only a single list of contributors.
+  For simplicity we currently assume that the contributors are also the copyright holders, although this may not always be the case.
+* A *contributors* section listing the contributors to the project.
+  Ideally the README and other parts of the documentation refer to this section.
+  Contributors are all the people that have in some way contributed ad shaped the *work* of the project.
+  This does not only include code contributions, but also design and architecture decisions, documentation, data curation, etc. .
+  Contributors should be identifiable, such that they can be contacted.
+  Common ways to list contributors are to list them with their full name and email address or their GitHub username.
+* (Recommended) A *contributing* section that describes how to contribute to the project.
+  From the licensing perspective, this section should include a reminder to add the license information to new files and modified files.
+  It should also make it clear that any contributions to the project are licensed under the same license as the project itself.
+
+If you have a soft fork, make sure you to adjust the following parts in the documentation:
+
+* Ensure the `readthedocs` documentation configuration reflects your project.
+  Adapt the `doc/config.py` file:
+  * Adjust the project name in: `project`, `html_title` and `html_short_title`.
+  * Add the relevant names to the list of copyright owners and authors in: `copyright` and `authors`.
+  * Update the version number in: `version`. In PyPSA-Eur, the version number is also defined in `config/config.default.yaml`.
+  * Change the repository URL in: `html_theme_options:repository_url`.
+* Reflect the content of your README in `doc/index.rst`.
+  You can keep part of the original upstream text as background information if this is relevant.
+* Provide an updated version of the installation guidelines in `doc/installation.rst`.
+  This expands on the [README](#readme) summary.
+* Provide an extensive description of the license strategy for both your repository and the upstream one in `doc/licenses.rst`.
+  This should expand on the [README](#readme) summary (e.g. [Licenses](https://open-tyndp.readthedocs.io/en/latest/licenses.html) from Open-TYNDP).
 * Give clear guidelines on how to contribute to and get support from this project and its upstream communities in `doc/contributing.rst` and `doc/support.rst`.
-* List the people who have contributed to the project and had a significant impact on the repository in `doc/contributors.rst`. Link to the list of those who contributed to the original work. This is where you should describe the group that the SPDX license header will reference (i.e., "Contributors to [CONTRIBUTORS]") (see also [Comply with REUSE](#comply-with-reuse)). Clearly state that this project builds on the work of other communities from which the soft fork was created (e.g., [Contributors](https://open-tyndp.readthedocs.io/en/latest/contributors.html) from Open-TYNDP).
-* If your project uses additional data, it must be properly referenced. If the data is included in the repository, it must be covered by the licensing scheme (see [Comply with REUSE](#comply-with-reuse)). Otherwise, it needs to be listed in the relevant file in the `doc/data_sources.rst`.
+* List the people who have contributed to the project and had a significant impact on the repository in `doc/contributors.rst`.
+  Link to the list of those who contributed to the original work.
+  This is where you should describe the group that the SPDX license header will reference (i.e., "Contributors to [CONTRIBUTORS]") (see also [REUSE tool](#reuse-tool)).
+  Clearly state that this project builds on the work of other communities from which the soft fork was created (e.g., [Contributors](https://open-tyndp.readthedocs.io/en/latest/contributors.html) from Open-TYNDP).
+* If your project uses additional data, it must be properly referenced.
+  If the data is included in the repository, it must be covered by the licensing scheme (see [REUSE tool](#comply-with-reuse)).
+  Otherwise, it needs to be listed in the relevant file in the `doc/data_sources.rst`.
 
 ### GitHub
+
 Below are additional suggestions for configuring your GitHub repository:
-* Ensure that the `About` section of your GitHub page is consistent with your README. This includes amending the description, the website and the [topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).
-* Use a [citation file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files), such as `CITATION.cff`, to let other users know how to cite the project. This file is used for user convenience only and has no legal value. However, you can use the `references` field of this file to refer to the original work (e.g. [`CITATION.cff`](https://github.com/open-energy-transition/open-tyndp/blob/master/CITATION.cff)  from Open-TYNDP).
-* Update issue and pull request templates to better guide user contributions (i.e., `.github/ISSUE_TEMPLATE/bug_report.yaml` and `.github/pull_request_template.md`). Add a guideline to specify what issue to report in which repository (e.g., [`bug_report.yaml`](https://github.com/open-energy-transition/open-tyndp/blob/master/.github/ISSUE_TEMPLATE/bug_report.yaml?plain=1#L19-L26) from Open-TYNDP).
+* Ensure that the `About` section of your GitHub page is consistent with your README.
+  This includes amending the description, the website and the [topics](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/classifying-your-repository-with-topics).
+* Use a [citation file](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files), such as `CITATION.cff`, to let other users know how to cite the project.
+  This file is used for user convenience only and has no legal value.
+  If you use a soft fork, use the `references` field of this file to refer to the original work, see e.g. [`CITATION.cff`](https://github.com/open-energy-transition/open-tyndp/blob/master/CITATION.cff) from Open-TYNDP.
+* Create issue and pull request templates or update the templates that you have forked in case of a soft fork, to better guide user contributions.
+  E.g. `.github/ISSUE_TEMPLATE/bug_report.yaml` and `.github/pull_request_template.md`.
+  Add a guideline to specify what issue to report in which repository, e.g., [`bug_report.yaml`](https://github.com/open-energy-transition/open-tyndp/blob/master/.github/ISSUE_TEMPLATE/bug_report.yaml?plain=1#L19-L26) from Open-TYNDP.
 
-## Comply with REUSE
+## REUSE tool
 
-[REUSE by the FSFE](https://reuse.software/) simplifies the licensing process. The specific licenses for each file can be found in its SPDX identifier or in the [REUSE.toml](https://github.com/PyPSA/pypsa-eur/blob/master/REUSE.toml) file. For example, the PyPSA-Eur repository uses it. Depending on the licenses used by the upstream project and your soft fork, different strategies may apply.
-
+The [REUSE tool](https://reuse.software/) from the Free Software Foundation Europe simplifies the licensing stuff significantly.
+It helps you to ensure that your project is compliant with the [REUSE guidelines](https://reuse.software/spec/) and uses the [SPDX license identifiers](https://spdx.org/licenses/) to identify the licenses used in your project.
 You can install the tool using their [installation instructions](https://reuse.readthedocs.io/en/stable/readme.html#install).
+It is very good.
+We try to use it in all our projects where possible.
 
-### Identical licenses
+The tool helps to record the licensing information in the repository in three standardised ways:
 
-If the license remains the same for the modifications, you can add the additional copyright holders to the top of the file with an additional SPDX header. As OET employees, the copyright holder is under German law.
+1. (Preferred) when possible the tool helps to add SPDX headers to the top of each file in the repository.
+   When possible, this approach should be used.
+   `reuse` automatically detects the file type and adds the correct SPDX header to the top of the file.
+   This modification does not change the behaviour of your files.
+2. (Fallback) if the file type does not support SPDX headers, the licensing information can be recorded in the `REUSE.toml` file in the root of the repository.
+   This file records the licensing information for all files that can not have an SPDX header, e.g. binary files and images.
+3. (Disencouraged) Another way to record the licensing information is to add `.license` file for each file that cannot be annotated.
+   When using the second approach with `REUSE.toml`, this approach is not needed.
+   It is discouraged by us because it is not as easy to maintain as the first two approaches and creates a lot of additional files in the repository.
 
-The `REUSE.toml` needs to be reconfigured:
-* Add another `SPDX-FileCopyrightText` item to the list for each `[[annotations]]` entry where this project brings additional changes.
-* Transform the original package supplier field `SPDX-PackageSupplier` to `SPDX-PackageOriginator`.
-* Add a new package supplier for the project using `SPDX-PackageSupplier`.
-* Adjust the package location `SPDX-PackageDownloadLocation` to point to the right repository.
+The SPDX headers added by the REUSE tool using `reuse annotate` usually consist of two lines:
 
-Then, REUSE can be used to annotate modified files accordingly.
-
-```bash
-reuse annotate --exclude-year --merge-copyrights --skip-unrecognised --copyright="Contributors to [CONTRIBUTORS] <[REPOSITORY]>"
+```python
+# SPDX-FileCopyrightText: ...
+# SPDX-License-Identifier: ...
 ```
 
-As an example for Open-TYNDP, the PyPSA-Eur default header is:
+The first line contains the copyright holder, which is usually the contributors to the project, e.g. `# SPDX-FileCopyrightText: Contributors to Open-TYNDP`.
+In this line [we do not include the copyright year](https://reuse.software/faq/#years-copyright); although it is possible to include it, it is not needed and just adds another confusing element to the header that needs to be maintained.
+The second line contains the standardised SPDX license identifier for the license used in the file, e.g. `SPDX-License-Identifier: MIT` for the MIT license.
+Another optional line is to include the contributors to a file that do not hold the copyright using the `SPDX-FileContributorText` identifier.
+In our case we assume that the contributors are also the copyright holders, so we do not use this line.
+
+### Adding a license to a fresh file
+
+A fresh file without any license information does not require special considerations.
+For the annotation you need to know which license you want to use for the file, see [OpenSource](OpenSource) for a suggestion on licenses to use.
+You can also check the [PyPSA-Eur repository](https://github.com/pypsa/pypsa-eur) and the [Open-TYNDP repository](https://github.com/open-energy-transition/open-tyndp) for examples.
+
+:::info
+
+    To add the license information to a fresh file without any license information, run:
+
+    ```bash
+    reuse annotate --license=<license identifier, e.g. mit or cc-by-4.0> --exclude-year --copyright="Contributors to [CONTRIBUTORS] <[REPOSITORY]>" <file or list of files>
+    ```
+
+:::
+
+`reuse` does not automatically create entries for the `REUSE.toml` file, this needs to be done manually.
+Since it is the fallback solution, this shouldn't be necessary for most files.
+
+An example `REUSE.toml` looks like this:
+
+```toml
+version = 1
+
+[[annotations]]
+path = [
+    "tests/*.py",
+    "MANIFEST",
+    ".github/workflows/*.yml",
+]
+SPDX-FileCopyrightText = "2019 Translation Company"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "tests/resources/**"
+SPDX-FileCopyrightText = "2019 Jane Doe"
+SPDX-License-Identifier = "CC0-1.0"
+```
+
+For more on the `REUSE.toml` file, see the [REUSE documentation](https://reuse.software/spec-3.2/) and the Open-TYNDP repository.
+
+### Modifying the `REUSE.toml` file
+
+In a soft fork with an existing `REUSE.toml` file, make the following adjustments:
+* Add a new package supplier for the project using `SPDX-PackageSupplier`.
+* Transform the original package supplier field `SPDX-PackageSupplier` to `SPDX-PackageOriginator`.
+* Adjust the package location `SPDX-PackageDownloadLocation` to point to the right repository.
+
+### Adding licenses to an existing file
+
+If you have an existing file that already contains a license header, you can also use the `reuse annotate` command to add the license information.
+Note that you may only claim copyright over the file if you have made contributions to the file.
+Simply forking a repository does not give you the right to add a copyright header to the files in the repository.
+
+If the license remains the same for the modifications, you can add the additional copyright holders to the top of the file with an additional SPDX header.
+
+:::info
+
+    To add the license information to an existing file with a license header that keeps the same license, run:
+
+    ```bash
+    reuse annotate --exclude-year --merge-copyrights --skip-unrecognised --copyright="Contributors to [CONTRIBUTORS] <[REPOSITORY]>"
+    ```
+
+:::
+
+For example this would turn the following header using the `reuse annotate` command:
+
+```bash
+reuse annotate --exclude-year --merge-copyrights --skip-unrecognised --copyright="Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp>"
+```
+
+on a file with the following header:
 
 ```python
 # SPDX-FileCopyrightText: Contributors to PyPSA-Eur <https://github.com/pypsa/pypsa-eur>
 #
 # SPDX-License-Identifier: MIT
-```
-
-Using this command:
-
-```bash
-reuse annotate --exclude-year --merge-copyrights --skip-unrecognised --copyright="Contributors to Open-TYNDP <https://github.com/open-energy-transition/open-tyndp>"
 ```
 
 The header becomes:
@@ -101,10 +307,102 @@ The header becomes:
 # SPDX-License-Identifier: MIT
 ```
 
+If the licensing information for the file is stored in the `REUSE.toml`, you need to update the `REUSE.toml` file as well.
+It is enough to add another `SPDX-FileCopyrightText` item to the list for each `[[annotations]]` entry where this project brings additional changes.
+In the example above, change the `REUSE.toml` file from this:
+
+```toml
+[[annotations]]
+path = ["my_awesome_code.py"]
+SPDX-FileCopyrightText = [
+    "The Open-TYNDP Authors",
+    "The PyPSA-Eur Authors",
+]
+SPDX-License-Identifier = "MIT"
+```
+
+to this:
+
+```toml
+[[annotations]]
+path = ["my_awesome_code.py"]
+SPDX-FileCopyrightText = [
+    "The Open-TYNDP Authors",
+    "The PyPSA-Eur Authors",
+]
+SPDX-License-Identifier = "MIT"
+```
+
 ### Mixed licenses
 
-If you want to use a different license for your contributions to a fork, you first need to validate that the license you plan on using is compatible with the original license. If this is the case, you need to add an `SPDX-FileCopyrightText` in a similar way to that used for [Identical licenses](#identical-licenses). You also need to modify the `SPDX-License-Identifier` to also mention your new license (e.g. `SPDX-License-Identifier: MIT` to `SPDX-License-Identifier: MIT AND Apache-2.0`). Finally, those changes need to be reflected in the `REUSE.toml` too.
+If you want to use a different license for your contributions to a fork, you first need to validate that the license you plan on using is compatible with the original license.
+If this is the case, you need to add an `SPDX-FileCopyrightText` in a similar way to that used for [Identical licenses](#identical-licenses).
+You also need to modify the `SPDX-License-Identifier` to also mention your new license (e.g. `SPDX-License-Identifier: MIT` to `SPDX-License-Identifier: MIT AND Apache-2.0`).
+Finally, those changes need to be reflected in the `REUSE.toml` too.
+Note that this should usually not be necessary and be avoided, because of the additional complexity it adds to the project.
 
-## Automate
+### Downloading licenses
 
-The best way to ensure your repository is compliant with REUSE is to use a [pre-commit hook](https://reuse.readthedocs.io/en/stable/readme.html#run-as-pre-commit-hook). REUSE provides such a hook that automatically runs `reuse lint` on every commit. This hook will help keep your repository compliant with the REUSE guidelines. Note that enforcing correct attribution is not automatic. Therefore, you can add an additional item to your pull request template (e.g., [`pull_request_template.md`](https://github.com/open-energy-transition/open-tyndp/blob/master/.github/pull_request_template.md?plain=1#L26) from Open-TYNDP).
+If you add a license to a new project or add a new license to an existing project, you need to include the license text in the repository.
+The REUSE tool simplifies this process immensely.
+
+:::info
+  
+    To download all licenses used in your project that are missing from the `LICENSES/` directory, run:
+    ```bash
+    reuse download --all
+    ```
+
+:::
+
+### Automated checks for compliance
+
+:::info
+
+    Add the [`reuse` pre-commit hook](https://reuse.readthedocs.io/en/stable/readme.html#run-as-pre-commit-hook) to check your repository automatically for compliance with REUSE.
+
+:::
+
+This is the best way to ensure your repository is compliant with REUSE.
+The hook that automatically runs `reuse lint` on every commit and will help keep your repository compliant with the REUSE guidelines.
+It will fail if your repository is not compliant, e.g. if a new file that you have added to the repository does not have a license attached to it, or a license file is missing.
+
+## Contributions and PR templates
+
+:::info
+
+    Add an item to your pull request template to remind contributors to add the license information to their pull requests.
+
+:::
+
+It is easy to forget about the need to add licensing information to your pull request.
+An additional entry can help remind contributors to add the license information to their pull request:
+
+```md
+- [ ] Licensing information to new or modified files has been added (SPDX header, REUSE.toml, etc.)
+- [ ] I have added myself to the list of contributors in `doc/contributors.rst` (if applicable)
+```
+
+Adding the correct license attribution is not automatic.
+In principle it is possible to automate the step of adding license information, but it is not recommended.
+If you remember to use tools like `reuse annotate` as described above, it becomes very easy and quick to add the license information to your files.
+
+See for example the [Open-TYNDP repository](https://github.com/open-energy-transition/open-tyndp/blob/6ab3be3704eb84121e8a5b5bfdf4cc45390571b5/.github/pull_request_template.md?plain=1#L26)
+
+## Contributing to other open source projects
+
+When you contribute to other open projects, e.g. to an *upstream* project as described earlier, or any other open source or open data project, some legal stuff is also happening in the background.
+
+Projects generally require you to agree with the license they have chosen for their project, e.g. the [MIT License](https://opensource.org/license/mit/) for [PyPSA](https://github.com/pypsa/pypsa).
+Some open source projects have longer contribution guidelines that clarify the licensing of contributions in more detail, you should read those carefully before contributing.
+
+At OET we have decided that you are granted the full copyright for contributions that you make to other open source projects.
+Effectively this means that you can freely contribute to other open source projects without requiring any additional permission from OET.
+
+In summary this means that....
+
+:::info
+
+    When contributing to other open source projects, you are the *author* and the *copyright holder* of your contributions.
+
+:::
