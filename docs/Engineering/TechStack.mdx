@@ -1,0 +1,25 @@
+---
+sidebar_label: "Technology stack"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org","johannes.hampp@openenergytransition.org"]} />
+
+# Technology stack that we use
+
+Recommended, not enforced.
+Projects may deviate, especially in case of projects based on soft forks.
+
+* Documentation: `mkdocs-material`
+* Code: `python`
+* Pre-commit framework: `pre-commit`
+    * Public repositories: use `pre-commit.ci` for automatic checks
+    * Example file: TODO link
+* Code style: `black` via `ruff`
+* Code linting: `ruff`
+* Licesnsing and copyright:
+    * Adding: `reuse`
+    * Checking: `reuse` via `pre-commit`
