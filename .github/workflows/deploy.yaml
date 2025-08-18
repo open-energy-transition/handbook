@@ -49,7 +49,7 @@ jobs:
         run: npm ci
 
       - name: Run pre-commit checks
-        run: npx pre-commit run --all-files
+        run: pre-commit run --all
 
       - name: Generate JSON of file structure
         run: bash scripts/generate-table-json.sh
