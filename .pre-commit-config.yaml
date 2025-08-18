@@ -1,0 +1,14 @@
+repos:
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.2.6
+    hooks:
+      - id: codespell
+        files: \.mdx?$
+
+  - repo: local
+    hooks:
+      - id: markdownlint
+        name: markdownlint
+        entry: npx markdownlint-cli "**/*.md"
+        language: system
+        files: \.mdx?$
