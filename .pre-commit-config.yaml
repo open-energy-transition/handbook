@@ -11,5 +11,5 @@ repos:
       - id: markdownlint
         name: markdownlint
         entry: npx markdownlint-cli "**/*.md"
-        language: system
+        language: node
         files: \.mdx?$

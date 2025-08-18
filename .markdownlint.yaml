@@ -17,3 +17,4 @@ MD037: false        # Disable spaces inside emphasis markers
 MD040: false        # Disable fenced code blocks should have a language specified
 MD041: false        # Disable first line heading rule
 MD047: false        # Disable code block style rule
+MD059: false        # Disable spaces around blockquote markers
