@@ -1,7 +1,19 @@
+MD001: false        # Disable header style rule
+MD004: false        # Disable unordered list style rule
+MD007: false        # Disable unordered list indentation rule
+MD009: false        # Disable line indentation rule
+MD010: false        # Disable no hard tabs rule
 MD012: false        # Disable multiple consecutive blank lines
 MD013: false        # Disable line length rule
 MD022: false        # Disable headings should be surrounded by blank lines
+MD024: false        # Disable multiple headings with the same content
+MD026: false        # Disable trailing punctuation in heading
+MD029: false        # Disable ordered list item prefix
 MD031: false        # Disable lists should be surrounded by blank lines
 MD032: false        # Disable lists should be surrounded by blank lines
 MD033: false        # Disable inline HTML rule
+MD034: false        # Disable bare URL rule
+MD037: false        # Disable spaces inside emphasis markers
+MD040: false        # Disable fenced code blocks should have a language specified
 MD041: false        # Disable first line heading rule
+MD047: false        # Disable code block style rule
