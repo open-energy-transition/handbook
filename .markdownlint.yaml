@@ -1,0 +1,20 @@
+MD001: true        # header style rule
+MD004: true        # unordered list style rule
+MD007: true        # unordered list indentation rule
+MD009: false        # line indentation rule
+MD010: false        # no hard tabs rule
+MD012: false        # multiple consecutive blank lines
+MD013: false        # line length rule
+MD022: false        # headings should be surrounded by blank lines
+MD024: false        # multiple headings with the same content
+MD026: false        # trailing punctuation in heading
+MD029: false        # ordered list item prefix
+MD031: false        # lists should be surrounded by blank lines
+MD032: false        # lists should be surrounded by blank lines
+MD033: false        # inline HTML rule
+MD034: false        # bare URL rule
+MD037: false        # spaces inside emphasis markers
+MD040: false        # fenced code blocks should have a language specified
+MD041: false        # first line heading rule
+MD047: false        # code block style rule
+MD059: false        # spaces around blockquote markers
