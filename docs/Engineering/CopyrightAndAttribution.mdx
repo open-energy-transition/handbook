@@ -48,9 +48,6 @@ If all authors are OET employees, OET is the sole copyright holder of the *work*
 If some authors are not OET employees, they themselves or their employer usually are the copyright holder of their *work*.
 We usually license the work as a whole, rather than individual contributions, and use the term *contributors* to refer to all authors of the *work*.
 
-### Differences between OET projects and contributions to other projects
-
-Because of how copyright works, we handle our own projects differently from contributions to other projects.
 
 First, we discuss how copyright and attribution are handled in our own projects, including new and stand-alone projects, as well as soft forks of other projects.
 Then, we discuss contributions to other projects, including upstream projects.
@@ -254,6 +251,7 @@ SPDX-License-Identifier = "MIT"
 path = "tests/resources/**"
 SPDX-FileCopyrightText = "Jane Doe"
 SPDX-License-Identifier = "CC0-1.0"
+```
 
 For more on the `REUSE.toml` file, see the [REUSE documentation](https://reuse.software/spec-3.2/#reusetoml) and the [Open-TYNDP](https://github.com/open-energy-transition/open-tyndp/blob/master/REUSE.toml) repository.
 
@@ -316,6 +314,7 @@ SPDX-FileCopyrightText = [
     "Translation Company",
 ]
 SPDX-License-Identifier = "MIT"
+```
 
 to this:
 
@@ -327,6 +326,7 @@ SPDX-FileCopyrightText = [
     "Translation Company",
 ]
 SPDX-License-Identifier = "MIT"
+```
 
 ### Mixed licenses
 
@@ -382,6 +382,9 @@ Adding the correct license attribution is not automatic.
 In principle, it is possible to automate the addition of license information, but this is not recommended.
 If you remember to use tools like `reuse annotate` as described above, it becomes very easy and quick to add the license information to your files.
 See for example the [Open-TYNDP PR template](https://github.com/open-energy-transition/open-tyndp/blob/6ab3be3704eb84121e8a5b5bfdf4cc45390571b5/.github/pull_request_template.md?plain=1#L26).
+
+Because of how copyright works, we handle our own projects differently from contributions to other projects.
+The next section discusses contributions to other projects, including upstream projects.
 
 ## Contributing to other open source projects
 
