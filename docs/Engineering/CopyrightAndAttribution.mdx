@@ -378,8 +378,9 @@ It is easy to forget about the need to add licensing information to your pull re
 An additional entry can help remind contributors to add the license information to their pull request:
 
 ```md
-- [ ] Licensing information to new or modified files has been added (SPDX header, REUSE.toml, etc.)
-- [ ] I have added myself to the list of contributors in `doc/contributors.rst` (if applicable)
+- [ ] Licensing information to new or modified files has been added (SPDX header, REUSE.toml, etc.).
+- By contributing I agree to make my contributions available under the repository's MIT license.
+- [ ] I have added myself to the list of contributors in `doc/contributors.rst` (if applicable).
 ```
 
 Adding the correct license attribution is not automatic.
@@ -389,6 +390,11 @@ See for example the [Open-TYNDP PR template](https://github.com/open-energy-tran
 
 Because of how copyright works, we handle our own projects differently from contributions to other projects.
 The next section discusses contributions to other projects, including upstream projects.
+
+The line `By contributing I agree to make my contributions available under the repository's MIT license.` is important.
+It makes explicit what is often considered "common practice" in open source projects, namely that contributions to a project are licensed under the same license as the project itself (sometimes referred to as "inbound=outbound" licensing).
+GitHub also explicitly assumes this principle for all repositories on its platform [by default](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service#6-contributions-under-repository-license).
+We do not use any other Contributor License Agreement (CLA) or Developer Certificate of Origin (DCO) for our projects, to keep things simple, avoid friction and encourage contributions.
 
 ## Contributing to other open source projects
 
