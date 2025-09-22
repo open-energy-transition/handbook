@@ -1,0 +1,51 @@
+---
+sidebar_label: "Solver Configuration"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["will.usher@openenergytransition.org"]} />
+
+# Solver Configuration
+
+At OET, we use both open source and proprietary solvers. 
+Proprietary solvers require a license. Users must configure the details of the solver license before using them.
+
+## Configuring Gurobi
+
+### Standard Approach
+
+Place the `gurobi.lic` file in your `/home` folder. Get solving...
+
+### Preferred Approach
+
+Our gurobi license is limited to 5 users in parallel. If a project is running multiple solves in parallel, we can run out of available licenses.
+As OET expands, license contention will become an increasing problem.
+
+To mitigate license contention, [linopy](https://linopy.readthedocs.io/) releases from v0.5.6 now support passing in solver license details as environment variables.
+In practice, these can be configured as part of your PyPSA configuration file by editing your `config/config.yaml` file to include:
+
+```
+gurobi-default:
+    env:
+        WLSACCESSID: ...
+        WLSSECRET: ...
+        LICENSEID: ...
+```
+
+Use this instead of adding the `gurobi.lic` to your home folder. This only pulls in the license during the actual solving.
+
+## FAQ
+
+Q. What if I already have a gurobi.lic file in my home folder? Will the environment variables take precedence?
+A. TODO:
+
+Q. How do I prevent license secrets from being included in a Pull Request?
+A. TODO:
+
+
+## Further reading
+
+- Linopy Pull Request: [allow passing a parameter dict to gurobi's env creation PyPSA/linopy#469](https://github.com/PyPSA/linopy/pull/469)
+- [Gurobi Support Article](https://support.gurobi.com/hc/en-us/articles/13232844297489-How-do-I-set-up-a-Web-License-Service-WLS-license)
