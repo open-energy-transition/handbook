@@ -33,12 +33,16 @@ In practice, these can be included as part of your PyPSA configuration file by e
 to include:
 
 ```
-gurobi-default:
-    env:
-        WLSACCESSID: ...
-        WLSSECRET: ...
+solving:
+  solver_options:
+    gurobi-default:
+      env:
+        WLSACCESSID: "..."
+        WLSSECRET: "..."
         LICENSEID: ...
 ```
+
+Make sure that `LICENSEID` is not quoted and reads like a plain integer.
 
 Use this instead of adding the `gurobi.lic` to your home folder. This approach only uses the license during the actual solving step,
 rather than locking a license for the duration of the workflow runtime.
