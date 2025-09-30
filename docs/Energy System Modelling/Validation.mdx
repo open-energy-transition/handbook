@@ -1,0 +1,223 @@
+---
+sidebar_label: "Model Validation"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["martha.frysztacki@openenergytransition.org"]} />
+
+# Model Validation
+
+<ControlledDocBanner />
+
+---
+
+## Purpose
+
+To ensure our studies are credible, transparent, and decision-grade, OET frequently proposes either starting projects with an already validated model or suggests an early project phase to model validation.
+
+This proposed process has three goals:
+1. Reduce rework: avoid repeating ad-hoc validation in each project.
+2. Align expectations with clients: provide a shared definition of what “validated” means.
+3. Strengthen upstream tools: identify validation tasks that can be generalized and contributed to upstream projects, either within the OET soft-fork or entirely upstream.
+
+Initially, some validation work will remain manual. However, by documenting and standardizing our workflow, we can progressively upstream both the technical methods and the documentation practices, improving long-term efficiency, credibility, and sustainability across the modelling ecosystem.
+
+---
+
+## Scope
+
+Applies to all modelling projects at OET (e.g., PyPSA-Eur, PyPSA-Earth, country/regional customisations, and client-specific scenarios).  
+Use this page as a **template**; projects MUST instantiate it in their repo/docs with project-specific details.
+
+---
+
+## Definition
+
+Model validation is the process of assessing whether a model is **fit for purpose** by checking that:
+
+1. **Inputs** are complete, consistent, and plausible.
+2. **Outputs** are reasonable, interpretable, and comparable to reference data or benchmarks.
+3. **Processes** (workflow, code, optimisation) are reproducible and transparent.
+
+
+The scope of validation depends on the **type of model**:
+
+- **Market models**
+  Focus: price signals, dispatch patterns, cross-border flows.  
+  Validation: compare against historical market outcomes (prices, interconnector usage), and check plausibility of market equilibrium.
+
+- **Capacity expansion models**
+  Focus: long-term investment decisions, technology mix, costs, emissions.  
+  Validation: benchmark against published scenarios, check plausibility of technology shares, cost ranges, and policy consistency.
+
+- **Operational / dispatch models**
+  Focus: short-term system operation, balancing, ramping, reserves.
+  Validation: reproduce historical operation patterns, ensure technical limits are respected (e.g. ramp rates, minimum loads).
+
+- **Other modelling contexts** (sector coupling, flexibility studies, etc.)
+  Validation should be tailored to the key decision variables (e.g. fuel switching, storage utilisation, hydrogen balance).
+
+---
+
+## When to Apply
+
+We apply validation progressively — starting with **inputs**, then **outputs**, and iterating until results converge.
+
+### M1 — Model Setup Complete
+
+- **Status:** Decision on the core model configuration is complete (e.g. region/countries, temporal resolution, demand assumptions, technology scope). An initial model is created, but not necessarily solved.  
+- **PyPSA context:** For PyPSA-related projects, this means that a project configuration file is defined and a first model instance (power-only or sector-coupled) is prepared.  
+- **Validation focus:** **Inputs.** Check completeness, plausibility, and consistency of input data. Try to spot major deviations from historically reported values.  
+- **Rationale:** Only what goes into the model determines what can come out.
+
+---
+
+### M2 — First Results Produced
+
+- **Status:** The model has been solved at least once, producing a first set of outputs.
+- **PyPSA context:** Running the optimisation workflow with the prepared configuration.
+- **Validation focus:**
+  - Confirm that the model runs successfully end-to-end and the CI passes.
+  - Capture / Visualise raw outputs without applying detailed interpretation yet.
+  - Check for obvious red flags (e.g. infeasible dispatch, unbounded variables, solver non-convergence).
+  - Identify major discrepancies between model results and benchmarks. Diagnose whether they are likely due to:
+    - **Inaccurate or incomplete input data**,  
+    - **Formulation or constraint issues**,  
+    - **Geographical/temporal scope or resolution**, or
+    - **Other reasons**.
+- **Rationale:** Establishes a baseline run that can be systematically compared against benchmarks and forms the starting point for structured debugging and improvement.
+
+---
+
+### M3 — Iterations and Convergence
+
+- **Status:** The model has undergone revisions and repeated runs to resolve issues identified in M2.
+- **Validation focus:**
+  - Apply iterative adjustments to inputs, constraints, or resolution.
+  - Re-run and re-benchmark until results are stable and discrepancies are understood.
+  - Document decisions: what was fixed, what remains open, and why.
+- **Rationale:** Iterative improvement ensures that the validated model is reproducible, credible, and defensible for reporting or delivery.
+
+> **Note:** During this stage of validation, **don’t save on model runs**. The more parameter sweeps you run, the deeper your insights will be. Test whether compromising on spatial or temporal resolution significantly affects results — this may allow you to use a simplified model to accelerate turnaround times while preserving credibility.
+
+---
+
+### M4 — Validation Satisfactory
+
+- **Status:** The workflow is reproducible end-to-end and passes baseline validation checks.  
+- **PyPSA context:** For PyPSA-related projects, this means the model can be re-run consistently by others using the reproducible workflow guide, ideally the benchmarking results are caputred by a CI (optional).
+- **Validation focus:**  
+  - Ensure full **reproducibility** of results (inputs, code, environment).
+  - Package results and code in a **versioned release** (tagged, archived).
+  - Document any **deviations, limitations, or open issues**.
+- **Rationale:** At this stage, the model is considered *validated enough* for external review, reporting, or delivery.
+
+---
+
+## Outcomes & Success Criteria
+
+- **Reproducibility:** Anyone at OET can re-run with documented env & parameters.  
+- **Traceability:** Every figure/table links to code, commit, and input versions.  
+- **Plausibility:** Outputs pass sanity ranges and conservation/physics checks.  
+- **Benchmark fit:** Differences vs references are explained or justified.  
+- **Stakeholder confidence:** Findings are understandable and defensible.
+
+---
+
+## Standard Workflow
+
+### 1) Input Data Checks
+- **Completeness & schema:** all required fields present; units consistent.
+- **Ranges & plausibility:** demand, capacity, efficiencies, costs within justified bounds.
+- **Spatial/topological integrity:** buses, lines, transformers, shapes consistent.
+- **Provenance:** dataset sources, versions, licenses recorded.
+- **Record deviations:** imputations/corrections with rationale.
+
+**Deliverables:** `inputs_audit.md` + automated check logs (if available).
+
+---
+
+### 2) Process / Reproducibility Checks
+- **Environment lock:** environment.yml/requirements.txt pinned; `snakemake`/workflow config committed.
+- **Determinism:** seeds fixed where stochastic; note non-deterministic steps.
+- **Runtime integrity:** end-to-end run completes from clean state.
+- **CI smoke test:** minimal test case runs on CI (if repo supports it).
+
+**Deliverables:** run log, CI badge or screenshot, rerun instructions.
+
+---
+
+### 3) Output Plausibility & Conservation
+- **Mass/energy balance:** supply = demand ± losses; storage SOC bounds respected.
+- **Capacity factors & dispatch:** within technical limits; curtailment plausible.
+- **Price/dual signals (if applicable):** no persistent arbitrage artefacts.
+- **Geographic patterns:** flows/diffs align with known constraints.
+
+**Deliverables:** standard plots notebook + checklist below.
+
+---
+
+### 4) Benchmarking & Cross-Model
+- **Historical comparison:** recent-year snapshots vs observed data (where possible).
+- **External benchmarks:** compare to published studies or official stats.
+- **Peer models:** side-by-side key metrics (peak demand, RES shares, costs, CO₂).
+
+**Deliverables:** comparison table with error metrics and explanations.
+
+---
+
+### 5) Sensitivity & Uncertainty
+- **Key levers:** demand growth, fuel/CO₂ price, CAPEX/OPEX, availability.
+- **Scenario sweeps:** quantify impact on KPIs; identify non-robust conclusions.
+- **Tornado/elasticity plots:** highlight most influential assumptions.
+
+**Deliverables:** sensitivity summary + plots + takeaways.
+
+---
+
+### 6) Stakeholder Review & Traceability
+- **Walkthrough:** 30–60 min session with PM/client to preview findings.
+- **Questions & actions:** log clarifications; adjust where appropriate.
+- **Narrative:** plain-language explanation of what changed and why.
+
+**Deliverables:** meeting notes + updated report section.
+
+---
+
+### 7) Sign-Off
+- **Reviewer (independent):** not the primary author; checks completeness.
+- **Criteria:** all checklists passed or deviations justified.
+- **Approval:** sign-off recorded in PR/issue and referenced in the report.
+
+**Deliverables:** `validation_signoff.md` (template below).
+
+---
+
+## Deliverables (Checklist)
+
+- [ ] `Validation Report` (see template)  
+- [ ] `inputs_audit.md` with provenance table  
+- [ ] Reproducible run log + CI evidence  
+- [ ] Standard validation plots notebook(s)  
+- [ ] Benchmark comparison table + rationale  
+- [ ] Sensitivity analysis summary  
+- [ ] `validation_signoff.md` with approvals
+
+---
+
+## Roles & Responsibilities
+
+- **Project Modelling Lead (PML):** orchestrates validation, ensures artifacts exist.  
+- **Modellers:** implement checks, generate plots, write findings.  
+- **Independent Reviewer:** challenges methods/results; approves sign-off.  
+- **Project Manager:** aligns validation gates with delivery timeline.
+
+---
+
+## Upstream Contribution Policy (Interim → Target)
+
+- **Interim:** keep project-specific validation code in the project repo under `validation/` and reference it here.  
+- **Target:** generalize reusable checks into **upstream** (PyPSA-Eur/Earth) or a dedicated `pypsa-validation` toolkit.  
+- **Rule of 3:** when the same check is use
