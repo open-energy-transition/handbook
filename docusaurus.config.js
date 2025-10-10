@@ -11,9 +11,6 @@ const config = {
   url: `https://${organizationName}.github.io`,
   baseUrl: `/`,
 
-  organizationName: "Open Energy Transition",
-  projectName: "Handbook",
-
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
 
