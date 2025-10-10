@@ -9,7 +9,7 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: `https://${organizationName}.github.io`,
-  baseUrl: `/${projectName}`,
+  baseUrl: `/${projectName}/`,
 
   organizationName: "Open Energy Transition",
   projectName: "Handbook",
