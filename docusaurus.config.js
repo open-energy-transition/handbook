@@ -9,7 +9,10 @@ const config = {
   favicon: "img/favicon.ico",
 
   url: `https://${organizationName}.github.io`,
-  baseUrl: `/`,
+  baseUrl: `/${projectName}/`,
+
+  organizationName: "Open Energy Transition",
+  projectName: "Handbook",
 
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "ignore",
@@ -44,7 +47,7 @@ const config = {
       require.resolve("@easyops-cn/docusaurus-search-local"),
       /** @type {import("@easyops-cn/docusaurus-search-local").PluginOptions} */
       ({
-        hashed: false,
+        hashed: true,
         indexDocs: true,
         indexBlog: false,
         indexPages: false,
