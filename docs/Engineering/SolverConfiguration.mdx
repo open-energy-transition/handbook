@@ -1,0 +1,65 @@
+---
+sidebar_label: "Solver Configuration"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["will.usher@openenergytransition.org"]} />
+
+# Solver Configuration
+
+At OET, we use both open source and proprietary solvers. 
+Proprietary solvers require a license. Users must configure the details of the solver license before using them.
+
+## Configuring Gurobi
+
+Our gurobi license is limited to 5 users in parallel. 
+If a project is running multiple solves in parallel, we can run out of available licenses.
+As OET expands, license contention will become an increasing problem.
+
+There are multiple ways to configure Gurobi. 
+We do not recommend the standard approach as it increases license contention. 
+Instead, use the preferred approach.
+
+### Standard Approach
+
+Rename and copy the `gurobi.lic` file in your `/home` folder. Get solving...
+
+### Preferred Approach
+
+To mitigate license contention, [linopy](https://linopy.readthedocs.io/) releases from v0.5.6 now support passing in solver license details as environment variables.
+In practice, these can be included as part of your PyPSA configuration file by editing the `config/config.yaml` file (which is not tracked in version control)
+to include:
+
+```
+solving:
+  solver_options:
+    gurobi-default:
+      env:
+        WLSACCESSID: "..."
+        WLSSECRET: "..."
+        LICENSEID: ...
+```
+
+Make sure that `LICENSEID` is not quoted and reads like a plain integer.
+
+Use this instead of adding the `gurobi.lic` to your home folder. This approach only uses the license during the actual solving step,
+rather than locking a license for the duration of the workflow runtime.
+
+## FAQ
+
+Q. What if I already have a gurobi.lic file in my home folder? Will the environment variable entries take precedence?
+
+A. No, you must remove the Gurobi license file from your home folder.
+
+Q. How do I prevent license secrets from being included in a Pull Request?
+
+A. The `config/config.yaml` file is not tracked - it is ignored by git. [This PR](https://github.com/open-energy-transition/open-tyndp/pull/111) adds gitleaks to the pre-commit, 
+   and warns of any secrets about to be added to the git history.
+
+
+## Further reading
+
+- Linopy Pull Request: [allow passing a parameter dict to gurobi's env creation PyPSA/linopy#469](https://github.com/PyPSA/linopy/pull/469)
+- [Gurobi Support Article](https://support.gurobi.com/hc/en-us/articles/13232844297489-How-do-I-set-up-a-Web-License-Service-WLS-license)
