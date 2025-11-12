@@ -2,7 +2,7 @@
   command = "npm run build"
   publish = "build"
   base = "/"
-  environment = { NODE_VERSION = "18.19.1" }
+  environment = { NODE_VERSION = "20.18.1" }
 
 [context.production]
   command = "bash scripts/change-base-url.sh && bash scripts/sync-changelog.sh && bash scripts/generate-table-json.sh && bash scripts/sync-data.sh && npm ci && npm run build"
