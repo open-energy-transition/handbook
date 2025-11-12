@@ -22,6 +22,11 @@ function NameLink(props) {
 function GenerateTags({ maintainerEmail }) {
   const memberData = handleSearch(maintainerEmail);
 
+  // If member data is not found, display email only
+  if (!memberData) {
+    return <span>{maintainerEmail}</span>;
+  }
+
   return (
     <>
       <ImageComponent imageUrl={memberData.image_link} />
