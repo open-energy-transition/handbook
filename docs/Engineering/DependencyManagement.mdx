@@ -125,3 +125,42 @@ In all other projects, use a `pixi.toml` file.
   Only add `PyPI` dependencies when no `conda` alternative is available.
 - Isolate docs dependencies in their own environment;
   the default dependencies should only be those required to run your main project scripts.
+
+## Making the transition in existing projects
+
+You can make the transition relatively painlessly:
+
+### `uv`
+
+If you just want to hand over the existing project (assuming you have been installing with `pip` to date):
+
+```sh
+uvx migrate-to-uv --requirements-file requirements.txt --dev-requirements-file requirements-dev.txt --package-manager pip
+```
+
+**NOTE**: if you have dynamic dependencies defined in your current `setup.py`/`pyproject.toml`, you will need to manually delete reference to these for `uv` to be able to work properly.
+
+`uv` also has [its own migration process](https://docs.astral.sh/uv/guides/migration/pip-to-project), but `migrate-to-uv` is more streamlined.
+
+### `pixi`
+
+If you have an existing conda environment file:
+```sh
+pixi init --import environment.yaml -p "win-64" -p "linux-64" -p "osx-64" -p "osx-arm64"
+# Add dev env dependencies separately
+pixi import --environment dev --format=conda-env env-docs.yaml
+```
+
+If you have an existing `requirements.txt` file:
+```sh
+pixi init -p "win-64" -p "linux-64" -p "osx-64" -p "osx-arm64"
+pixi import --environment default --format=pypi-txt requirements.txt
+# Add dev env dependencies separately
+pixi import --environment dev --format=pypi-txt requirements-dev.txt
+```
+
+You can mix and match the above, to import an `environment.yaml` as one `pixi` environment and a `requirements.txt` as another.
+
+**NOTE**: once you have imported requirements, if from a PyPI requirements file you should manually move the dependencies from the `[pypi-dependencies]` config option to `[dependencies]`.
+That is, the dependencies should be installed from `conda`, not `PyPI`.
+You may find that on running `pixi install`, there are issues raised that require some dependencies to be returned to `[pypi-dependencies]`.
