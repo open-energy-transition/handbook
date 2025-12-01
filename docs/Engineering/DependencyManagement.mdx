@@ -128,6 +128,10 @@ In all other projects, use a `pixi.toml` file.
   Only add `PyPI` dependencies when no `conda` alternative is available.
 - Isolate docs dependencies in their own environment;
   the default dependencies should only be those required to run your main project scripts.
+- If working on a soft-fork of a workflow for a project (e.g. [open-TYNDP](https://github.com/open-energy-transition/open-tyndp)), you should use a different [`pixi` environment](https://pixi.sh/dev/workspace/multi_environment/) for project-specific dependencies.
+  These dependencies will be merged with the existing, default dependencies to create the project working environment.
+  This way, merging in changes from upstream will entail fewer conflicts that need resolving *and* it is clear what dependencies have been added in the project above and beyond those in the upstream repository.
+  For an example of how to achieve this, see the [open-TYNDP](https://github.com/open-energy-transition/open-tyndp/blob/e7bfb774f23641a29c7fb07ffd37c4f0477d7c74/pixi.toml#L159-L172) or [gb-dispatch-model](https://github.com/open-energy-transition/gb-dispatch-model/blob/0c88872a37665a314efddf5d88e8b8bc199541ff/pixi.toml#L152-L171) pixi configuration files.
 
 ## Making the transition in existing projects
 
