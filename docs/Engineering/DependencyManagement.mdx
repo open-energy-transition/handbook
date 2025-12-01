@@ -89,6 +89,9 @@ Since dependencies of PyPI-indexed packages must also be PyPI-indexed, you will 
 
 `uv` comes with [various features to streamline building and publishing your package](https://docs.astral.sh/uv/guides/package).
 
+You should **not** track your lockfile (`uv.lock`) in git in Python packages.
+This mitigates the risk of developing (/ running your CI tests) in an environment which deviates from that seen by users accessing the package from PyPI.
+
 ### Ad-hoc scripting
 
 **Example(s)**: [openmod-tracker](https://github.com/open-energy-transition/openmod-tracker)
@@ -102,6 +105,11 @@ This means you can share the script with others without needing to also share de
 Although `uv` is probably sufficient for most of your ad-hoc scripting needs, you should use `pixi` (and `conda` dependencies) where possible.
 This increases the likelihood that your scripts are transferrable to other users and operating systems since non-Python binaries will be accounted for.
 
+You **should** track your lockfile (`pixi.lock`/`uv.lock`) in git in scripted projects.
+This mitigates the risk of your scripts failing when run by others on their local machines.
+Note that this is not feasible if defining dependencies in script metadata.
+In such cases, you should at least explicitly pin your dependency versions.
+
 ### Snakemake workflows
 
 **Example(s)**: [PyPSA-Earth](https://github.com/open-energy-transition/pypsa-earth), [PyPSA-Eur](https://github.com/open-energy-transition/pypsa-eur), and their forks
@@ -109,6 +117,9 @@ This increases the likelihood that your scripts are transferrable to other users
 
 It is not possible to run our `snakemake` workflows without access to `conda`.
 Therefore, `pixi` is the recommended dependency manager.
+
+You **should** track your lockfile (`pixi.lock`) in git in snakemake workflows.
+This is essential for reproducibility.
 
 ## Configuration
 
