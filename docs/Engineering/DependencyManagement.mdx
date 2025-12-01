@@ -6,7 +6,7 @@ import MaintainerTag from "@site/src/components/MaintainerTag";
 import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
 
-<MaintainerTag maintainerEmails={["bryn.pickering@openenergytransition.org"]} />
+<MaintainerTag maintainerEmails={["bryn.pickering@openenergytransition.org", "siddharth.krishna@openenergytransition.org"]} />
 
 # Python dependency management
 
@@ -18,7 +18,7 @@ This page describes our current recommended approach to dependency management, b
 **TL;DR**: use [`uv`](https://docs.astral.sh/uv) if you are working in a pure Python workspace, otherwise use [`pixi`](https://pixi.sh/latest).
 For a 2025 perspective on these package managers see [this blog article](https://jacobtomlinson.dev/posts/2025/python-package-managers-uv-vs-pixi/).
 
-### Recommendations
+## Recommendations
 
 Both `uv` and `pixi` are modern, fast, and reliable dependency management tools that significantly improve upon traditional Python package managers.
 They share several advantages:
@@ -38,22 +38,22 @@ If you are already using `conda` (/`mamba`/`micromama`) or Python `venv`s for de
 - **Running commands**: You can activate shell environments with `uv` and `pixi` but you will often find it easier to prepend your existing calls with `uv run` or `pixi run`.
   For example: `pixi run snakemake -n`.
   Here, `snakemake -n` will be run in the project-level environment.
-- **ephemeral environments**: If you need to run a script with a temporary combination of dependencies, you can do so with `uvx` or `pixi exec`.
+- **Ephemeral environments**: If you need to run a script with a temporary combination of dependencies, you can do so with `uvx` or `pixi exec`.
   This saves you creating a conda environment (e.g. `test-113`) which you invariably forget to delete after you are done...
 - **Adding dependencies**: You will find it easiest to add dependencies with `uv add`/`pixi add`.
   This will simultaneously resolve dependencies, update the lockfile, and update your requirements list.
   So, whenever you add a dependency to your working environment, you have a record of it that others will also have access to.
 
-## `uv`
+### `uv`
 
-`uv` is the ideal choice for pure Python projects and package development:
+`uv` is the ideal choice for pure Python projects and package or library development:
 
 - **PyPI-native**: Optimised for Python packages distributed on PyPI.
 - **Package publishing**: Built-in support for building and publishing Python packages.
 - **Script metadata**: Embed dependencies directly in Python scripts for easy sharing.
 - **Virtual environments**: Fast creation and management of Python virtual environments.
 
-## `pixi`
+### `pixi`
 
 `pixi` is the better choice when you need conda packages or multi-language support:
 
@@ -77,10 +77,11 @@ If you are already using `conda` (/`mamba`/`micromama`) or Python `venv`s for de
 | **Task management** | Limited (via scripts) | Built-in task runner |
 | **Platform support** | Cross-platform only if no system libraries required | Cross-platform with explicit platform targets |
 
-### Recommendation by use-case
+## Recommendation by use-case
 
-## Developing Python packages
+### Developing Python packages
 
+**Example(s): [linopy](https://github.com/open-energy-transition/linopy)**
 **Recommendation**: `uv`
 
 You will know if you are developing a package if you plan to distribute it on [PyPI](https://pypi.org/).
@@ -88,7 +89,7 @@ Since dependencies of PyPI-indexed packages must also be PyPI-indexed, you will 
 
 `uv` comes with [various features to streamline building and publishing your package](https://docs.astral.sh/uv/guides/package).
 
-## Ad-hoc scripting
+### Ad-hoc scripting
 
 **Recommendation**: `uv` or `pixi` (depending on reliance on non-Python binaries)
 
@@ -100,8 +101,9 @@ This means you can share the script with others without needing to also share de
 `uv` is probably sufficient for most of your ad-hoc scripting needs.
 However, if you rely on non-Python binaries for your work (e.g., geospatial libs), especially on Windows, you should use `pixi` to access `conda` packages.
 
-## Snakemake workflows
+### Snakemake workflows
 
+**Example(s): PyPSA-Earth, PyPSA-Eur, and their forks**
 **Recommendation**: `pixi`
 
 It is not possible to run our `snakemake` workflows without access to `conda`.
@@ -161,6 +163,5 @@ pixi import --environment dev --format=pypi-txt requirements-dev.txt
 
 You can mix and match the above, to import an `environment.yaml` as one `pixi` environment and a `requirements.txt` as another.
 
-**NOTE**: once you have imported requirements, if from a PyPI requirements file you should manually move the dependencies from the `[pypi-dependencies]` config option to `[dependencies]`.
-That is, the dependencies should be installed from `conda`, not `PyPI`.
-You may find that on running `pixi install`, there are issues raised that require some dependencies to be returned to `[pypi-dependencies]`.
+**NOTE**: if you have imported requirements from a PyPI requirements file, then you should manually move the dependencies from the `[pypi-dependencies]` config option to `[dependencies]` for all dependencies available via `conda`.
+An easy way to check this is to move all dependencies, run `pixi install`, and return dependencies to `[pypi-dependencies]` for which issues are raised.
