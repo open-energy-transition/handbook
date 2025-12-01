@@ -103,7 +103,7 @@ With `uv`, you can also use [script metadata](https://docs.astral.sh/uv/guides/s
 This means you can share the script with others without needing to also share dependency requirements; they can run it directly with `uv run` and know that the appropriate dependencies will be installed.
 
 Although `uv` is probably sufficient for most of your ad-hoc scripting needs, you should use `pixi` (and `conda` dependencies) where possible.
-This increases the likelihood that your scripts are transferrable to other users and operating systems since non-Python binaries will be accounted for.
+This increases the likelihood that your scripts are transferable to other users and operating systems since non-Python binaries will be accounted for.
 
 You **should** track your lockfile (`pixi.lock`/`uv.lock`) in git in scripted projects.
 This mitigates the risk of your scripts failing when run by others on their local machines.
