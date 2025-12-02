@@ -82,6 +82,7 @@ If you are already using `conda` (/`mamba`/`micromama`) or Python `venv`s for de
 ### Developing Python packages
 
 **Example(s)**: [linopy](https://github.com/open-energy-transition/linopy)
+
 **Recommendation**: `uv`
 
 You will know if you are developing a package if you plan to distribute it on [PyPI](https://pypi.org/).
@@ -95,6 +96,7 @@ This mitigates the risk of developing (/ running your CI tests) in an environmen
 ### Ad-hoc scripting
 
 **Example(s)**: [openmod-tracker](https://github.com/open-energy-transition/openmod-tracker)
+
 **Recommendation**: `pixi`
 
 It is still useful to use one of `uv` or `pixi` when undertaking ad-hoc scripting instead of using a globally installed `conda` environment or `venv`.
@@ -113,6 +115,7 @@ In such cases, you should at least explicitly pin your dependency versions.
 ### Snakemake workflows
 
 **Example(s)**: [PyPSA-Earth](https://github.com/open-energy-transition/pypsa-earth), [PyPSA-Eur](https://github.com/open-energy-transition/pypsa-eur), and their forks
+
 **Recommendation**: `pixi`
 
 It is not possible to run our `snakemake` workflows without access to `conda`.
