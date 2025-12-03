@@ -90,8 +90,9 @@ Since dependencies of PyPI-indexed packages must also be PyPI-indexed, you will 
 
 `uv` comes with [various features to streamline building and publishing your package](https://docs.astral.sh/uv/guides/package).
 
-You should **not** track your lockfile (`uv.lock`) in git in Python packages.
-This mitigates the risk of developing (/ running your CI tests) in an environment which deviates from that seen by users accessing the package from PyPI.
+You **should** track your lockfile (`uv.lock`) in git in Python packages.
+This ensures all developers are working with the same dependencies.
+However, your CI tests should run against a fresh resolution of dependencies (ignoring the lockfile), to reflect the environment created when installing the package directly from PyPI.
 
 ### Ad-hoc scripting
 
