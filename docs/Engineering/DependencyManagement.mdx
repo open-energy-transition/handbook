@@ -1,0 +1,187 @@
+---
+sidebar_label: "Python Dependency Management"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+
+<MaintainerTag maintainerEmails={["bryn.pickering@openenergytransition.org", "siddharth.krishna@openenergytransition.org"]} />
+
+# Python dependency management
+
+Most of our projects are Python-based.
+This may be in the form of groups of ad-hoc scripts, distributable packages, or `snakemake` workflows.
+Python has a long history of dependency management, with new solutions become available almost annually.
+This page describes our current recommended approach to dependency management, by project type.
+
+**TL;DR**: use [`uv`](https://docs.astral.sh/uv) if you are working on a Python package that will be uploaded to PyPI, otherwise use [`pixi`](https://pixi.sh/latest).
+For a 2025 perspective on these package managers see [this blog article](https://jacobtomlinson.dev/posts/2025/python-package-managers-uv-vs-pixi/).
+
+## Recommendations
+
+Both `uv` and `pixi` are modern, fast, and reliable dependency management tools that significantly improve upon traditional Python package managers.
+They share several advantages:
+
+- **Speed**: Both are written in Rust and are orders of magnitude faster than traditional tools like `pip` and `conda`.
+- **Reproducibility**: Lock files ensure consistent environments across machines and over time.
+- **Active development**: Both tools are actively maintained with regular updates and improvements.
+- **Multiple environments**: Dependencies can be grouped within a single project (e.g., to separate docs, dev, test, and base dependencies) and easily invoked when needed.
+- **Tool management**: Run in ephemeral environments as needed, with `pixi exec` or `uvx`.
+- **Directory-level environments**: Environments don't need to be actively invoked, they will be activated automatically in directories in which appropriate configuration is available, simply by prepending calls with `uv run` / `pixi run`.
+
+If you are already using `conda` (/`mamba`/`micromama`) or Python `venv`s for dependency management, the main differences are:
+
+- **Directory-level environments**: Although it is possible to set up workspaces in which the same environment is available in various directories on the same machine, `uv` and `pixi` are designed to be used to create project-specific environments, which means that you only have access to the environment when you are in the project directory.
+  This will be a change from system-level environments that you will have used previously.
+  The benefit of this approach is that your environments are more robust; they do not accidentally grow and deviate from the original environment over time as you add and remove dependencies.
+- **Running commands**: You can activate shell environments with `uv` and `pixi` but you will often find it easier to prepend your existing calls with `uv run` or `pixi run`.
+  For example: `pixi run snakemake -n`.
+  Here, `snakemake -n` will be run in the project-level environment.
+- **Ephemeral environments**: If you need to run a script with a temporary combination of dependencies, you can do so with `uvx` or `pixi exec`.
+  This saves you creating a conda environment (e.g. `test-113`) which you invariably forget to delete after you are done...
+- **Adding dependencies**: You will find it easiest to add dependencies with `uv add`/`pixi add`.
+  This will simultaneously resolve dependencies, update the lockfile, and update your requirements list.
+  So, whenever you add a dependency to your working environment, you have a record of it that others will also have access to.
+
+### `uv`
+
+`uv` is the ideal choice for pure Python projects and package or library development:
+
+- **PyPI-native**: Optimised for Python packages distributed on PyPI.
+- **Package publishing**: Built-in support for building and publishing Python packages.
+- **Script metadata**: Embed dependencies directly in Python scripts for easy sharing.
+- **Virtual environments**: Fast creation and management of Python virtual environments.
+
+### `pixi`
+
+`pixi` is the better choice when you need conda packages or multi-language support:
+
+- **Conda & PyPI ecosystem**: Full access to conda-forge and other conda channels, whilst maintaining access to `pip` dependencies if needed (via `uv`!).
+- **Multi-language**: Manage dependencies for Python and system libraries simultaneously.
+- **Binary dependencies**: Excellent for projects requiring compiled libraries (geospatial, scientific computing).
+- **Task runner**: Built-in task management to replace Make files for more complex workflows.
+- **Multiple environments**: Easy configuration of isolated or partially dependent environments (dev, test, docs) in one project.
+
+### Key differences between `uv` and `pixi`
+
+| Aspect | `uv` | `pixi` |
+|--------|------|--------|
+| **Package ecosystem** | PyPI only | Conda channels + PyPI (internally via `uv`) |
+| **Primary use case** | Pure Python projects | Multi-language or binary-heavy projects |
+| **Package publishing** | Full support for building & publishing to PyPI | Designed for conda package distribution to [prefix.dev](https://prefix.dev/) |
+| **Speed** | Extremely fast (Rust-based) | Very fast (Rust-based) |
+| **Configuration** | `pyproject.toml` or `uv.toml` | `pyproject.toml` or `pixi.toml` |
+| **Virtual environments** | Python venv compatible | Conda-style environments |
+| **Script execution** | `uv run` with inline metadata | `pixi exec` for ephemeral runs |
+| **Task management** | Limited (via scripts) | Built-in task runner |
+| **Platform support** | Cross-platform only if no system libraries required | Cross-platform with explicit platform targets |
+
+## Recommendation by use-case
+
+### Developing Python packages
+
+**Example(s)**: [linopy](https://github.com/open-energy-transition/linopy)
+
+**Recommendation**: `uv`
+
+You will know if you are developing a package if you plan to distribute it on [PyPI](https://pypi.org/).
+Since dependencies of PyPI-indexed packages must also be PyPI-indexed, you will benefit from using [`uv`](https://docs.astral.sh/uv) for dependency management.
+
+`uv` comes with [various features to streamline building and publishing your package](https://docs.astral.sh/uv/guides/package).
+
+You **should** track your lockfile (`uv.lock`) in git in Python packages.
+This ensures all developers are working with the same dependencies.
+However, your CI tests should run against a fresh resolution of dependencies (ignoring the lockfile), to reflect the environment created when installing the package directly from PyPI.
+
+### Ad-hoc scripting
+
+**Example(s)**: [openmod-tracker](https://github.com/open-energy-transition/openmod-tracker)
+
+**Recommendation**: `pixi`
+
+It is still useful to use one of `uv` or `pixi` when undertaking ad-hoc scripting instead of using a globally installed `conda` environment or `venv`.
+Even if your ad-hoc scripting is entirely local (i.e., not collated in a GitHub repository), you can benefit from using ephemeral environments with [`uvx`](https://docs.astral.sh/uv/guides/tools) and [`pixi exec`](https://pixi.sh/dev/reference/cli/pixi/exec/) so that you don't slowly build up a long list of test environments on your machine.
+With `uv`, you can also use [script metadata](https://docs.astral.sh/uv/guides/scripts/#creating-a-python-script) to embed the dependencies required for a script directly in the script ([in the pipeline for `pixi`](https://github.com/prefix-dev/pixi/pull/4881)).
+This means you can share the script with others without needing to also share dependency requirements; they can run it directly with `uv run` and know that the appropriate dependencies will be installed.
+
+Although `uv` is probably sufficient for most of your ad-hoc scripting needs, you should use `pixi` (and `conda` dependencies) where possible.
+This increases the likelihood that your scripts are transferable to other users and operating systems since non-Python binaries will be accounted for.
+
+You **should** track your lockfile (`pixi.lock`/`uv.lock`) in git in scripted projects.
+This mitigates the risk of your scripts failing when run by others on their local machines.
+Note that this is not feasible if defining dependencies in script metadata.
+In such cases, you should at least explicitly pin your dependency versions.
+
+### Snakemake workflows
+
+**Example(s)**: [PyPSA-Earth](https://github.com/open-energy-transition/pypsa-earth), [PyPSA-Eur](https://github.com/open-energy-transition/pypsa-eur), and their forks
+
+**Recommendation**: `pixi`
+
+It is not possible to run our `snakemake` workflows without access to `conda`.
+Therefore, `pixi` is the recommended dependency manager.
+
+You **should** track your lockfile (`pixi.lock`) in git in snakemake workflows.
+This is essential for reproducibility.
+
+## Configuration
+
+### `uv`
+
+In a Python package, you should store your `uv` configuration in a project `pyproject.toml`.
+In all other projects, use a `uv.toml` file.
+
+### `pixi`
+
+In a Python package, you should store your `pixi` configuration in a project `pyproject.toml`.
+In all other projects, use a `pixi.toml` file.
+
+- Your project should be cross-platform compatible since we and our clients work across Windows, Linux, and MacOS machines.
+  To ensure this is captured in your dependencies, set `[workspace.platforms]` to `["win-64", "linux-64", "osx-64", "osx-arm64"]` (+ optionally `linux-aarch64`).
+- Your project should also use `conda` dependencies where possible.
+  Only add `PyPI` dependencies when no `conda` alternative is available.
+- Isolate docs dependencies in their own environment;
+  the default dependencies should only be those required to run your main project scripts.
+- If working on a soft-fork of a workflow for a project (e.g. [open-TYNDP](https://github.com/open-energy-transition/open-tyndp)), you should use a different [`pixi` environment](https://pixi.sh/dev/workspace/multi_environment/) for project-specific dependencies.
+  These dependencies will be merged with the existing, default dependencies to create the project working environment.
+  This way, merging in changes from upstream will entail fewer conflicts that need resolving *and* it is clear what dependencies have been added in the project above and beyond those in the upstream repository.
+  For an example of how to achieve this, see the [open-TYNDP](https://github.com/open-energy-transition/open-tyndp/blob/e7bfb774f23641a29c7fb07ffd37c4f0477d7c74/pixi.toml#L159-L172) or [gb-dispatch-model](https://github.com/open-energy-transition/gb-dispatch-model/blob/0c88872a37665a314efddf5d88e8b8bc199541ff/pixi.toml#L152-L171) pixi configuration files.
+
+## Making the transition in existing projects
+
+You can make the transition relatively painlessly:
+
+### `uv`
+
+If you just want to hand over the existing project (assuming you have been installing with `pip` to date):
+
+```sh
+uvx migrate-to-uv --requirements-file requirements.txt --dev-requirements-file requirements-dev.txt --package-manager pip
+```
+
+**NOTE**: if you have dynamic dependencies defined in your current `setup.py`/`pyproject.toml`, you will need to manually delete reference to these for `uv` to be able to work properly.
+
+`uv` also has [its own migration process](https://docs.astral.sh/uv/guides/migration/pip-to-project), but `migrate-to-uv` is more streamlined.
+
+### `pixi`
+
+If you have an existing conda environment file:
+```sh
+pixi init --import environment.yaml -p "win-64" -p "linux-64" -p "osx-64" -p "osx-arm64"
+# Add dev env dependencies separately
+pixi import --environment dev --format=conda-env env-docs.yaml
+```
+
+If you have an existing `requirements.txt` file:
+```sh
+pixi init -p "win-64" -p "linux-64" -p "osx-64" -p "osx-arm64"
+pixi import --environment default --format=pypi-txt requirements.txt
+# Add dev env dependencies separately
+pixi import --environment dev --format=pypi-txt requirements-dev.txt
+```
+
+You can mix and match the above, to import an `environment.yaml` as one `pixi` environment and a `requirements.txt` as another.
+
+**NOTE**: if you have imported requirements from a PyPI requirements file, then you should manually move the dependencies from the `[pypi-dependencies]` config option to `[dependencies]` for all dependencies available via `conda`.
+An easy way to check this is to move all dependencies, run `pixi install`, and return dependencies to `[pypi-dependencies]` for which issues are raised.
