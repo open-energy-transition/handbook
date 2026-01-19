@@ -26,6 +26,12 @@ Snakemake before version 9.14.6 acquired configured licenses whenever you starte
 Rename and copy the `gurobi.lic` file in your `/home/<you>` folder. Get solving...
 
 ### Discouraged Approach
+:::warning
+
+This added the Gurobi license key as part of the config into created PyPSA network files.
+Therefore this approach is now discouraged, please move to the Standard Approach and *remove* the key from your configuration files.
+
+:::
 
 We used to include the license key as part of the PyPSA configuration file by editing the `config/config.yaml` file (which is not tracked in version control)
 to include:
