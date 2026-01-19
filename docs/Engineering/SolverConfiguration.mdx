@@ -27,9 +27,7 @@ Rename and copy the `gurobi.lic` file in your `/home/<you>` folder. Get solving.
 
 ### Discouraged Approach
 
-To mitigate license contention, [linopy](https://linopy.readthedocs.io/) releases from v0.5.6 now support passing in solver license details as environment variables.
-
-We used to include these as part of the PyPSA configuration file by editing the `config/config.yaml` file (which is not tracked in version control)
+We used to include the license key as part of the PyPSA configuration file by editing the `config/config.yaml` file (which is not tracked in version control)
 to include:
 
 ```
@@ -42,9 +40,7 @@ solving:
         LICENSEID: ...
 ```
 
-```{warning}
-This added the Gurobi license key as part of the config into created PyPSA network files. Therefore this is now discouraged, please move to the Standard Approach and *remove* the key from your configuration files.
-```
+**This added the Gurobi license key as part of the config into created PyPSA network files. Therefore this is now discouraged, please move to the Standard Approach and *remove* the key from your configuration files.**
 
 ## FAQ
 
