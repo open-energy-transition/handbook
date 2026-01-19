@@ -14,22 +14,26 @@ Proprietary solvers require a license. Users must configure the details of the s
 
 ## Configuring Gurobi
 
-Our gurobi license is limited to 5 users in parallel. 
+Our gurobi license is limited to 15 users in parallel. 
 If a project is running multiple solves in parallel, we can run out of available licenses.
-As OET expands, license contention will become an increasing problem.
+As OET expands, license contention will become an increasing problem, some coordination is happening on [discord](https://discord.com/channels/1097854148965306470/1432376105205104700/1432376109789479044) and [Google Calendar](https://calendar.google.com/calendar/embed?src=c_4243181a0a7ef461e50a85319cd931c0c404ad8289b35be066063d9d6e71aaa8%40group.calendar.google.com&ctz=Europe%2FBerlin).
 
 There are multiple ways to configure Gurobi. 
-We do not recommend the standard approach as it increases license contention. 
-Instead, use the preferred approach.
+Snakemake before version 9.14.6 acquired configured licenses whenever you started it, so please make sure to update it to at least >=9.14.6.
 
 ### Standard Approach
 
-Rename and copy the `gurobi.lic` file in your `/home` folder. Get solving...
+Rename and copy the `gurobi.lic` file in your `/home/<you>` folder. Get solving...
 
-### Preferred Approach
+### Discouraged Approach
+:::warning
 
-To mitigate license contention, [linopy](https://linopy.readthedocs.io/) releases from v0.5.6 now support passing in solver license details as environment variables.
-In practice, these can be included as part of your PyPSA configuration file by editing the `config/config.yaml` file (which is not tracked in version control)
+This added the Gurobi license key as part of the config into created PyPSA network files.
+Therefore this approach is now discouraged, please move to the Standard Approach and *remove* the key from your configuration files.
+
+:::
+
+We used to include the license key as part of the PyPSA configuration file by editing the `config/config.yaml` file (which is not tracked in version control)
 to include:
 
 ```
@@ -42,10 +46,6 @@ solving:
         LICENSEID: ...
 ```
 
-Make sure that `LICENSEID` is not quoted and reads like a plain integer.
-
-Use this instead of adding the `gurobi.lic` to your home folder. This approach only uses the license during the actual solving step,
-rather than locking a license for the duration of the workflow runtime.
 
 ## FAQ
 
