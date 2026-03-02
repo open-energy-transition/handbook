@@ -1,0 +1,29 @@
+---
+sidebar_label: "Information security"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# Information security
+
+<ControlledDocBanner />
+
+## Security classification
+
+All information within OET (documents, datasets, etc.) must be classified into one of the following categories:
+
+- **Public** - Information intended for unrestricted distribution, where disclosure would not cause any harm to OET (e.g., open source code or open data, publicly released documents, information published on the official website).
+- **Internal** - Information intended for employees and associates of OET, where unauthorized disclosure could cause minor operational or reputational impact (e.g., internal procedures, meeting notes, organizational plans).
+- **Confidential** - Information where unauthorized disclosure could result in significant business, legal, or reputational damage to OET (e.g., personal data, unpublished financial results, sensitive contractual or technical information).
+
+To facilitate this classification and make it easy to identify the security classification of documents, we have added a table with metadata including security classification to most of our [template documents](TemplateDocuments) which use the Internal classification by default. Note that the security classification is **mandatory**, other fields such as version and owner are recommended but you are free to adapt it to your usage.
+
+## Folder naming convention
+
+To reduce the risk of unintentionally sharing internal and confidential data outside of OET or approved partners, we require the following naming conventions for folders on Google Drive:
+
+- Prefix names with `[External]` for folders that are shared outside OET. When sharing documents with a partner or client, we recommend creating a folder called e.g. `[External] Justice League / OET Shared Folder` and placing all shared files in it.
+- Prefix names with `[Public]` for folders that are shared to the public (anyone with the link can access).
