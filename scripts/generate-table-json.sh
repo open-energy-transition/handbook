@@ -1,73 +1,67 @@
 #!/bin/bash
 
-# Function to generate JSON for a directory
-generate_json() {
-    local directory="$1"
-    local json="{"
+set -euo pipefail
 
-    # Loop through each directory in the given directory
-    for folder in "$directory"/*; do
-        if [ -d "$folder" ]; then
-            # Extract folder name
-            folder_name=$(basename "$folder")
+# This script generates a valid JSON file (output.json) describing files under
+# the docs/ directory. The previous pure-shell approach concatenated strings
+# and could emit invalid JSON when a value contained quotes or newlines.
+#
+# Here we use an embedded Python script to reliably build the JSON and write it
+# with proper escaping.
 
-            # We'll build an array of objects here
-            local items="["
+ROOT_DIR="$(pwd)/docs"
+OUT_FILE="output.json"
 
-            # Loop through files in the folder
-            for item in "$folder"/*; do
-                if [ -f "$item" ]; then
-                    item_name=$(basename "$item")
-                    
-                    # Skip index.md or index.mdx
-                    if [ "$item_name" != "index.md" ] && [ "$item_name" != "index.mdx" ]; then
-                        
-                        # Remove extension from the filename
-                        local link_name="${item_name%.*}"
+if [ ! -d "$ROOT_DIR" ]; then
+  echo "Error: docs directory not found at $ROOT_DIR" >&2
+  exit 1
+fi
 
-                        # Attempt to extract 'sidebar_label' from the front matter
-                        # removing any trailing newline/carriage return characters
-                        local nice_name=""
-                        nice_name=$(grep '^sidebar_label: ' "$item" \
-                          | head -n 1 \
-                          | sed -E 's/^sidebar_label:\s*"(.*)"/\1/' \
-                          | tr -d '\r\n')
+python3 - <<'PY'
+import os, json, re, sys
+root = os.path.join(os.getcwd(), 'docs')
+result = {}
 
-                        # If no sidebar_label was found, default to the link_name
-                        if [ -z "$nice_name" ]; then
-                            nice_name="$link_name"
-                        fi
+# Iterate top-level directories in docs/
+for folder_name in sorted(os.listdir(root)):
+    folder = os.path.join(root, folder_name)
+    if not os.path.isdir(folder):
+        continue
+    items = []
+    # Iterate files in the folder
+    for fname in sorted(os.listdir(folder)):
+        p = os.path.join(folder, fname)
+        if not os.path.isfile(p):
+            continue
+        if fname in ('index.md', 'index.mdx'):
+            continue
+        name_no_ext = os.path.splitext(fname)[0]
+        nice_name = name_no_ext
+        # Try to extract sidebar_label: value from the file (simple heuristic)
+        try:
+            with open(p, 'r', encoding='utf8') as fh:
+                for line in fh:
+                    m = re.match(r'^\s*sidebar_label:\s*(.+)$', line)
+                    if m:
+                        val = m.group(1).strip()
+                        # strip surrounding quotes if present
+                        if (val.startswith('"') and val.endswith('"')) or (val.startswith("'") and val.endswith("'")):
+                            val = val[1:-1]
+                        # remove any trailing carriage returns/newlines
+                        val = val.replace('\r', '').replace('\n', '')
+                        nice_name = val
+                        break
+        except Exception:
+            # ignore read errors and fall back to filename
+            pass
+        items.append({"link": name_no_ext, "nice_name": nice_name})
+    result[folder_name] = items
 
-                        # Append object to our items array
-                        items="$items{\"link\": \"$link_name\", \"nice_name\": \"$nice_name\"}, "
-                    fi
-                fi
-            done
+# Write JSON to output.json in repository root
+with open('output.json', 'w', encoding='utf8') as out:
+    json.dump(result, out, ensure_ascii=False, indent=2)
 
-            # Remove trailing comma and close the array
-            items="${items%, }]"
-            
-            # Add this folder's items array to the JSON
-            json="$json\"$folder_name\": $items, "
-        fi
-    done
+print('Wrote output.json', file=sys.stderr)
+PY
 
-    # Remove trailing comma and close the main JSON object
-    json="${json%, }}"
-    echo "$json"
-}
-
-# Get the relative path to the directory
-relative_directory="docs"
-directory="$(pwd)/$relative_directory"
-
-# Generate the JSON structure
-output_json=$(generate_json "$directory")
-
-# Specify the relative path to the output file
-output_file="output.json"
-
-# Write JSON to file
-echo "$output_json" > "$output_file"
-
-echo "JSON generated and saved as output.json"
+echo "JSON generated and saved as $OUT_FILE"
