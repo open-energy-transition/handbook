@@ -63,7 +63,7 @@ def build_map(root: Path) -> dict:
                 continue
             name_no_ext = f.stem
             nice = extract_sidebar_label(f) or nice_name_from_basename(name_no_ext)
-            items.append({"link": name_no_ext, "nice_name": nice})
+            items.append({"link": name_no_ext, "sidebar_label": nice})
         result[folder.name] = items
     return result
 
