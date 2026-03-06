@@ -1,0 +1,66 @@
+---
+sidebar_label: "Information security"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# Information security
+
+<ControlledDocBanner />
+
+## Security classification
+
+All information within OET (documents, datasets, etc.) must be classified into one of the following categories:
+
+- **Public** - Information intended for unrestricted distribution, where disclosure would not cause any harm to OET (e.g., open source code or open data, publicly released documents, information published on the official website).
+- **Internal** - Information intended for employees and associates of OET, where unauthorized disclosure could cause minor operational or reputational impact (e.g., internal procedures, meeting notes, organizational plans).
+- **Confidential** - Information where unauthorized disclosure could result in significant business, legal, or reputational damage to OET (e.g., personal data, unpublished financial results, sensitive contractual or technical information).
+
+To facilitate this classification and make it easy to identify the security classification of documents, we have added a table with metadata including security classification to most of our [template documents](docs/Company/TemplateDocuments.mdx). The default classification is Internal, but you must change the classification when you use the template. Note that the security classification is **mandatory**, other fields such as version and owner are recommended but you are free to adapt it to your usage.
+
+## Data storage and backups
+
+As a fully-remote cloud-native organization, all information **must be** stored on one of our approved cloud services and modified or updated using the appropriate method. No information must be stored solely on personal devices, as this can lead to data loss in the event of an incident. For example:
+
+- All code must be hosted on GitHub. Repositories must be owned by OET's GitHub organization, unless the project is contributing to an existing open source repository. Local checkouts of repositories are of course permitted for development, but please remember to push your code early and often!
+- All documents (meeting minutes, reports, spreadsheets, etc) must be on Google Drive. Use the appropriate project folder in the [OET Shared Drive](https://drive.google.com/drive/folders/0AJwtCWGBFq0PUk9PVA) for everything except confidential information or personal notes. There are restricted shared drives for HoDs and HR/Finance related confidential information.
+- Datasets: public datasets can be stored on Zenodo or the PyPSA [data mirror](https://pypsa-eur.readthedocs.io/en/latest/data_sources.html#data-versioning). Internal and confidential data must be stored on the project folder on Google Drive or Google Cloud Storage buckets (reach out to the Head of Software if you need to set this up for your project).
+- Application databases: if you are building an application (e.g. OETC, powernetzero), you must set up automatic backups and ensure any personal data is encrypted at rest. We recommend using your hosting provider's inbuilt backup solution (e.g. Google Cloud).
+
+This policy ensures that we are protected by the industry-grade backup, recovery, and data retention capabilities of our cloud service providers. In particular:
+- [Google Workspace Data Protection Overview](https://workspace.google.com/intl/en/security/)
+- [Google Backup & DR Overview](https://docs.cloud.google.com/backup-disaster-recovery/docs/concepts/backup-dr)
+- [GitHub security & retention policy](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement#security-and-retention)
+    - Code in git repositories are also protected by the distributed nature of git: even in the unlikely event that GitHub goes down, local checkouts on our laptops can be used as backups.
+
+## Information transfer
+
+Information must be transferred in a secure manner appropriate to its classification to ensure confidentiality, integrity, and availability.
+
+**Approved transfer methods:**
+Only approved communication channels may be used for transferring business information. These include:
+- Company email accounts
+- Google Drive
+- Other tools formally approved by Management / Information Security Officer (ISO)
+
+The use of personal accounts or unapproved file-sharing services is prohibited.
+
+**Transfer based on classification:**
+- Public / Internal information may be shared using the approved tools above.
+- Confidential information must only be shared via:
+    - Ecrypted file transfer (e.g., encrypted ZIP archive). The password must be communicated via a separate communication channel.
+    - Google Drive with restricted access to named recipients.
+Public or anonymous sharing links are prohibited for Confidential information. Access must be revoked when no longer required.
+
+**External parties**:
+Before transferring Confidential or Restricted information to external parties a valid confidentiality agreement (e.g., NDA, contractual clause) must be in place. The appropriate Information Owner must approve the transfer where required. The Management / ISO shall be involved if additional protection measures are necessary.
+
+## Folder naming convention
+
+To reduce the risk of unintentionally sharing internal and confidential data outside of OET or approved partners, we require the following naming conventions for folders on Google Drive:
+
+- Prefix names with `[External]` for folders that are shared outside OET. When sharing documents with a partner or client, we recommend creating a folder called e.g. `[External] Justice League / OET Shared Folder` and placing all shared files in it.
+- Prefix names with `[Public]` for folders that are shared to the public (anyone with the link can access).
