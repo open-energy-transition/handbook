@@ -5,8 +5,8 @@
   environment = { NODE_VERSION = "20.18.1" }
 
 [context.production]
-  command = "bash scripts/change-base-url.sh && bash scripts/sync-changelog.sh && python scripts/generate-table-json.py && bash scripts/sync-data.sh && npm ci && npm run build"
+  command = "bash scripts/change-base-url.sh && bash scripts/sync-changelog.sh && bash scripts/generate-table-json.sh && bash scripts/sync-data.sh && npm ci && npm run build"
 
 [context.deploy-preview]
-  command = "bash scripts/change-base-url.sh && bash scripts/sync-changelog.sh && python scripts/generate-table-json.py && bash scripts/sync-data.sh && npm ci && npm run build"
+  command = "bash scripts/change-base-url.sh && bash scripts/sync-changelog.sh && bash scripts/generate-table-json.sh && bash scripts/sync-data.sh && npm ci && npm run build"
 
