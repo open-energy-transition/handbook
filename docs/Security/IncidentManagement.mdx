@@ -1,0 +1,57 @@
+---
+sidebar_label: "Incident management"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# Incident management
+
+<ControlledDocBanner />
+
+This procedure provides a structured approach for managing information security incidents at OET.
+Its objectives are to:
+
+- Ensure that all employees and third parties can promptly report incidents.
+- Define clear roles, responsibilities, and escalation paths.
+- Guarantee that incidents are classified, contained, resolved, and reviewed systematically.
+- Support compliance with ISO/IEC 27001:2022, NIS2, and GDPR obligations.
+
+## Roles and responsibilities
+
+The following roles are responsible for managing security incidents:
+
+| Role | Responsibilities |
+| :--- | :--- |
+| **Employees & Users** | Promptly report any suspected or actual security incidents; follow security policies and support investigations. |
+| **Information Security Manager (ISM)** | Coordinates the overall incident management process, including classification, escalation, and reporting to management. They assign an Incident Coordinator and will inform the Information Security Officer (ISO) about the incident. |
+| **Incident Coordinator** | Nominated by the ISM depending on the type and domain of the incident. Manages specific containment, resolution, and recovery activities; acts as the primary point of contact during an incident. |
+| **Incident Response Team (IRT)** | Technical and administrative staff who support investigation, documentation, and mitigation. |
+| **OET Management** | Heads of Departments and CEO. Responsible for final decision-making during major incidents and allocating necessary resources for recovery. |
+
+As of March 2026, our ISM is [Stefan Radnev](mailto:stefan.radnev@openenergytransition.org) and our ISO is [Bartosz Naumowicz](mailto:bartosz.naumowicz@openenergytransition.org). Permanent members of the IRT include the Heads of People and Software; others are added to the team depending on the incident.
+
+## How to report incidents
+
+All incidents must be reported immediately upon detection through the following channels:
+
+* **Discord:** OET employees can report incidents in the `#iso-security` Discord channel, tagging the ISM and permanent members of the response team. Note that as this channel is accessible to all OET employees, you should use direct messages (DMs) instead if the incident is not sensitive or confidential.
+* **Email:** Both employees and external parties can report incidents to [security@openenergytransition.org](mailto:security@openenergytransition.org).
+
+## What happens after reporting
+
+Once an incident is reported, the Incident Response Team follows the below process, tracked in a central [incident register](https://docs.google.com/spreadsheets/d/1ox4QMs73tpSriZ3Vwc8t7Rs1fcvMmjV2_8GncHFFvc8/edit):
+
+1.  **Classification:** The ISM or Incident Coordinator classifies the incident based on its impact and urgency to determine the priority level (Critical, High, Medium, or Low).
+
+2.  **Containment & Resolution:** The Incident Coordinator and IRT take immediate actions to limit the damage and restore normal operations.
+
+3. **Documentation & Tracking:** All details are logged in an [incident register](https://docs.google.com/spreadsheets/d/1ox4QMs73tpSriZ3Vwc8t7Rs1fcvMmjV2_8GncHFFvc8/edit) which records:
+    * **Reporter Details:** Who reported it and when.
+    * **Incident Description:** What happened and which systems/data were affected.
+    * **Classification:** The assigned impact, urgency, and response level.
+    * **Team Involved:** Who is managing the response.
+    * **Actions Taken:** What steps were taken to contain/manage the incident and the timeline.
+    * **Lessons Learnt:** A review of how to prevent similar incidents in the future.
