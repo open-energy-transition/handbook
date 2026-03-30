@@ -56,22 +56,37 @@ In addition to the minimum requirements above, if using personal BYO devices for
 
 ## Security tools
 
-[Fleet](TODO link) is a ... tool that we need for ...
+### Fleet
+
+[Fleet](https://github.com/fleetdm/fleet) is an open-source device management and inventory tool that we need to maintain an accurate overview of the computers used for OET work and to confirm that important security controls are in place for ISO 27001 compliance.
 
 We use Fleet to:
-- ...
+- Collect device inventory (hostname, operating system, and version).
+- Monitor security status (disk encryption, installed software, and update status).
+- Ensure all devices accessing OET systems meet our minimum security standards.
 
-After installation, you will be able to see exactly what information is shared with our Fleet server.
+You can install Fleet using our [installation guide](https://docs.google.com/document/d/1W_BpmEoBPB5FYK_vieuDn85Oz57gLdPz/edit). Please suggest improvements to the guide as you use it!
 
-All data is sent only to OET’s self-hosted Fleet server. No data is shared with external parties.
+After installation, you will be able to see exactly what information is shared with our Fleet server. All data is sent only to OET’s self-hosted Fleet server on our GCP infrastructure. No data is shared with external parties.
 
-[Falcon](TODO link) is a ... tool that we need for ...
+### Falcon
+
+CrowdStrike [Falcon](https://www.crowdstrike.com/en-us/platform/) is an Endpoint Detection and Response (EDR) tool provided by CrowdStrike that we need for real-time protection against cyber threats.
 
 We use Falcon to:
-- ...
+- Detect and block malware, ransomware, and other security threats.
+- Provide real-time visibility into security incidents to prevent data breaches.
+- Ensure the integrity of devices performing confidential OET work.
+
+You can install Falcon using our [installation guide](https://docs.google.com/document/d/13zN4p-qXxmdYa0jbxd-w4xodOBjdeLtn/edit). Please suggest improvements to the guide as you use it!
+
+### Privacy
 
 We **do not** use Fleet or Falcon to:
-- ...
+- Access or collect personal files.
+- Monitor your web browsing history.
+- View or record your passwords.
+- Access your webcam or microphone.
 
 **Privacy Scope:** Monitoring of BYODs is strictly limited to Company-related data, compliance, and system access; personal content and private use remain outside the scope of monitoring.
 
