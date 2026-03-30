@@ -1,0 +1,80 @@
+---
+sidebar_label: "Device policy"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# Device policy
+
+<ControlledDocBanner />
+
+This page describes OET's device policy, including OET laptop policy, approved use of bring-your-own devices (BYOD), and use of personal mobile devices.
+
+For more details, see the Acceptable Use of the Information System [policy](https://docs.google.com/document/d/169YXi2lUckY6_qicAf-FrhZsggqt8XkO/edit).
+
+## OET devices: Linux
+
+As a non-profit whose core value is open source, OET procures Linux laptops for all employees. Exemptions are handled case-by-case, need a strong business reason, and need to be approved by the employee's HoD and the Head of Software.
+
+If you haven't used Linux before, don't worry! As a fully-remote organization, almost all OET work is performed on cloud services (Google Drive, GitHub, etc) which can be used in the browser and look the same on all operating systems. You can also ask in the Discord `#support` channel (and tag someone in the software department) if you have questions about getting started on Linux or troubleshooting something.
+
+If you need to use a particular app that is only available on Windows or macOS for your work, reach out to the Head of Software. We can create a virtual machine for your usage.
+
+OET also allows you to use your own personal laptop (BYOD) for work in certain cases. See the BYOD policy below.
+
+## Security requirements on all devices
+
+Here are some minimum requirements you must follow on any computer you use for OET work:
+
+* Regularly **update** the operating system and installed software, ideally automatically.
+* Install an approved **anti-malware tool** and keep it up to date. You must use [Falcon](TODO) on OET laptops and BYODs performing confidential work; on others we recommend TODO for Linux, TODO for macOS, and TODO for Windows.
+* Enable **full-disk encryption**, following this [guide](https://docs.google.com/document/d/1UYJPbWbLbDMCZZfcHcWRxu5qIl1KAmzEUk2naNtEVeY/edit?tab=t.0).
+* Use only approved cloud platforms and software on business data, and follow the [Information security](docs/Security/InformationSecurity.mdx) policy for classifying, storing, and transmitting information.
+* Avoid **connecting** to unsecured public Wi-Fi networks when accessing OET systems.
+* Any loss, theft, or suspected compromise of a device used for business purposes must be reported immediately following the [Incident management](docs/Security/IncidentManagement.mdx) procedure.
+
+## Security on OET devices
+
+In addition to the minimum requirements above, OET devices must:
+
+* Have [Fleet](TODO) installed for device inventory purposes, and so that software update and disk encryption status can be monitored.
+* Follow the hostname convention `OET-[CountryCode]-[OperatingSystem]-[EmployeeInitials]-[SerialNumber]`, e.g. `OET-NL-linux-SK-003`. See the [laptop register](https://docs.google.com/spreadsheets/d/1Hely8oQGtZPoYj2gzdKzBYK_clhTdYHIcYQdLpcW_4g/edit?gid=0#gid=0) for existing IDs to ensure your ID is unique.
+
+## BYOD policy
+
+In addition to the minimum requirements above, if using personal BYO devices for OET work, you must:
+
+* Ensure your device meets the **minimum security requirements** above including password/PIN protection, encryption, antivirus/endpoint protection, and regular updates.
+* If you are working on any information [classified](docs/Security/InformationSecurity.mdx) Confidential, you must have [Fleet](TODO) installed. If you are only working on Public information (e.g. on open-source code or public reports), you may work on a device without Fleet.
+* As mentioned above, we highly recommend using the anti-malware tool [Falcon](TODO). It is mandatory if you are working on Confidential information. If not, you may use another tool (we recommend TODO for Linux, TODO for macOS, and TODO for Windows).
+* **Separate** business and personal use on the device to prevent data leakage or unauthorized access.
+* **Offboarding:** Upon device replacement or employment termination, ensure all Company data is securely deleted or wiped and email confirmation of this to the Head of People.
+* Policy Violations: Failure to comply with BYOD requirements is considered a breach of the Information Security Policy and may result in disciplinary action.
+
+## Security tools
+
+[Fleet](TODO link) is a ... tool that we need for ...
+
+We use Fleet to:
+- ...
+
+After installation, you will be able to see exactly what information is shared with our Fleet server.
+
+All data is sent only to OET’s self-hosted Fleet server. No data is shared with external parties.
+
+[Falcon](TODO link) is a ... tool that we need for ...
+
+We use Falcon to:
+- ...
+
+We **do not** use Fleet or Falcon to:
+- ...
+
+**Privacy Scope:** Monitoring of BYODs is strictly limited to Company-related data, compliance, and system access; personal content and private use remain outside the scope of monitoring.
+
+## Mobile devices
+
+TODO
