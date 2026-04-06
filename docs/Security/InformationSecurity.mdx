@@ -19,7 +19,7 @@ All information within OET (documents, datasets, etc.) must be classified into o
 - **Internal**: Information intended for employees and associates of OET, where unauthorized disclosure could cause minor operational or reputational impact (e.g., internal procedures, meeting notes, organizational plans).
 - **Confidential**: Information where unauthorized disclosure could result in significant business, legal, or reputational damage to OET (e.g., personal data, unpublished financial results, sensitive contractual or technical information). Share this only with the relevant people on a need-to-know basis.
 
-To facilitate this classification and make it easy to identify the security classification of documents, we have added a table with metadata including security classification to most of our [template documents](docs/Company/TemplateDocuments.mdx). The default classification is Internal, but you must change the classification when you use the template. Note that the security classification is **mandatory**, other fields such as version and owner are recommended but you are free to adapt it to your usage.
+To facilitate this classification and make it easy to identify the security classification of documents, we have added a table with metadata including security classification to most of our [template documents](docs/Company/TemplateDocuments.mdx). The default classification is Internal, but you must change the classification when you use the template. Note that the security classification is **mandatory** for all documents, while other fields such as version are recommended and you are free to adapt it to your usage. For policies, procedures, and registers, an owner is also mandatory.
 
 Note: unlabelled information is considered **internal**. 
 
@@ -77,3 +77,23 @@ To reduce the risk of unintentionally sharing internal and confidential data out
 
 - Prefix names with `[External]` for folders that are shared outside OET. When sharing documents with a partner or client, we recommend creating a folder called e.g. `[External] Justice League / OET Shared Folder` and placing all shared files in it.
 - Prefix names with `[Public]` for folders that are shared to the public (anyone with the link can access).
+
+## External media (e.g. USB drives)
+
+The use of removable and external storage devices such as USB flash drives and external backup drives on company-managed devices is **not permitted** (unless you are directed by management to, e.g. [secure wipe](#secure-wipe) your device). You should also not use these to store or transfer OET data on other devices. If you have a business reason for using such a device, please first get approval from the Information Security Manager (currently Stefan Radnev) or the ISO, who will coordinate with you to determine the most suitable device and protective measures.
+
+## Secure wipe
+
+The recommended tool for securely wiping data is [ShredOS](https://github.com/PartialVolume/shredos.x86_64).
+
+Here is the procedure for wiping a company laptop when you are offboarding, or returning/replacing a device:
+
+1. Preparation: The employee creates a ShredOS bootable USB.
+1. The Witness Call: The employee starts a video call  with the Head of People or Information Security Manager from their phone.
+1. The Identification:
+    - The employee points the phone camera at the laptop screen showing the Serial Number (using the dmidecode command we discussed earlier or the BIOS screen).
+    - The employee shows the physical Asset Tag or serial number sticker on the bottom of the device.
+1. The Initiation: The employee boots into ShredOS, selects the drive, and chooses the PRNG Stream or Zero Fill (1 pass is sufficient for modern SSDs).
+1. The Proof: Once finished, ShredOS displays a "Wipe Successful" screen.
+    - Screenshot 1: The final success screen showing the drive serial and "100% Complete."
+    - Screenshot 2: The employee's face or ID next to the screen (optional, but great for non-repudiation).
