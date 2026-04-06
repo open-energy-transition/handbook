@@ -1,0 +1,121 @@
+---
+sidebar_label: "Secure software development"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# 🛡️ Secure software development at OET
+
+<ControlledDocBanner />
+
+At OET, we build the tools that power the global energy transition. Because our software is used for critical infrastructure planning, the **integrity** of our code and the **protection** of our research data are vital.
+
+However, we know that a quick data analysis script doesn't need the same security overhead as a public-facing web platform. Use this guide to figure out what applies to your project.
+
+## 🏗️ Software Categories
+
+Identify which "bucket" your project falls into to determine your security requirements.
+
+| Category | Description | Mandatory security policies |
+| :--- | :--- | :--- |
+| **Internal prototypes** | Quick scripts, one-off visualizations, or "proof of concept" tools used only by the OET team. | None, but make sure it is clearly labelled as a prototype or internal tool. |
+| **Forks of open-source repos** | OET forks of open-source projects, typically used to contribute features and bug-fixes upstream. (E.g. [PyPSA](https://github.com/PyPSA/pypsa), [linopy](https://github.com/PyPSA/linopy/)) | Follow the security procedures of the upstream project, while protecting the security of data and secrets as per usual (e.g. do not disclose Internal or Confidential data, ensure not to check-in credentials). |
+| **Open models** | Open-source modelling workflows on Public or open data; typically the code used to produce consultancy reports and static dashboards for clients (e.g., [Open-TYNDP](https://github.com/open-energy-transition/open-tyndp), [geothermal-modelling](https://github.com/open-energy-transition/geothermal-modelling), [form-energy-storage](https://github.com/open-energy-transition/form-energy-storage)). | Follow our general coding and data guidelines, no special security policies necessary as these are data science projects not software applications. |
+| **Dashboards of public data** | Websites displaying or analyzing public data (e.g., [Open Energy Benchmark](https://openenergybenchmark.org/), [Open Energy Modelling Tool Tracker](https://openmod-tracker.org/)). | Follow our general coding and data guidelines, no special security policies necessary as these are essentially static websites that do not have users or process personal data. |
+| **Open tools** | Libraries providing tools to process or analyze data (e.g., [osm-wikidata-toolset](https://github.com/open-energy-transition/osm-wikidata-toolset), [technology-data](https://github.com/open-energy-transition/technology-data/)). | Follow the security policies for software development (relevant parts of the S-SDLC), information security policies, and use of cryptography policy. Use a security scanning tool on **dependencies** to prevent malicious code injection. Policies on secure system architecture, application security requirements, and network services security are not applicable. |
+| **Products & platforms** | Web-deployed tools, SaaS platforms, or on-premises energy modeling applications. (e.g. [EU-Flex Platform](https://www.openenergytransition.org/projects/flexibility-assessment-platform), OETC) | **High security:** follow all our security policies, including S-SDLC, Secure system architecture & engineering principles, Security requirements for applications, Security of network services, and Use of cryptography. Use security tools for static analysis (SAST), dependency scanning, and secret scanning. |
+
+## Secure Coding Standards
+
+The goal of this policy is to ensure that OET code is resilient, dependencies are safe, and sensitive data remains protected. 
+
+### Core Technical Standards
+Regardless of the project category, all OET code must adhere to these baseline standards:
+* **No Hardcoded Secrets:** Credentials, API keys, and tokens must never be committed to Git. Use environment variables (`.env`) or Secret Managers (GitHub Secrets).
+* **Dependency Management:** All projects must use a lockfile (e.g., `poetry.lock`, `requirements.txt` with hashes, or `conda-lock`) to ensure reproducible and auditable environments.
+* **Peer Review:** All code changes must be reviewed by at least one other person before merging to a main branch.
+
+TODO link to repo handbook
+
+The following table lists the standard applicable for each type of software developed at OET:
+
+| Category | Applicable secure coding standard |
+| :--- | :--- |
+| **Internal prototypes** | N/A
+| **Forks of open-source repos** | Follow the security standards of the upstream project. |
+| **Open models** | Follow TODO standard for Secure Repo, Secrets. |
+| **Dashboards of public data** | Follow TODO standard for Secure Repo, Secrets. |
+| **Open tools** | Follow OpenSSF Scorecard, TODO standard for Secure Repo, Secrets. |
+| **Products & platforms** | Follow OpenSSF Scorecard, OWASP for web applications, TODO standard for Secure Repo, Secrets. |
+
+### Tooling
+We use automated "guardrails" to help developers catch issues early:
+* **Static Analysis (SAST):** Use CodeQL or SonarQube to find common security issues in your code.
+* **Dependency Scanning:** Use `pip-audit` or Dependabot to check for known vulnerabilities in your libraries.
+* **Secret Scanning:** Use TODO (inbuilt GitHub secret scanner).
+* **Repository Health:** Use [OpenSSF Scorecard](https://scorecard.dev/) on all public "Open Tools" and "Products" to track branch protection and maintenance health.
+
+## 🎓 Training Recommendations
+
+To meet ISO requirements, OET employees should complete training that matches their project's risk level.
+
+| Category | Recommended Course / Resource |
+| :--- | :--- |
+| **Open Models & Public Dashboards** | [GitHub Skills: Maintain a Secure Repo](https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/) (35 mins) + OET Secrets Checklist. |
+| **Open Tools (Libraries)** | The above + [Snyk Learn: OWASP Top 10 for OSS](https://learn.snyk.io/learning-paths/owasp-top-10-open-source-software-risks/) (2.5 hrs). |
+| **Products & Platforms** | The above + **[OpenSSF LFD121](https://training.linuxfoundation.org/training/developing-secure-software-lfd121/)** (Full course) + [Hacksplaining](https://www.hacksplaining.com/lessons) for Web Vulnerabilities. |
+
+## 📚 Policy Overviews
+
+### 🛠️ [Secure Software Development (S-SDLC)](https://docs.google.com/document/d/1DJpt1JYWzyjEUkUjwJgxp_Ag-SJrlBYu/preview)
+
+*Our framework for ensuring security is baked into the coding process from the first "Hello World" to the final release.*
+
+  * **The S-SDLC Phases:** Breaks down security tasks into stages: planning, development, testing, and release.
+  * **Separate Environments:** Guidelines on keeping Dev, Test, and Prod environments isolated to prevent accidents in live systems.
+  * **Change Management:** A standard workflow for how code is reviewed and approved (the "Peer Review" culture).
+  * **Test Information:** Rules for using synthetic or sanitized data for testing so we don't leak real client data during development.
+
+### 🏛️ [Secure System Architecture & Engineering Principles](https://docs.google.com/document/d/1afKQyebf_zh1kxdl9vynQog6dTtZEVe8/preview)
+
+*The "Manifesto" that guides how we design high-level systems and infrastructure.*
+
+  * **Architectural Requirements:** Defines the "Golden Principles" like *Security by Design* and *Defense in Depth*.
+  * **Layered Security:** How we secure the different layers of a system: Access (Who), Compute (Where it runs), and Data (What it stores).
+  * **Engineering Lifecycle:** How architectural proposals are reviewed and mapped against OET's long-term security goals.
+
+### 📱 [Security Requirements for Applications](https://docs.google.com/document/d/1W2QUgpHMwNMU-HA0NhAEGXzFuThD53hH/preview)
+
+*The functional security features that must be present in any software OET builds or buys.*
+
+  * **Data Requirements:** Classifying data (Public vs. Confidential) and defining how it must be handled.
+  * **Access Control:** Standards for **MFA** and preferring **Single Sign-On (SSO)** to keep logins simple and secure.
+  * **Integrity & Availability:** Ensuring the software is reliable and that the data it produces hasn't been tampered with.
+  * **Logging & Error Handling:** Requirements for recording "who did what" and ensuring error messages don't reveal system secrets.
+
+### 🌐 [Security of Network Services](https://docs.google.com/document/d/1RfvLHYj4JZjwgyrMLoJ9S_50bW7veO_r/preview)
+
+*How we manage the "pipes" and platforms that connect our services to the world.*
+
+  * **Service Inventory:** Keeping track of every cloud provider and tool (AWS, GitHub, etc.) we use.
+  * **Network Defense:** High-level rules for **segmentation**, firewalls, and protecting our public-facing APIs.
+  * **Third-Party Management:** How we vet the security and uptime (SLAs) of our service providers.
+
+### 🔐 [Use of Cryptography and Key Management](https://docs.google.com/document/d/1G26DKPYiElxPNDvQ_VbRBass_QbXLFz0/preview)
+
+*The rules for how we lock our data and, more importantly, how we look after the keys.*
+
+  * **Data at Rest:** Standards for encrypting files and databases sitting in storage.
+  * **Data in Transit:** Ensuring all data moving across the internet (APIs, Web) uses modern, secure tunnels (TLS).
+  * **Key Management:** The "Lifecycle" of a secret—how we generate, store, rotate, and eventually destroy encryption keys.
+
+### 📁 [Retention and Deletion Policy](https://docs.google.com/document/d/1M3SFfn6s9PtMOy05O4ESVrWk_IUcDPtY/preview)
+
+*How we manage the lifecycle of information, from creation to secure destruction.*
+
+  * **Retention Schedules:** High-level timelines for how long we must keep research, financial, and personnel records.
+  * **Secure Deletion:** Standards for "digitally shredding" data so it cannot be recovered once its time is up.
+  * **Compliance:** Meeting our legal obligations (GDPR, DFG research rules) regarding data storage.
