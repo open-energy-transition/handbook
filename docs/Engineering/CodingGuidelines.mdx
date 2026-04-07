@@ -10,7 +10,7 @@ import MaintainerTag from "@site/src/components/MaintainerTag";
 
 This page outlines the standards and workflows for contributing code at OET. Adhering to these practices ensures our codebase remains stable, maintainable, and compatible with upstream open-source projects.
 
-## Security Best Practices
+## Security best practices
 
 * **Secret Management**: Never commit API keys, passwords, or SSH keys to the repository. Use environment variables or a dedicated secrets manager.
 * **Dependency Auditing**: Regularly run security audits on dependencies (e.g., `npm audit` or `pip-audit`) to identify and patch vulnerabilities.
@@ -41,7 +41,7 @@ Ensure the following options are set when creating a new repository or on any ac
     * I verified that security scan reported no high-severity bugs, critical vulnerabilities, or secrets exposed in plaintext.
 * Create issue templates for feature requests and bug reports. See [this repo](https://github.com/stevemao/github-issue-templates) for good examples.
 
-## Repository Hygiene
+## Repository hygiene
 
 * **Reproducibility**: Use a pinned/fixed environment file or a package lock file and check this into the repository.
 * **Environment Updates**: Environments should only be updated when a new dependency version is required or to address a security issue.
@@ -49,9 +49,9 @@ Ensure the following options are set when creating a new repository or on any ac
 * **Documentation**: Follow the `numpydoc` standard for code documentation.
 * **Type Annotations**: Use type annotations consistently to improve code clarity.
 
-## Pull Request Standards
+## Pull request standards
 
-### Branch and Title Naming
+### Branch and title naming
 * **Case and Format**: Use lowercase and hyphen-separated names for all branches.
 * **Prefix with Name**: Use your name as a prefix, for example: `sid/feat-x`.
 * **Prefix with Category**: Alternatively, use categories such as `feature/x`, `bugfix/y`, `release/z`, or `docs/a`.
@@ -60,7 +60,7 @@ Ensure the following options are set when creating a new repository or on any ac
     * **Incorrect**: "Changing solver to Highs" or "This commit changes...".
 * **Component/Type Prefixes**: Use subcomponent prefixes (e.g., `Solver: change default to Highs`) or type prefixes (e.g., `feat: add Highs support`).
 
-### Review and Merging
+### Review and merging
 * **No Force Pushes**: Never force push or rebase a PR branch once it is ready for review, as this makes it difficult for reviewers to track changes from the last version. If you squash your PRs (recommended below) you don't have to worry about keeping your PR branch clean.
 * **Squash Merges**: We prefer to squash PRs to keep the `main` branch history linear and clean. 
 * **Branch Lifecycle**: Do not reuse the same branch for another PR; GitHub retains branch history even after deletion, which is useful for future reference.
@@ -70,14 +70,14 @@ Ensure the following options are set when creating a new repository or on any ac
 
 Why?
 * Keeps the main branch history **linear** and clean
-    * Rebasing also does this, but then needs discipline to keep PR branches clean (no “fix”, “fix fix”, etc)
+    * Rebasing also does this, but then needs discipline to keep PR branches clean (no "fix", "fix fix", etc)
 * Every commit in the main branch has **passed CI tests**
     * Each commit, in theory, is a snapshot of the code where everything works
 * Easier to **revert** last PR if it breaks something
 * Easier to **git bisect** and find the source of a bug
 * In GitHub, the **commit title** has link to the PR
     * Commit titles are also used in auto-generated release notes
-* Finally, it’s easier to cherry-pick the final PR and **contribute to upstream** (see our Soft Fork [strategy](docs/Engineering/SoftForkStrategy))
+* Finally, it's easier to cherry-pick the final PR and **contribute to upstream** (see our Soft Fork [strategy](docs/Engineering/SoftForkStrategy))
 
 ## Testing and CI
 
