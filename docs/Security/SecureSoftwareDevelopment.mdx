@@ -33,12 +33,10 @@ Identify which "bucket" your project falls into to determine your security requi
 The goal of this policy is to ensure that OET code is resilient, dependencies are safe, and sensitive data remains protected. 
 
 ### Core technical standards
-Regardless of the project category, all OET code must adhere to these baseline standards:
+Regardless of the project category, all OET code must adhere to these baseline standards (see our [Coding guidelines](docs/Engineering/CodingGuidelines)):
 * **No Hardcoded Secrets:** Credentials, API keys, and tokens must never be committed to Git. Use environment variables (`.env`) or Secret Managers (GitHub Secrets).
 * **Dependency Management:** All projects must use a lockfile (e.g., `poetry.lock`, `requirements.txt` with hashes, or `conda-lock`) to ensure reproducible and auditable environments.
 * **Peer Review:** All code changes must be reviewed by at least one other person before merging to a main branch.
-
-TODO link to repo handbook
 
 The following table lists the standard applicable for each type of software developed at OET:
 
@@ -46,10 +44,10 @@ The following table lists the standard applicable for each type of software deve
 | :--- | :--- |
 | **Internal prototypes** | N/A
 | **Forks of open-source repos** | Follow the security standards of the upstream project. |
-| **Open models** | Follow TODO standard for Secure Repo, Secrets. |
-| **Dashboards of public data** | Follow TODO standard for Secure Repo, Secrets. |
-| **Open tools** | Follow OpenSSF Scorecard, TODO standard for Secure Repo, Secrets. |
-| **Products & platforms** | Follow OpenSSF Scorecard, OWASP for web applications, TODO standard for Secure Repo, Secrets. |
+| **Open models** | Follow OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Dashboards of public data** | Follow OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Open tools** | Follow OpenSSF Scorecard, OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Products & platforms** | Follow OpenSSF Scorecard, OWASP for web applications, OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
 
 ### Tooling
 We use automated "guardrails" to help developers catch issues early:
