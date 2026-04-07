@@ -17,6 +17,7 @@ This page outlines the standards and workflows for contributing code at OET. Adh
 * **Least Privilege**: Only request the permissions necessary for CI/CD actions and avoid using personal access tokens with broad scopes.
 * **Input Validation**: Always sanitize and validate user-provided data to prevent common vulnerabilities like injection attacks.
 * **Protected Branches**: Ensure the `main` branch is protected to restrict deletions, block force pushes, and require status checks to pass before merging. (See [Repository setup](#repository-setup))
+* Define a **Time to resolve (TTR)** -- e.g. X time to resolve Y severity issue -- that is appropriate for your type of project. See [Secure software development](docs/Security/SecureSoftwareDevelopment) for the categorization of OET projects along with the security tools and policies applicable for each category.
 
 ## Repository setup
 
@@ -33,6 +34,12 @@ Ensure the following options are set when creating a new repository or on any ac
 * If this repository is not a fork:
     * Disable PRs by merge commits and by rebasing 🆇
     * Default commit message for squash merges: PR title and description
+
+### Pull request and issue templates
+
+* Create a PR template at `.github/PULL_REQUEST_TEMPLATE.md` (see an example [here](https://github.com/open-energy-transition/solver-benchmark/blob/main/.github/PULL_REQUEST_TEMPLATE.md)). It should have a checklist that contains at the minimum a security item:
+    * I verified that security scan reported no high-severity bugs, critical vulnerabilities, or secrets exposed in plaintext.
+* Create issue templates for feature requests and bug reports. See [this repo](https://github.com/stevemao/github-issue-templates) for good examples.
 
 ## Repository Hygiene
 
