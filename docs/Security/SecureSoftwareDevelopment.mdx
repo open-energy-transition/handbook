@@ -50,11 +50,86 @@ The following table lists the standard applicable for each type of software deve
 | **Products & platforms** | Follow OpenSSF Scorecard, OWASP for web applications, OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
 
 ### Tooling
-We use automated "guardrails" to help developers catch issues early:
-* **Static Analysis (SAST):** Use CodeQL or SonarQube to find common security issues in your code.
-* **Dependency Scanning:** Use `pip-audit` or Dependabot to check for known vulnerabilities in your libraries.
-* **Secret Scanning:** Use TODO (inbuilt GitHub secret scanner).
-* **Repository Health:** Use [OpenSSF Scorecard](https://scorecard.dev/) on all public "Open Tools" and "Products" to track branch protection and maintenance health.
+
+We use automated "guardrails" to catch security issues early. The right tools depend on whether your repository is **public** or **private**, because GitHub's free plan has different capabilities for each.
+
+#### Public repositories
+
+For public repositories, GitHub's full Advanced Security suite is available for free — use it fully.
+
+**Static Analysis (SAST) — CodeQL**
+
+[CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) is GitHub's native static analysis engine. It scans for common vulnerability classes (injection, path traversal, insecure deserialization, etc.) and posts results directly on PRs.
+
+Setup:
+1. Go to **Security** → **Code scanning** → **Set up code scanning** → select **CodeQL**.
+2. Accept or customise the generated `.github/workflows/codeql.yml`. It runs on every push and pull request.
+3. To **block PRs** when CodeQL finds issues: **Settings** → **Branches** → **Add branch protection rule** for `main` → enable *Require status checks to pass before merging* → add `CodeQL` as a required check.
+
+**Dependency Scanning — Dependabot**
+
+[Dependabot](https://docs.github.com/en/code-security/dependabot) alerts you to known vulnerabilities in your dependencies and can automatically open PRs to fix them.
+
+Setup:
+1. Enable **Dependabot alerts** and **Dependabot security updates** at **Settings** → **Code security and analysis**.
+2. Add a `.github/dependabot.yml` to configure which package ecosystems to watch (pip, npm, GitHub Actions, etc.) and how often to check.
+
+Optionally, add the [Dependency Review Action](https://github.com/actions/dependency-review-action) to `.github/workflows/dependency-review.yml` to actively block PRs that introduce new vulnerable dependencies. It compares manifest changes against the GitHub Advisory Database and fails the workflow on a match. Add it as a required status check in branch protection to enforce it.
+
+**Secret Scanning — GitHub Secret Scanning**
+
+GitHub [Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning) is on by default for all public repos. It detects over 200 token and credential patterns from major providers.
+
+Setup:
+1. Confirm it is active at **Settings** → **Code security and analysis** → *Secret scanning*.
+2. Enable **Push protection** at the same location. This makes secret scanning *blocking*: a `git push` containing a detected secret is rejected at the network layer, before the commit ever lands in the repository.
+
+**Repository Health — OpenSSF Scorecard**
+
+[OpenSSF Scorecard](https://scorecard.dev/) audits a repository's security posture (branch protection, dependency pinning, signed releases, etc.) and produces a score that can be displayed on your README.
+
+Setup:
+1. Add the [Scorecard Action](https://github.com/ossf/scorecard-action) to your repo using the template workflow it provides.
+2. Results appear in the GitHub Security dashboard and at [scorecard.dev](https://scorecard.dev/).
+3. Use Scorecard on all public **Open Tools** and **Products & Platforms** repositories.
+
+---
+
+#### Private repositories
+
+GitHub Advanced Security (CodeQL, Secret Scanning push protection) is not available for private repositories on the free GitHub plan. Use [SonarQube Cloud](https://sonarcloud.io/) as the primary security analysis platform, supplemented by CI-based tooling.
+
+:::note Free-plan enforcement limitation
+On GitHub's free tier, branch protection rulesets cannot enforce required status checks on private repositories. All the tools below will run and report findings, but **it is the responsibility of each maintainer to review and resolve those findings before merging**. Do not merge PRs with unresolved `BLOCKER` or `CRITICAL` issues from any of the tools below.
+:::
+
+**Static Analysis (SAST) — SonarQube Cloud**
+
+[SonarQube Cloud](https://sonarcloud.io/) (formerly SonarCloud) detects bugs, vulnerabilities, and code smells. It posts a status check on every PR and maintains a project dashboard with trend tracking.
+
+Setup:
+1. Log in to [sonarcloud.io](https://sonarcloud.io/) with your GitHub account and grant it access to the OET organisation.
+2. Click **+** → **Analyze new project** → select your repository.
+3. Choose **Automatic Analysis** for the simplest setup. For more control (e.g. to pass build-time flags or analysis parameters), add the [SonarQube Cloud GitHub Action](https://docs.sonarsource.com/sonarcloud/advanced-setup/ci-based-analysis/github-actions-for-sonarcloud/) to `.github/workflows/sonarcloud.yml` instead.
+4. Review the [Quality Gate](https://docs.sonarsource.com/sonarcloud/standards/quality-gates/) in your project settings. The default gate fails on any new `BLOCKER` vulnerability or security hotspot. Keep this gate or tighten it — do not loosen it.
+5. Maintainers must check the SonarQube Cloud PR decoration and must not merge when the Quality Gate is red.
+
+**Dependency Scanning — Dependabot**
+
+Dependabot alerts and security updates are available for private repositories on all GitHub plans. The Dependency Review Action that blocks PRs in public repos requires GitHub Advanced Security for private repos and is therefore not available on the free plan.
+
+Setup:
+1. Enable **Dependabot alerts** and **Dependabot security updates** at **Settings** → **Code security and analysis**.
+2. Configure `.github/dependabot.yml` for your package ecosystems.
+3. Maintainers must review open Dependabot alerts and must not merge PRs that introduce new vulnerabilities flagged by Dependabot.
+
+SonarQube Cloud also surfaces known vulnerable dependencies under the **Dependencies** tab of your project dashboard.
+
+**Secret Scanning — SonarQube Cloud + Gitleaks (pre-commit)**
+
+GitHub Secret Scanning push protection is not available for private repos on the free plan. SonarQube Cloud covers this in the pipeline: it detects hardcoded passwords, API keys, and credentials as security hotspots (e.g. rules `S2068`, `S6290`) as part of its standard analysis — no additional setup is required beyond the SAST configuration above. Maintainers must resolve any secret-related hotspots before merging.
+
+As an additional local safeguard, install the [Gitleaks pre-commit hook](https://github.com/gitleaks/gitleaks?tab=readme-ov-file#pre-commit) to catch secrets before they are even committed. This is optional but strongly recommended.
 
 ## 🎓 Training recommendations
 
