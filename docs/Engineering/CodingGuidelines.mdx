@@ -1,0 +1,129 @@
+---
+sidebar_label: "Coding guidelines"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# Coding guidelines
+
+This page outlines the standards and workflows for contributing code at OET. Adhering to these practices ensures our codebase remains stable, maintainable, and compatible with upstream open-source projects.
+
+## Security best practices
+
+* **Secret Management**: Never commit API keys, passwords, or SSH keys to the repository. Use environment variables or a dedicated secrets manager.
+* **Dependency Auditing**: Regularly run security audits on dependencies (e.g., `npm audit` or `pip-audit`) to identify and patch vulnerabilities.
+* **Least Privilege**: Only request the permissions necessary for CI/CD actions and avoid using personal access tokens with broad scopes.
+* **Input Validation**: Always sanitize and validate user-provided data to prevent common vulnerabilities like injection attacks.
+* **Protected Branches**: Ensure the `main` branch is protected to restrict deletions, block force pushes, and require status checks to pass before merging. (See [Repository setup](#repository-setup))
+* Define a **Time to resolve (TTR)** -- e.g. X time to resolve Y severity issue -- that is appropriate for your type of project. See [Secure software development](docs/Security/SecureSoftwareDevelopment) for the categorization of OET projects along with the security tools and policies applicable for each category.
+
+## Repository setup
+
+Ensure the following options are set when creating a new repository or on any active project repositories:
+
+* **Protect the main branch** by using a ruleset:
+    * **Require a PR** before merging, and **require approvals** ✅
+    * Restrict deletions, and block force pushes ✅
+    * Require status **checks to pass** (note: need to name the CI file) ✅
+    * Require linear history ✅
+    * Always suggest updating pull request branches ✅
+* Allow auto-merge ✅
+* Automatically delete head branches ✅
+* If this repository is not a fork:
+    * Disable PRs by merge commits and by rebasing 🆇
+    * Default commit message for squash merges: PR title and description
+
+### Pull request and issue templates
+
+* Create a PR template at `.github/PULL_REQUEST_TEMPLATE.md` (see an example [here](https://github.com/open-energy-transition/solver-benchmark/blob/main/.github/PULL_REQUEST_TEMPLATE.md)). It should have a checklist that contains at the minimum a security item:
+    * I verified that security scan reported no high-severity bugs, critical vulnerabilities, or secrets exposed in plaintext.
+* Create issue templates for feature requests and bug reports. See [this repo](https://github.com/stevemao/github-issue-templates) for good examples.
+
+## Repository hygiene
+
+* **Reproducibility**: Use a pinned/fixed environment file or a package lock file and check this into the repository.
+* **Environment Updates**: Environments should only be updated when a new dependency version is required or to address a security issue.
+* **Automated Tooling**: Utilize code formatters and linters such as `ruff`, `black`, or `prettier`. These should be introduced as early as possible in a standalone PR.
+* **Documentation**: Follow the `numpydoc` standard for code documentation.
+* **Type Annotations**: Use type annotations consistently to improve code clarity.
+
+## Pull request standards
+
+### Branch and title naming
+* **Case and Format**: Use lowercase and hyphen-separated names for all branches.
+* **Prefix with Name**: Use your name as a prefix, for example: `sid/feat-x`.
+* **Prefix with Category**: Alternatively, use categories such as `feature/x`, `bugfix/y`, `release/z`, or `docs/a`.
+* **PR Titles**: Keep titles short, imperative, and in the present tense. 
+    * **Correct**: "Change default solver to Highs".
+    * **Incorrect**: "Changing solver to Highs" or "This commit changes...".
+* **Component/Type Prefixes**: Use subcomponent prefixes (e.g., `Solver: change default to Highs`) or type prefixes (e.g., `feat: add Highs support`).
+
+### Review and merging
+* **No Force Pushes**: Never force push or rebase a PR branch once it is ready for review, as this makes it difficult for reviewers to track changes from the last version. If you squash your PRs (recommended below) you don't have to worry about keeping your PR branch clean.
+* **Squash Merges**: Always squash PRs to keep the `main` branch history linear and clean, except if your repo is a fork (use merge commits when merging upstream). See [below](#squash-your-prs) for the reasoning behind this policy.
+* **Branch Lifecycle**: Do not reuse the same branch for another PR; GitHub retains branch history even after deletion, which is useful for future reference.
+* **Reviewers**: Small PRs require one reviewer, while major restructures may need three or more. It is recommended to seek reviews from members outside your specific project to maximize knowledge sharing.
+
+#### Squash your PRs!
+
+Why?
+* Keeps the main branch history **linear** and clean
+    * Rebasing also does this, but then needs discipline to keep PR branches clean (no "fix", "fix fix", etc)
+    * Using only squashing also incentivizes you to keep your PRs small and self-contained
+* Every commit in the main branch has **passed CI tests**
+    * Each commit, in theory, is a snapshot of the code where everything works
+    * This makes it easy to rollback your deployment to a previous commit with confidence
+    * This is not the case when you rebase PRs, because intermediate commits are not enforced to have passed CI
+* Easier to **revert** last PR if it breaks something
+* Easier to **git bisect** and find the source of a bug
+* In GitHub, the **commit title** has link to the PR
+    * Commit titles are also used in auto-generated release notes
+* Finally, it's easier to cherry-pick the final PR and **contribute to upstream** (see our Soft Fork [strategy](docs/Engineering/SoftForkStrategy))
+
+## Testing and CI
+
+* **Framework**: We use `pytest` for unit testing.
+* **Frequency**: Write unit tests for every new function developed.
+* **Small Functions**: Develop code in small, modular functions that are easily testable.
+* **Pre-commit Hooks**: Use `pre-commit` to automate formatting and linting. Recommended hooks: check-yaml, end-of-file-fixer, trailing-whitespace, check-merge-conflict, mixed-line-ending, check-added-large-files
+* **CI Environment**: Always use the pinned environment within the Continuous Integration (CI) pipeline.
+
+## Git tips & tricks
+
+Stash things (judiciously):
+```bash
+git stash save/pop/drop
+```
+
+Show a file from another branch:
+```bash
+git show main:README.md
+```
+
+Search for a string in git history:
+```bash
+git log -S'<a term in the source>'
+```
+
+Convert commit to file and re-apply commit in another checkout:
+```bash
+git format-patch HEAD~
+git am 0001-commit-message.patch
+```
+
+Aliases (put these in e.g. ~/.bash_aliases):
+```bash
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit'
+alias gd='git diff --word-diff'
+alias go='git checkout '
+alias gl='git log -n 5 --pretty=format:"%Cblue%h %Cgreen%an, %ar%Creset %s"'
+alias gll='git log --pretty=format:"%Cblue%h %Cgreen%an, %ar%Creset %s"'
+alias glg='git log --graph --decorate --pretty=format:"%Cblue%h%Cred%d %Cgreen%an, %ar%Creset %s"'
+```
+
+Your tricks here!
