@@ -33,8 +33,8 @@ Identify which "bucket" your project falls into to determine your security requi
 The goal of this policy is to ensure that OET code is resilient, dependencies are safe, and sensitive data remains protected. 
 
 ### Core technical standards
-Regardless of the project category, all OET code must adhere to these baseline standards (see our [Coding guidelines](docs/Engineering/CodingGuidelines)):
-* **No Hardcoded Secrets:** Credentials, API keys, and tokens must never be committed to Git. Use environment variables (`.env`) or Secret Managers (GitHub Secrets).
+Regardless of the project category, all OET code (except internal prototypes, see table above) must adhere to these baseline standards (see our [Coding guidelines](docs/Engineering/CodingGuidelines)):
+* **No Hardcoded Secrets:** Credentials, API keys, and tokens must never be committed to Git. Use environment variables (`.env`) or Secret Managers (e.g. GitHub Secrets, see [Tooling](#tooling)).
 * **Dependency Management:** All projects must use a lockfile (e.g., `poetry.lock`, `requirements.txt` with hashes, or `conda-lock`) to ensure reproducible and auditable environments.
 * **Peer Review:** All code changes must be reviewed by at least one other person before merging to a main branch.
 

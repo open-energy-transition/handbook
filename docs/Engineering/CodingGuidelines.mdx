@@ -62,7 +62,7 @@ Ensure the following options are set when creating a new repository or on any ac
 
 ### Review and merging
 * **No Force Pushes**: Never force push or rebase a PR branch once it is ready for review, as this makes it difficult for reviewers to track changes from the last version. If you squash your PRs (recommended below) you don't have to worry about keeping your PR branch clean.
-* **Squash Merges**: We prefer to squash PRs to keep the `main` branch history linear and clean. 
+* **Squash Merges**: Always squash PRs to keep the `main` branch history linear and clean, except if your repo is a fork (use merge commits when merging upstream). See [below](#squash-your-prs) for the reasoning behind this policy.
 * **Branch Lifecycle**: Do not reuse the same branch for another PR; GitHub retains branch history even after deletion, which is useful for future reference.
 * **Reviewers**: Small PRs require one reviewer, while major restructures may need three or more. It is recommended to seek reviews from members outside your specific project to maximize knowledge sharing.
 
@@ -71,8 +71,11 @@ Ensure the following options are set when creating a new repository or on any ac
 Why?
 * Keeps the main branch history **linear** and clean
     * Rebasing also does this, but then needs discipline to keep PR branches clean (no "fix", "fix fix", etc)
+    * Using only squashing also incentivizes you to keep your PRs small and self-contained
 * Every commit in the main branch has **passed CI tests**
     * Each commit, in theory, is a snapshot of the code where everything works
+    * This makes it easy to rollback your deployment to a previous commit with confidence
+    * This is not the case when you rebase PRs, because intermediate commits are not enforced to have passed CI
 * Easier to **revert** last PR if it breaks something
 * Easier to **git bisect** and find the source of a bug
 * In GitHub, the **commit title** has link to the PR
