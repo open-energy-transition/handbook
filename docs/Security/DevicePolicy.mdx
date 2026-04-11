@@ -1,0 +1,115 @@
+---
+sidebar_label: "Device policy"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# Device policy
+
+<ControlledDocBanner />
+
+This page describes OET's device policy, including OET laptop policy, approved use of bring-your-own devices (BYOD), and use of personal mobile devices.
+
+For more details, see the Acceptable Use of the Information System [policy](https://docs.google.com/document/d/169YXi2lUckY6_qicAf-FrhZsggqt8XkO/edit).
+
+## OET devices: Linux
+
+As a non-profit whose core value is open source, OET procures Linux laptops for all employees. Exemptions are handled case-by-case, need a strong business reason, and need to be approved by the employee's HoD and the Head of Software.
+
+If you haven't used Linux before, don't worry! As a fully-remote organization, almost all OET work is performed on cloud services (Google Drive, GitHub, etc) which can be used in the browser and look the same on all operating systems. You can also ask in the Discord `#support` channel (and tag someone in the software department) if you have questions about getting started on Linux or troubleshooting something.
+
+If you need to use a particular app that is only available on Windows or macOS for your work, reach out to the Head of Software. We can create a virtual machine for your usage.
+
+OET also allows you to use your own personal laptop (BYOD) for work in certain cases. See the BYOD policy below.
+
+## Device security requirements
+
+Here are some minimum requirements you must follow on any computer you use for OET work:
+
+* Regularly **update** the operating system and installed software, ideally automatically.
+* Install an approved **anti-malware tool** and keep it up to date. You must use [Falcon](#falcon) on OET laptops and BYODs performing confidential work.
+* Enable **full-disk encryption**, following this [guide](https://docs.google.com/document/d/1UYJPbWbLbDMCZZfcHcWRxu5qIl1KAmzEUk2naNtEVeY/edit?tab=t.0).
+* Use only approved cloud platforms and software on business data, and follow the [Information security](docs/Security/InformationSecurity.mdx) policy for classifying, storing, and transmitting information.
+* When working from public networks, use a trusted VPN or personal hotspot / travel router.
+* Any loss, theft, or suspected compromise of a device used for business purposes must be reported immediately following the [Incident management](docs/Security/IncidentManagement.mdx) procedure.
+
+### OET device requirements
+
+In addition to the minimum requirements above, OET devices must:
+
+* Have [Fleet](#fleet) installed for device inventory purposes, and so that software update and disk encryption status can be monitored.
+* Follow the hostname convention `oet-[CountryCode]-[OperatingSystem]-[EmployeeInitials]-[ID]`, e.g. `oet-it-linux-sk-003`. See the [laptop register](https://docs.google.com/spreadsheets/d/1Hely8oQGtZPoYj2gzdKzBYK_clhTdYHIcYQdLpcW_4g/edit?gid=0#gid=0) for existing IDs to ensure your hostname is unique. Consider that hostnames are case insensitive, but lowercase is recommended.
+
+### BYOD requirements
+
+In addition to the minimum requirements above, if using personal BYO devices for OET work, you must:
+
+* Ensure your device meets the **minimum security requirements** above including password/PIN protection, encryption, antivirus/endpoint protection, and regular updates.
+* If you are working on any information [classified](docs/Security/InformationSecurity.mdx) Confidential, you must have [Fleet](#fleet) installed. If you are only working on Public information (e.g. on open-source code or public reports), you may work on a device without Fleet.
+* An anti-malware tool is mandatory. We highly recommend using OET's anti-malware tool [Falcon](#falcon). It is mandatory if you are working on Confidential information. If not, you may use [another tool](#other-recommended-anti-malware-tools) that is approved by our Information Security Officer.
+* **Separate** business and personal use on the device to prevent data leakage or unauthorized access, for example by using separate browser profiles or containers and a dedicated folder for all OET-related documents (though remember OET [policy](docs/Security/InformationSecurity.mdx) is that all information must be stored on an approved cloud service).
+* **Offboarding:** Upon device replacement or employment termination, ensure all Company data is securely deleted or wiped and email confirmation of this to the Head of People.
+* Policy Violations: Failure to comply with BYOD requirements is considered a breach of the Information Security Policy and may result in disciplinary action.
+
+## Security tools
+
+### Fleet
+
+[Fleet](https://github.com/fleetdm/fleet) is an open-source device management and inventory tool that we need to maintain an accurate overview of the computers used for OET work and to confirm that important security controls are in place for ISO 27001 compliance.
+
+We use Fleet to:
+- Collect device inventory (hostname, operating system, and version).
+- Monitor security status (disk encryption, installed software, and update status).
+- Ensure all devices accessing OET systems meet our minimum security standards.
+
+You can install Fleet using our [installation guide](https://docs.google.com/document/d/1W_BpmEoBPB5FYK_vieuDn85Oz57gLdPz/edit). Please suggest improvements to the guide as you use it!
+
+After installation, you will be able to see exactly what information is shared with our Fleet server. All data is sent only to OET’s self-hosted Fleet server on our GCP infrastructure. No data is shared with external parties.
+
+### Falcon
+
+CrowdStrike [Falcon](https://www.crowdstrike.com/en-us/platform/) is an Endpoint Detection and Response (EDR) tool provided by CrowdStrike that we need for real-time protection against cyber threats.
+
+We use Falcon to:
+- Detect and block malware, ransomware, and other security threats.
+- Provide real-time visibility into security incidents to prevent data breaches.
+- Ensure the integrity of devices performing confidential OET work.
+
+You can install Falcon using our [installation guide](https://docs.google.com/document/d/13zN4p-qXxmdYa0jbxd-w4xodOBjdeLtn/edit). Please suggest improvements to the guide as you use it!
+
+### Other recommended anti-malware tools
+
+For BYODs, if you are not using Falcon, these are the tools recommended by our Information Security Officer:
+
+- Linux: ClamAV (ClamOnAcc client should to be enabled for real-time protection)
+- macOS: XProtect + Gatekeeper (sufficient)
+- Windows: Microsoft Defender
+
+### Privacy
+
+We **do not** use Fleet or Falcon to:
+- Access or collect personal files.
+- Monitor your web browsing history.
+- View or record your passwords.
+- Access your webcam or microphone.
+
+**Privacy Scope:** Monitoring of BYODs is strictly limited to Company-related data, compliance, and system access; personal content and private use remain outside the scope of monitoring.
+
+## Mobile devices
+
+We recognize that you may use your personal mobile phone or tablet to stay connected (e.g., checking Discord or email). While these devices don't require the full suite of security tools like laptops, they must still be used responsibly.
+
+### Minimum requirements
+* **Lock your screen:** All mobile devices accessing OET data must have a PIN, password, or biometric lock (FaceID/Fingerprint) enabled along with an auto-lock timeout. 
+* **Keep it updated:** Always run the latest version of your mobile operating system (iOS/Android) and keep your apps updated to ensure you have the latest security patches.
+* **Encryption:** Ensure device encryption is active. Most modern smartphones enable this by default once a passcode is set.
+* **Loss or Theft:** If you lose a device that has access to OET accounts, [report](docs/Security/IncidentManagement.mdx) it immediately so we can revoke access to those sessions.
+
+### Safe usage
+* **Approved Apps Only:** Only use official, OET-approved apps (like Google Workspace, Discord, or GitHub) to access business data. 
+* **No Local Storage:** Do not download or store **Confidential** files directly onto your mobile device’s local storage or personal cloud (e.g., iCloud, personal Google Drive).
+* **Avoid Public Wi-Fi:** Avoid using unsecured public Wi-Fi. We recommend using **cellular data** or a trusted VPN when accessing OET systems on the go.
+* **Jailbreaking:** You are **prohibited** from accessing OET systems from devices that have been "jailbroken" or "rooted," as these bypass essential security protections.
