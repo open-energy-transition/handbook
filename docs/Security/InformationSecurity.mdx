@@ -19,18 +19,18 @@ All information within OET (documents, datasets, etc.) must be classified into o
 - **Internal**: Information intended for employees and associates of OET, where unauthorized disclosure could cause minor operational or reputational impact (e.g., internal procedures, meeting notes, organizational plans).
 - **Confidential**: Information where unauthorized disclosure could result in significant business, legal, or reputational damage to OET (e.g., personal data, unpublished financial results, sensitive contractual or technical information). Share this only with the relevant people on a need-to-know basis.
 
-To facilitate this classification and make it easy to identify the security classification of documents, we have added a table with metadata including security classification to most of our [template documents](docs/Company/TemplateDocuments.mdx). The default classification is Internal, but you must change the classification when you use the template. Note that the security classification is **mandatory**, other fields such as version and owner are recommended but you are free to adapt it to your usage.
+To facilitate this classification and make it easy to identify the security classification of documents, we have added a table with metadata including security classification to most of our [template documents](docs/Company/TemplateDocuments.mdx). The default classification is Internal, but you must change the classification when you use the template. Note that the security classification is **mandatory** for all documents, while other fields such as version are recommended and you are free to adapt it to your usage. For policies, procedures, and registers, an owner is also mandatory.
 
-Note: unlabelled information is considered **internal**. 
+Note: unlabelled information is considered **internal**.
 
 ## Data storage and backups
 
 As a fully-remote cloud-native organization, all information **must be** stored on one of our approved cloud services and modified or updated using the appropriate method. No information must be stored solely on personal devices, as this can lead to data loss in the event of an incident. For example:
 
-- All code must be hosted on GitHub. Repositories must be owned by OET's GitHub organization, unless the project is contributing to an existing open source repository. Local checkouts of repositories are of course permitted for development, but please remember to push your code early and often!
-- All documents (meeting minutes, reports, spreadsheets, etc) must be on Google Drive. Use the appropriate project folder in the [OET Shared Drive](https://drive.google.com/drive/folders/0AJwtCWGBFq0PUk9PVA) for everything except confidential information or personal notes. There are restricted shared drives for HoDs and HR/Finance related confidential information.
-- Datasets: public datasets can be stored on Zenodo or the PyPSA [data mirror](https://pypsa-eur.readthedocs.io/en/latest/data_sources.html#data-versioning). Internal and confidential data must be stored on the project folder on Google Drive or Google Cloud Storage buckets (reach out to the Head of Software if you need to set this up for your project).
-- Application databases: if you are building an application (e.g. OETC, powernetzero), you must set up automatic backups and ensure any personal data is encrypted at rest. We recommend using your hosting provider's inbuilt backup solution (e.g. Google Cloud).
+- All **code** must be hosted on GitHub. Repositories must be owned by OET's GitHub organization, unless the project is contributing to an existing open source repository. Local checkouts of repositories are of course permitted for development, but please remember to push your code early and often!
+- All **documents** (meeting minutes, reports, spreadsheets, etc) must be on Google Drive. Use the appropriate project folder in the [OET Shared Drive](https://drive.google.com/drive/folders/0AJwtCWGBFq0PUk9PVA) for everything except confidential information or personal notes. There are restricted shared drives for HoDs and HR/Finance related confidential information.
+- **Datasets**: public datasets can be stored on Zenodo or the PyPSA [data mirror](https://pypsa-eur.readthedocs.io/en/latest/data_sources.html#data-versioning). Internal and confidential data must be stored on the project folder on Google Drive or Google Cloud Storage buckets (reach out to the Head of Software if you need to set this up for your project).
+- Application **databases**: if you are building an application (e.g. OETC, powernetzero), you must set up automatic backups and ensure any personal data is encrypted at rest. We recommend using your hosting provider's inbuilt backup solution (e.g. Google Cloud). Document the backup strategy and backup restore tests (which must be performed every six months) in the [register](https://docs.google.com/spreadsheets/d/1-PexrDuptJNWakh3arWlBBjhBI74wDUa6j7R_OqGC3k/edit?gid=2146615669#gid=2146615669) of OET-managed software products.
 
 This policy ensures that we are protected by the industry-grade backup, recovery, and data retention capabilities of our cloud service providers. In particular:
 - [Google Workspace Data Protection Overview](https://workspace.google.com/intl/en/security/)
@@ -77,3 +77,35 @@ To reduce the risk of unintentionally sharing internal and confidential data out
 
 - Prefix names with `[External]` for folders that are shared outside OET. When sharing documents with a partner or client, we recommend creating a folder called e.g. `[External] Justice League / OET Shared Folder` and placing all shared files in it.
 - Prefix names with `[Public]` for folders that are shared to the public (anyone with the link can access).
+
+## External media (e.g. USB drives)
+
+The use of removable and external storage devices such as USB flash drives and external backup drives on company-managed devices is **not permitted** (unless you are directed by management to, e.g. [secure wipe](#secure-wipe) your device). You should also not use these to store or transfer OET data on other devices. If you have a business reason for using such a device, please first get approval from the Information Security Manager (currently Stefan Radnev) or the ISO, who will coordinate with you to determine the most suitable device and protective measures.
+
+## Secure wipe
+
+The recommended tool for securely wiping company devices is [ShredOS](https://github.com/PartialVolume/shredos.x86_64). ShredOS boots from USB and includes `nwipe` for HDD overwrites, `hdparm` for SATA SSD secure erase, and `nvme-cli` for NVMe sanitize/format operations.
+
+Use this procedure when offboarding, or returning/replacing a company device:
+
+1. Preparation: Create a ShredOS bootable USB using [Rufus](https://rufus.ie/) (Windows) or `dd` (Linux).
+2. Witness call: The employee starts a video call with the Head of People or Information Security Manager from their phone.
+3. Device identification:
+    - Show the laptop screen with the serial number. On Linux: `sudo dmidecode -s system-serial-number`. On Windows (PowerShell): `(Get-CimInstance Win32_BIOS).SerialNumber`. Alternatively, show the BIOS/UEFI screen.
+    - Show the physical asset tag or serial number sticker on the device.
+4. Wipe: Boot into ShredOS and use the method appropriate to the drive type:
+    - **HDD**: Use the `nwipe` GUI (launches automatically). Select the drive and use Fill With Zeros (1 round).
+    - **SATA SSD**: Press `ALT+F2` for a terminal. Identify the drive with `fdisk -l`. Check it is not frozen with `hdparm -I /dev/sdX | grep frozen`. If frozen, run `rtcwake -m mem -s 5` and check again. Then:
+        - Check sanitize support: `hdparm --sanitize-status /dev/sdX`
+        - Preferred: `hdparm --yes-i-know-what-i-am-doing --sanitize-block-erase /dev/sdX`
+        - Fallback (if sanitize not supported): `hdparm --user-master u --security-set-pass p /dev/sdX` then `hdparm --user-master u --security-erase p /dev/sdX`
+    - **NVMe SSD**: Press `ALT+F2` for a terminal. List devices with `nvme list`. Then:
+        - Check sanitize support: `nvme id-ctrl -H /dev/nvmeX | grep Sanitize`
+        - Preferred: `nvme sanitize -a 2 /dev/nvmeX` (check completion with `nvme sanitize-log /dev/nvmeX`, status `0x101` = complete)
+        - Fallback (if sanitize not supported): `nvme format /dev/nvmeX -n 0xffffffff --ses=2` (crypto erase) or `--ses=1` (user data erase)
+    - For detailed command syntax, see the [ShredOS SSD/NVMe wipe guide](https://github.com/PartialVolume/shredos.x86_64#wipe-ssd-and-nvme-using-hdparm-and-nvme-cli).
+5. Evidence:
+    - For `nwipe`: capture the success screen. ShredOS automatically saves a PDF certificate and log file to the USB drive.
+    - For `hdparm`/`nvme`: capture screenshots or photos showing the device identifier, the wipe command, and the completion status output.
+    - Optionally: a photo of the employee next to the screen during the witness call.
+6. Recordkeeping: Store the evidence alongside the employee name, asset tag/serial number, date, witness name, wipe method, and outcome.
