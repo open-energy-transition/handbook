@@ -1,0 +1,194 @@
+---
+sidebar_label: "Secure software development"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org"]} />
+
+# 🛡️ Secure software development at OET
+
+<ControlledDocBanner />
+
+At OET, we build the tools that power the global energy transition. Because our software is used for critical infrastructure planning, the **integrity** of our code and the **protection** of our research data are vital.
+
+However, we know that a quick data analysis script doesn't need the same security overhead as a public-facing web platform. Use this guide to figure out what applies to your project.
+
+## 🏗️ Software categories
+
+Identify which "bucket" your project falls into to determine your security requirements.
+
+| Category | Description | Mandatory security policies |
+| :--- | :--- | :--- |
+| **Internal prototypes** | Quick scripts, one-off visualizations, or "proof of concept" tools used only by the OET team. | None, but make sure it is clearly labelled as a prototype or internal tool. |
+| **Forks of open-source repos** | OET forks of open-source projects, typically used to contribute features and bug-fixes upstream. (E.g. [PyPSA](https://github.com/PyPSA/pypsa), [linopy](https://github.com/PyPSA/linopy/)) | Follow the security procedures of the upstream project, while protecting the security of data and secrets as per usual (e.g. do not disclose Internal or Confidential data, ensure not to check-in credentials). |
+| **Open models** | Open-source modelling workflows on Public or open data; typically the code used to produce consultancy reports and static dashboards for clients (e.g., [Open-TYNDP](https://github.com/open-energy-transition/open-tyndp), [geothermal-modelling](https://github.com/open-energy-transition/geothermal-modelling), [form-energy-storage](https://github.com/open-energy-transition/form-energy-storage)). | Follow our general coding and data guidelines, no special security policies necessary as these are data science projects not software applications. |
+| **Dashboards of public data** | Websites displaying or analyzing public data (e.g., [Open Energy Benchmark](https://openenergybenchmark.org/), [Open Energy Modelling Tool Tracker](https://openmod-tracker.org/)). | Follow our general coding and data guidelines, no special security policies necessary as these are essentially static websites that do not have users or process personal data. |
+| **Open tools** | Libraries providing tools to process or analyze data (e.g., [osm-wikidata-toolset](https://github.com/open-energy-transition/osm-wikidata-toolset), [technology-data](https://github.com/open-energy-transition/technology-data/)). | Follow the security policies for software development (relevant parts of the S-SDLC), information security policies, and use of cryptography policy. Use a security scanning tool on **dependencies** to prevent malicious code injection. Policies on secure system architecture, application security requirements, and network services security are not applicable. |
+| **Products & platforms** | Web-deployed tools, SaaS platforms, or on-premises energy modeling applications. (e.g. [EU-Flex Platform](https://www.openenergytransition.org/projects/flexibility-assessment-platform), OETC) | **High security:** follow all our security policies, including S-SDLC, Secure system architecture & engineering principles, Security requirements for applications, Security of network services, and Use of cryptography. Use security tools for static analysis (SAST), dependency scanning, and secret scanning. |
+
+## Secure coding standards
+
+The goal of this policy is to ensure that OET code is resilient, dependencies are safe, and sensitive data remains protected. 
+
+### Core technical standards
+Regardless of the project category, all OET code (except internal prototypes, see table above) must adhere to these baseline standards (see our [Coding guidelines](docs/Engineering/CodingGuidelines)):
+* **No Hardcoded Secrets:** Credentials, API keys, and tokens must never be committed to Git. Use environment variables (`.env`) or Secret Managers (e.g. GitHub Secrets, see [Tooling](#tooling)).
+* **Dependency Management:** All projects must use a lockfile (e.g., `poetry.lock`, `requirements.txt` with hashes, or `conda-lock`) to ensure reproducible and auditable environments.
+* **Peer Review:** All code changes must be reviewed by at least one other person before merging to a main branch.
+
+The following table lists the standard applicable for each type of software developed at OET:
+
+| Category | Applicable secure coding standard |
+| :--- | :--- |
+| **Internal prototypes** | N/A
+| **Forks of open-source repos** | Follow the security standards of the upstream project. |
+| **Open models** | Follow OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Dashboards of public data** | Follow OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Open tools** | Follow OpenSSF Scorecard, OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Products & platforms** | Follow OpenSSF Scorecard, OWASP for web applications, OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+
+### Tooling
+
+We use automated "guardrails" to catch security issues early. The right tools depend on whether your repository is **public** or **private**, because GitHub's free plan has different capabilities for each.
+
+#### Public repositories
+
+For public repositories, GitHub's full Advanced Security suite is available for free — use it fully.
+
+**Static Analysis (SAST) — CodeQL**
+
+[CodeQL](https://docs.github.com/en/code-security/code-scanning/introduction-to-code-scanning/about-code-scanning-with-codeql) is GitHub's native static analysis engine. It scans for common vulnerability classes (injection, path traversal, insecure deserialization, etc.) and posts results directly on PRs.
+
+Setup:
+1. Go to **Security** → **Code scanning** → **Set up code scanning** → select **CodeQL**.
+2. Accept or customise the generated `.github/workflows/codeql.yml`. It runs on every push and pull request.
+3. To **block PRs** when CodeQL finds issues: **Settings** → **Branches** → **Add branch protection rule** for `main` → enable *Require status checks to pass before merging* → add `CodeQL` as a required check.
+
+**Dependency Scanning — Dependabot**
+
+[Dependabot](https://docs.github.com/en/code-security/dependabot) alerts you to known vulnerabilities in your dependencies and can automatically open PRs to fix them.
+
+Setup:
+1. Enable **Dependabot alerts** and **Dependabot security updates** at **Settings** → **Code security and analysis**.
+2. Add a `.github/dependabot.yml` to configure which package ecosystems to watch (pip, npm, GitHub Actions, etc.) and how often to check.
+
+Optionally, add the [Dependency Review Action](https://github.com/actions/dependency-review-action) to `.github/workflows/dependency-review.yml` to actively block PRs that introduce new vulnerable dependencies. It compares manifest changes against the GitHub Advisory Database and fails the workflow on a match. Add it as a required status check in branch protection to enforce it.
+
+**Secret Scanning — GitHub Secret Scanning**
+
+GitHub [Secret Scanning](https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning) is on by default for all public repos. It detects over 200 token and credential patterns from major providers.
+
+Setup:
+1. Confirm it is active at **Settings** → **Code security and analysis** → *Secret scanning*.
+2. Enable **Push protection** at the same location. This makes secret scanning *blocking*: a `git push` containing a detected secret is rejected at the network layer, before the commit ever lands in the repository.
+
+**Repository Health — OpenSSF Scorecard**
+
+[OpenSSF Scorecard](https://scorecard.dev/) audits a repository's security posture (branch protection, dependency pinning, signed releases, etc.) and produces a score that can be displayed on your README.
+
+Setup:
+1. Add the [Scorecard Action](https://github.com/ossf/scorecard-action) to your repo using the template workflow it provides.
+2. Results appear in the GitHub Security dashboard and at [scorecard.dev](https://scorecard.dev/).
+3. Use Scorecard on all public **Open Tools** and **Products & Platforms** repositories.
+
+---
+
+#### Private repositories
+
+GitHub Advanced Security (CodeQL, Secret Scanning push protection) is not available for private repositories on the free GitHub plan. Use [SonarQube Cloud](https://sonarcloud.io/) as the primary security analysis platform, supplemented by CI-based tooling.
+
+:::note Free-plan enforcement limitation
+On GitHub's free tier, branch protection rulesets cannot enforce required status checks on private repositories. All the tools below will run and report findings, but **it is the responsibility of each maintainer to review and resolve those findings before merging**. Do not merge PRs with unresolved `BLOCKER` or `CRITICAL` issues from any of the tools below.
+:::
+
+**Static Analysis (SAST) — SonarQube Cloud**
+
+[SonarQube Cloud](https://sonarcloud.io/) (formerly SonarCloud) detects bugs, vulnerabilities, and code smells. It posts a status check on every PR and maintains a project dashboard with trend tracking.
+
+Setup:
+1. Log in to [sonarcloud.io](https://sonarcloud.io/) with your GitHub account and grant it access to the OET organisation.
+2. Click **+** → **Analyze new project** → select your repository.
+3. Choose **Automatic Analysis** for the simplest setup. For more control (e.g. to pass build-time flags or analysis parameters), add the [SonarQube Cloud GitHub Action](https://docs.sonarsource.com/sonarcloud/advanced-setup/ci-based-analysis/github-actions-for-sonarcloud/) to `.github/workflows/sonarcloud.yml` instead.
+4. Review the [Quality Gate](https://docs.sonarsource.com/sonarcloud/standards/quality-gates/) in your project settings. The default gate fails on any new `BLOCKER` vulnerability or security hotspot. Keep this gate or tighten it — do not loosen it.
+5. Maintainers must check the SonarQube Cloud PR decoration and must not merge when the Quality Gate is red.
+
+**Dependency Scanning — Dependabot**
+
+Dependabot alerts and security updates are available for private repositories on all GitHub plans. The Dependency Review Action that blocks PRs in public repos requires GitHub Advanced Security for private repos and is therefore not available on the free plan.
+
+Setup:
+1. Enable **Dependabot alerts** and **Dependabot security updates** at **Settings** → **Code security and analysis**.
+2. Configure `.github/dependabot.yml` for your package ecosystems.
+3. Maintainers must review open Dependabot alerts and must not merge PRs that introduce new vulnerabilities flagged by Dependabot.
+
+SonarQube Cloud also surfaces known vulnerable dependencies under the **Dependencies** tab of your project dashboard.
+
+**Secret Scanning — SonarQube Cloud + Gitleaks (pre-commit)**
+
+GitHub Secret Scanning push protection is not available for private repos on the free plan. SonarQube Cloud covers this in the pipeline: it detects hardcoded passwords, API keys, and credentials as security hotspots (e.g. rules `S2068`, `S6290`) as part of its standard analysis — no additional setup is required beyond the SAST configuration above. Maintainers must resolve any secret-related hotspots before merging.
+
+As an additional local safeguard, install the [Gitleaks pre-commit hook](https://github.com/gitleaks/gitleaks?tab=readme-ov-file#pre-commit) to catch secrets before they are even committed. This is optional but strongly recommended.
+
+## 🎓 Training recommendations
+
+To meet ISO requirements, OET employees should complete training that matches their project's risk level.
+
+| Category | Recommended Course / Resource |
+| :--- | :--- |
+| **Open Models & Public Dashboards** | [GitHub Skills: Maintain a Secure Repo](https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/) (35 mins) + OET Secrets Checklist. |
+| **Open Tools (Libraries)** | The above + [Snyk Learn: OWASP Top 10 for OSS](https://learn.snyk.io/learning-paths/owasp-top-10-open-source-software-risks/) (2.5 hrs). |
+| **Products & Platforms** | The above + **[OpenSSF LFD121](https://training.linuxfoundation.org/training/developing-secure-software-lfd121/)** (Full course) + [Hacksplaining](https://www.hacksplaining.com/lessons) for Web Vulnerabilities. |
+
+## 📚 Policy overviews
+
+### 🛠️ [Secure software development (S-SDLC)](https://docs.google.com/document/d/1DJpt1JYWzyjEUkUjwJgxp_Ag-SJrlBYu/preview)
+
+*Our framework for ensuring security is baked into the coding process from the first "Hello World" to the final release.*
+
+  * **The S-SDLC Phases:** Breaks down security tasks into stages: planning, development, testing, and release.
+  * **Separate Environments:** Guidelines on keeping Dev, Test, and Prod environments isolated to prevent accidents in live systems.
+  * **Change Management:** A standard workflow for how code is reviewed and approved (the "Peer Review" culture).
+  * **Test Information:** Rules for using synthetic or sanitized data for testing so we don't leak real client data during development.
+
+### 🏛️ [Secure system architecture & engineering principles](https://docs.google.com/document/d/1afKQyebf_zh1kxdl9vynQog6dTtZEVe8/preview)
+
+*The "Manifesto" that guides how we design high-level systems and infrastructure.*
+
+  * **Architectural Requirements:** Defines the "Golden Principles" like *Security by Design* and *Defense in Depth*.
+  * **Layered Security:** How we secure the different layers of a system: Access (Who), Compute (Where it runs), and Data (What it stores).
+  * **Engineering Lifecycle:** How architectural proposals are reviewed and mapped against OET's long-term security goals.
+
+### 📱 [Security requirements for applications](https://docs.google.com/document/d/1W2QUgpHMwNMU-HA0NhAEGXzFuThD53hH/preview)
+
+*The functional security features that must be present in any software OET builds or buys.*
+
+  * **Data Requirements:** Classifying data (Public vs. Confidential) and defining how it must be handled.
+  * **Access Control:** Standards for **MFA** and preferring **Single Sign-On (SSO)** to keep logins simple and secure.
+  * **Integrity & Availability:** Ensuring the software is reliable and that the data it produces hasn't been tampered with.
+  * **Logging & Error Handling:** Requirements for recording "who did what" and ensuring error messages don't reveal system secrets.
+
+### 🌐 [Security of network services](https://docs.google.com/document/d/1RfvLHYj4JZjwgyrMLoJ9S_50bW7veO_r/preview)
+
+*How we manage the "pipes" and platforms that connect our services to the world.*
+
+  * **Service Inventory:** Keeping track of every cloud provider and tool (AWS, GitHub, etc.) we use.
+  * **Network Defense:** High-level rules for **segmentation**, firewalls, and protecting our public-facing APIs.
+  * **Third-Party Management:** How we vet the security and uptime (SLAs) of our service providers.
+
+### 🔐 [Use of cryptography and key management](https://docs.google.com/document/d/1G26DKPYiElxPNDvQ_VbRBass_QbXLFz0/preview)
+
+*The rules for how we lock our data and, more importantly, how we look after the keys.*
+
+  * **Data at Rest:** Standards for encrypting files and databases sitting in storage.
+  * **Data in Transit:** Ensuring all data moving across the internet (APIs, Web) uses modern, secure tunnels (TLS).
+  * **Key Management:** The "Lifecycle" of a secret—how we generate, store, rotate, and eventually destroy encryption keys.
+
+### 📁 [Retention and deletion policy](https://docs.google.com/document/d/1M3SFfn6s9PtMOy05O4ESVrWk_IUcDPtY/preview)
+
+*How we manage the lifecycle of information, from creation to secure destruction.*
+
+  * **Retention Schedules:** High-level timelines for how long we must keep research, financial, and personnel records.
+  * **Secure Deletion:** Standards for "digitally shredding" data so it cannot be recovered once its time is up.
+  * **Compliance:** Meeting our legal obligations (GDPR, DFG research rules) regarding data storage.
