@@ -1,0 +1,299 @@
+---
+sidebar_label: "Information Security policy"
+---
+## Purpose
+
+This procedure provides a structured approach for managing information security incidents at OET.
+Its objectives are to:
+- Ensure that all employees and third parties can promptly report incidents.
+- Define clear roles, responsibilities, and escalation paths.
+- Guarantee that incidents are classified, contained, resolved, and reviewed systematically.
+- Support compliance with ISO/IEC 27001:2022, and GDPR obligations.
+
+## Scope
+
+This procedure applies to all OET employees, contractors, and third parties who access OET information systems, regardless of location. It covers all incidents impacting the confidentiality, integrity, or availability of OET information, systems, or services.
+
+## References
+
+## Definitions and Abbreviations
+
+## Roles and Responsibilities
+
+| Role | Responsibilities |
+| :--- | :--- |
+| **OET Management: Heads of relevant Departments and CEO Heads of Departments and CEO.** |  Responsible for final decision-making during major incidents and allocating necessary resources for recovery. |
+| **Information Security Officer (ISO)** | Coordinates the overall incident management process, including classification, escalation, and reporting to management. |
+| **Information Security Manager (ISM)** | Responsible for the day-to-day operational implementation of information security controls across endpoints, infrastructure, monitoring, and identity. |
+| **Incident Coordinator** | Nominated by the ISO depending on the type and domain of the incident. Manages specific containment, resolution, and recovery activities; acts as the primary point of contact during an incident. |
+| **Incident Response Team (IRT)** | Technical and administrative staff who support investigation, documentation, and mitigation. |
+| **Employees / Users** | Promptly report any suspected or actual security incidents; follow security policies and support investigations. |
+
+As of March 2026, our ISM is Stefan Radnev and our ISO is Bartosz Naumowicz. Permanent members of the IRT include the Heads of People and Software; others are added to the team depending on the incident.
+
+## Incident Management Process
+
+### **Process Overview**
+
+The incident management process at OET follows five main stages:
+- Incident Reporting: Incidents are reported through defined communication channels.
+- Incident Classification and Prioritization: Incidents are assessed based on impact and urgency.
+- Containment: Actions are taken to limit the impact of the incident.
+- Resolution and Recovery: Root causes are addressed and systems are restored.
+- Documentation and Tracking: Incidents are recorded in a central incident register.
+- Post-Incident Review and Lessons Learned: Significant incidents are reviewed to identify improvements.
+
+This process ensures consistent handling of incidents, minimizes business impact, and supports continuous improvement.
+
+### **Incident Reporting**
+
+All employees, contractors, and external parties shall report any suspected or actual information security incidents immediately upon detection.
+
+Incidents shall be reported using the following communication channels:
+- **Discord:** OET employees shall report incidents in the #iso-security channel, tagging the Information Security Officer (Bartosz Naumowicz), the Information Security Manager (Stefan Radnev), and relevant Incident Response Team members (Quintin Coetzee, Siddharth Krishna). If the incident involves sensitive or confidential information, reporting shall be done via direct messages to authorized personnel.
+- **Email:** Incidents may be reported to [security@openenergytransition.org](security@openenergytransition.org) by both internal and external parties.
+
+The report should include, where possible:
+- Date and time of occurrence
+- Description of the incident and potential impact
+- Affected systems, data, or services
+- Contact details of the reporting person
+
+All reported incidents shall be documented in the central incident register.
+
+### **Incident Classification Methodology**
+
+Incidents are classified according to their Impact (the extent of business or security consequences) and Urgency (the required response time). The combination of these two dimensions results in a severity level that determines how the incident should be managed.
+
+Incident Priority Matrix
+
+| Impact | Urgency: Immediate | Urgency: High | Urgency: Medium | Urgency: Low |
+| :----- | :----------------- | :------------ | :-------------- | :----------- |
+| High Impact | Priority 1 - Critical Response | Priority 2 – High Response | Priority 2 – High Response | Priority 3 – Medium Response |
+| Medium Impact | Priority 2 – High Response | Priority 3 – Medium Response | Priority 3 – Medium Response | Priority 4 – Low Response |
+| Low Impact | Priority 3 – Medium Response | Priority 3 – Medium Response | Priority 4 – Low Response | Priority 4 – Low Response |
+
+### **Impact Levels**
+
+1. High (Critical business impact):
+Incident significantly affects critical business processes, involves a large number of users, or exposes sensitive/confidential data. Could result in major financial loss, regulatory breach, or reputational damage.
+Example: Prolonged outage of critical systems, large-scale data breach, ransomware on production systems.
+
+2. Medium (Moderate business impact):
+Incident impacts important systems or business processes but does not cause complete disruption. Limited financial or reputational consequences.
+Example: Malware infection contained to one department, disruption of a non-critical application, temporary loss of partial functionality.
+
+3. Low (Minor business impact):
+Incident has minimal or no effect on business operations, involves a small number of users, and causes little or no financial/reputational damage.
+Example: Single user phishing attempt (not successful), short unavailability of a non-essential service.
+
+### **Urgency Levels**
+
+1. Immediate: Requires immediate action (response within minutes or hours). Delay will cause unacceptable business or security consequences.
+2. High: Response required the same day (within 24h).
+3. Medium: Response required within 2 business days.
+4. Low: Response can be scheduled within a week or longer.
+
+### **Response Levels**
+
+1. Critical: Situation that can disrupt or endanger core business functions, credibility, or regulatory obligations. Requires activation of the Incident Response Team and potentially management-level escalation.
+2. High: Incident with material impact on confidentiality, integrity, or availability of critical systems/data. Requires urgent coordinated response and regular reporting until resolution.
+3. Medium: An event that has or may have a minor impact on the integrity, availability, confidentiality, or reliability of information, business processes, IT services, systems, or applications.
+4. Low: An event determined to have no or minimal impact on the integrity, availability, confidentiality, or reliability of information, business processes, IT services, systems, or applications. Low incidents may be handled using a simplified process but shall be documented where relevant to ensure traceability and support continuous improvement.
+
+### **Communication and Escalation by Incident Severity**
+
+ a. Who Responds
+- Critical incidents: Managed by the Incident Response Team (IRT).
+- The Senior Management is involved when the incident threatens business continuity, regulatory compliance, or reputation.
+- High or Medium incidents: Coordinated by the ISO or an Incident Coordinator appointed by them.
+- The Incident Response Team (IRT) may be partially activated if additional expertise or support is needed.
+- Low incidents: Handled by the organizational unit responsible for the affected system, without the involvement of ISO or IRT.
+
+ b. How Communication Takes Place
+Communication within the IRT occurs only through secure channels:
+- the group mailbox [e.g., security@openenergytransition.org](security@openenergytransition.org) including all relevant team members, or
+- a direct message group on Discord containing only the IRT and relevant members.
+- If the incident affects the availability or integrity of the email system, email must not be used as a communication channel.
+
+All communication related to the incident must be logged and traceable for audit and post-incident review purposes.
+[Incident_log](https://docs.google.com/spreadsheets/d/1p8t2RXWUd-fIO_s5tWyZYdWoTrg9oGOm/edit?usp=drive_link&ouid=115306671467143951156&rtpof=true&sd=true), [Lessons learned](https://docs.google.com/document/d/1VmShngMHfAKQ7uu1ckGN0b23WLLMcP5B/edit?usp=drive_link&ouid=115306671467143951156&rtpof=true&sd=true)
+
+c. Who is involved and when
+
+| Incident Level | Key Participants | Escalation / Involvement |
+|----------------|------------------|---------------------------|
+| Critical | ISO, ISM, Incident Response Team, Senior Management, Legal, Communications | Immediate activation of IRT and escalation to management. |
+| High | ISO, ISM, Incident Coordinator, IT, Security | Escalate to IRT if containment exceeds defined response time. |
+| Medium | Incident Coordinator, System Owner | Managed within department; escalate if impact grows. |
+| Low | System Owner, Local Support | No escalation; handle within operational scope. |
+
+### **Containment Phase**
+
+The containment phase includes all necessary activities aimed at determining and limiting the scope and impact of the incident.
+This may involve creating backup copies of compromised systems and collecting evidence for further investigation into the root cause of the incident, if required.
+The containment phase primarily applies to security incidents whose impact can be isolated or reduced.
+
+The Information Security Officer shall notify all relevant stakeholders affected by the incident to coordinate further containment activities.
+
+Before initiating containment actions, it is recommended to determine the following:
+- The financial and operational impact of the incident on business processes,
+- The number of computers, applications, or user accounts affected,
+- Whether critical system components that support essential services have been compromised,
+- Whether confidential information, including personal data, has been compromised,
+- Which external parties (e.g., third parties, law enforcement) need to be contacted,
+- The estimated recovery time following the incident.
+
+**Containment activities are managed by the Incident Coordinator, appointed by the Information Security Officer.**
+
+After gathering the necessary information, the containment steps should be implemented.
+Containment can be performed in several ways, depending on the type and nature of the incident. 
+
+Possible activities are illustrated in the following figure:
+
+
+
+
+
+Regardless of the containment method applied, it is essential to verify whether redundant IT systems and data (located at alternate sites or in backup storage) have also been compromised.
+All containment actions executed at the primary location must also be applied to the alternate site.
+
+### **Evidence Collection and Preservation**
+
+After the appropriate containment measures have been implemented to limit the scope and impact of the incident, it is necessary to identify the root cause and carry out activities to remove it.
+Based on the identified cause, the removal of the incident cause may include the following activities:
+- Implementation of additional security controls at the hardware or software level within the information system,
+- Restoration of systems to the state prior to the incident,
+- Vulnerability analysis to prevent recurrence of incidents caused by the same issue.
+- Evidence collection related to incidents must be performed only by authorized personnel within their area of responsibility and with the necessary expertise, or by individuals appointed by the Incident Coordinator.
+
+All collected evidence must be handled carefully, in accordance with the following guidelines:
+- For non-digital media (paper, film, etc.):
+-- The original document must be stored securely, along with records of the person who found it, the location, and a witness statement. Originals must never be altered.
+- For information in electronic form:
+-- Copies or images (disk images or memory dumps) of all relevant storage media, hard drives, or memory must be made. A detailed record of all activities during copying must be maintained, and the process should be conducted in the presence of a witness.
+-- Original media and logs must be securely stored to prevent any modification.
+
+**The Incident Coordinator shall immediately notify the Data Protection Officer (DPO) of any incidents involving personal data, who will initiate further actions related to notification of the supervisory authority.**
+
+### **Incident recovery**
+
+After the root cause of the incident has been eliminated, the recovery phase follows, its goal is to restore affected systems and information assets to their operational state prior to the incident.
+
+Examples of recovery activities include:
+- Reinstallation of the operating system from verified or original manufacturer media,
+- Data restoration using verified backup copies,
+- Disabling unnecessary services and applying the latest security patches and updates,
+- Installation of required applications with corresponding patches and updates,
+- Password resets,
+- System reintegration into the production environment, etc.
+
+After recovery, system configuration settings must be verified to ensure full functional integrity.
+Before returning the system to production, testing procedures must be conducted to validate stability and security. 
+
+## Incident reporting
+
+All reported incidents shall be recorded in the central [OET Incident Register](https://docs.google.com/spreadsheets/d/1ox4QMs73tpSriZ3Vwc8t7Rs1fcvMmjV2_8GncHFFvc8/edit?usp=sharing) maintained by the Information Security Officer.
+**The Incident Report shall be prepared by the Incident Coordinator and submitted to the Information Security Officer.**
+
+The report must contain the following information:
+- Details of the reporting person,
+- Type and severity of the incident (incident classification),
+- Detailed description of the incident,
+- Affected information assets,
+- Impact and consequences of the incident,
+- Individuals involved in the incident,
+- Planned actions for incident resolution,
+- Executed actions,
+- Outstanding/unexecuted actions,
+- Notified individuals or entities.
+
+The Information Security Officer shall centrally collect, analyze, and review all incident reports, and develop recommendations to improve detection and prevention of similar events in the future.
+
+Collected data and analysis results shall form a knowledge base for future incident management activities.
+Incident reports shall also serve as a basis for improving existing security controls and procedures, or for implementing new controls.
+Such implementation plans must define the control description, responsible persons, and deadlines for completion.
+The Information Security Officer shall regularly report on all security incidents that occurred during the previous reporting period.
+All incident reports must be securely archived, and information related to incidents is classified as confidential.
+
+
+### **Regulatory Reporting Obligations**
+
+As a non-profit research organization developing open-source tools and data for energy system planning, the organization currently reports personal data breaches in accordance with the **General Data Protection Regulation (GDPR) and Bundesdatenschutzgesetz (BDSG) .**
+
+**Contact with Authorities**
+Notification to authorities shall be performed where required by applicable law (e.g. GDPR), contractual obligations, or where there is a reasonable indication of criminal activity or significant impact to OET operations.
+The decision to contact external authorities shall be made by the Information Security Officer in coordination with Management, taking into account legal and regulatory requirements.
+Where applicable, relevant authorities may include data protection authorities, law enforcement agencies, or other regulatory bodies depending on the nature of the incident. Refer to Annex 1 to see who shall carry out the communication with the relevant authority.
+All communication with authorities must be documented within the incident record.
+
+**Personal Data Breach Incidents**
+
+If an incident results in a personal data breach, the Data Protection Officer must notify the competent supervisory authority no later than 72 hours after becoming aware of the breach.
+
+In Bavaria, the competent authority is the Bavarian State Office for Data Protection Supervision (Bayerisches Landesamt für Datenschutzaufsicht - BayLDA).
+
+- The notification must be submitted using the official online form available on the BayLDA website:
+[https://www.lda.bayern.de/de/datenpanne.html](https://www.lda.bayern.de/de/datenpanne.html)
+- Additional information and guidance are available on the main BayLDA webpage: 
+[https://www.lda.bayern.de/de/index.html](https://www.lda.bayern.de/de/index.html)
+
+## Final Provisions
+
+The ISO, supported by the ISM, is responsible for the review and updating of this Procedure.
+This Procedure enters into force on the date of its publication.
+
+## Annex 1 – Contact Details of Responsible Persons
+
+| Name and Surname | Role | Mobile | E-mail | Notes |
+|------------------|------|--------|--------|-------|
+| Bartosz Naumowicz | Information Security Officer (ISO) | +48 666 018 994 | naumowicz@isico.de | Initiates and coordinates incident response activities, including internal communication and coordination. Responsible for coordination and communication with external authorities, where required. |
+| Stefan Radnev | Information Security Manager (ISM) | +31 648562801 | stefan.radnev@openenergytransition.org | Operational lead for IT/infrastructure incidents. Coordinates technical containment, evidence collection and recovery. |
+| Quintin Coetzee, Head of People | Incident Coordinator | +27 66 000 5720 | quintin.coetzee@openenergytransition.org | If the incident relates to personal or employee data, or platforms administered by him (Google, Discord, Remote.com, etc). |
+| Siddharth Krishna, Head of Software Engineering | Incident Coordinator | +265 988 042 353 | siddharth.krishna@openenergytransition.org | If the incident relates to software, IT infrastructure, or platforms administered by him (GitHub, GCP, etc). |
+| Maximilian Parzen, CEO | Members of the Incident Response Team | +49 17670889068 | max.parzen@openenergytransition.org | If the incident is critical and needs escalation to senior management. |
+
+## Annex 2 – CrowdStrike Falcon Managed Incident Response
+
+### **1. Detection & Initial Triage**
+
+Incidents are identified via the Falcon Console or via automated email integrations. The ISO (or on-call engineer) must categorize the detection based on the Falcon Severity Score:
+
+| Falcon Score | Severity | OET Action Level | Example |
+|--------------|----------|------------------|---------|
+| 8.0 – 10.0 | Critical | Immediate Crisis | Active Ransomware, Credential Dumping. |
+| 6.0 – 7.9 | High | Same-Day Response | Suspicious PowerShell script, Mimikatz detected. |
+| 3.0 – 5.9 | Medium | 24-Hour Review | Unsigned binary execution, Grayware. |
+| 0.1 – 2.9 | Low | Weekly Audit | Adware, Policy violation (e.g., USB use). |
+
+### **2. Containment Strategy (The "Kill Switch")**
+When a **High or Critical** incident is confirmed, OET will use Falcon’s **Network Containment** feature to isolate the host.
+- **Action:** The responder clicks "Contain Host" in the Falcon Console.
+- **Result:** The device is cut off from the internet and OET internal networks (GitHub, GCP) but remains connected to the CrowdStrike cloud for investigation.
+ISO 27001 Requirement: This satisfies the requirement to "limit the impact" of a security event.
+
+### **3. Investigation via Real Time Response (RTR)**
+To fulfill **A.5.28 (Collection of Evidence)**, OET responders will use Falcon’s **RTR (Real Time Response)** capability:
+- **Live Analysis:** Responders connect to the remote terminal of the affected device to inspect running processes and suspicious files.
+- **Forensic Collection:** Use the get command to retrieve malicious samples or memory dumps for analysis.
+- **No-Touch Integrity:** All commands executed via RTR are automatically logged by CrowdStrike, creating an immutable audit trail for auditors.
+
+### **4. Remediation & Eradication**
+Once the threat is understood:
+- Kill Processes: Use Falcon to terminate malicious process trees.
+- Remove Artifacts: Delete malicious files and registry keys identified during the RTR session.
+- Salutec GmbH Support: For Critical incidents, the ISO may engage Salutec GmbH (OET's CrowdStrike partner) for additional incident response support, or procure other external incident response services if the incident exceeds internal capabilities.
+
+### **5. Recovery & Lift-Containment**
+The host is only returned to the operational network after:
+- A full "On-Demand Scan" returns zero threats.
+- Credentials used on that machine (GitHub/GCP tokens) have been rotated.
+- The **ISO** formally approves the "Lift Containment" action.
+
+### **6. Post-Incident Activity**
+Within 5 business days of a CrowdStrike-detected incident, the team must:
+- **Export the Falcon Incident Report:** This serves as the primary evidence for ISO 27001 audits.
+- **Update Falcon Policies:** If the incident was a "False Negative" (detected late), update the Prevention Policy (e.g., move from "Detection" to "Prevention" for a specific IOC).
+
+
+
