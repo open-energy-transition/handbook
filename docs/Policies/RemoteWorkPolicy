@@ -1,0 +1,215 @@
+---
+sidebar_label: "Remote Work policy"
+---
+## Purpose
+This policy defines OET’s approach to remote work. As a fully remote organization, it sets clear expectations to support effective collaboration, accountability, and wellbeing across a globally distributed team. This policy forms part of OET’s Information Security Management System (ISMS) and supports the implementation of ISO/IEC 27001:2022 including Annex A control A.6.7 Remote Working.
+It reflects OET’s commitment to:
+- Flexibility and autonomy
+- Asynchronous-first collaboration
+- Outcomes-based performance
+- Trust-driven ways of working 
+
+## Scope
+This policy applies globally to:
+- All those working with OET, on a full-time or part-time basis, including but not limited to:
+-- Direct hires (through our German entity)
+-- Employees engaged via Employer of Record (EoR) providers (e.g., Remote.com)
+-- Contractors and advisors, where relevant
+-- Postgraduate students and interns
+- All work performed on behalf of OET, regardless of geographical location
+
+## Guiding Principles
+OET operates on the following principles:
+- Wherever possible, work is measured by outcomes, not hours
+- Flexibility is encouraged, with accountability
+- Communication defaults to asynchronous wherever possible
+- Trust is the baseline; micromanagement is avoided
+- Individuals are responsible for managing their work environment and productivity
+- Collaboration should be inclusive across time zones
+
+## Work Location
+OET is a location-flexible organization. The company does not maintain fixed premises for any official business, and each OETer’s formal place of work is their private residence.
+Remote work is the default working model at OET and is considered formally authorized for all roles within scope of this policy.
+
+### **General Approach**
+Team members may work from any location of their choosing, including:
+- Home offices
+- Co-working spaces
+- Cafés or public spaces
+- While traveling
+
+There are no fixed geographic restrictions imposed by OET.
+
+### **Expectations**
+Individuals are responsible for ensuring that:
+- Their work environment enables them to perform their role effectively
+- They have reliable internet connectivity, including for taking part in voice and/or video calls when necessary, facilitating smooth cloud data access and storage, etc.
+- Confidential and sensitive information is protected, especially in public or shared spaces
+
+If a chosen work setup impacts performance or collaboration, adjustments may be requested.
+Work in public or shared spaces shall only be performed where confidentiality and information security can be ensured in line with Section 9.
+
+## Availability
+### **Asynchronous-First Approach**
+OET operates as an asynchronous-first organization:
+
+- A lot of the work that we do does not depend on real-time availability, though for certain roles and meetings, a certain amount of overlap and therefore synchronicity may be required
+- Communication should not assume immediate responses, and should seek to have a balance of not being too long, but also providing enough information and context upfront
+- Decisions and discussions should be documented where possible
+
+### **Flexibility and Responsibility**
+- There are no fixed working hours, and we have a team working from many countries, across many different time zones
+- Individuals are expected to manage their schedules responsibly. Calendar and workflow management, and general prioritization, is insofar as possible left to each OETer to do
+- Work should be structured to meet team needs, deadlines, and role expectations
+
+### **Availability Expectations**
+While flexibility is encouraged:
+- Team members should maintain a reasonable level of responsiveness during their working periods (i.e., when not on leave), using their best judgement
+- Availability expectations may vary by team and role. This will be communicated if so
+
+## Communication & Collaboration
+Effective communication is critical in a remote environment.
+
+### **Communication Norms**
+- Default to asynchronous communication (e.g. Discord, documented updates)
+- Default to instant messaging (in DMs or channels) as opposed to using email
+- Use meetings intentionally and only when necessary
+- Ensure key decisions and discussions are documented
+
+### **Responsiveness**
+- Respond within reasonable timeframes based on context and urgency
+- Communicate proactively to relevant parties if major delays are expected
+
+### **Meetings**
+- Keep meetings purposeful and inclusive
+- Be mindful of time zone differences and differences in styles of work
+- Try to find suitable times for all, or at least most, participants
+- Document outcomes and action items
+
+## Performance & Deliverables
+OET is an outcomes-driven organization.
+Performance is measured based on:
+ ○ Quality of work
+ ○ Delivery against agreed goals
+ ○ Contribution to team objectives
+
+Team members are expected to:
+ ○ Manage their workflow and use their judgement to prioritize things
+ ○ Communicate major blockers and delays for fixed deadlines proactively
+
+Self-management is encouraged, alongside accountability. In working this way, OET naturally expects its team members to properly fulfil the responsibilities of their respective roles, but in doing so, the company affords everyone the ability to have a great deal of control over how they do so - a high level of autonomy and trust is provided.
+
+## Equipment & Workspace
+### **Equipment Provision**
+OET may provide:
+- A company-issued laptop of suitable specification, where required
+-- If this is the case, the OETer is to let their manager know, so that the People Department can source something suitable for them
+-- Delivery addresses are to be kept up-to-date in Remote and any other relevant systems. A relevant contact number, and any special delivery instructions, are to be included
+
+### **Bring Your Own Device (BYOD)**
+Use of personal devices is permitted, provided that:
+- Devices comply with OET’s data security and [encryption requirements](https://open-energy-transition.github.io/handbook/docs/Security/DevicePolicy#device-security-requirements)
+- Appropriate safeguards are in place to protect company data, including keeping the operating system, antivirus software, and OET apps updated. OET recommends enabling auto-update functionality where available
+- The individual has read and acknowledged OET’s [device](https://open-energy-transition.github.io/handbook/docs/Security/DevicePolicy#device-security-requirements) and [data](https://open-energy-transition.github.io/handbook/docs/Security/InformationSecurity) policies
+- Use of personal devices must be approved and may be subject to registration and compliance checks as defined in OET policies.
+
+### **Individual Responsibility**
+Team members are responsible for:
+- Maintaining their equipment in good working condition
+- Ensuring their workspace supports effective and secure work, whether in or out of home
+
+### **Bring Your Own Device (BYOD)**
+Use of personal devices is permitted, provided that:
+- Devices comply with OET’s data security and encryption [requirements](https://open-energy-transition.github.io/handbook/docs/Security/DevicePolicy#device-security-requirements)
+- Appropriate safeguards are in place to protect company data, including keeping the operating system, antivirus software, and OET apps updated. OET recommends enabling auto-update functionality where available
+- Avoid unsecured public Wi-Fi or use appropriate protection where necessary
+- Never use public or shared computers for OET work
+- Ensure that family members, friends, or other third parties cannot access OET systems, devices, or information
+- Report any loss, theft, compromise, suspected incident, or security weakness promptly
+
+### **Devices and BYOD**
+OET may provide company-issued devices where required. Personal devices may be used for business purposes only if they meet OET’s [security requirements](https://open-energy-transition.github.io/handbook/docs/Security/DevicePolicy#device-security-requirements) Remote working risks are identified and managed as part of OET’s risk management process.
+Devices used for OET work shall:
+- Be protected by password, PIN, biometric authentication, or equivalent
+- The individual has read and acknowledged OET’s device and data policies
+- Use of personal devices must be approved and may be subject to registration and compliance checks as defined in OET policies.
+
+Individual Responsibility
+Team members are responsible for:
+- Maintaining their equipment in good working condition
+- Ensuring their workspace supports effective and secure work, whether in or out of home
+
+## Information Security and Data Protection
+                                                                                                                                                          
+- Have encryption enabled where supported
+- Use updated operating systems and software
+- Have antivirus, endpoint protection, or equivalent safeguards active where required
+- Be protected by automatic screen lock
+- Not be shared with unauthorized persons
+- Not store OET business data in personal or unapproved cloud services
+- BYOD use must follow the requirements defined in OET’s [Acceptable Use Policy.](https://docs.google.com/document/d/169YXi2lUckY6_qicAf-FrhZsggqt8XkO/edit)
+
+## Information Handling and Confidentiality
+All information must be handled according to OET’s classification scheme:
+- Public
+- Internal
+- Confidential
+If information is not explicitly labelled, it shall be treated as Internal by default.
+Confidential information shall only be shared using approved and secure channels. Public or anonymous sharing links must not be used for Confidential information.
+All individuals must maintain confidentiality of OET, partner, client, and project information during and after their engagement with OET, in line with contractual obligations, NDAs, and OET policies.
+
+##Leave & Other Time Off
+- The individual has read and acknowledged OET’s device and data policies
+- Use of personal devices must be approved and may be subject to registration and compliance checks as defined in OET policies.
+
+##Individual Responsibility
+Team members are responsible for:
+Maintaining their equipment in good working condition
+Ensuring their workspace supports effective and secure work, whether in or out of home
+
+## Health, Safety & Wellbeing
+OET encourages sustainable and healthy work practices.
+
+Team members are encouraged to:
+- Maintain a comfortable and safe workspace
+- Take suitable breaks, leave, and other time off work
+- Manage workload to avoid burnout
+- Communicate to their managers (or HoDs in the manager’s absence) when support is needed
+- Remind themselves that work is one aspect of their life. Safeguards should be put in place to protect their personal life and general wellbeing, and OET aims to create a work environment that is flexible and supportive of this
+
+## Expenses & Reimbursements
+OET does not formally provide:
+- A home office budget upfront
+- Ongoing remote work allowances
+
+However, costs are approved and reimbursed on a case-by-case basis.
+Any exceptions must be:
+- Pre-approved by an HoD or shareholder
+- Aligned with company policies
+                                                                                                                                                          
+If such costs are approved, they should be:
+- Logged in Remote and any other relevant database
+- Expensed along with relevant invoices
+- Reimbursed grossed-up, to avoid the OETer paying taxes on an OET purchase
+
+## Travel & In-Person Collaboration
+From time to time, OET may organize:
+- Team meetups
+- In-person collaboration sessions
+- As well as be represented by certain OETers at events (conferences and the like).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
