@@ -73,6 +73,15 @@ Setup:
 Setup:
 1. Enable **Dependabot alerts** and **Dependabot security updates** at **Settings** → **Code security and analysis**.
 2. Add a `.github/dependabot.yml` to configure which package ecosystems to watch (pip, npm, GitHub Actions, etc.) and how often to check.
+3. Each maintainer who needs to receive email notifications for Dependabot alerts should configure their personal GitHub notification settings:
+   - Go to **GitHub.com → avatar → Settings → Notifications**.
+   - Under **"Dependabot alerts"**, enable **"Email"**.
+   - In the repository, click **Watch** → **Custom** → enable **"Security alerts"** to ensure alerts for this specific repo are included.
+
+:::caution ISO 27001 obligation
+We are obliged by the ISO 27001 standard to fix issues in a certain timeframe based on their severity: [SSDP](https://docs.google.com/document/d/1DJpt1JYWzyjEUkUjwJgxp_Ag-SJrlBYu)
+Please, do not consider step 3 as optional. It is important for the maintainers to be notified of any such new issues on time, so they can be resolved according to our TTR commitments.
+:::
 
 Optionally, add the [Dependency Review Action](https://github.com/actions/dependency-review-action) to `.github/workflows/dependency-review.yml` to actively block PRs that introduce new vulnerable dependencies. It compares manifest changes against the GitHub Advisory Database and fails the workflow on a match. Add it as a required status check in branch protection to enforce it.
 
@@ -121,7 +130,16 @@ Dependabot alerts and security updates are available for private repositories on
 Setup:
 1. Enable **Dependabot alerts** and **Dependabot security updates** at **Settings** → **Code security and analysis**.
 2. Configure `.github/dependabot.yml` for your package ecosystems.
-3. Maintainers must review open Dependabot alerts and must not merge PRs that introduce new vulnerabilities flagged by Dependabot.
+3. Each maintainer who needs to receive email notifications for Dependabot alerts should configure their personal GitHub notification settings:
+   - Go to **GitHub.com → avatar → Settings → Notifications**.
+   - Under **"Dependabot alerts"**, enable **"Email"**.
+   - In the repository, click **Watch** → **Custom** → enable **"Security alerts"** to ensure alerts for this specific repo are included.
+4. Maintainers must review open Dependabot alerts and must not merge PRs that introduce new vulnerabilities flagged by Dependabot.
+
+:::caution ISO 27001 obligation
+We are obliged by the ISO 27001 standard to fix issues in a certain timeframe based on their severity: [SSDP](https://docs.google.com/document/d/1DJpt1JYWzyjEUkUjwJgxp_Ag-SJrlBYu)
+Please, do not consider step 3 as optional. It is important for the maintainers to be notified of any such new issues on time, so they can be resolved according to our TTR commitments.
+:::
 
 SonarQube Cloud also surfaces known vulnerable dependencies under the **Dependencies** tab of your project dashboard.
 
