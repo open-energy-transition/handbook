@@ -5,7 +5,7 @@ sidebar_label: "Checking code for security vulnerabilities"
 import MaintainerTag from "@site/src/components/MaintainerTag";
 import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
 
-<MaintainerTag maintainerEmails={["sermisha.narayana@openenergytransition.org", "fabrizio.finozzi@openenergytransition.org"]} />
+<MaintainerTag maintainerEmails={["sermisha.narayana@openenergytransition.org"]} />
 
 # Checking code for security vulnerabilities
 
@@ -26,7 +26,7 @@ For example, if using a pixi environment, you can run:
 
 This command will scan the specified directory for vulnerabilities in the dependencies and provide a report of the issues found, including the severity and recommended actions to mitigate them.
 
-Whilst, the above command will print the report in the terminal, you can also export the report to a file using the `-o` flag followed by the desired output format (e.g., `json`, `table`, `cyclonedx`, etc.) and the output file name. For example:
+Whilst, the above command will print the report in the terminal, you can also export the report to a file using the `-o` flag followed by the desired output format (e.g., `json`) and the output file name. For example:
 
     grype <directory_to_scan> -o json > grype_report.json
 
