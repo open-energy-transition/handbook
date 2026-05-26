@@ -1,0 +1,52 @@
+---
+sidebar_label: "Checking code for security vulnerabilities"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["sermisha.narayana@openenergytransition.org", "fabrizio.finozzi@openenergytransition.org"]} />
+
+# Checking code for security vulnerabilities
+
+## Introduction
+To ensure the security of the codebase, it is essential to check for vulnerabilities in the dependencies used by the project. 
+This can be done using various tools such as `grype` that scan the container images, filesystems, and SBOMs (Software Bill of Materials) for known vulnerabilities.
+
+The installation and usage of `grype` can be found in the [Grype documentation](https://github.com/anchore/grype)
+
+## Running grype on the project
+To run `grype` on the project, you can use the following command in the terminal:
+
+    grype <directory_to_scan>
+
+For example, if using a pixi environment, you can run:
+
+    grype .\.pixi\envs\<env_name>\Lib\
+
+This command will scan the specified directory for vulnerabilities in the dependencies and provide a report of the issues found, including the severity and recommended actions to mitigate them.
+
+Whilst, the above command will print the report in the terminal, you can also export the report to a file using the `-o` flag followed by the desired output format (e.g., `json`, `table`, `cyclonedx`, etc.) and the output file name. For example:
+
+    grype <directory_to_scan> -o json > grype_report.json
+
+## Interpreting the grype report
+The `grype` report will list the vulnerabilities found in the scanned directory, along with details such as the package name, version, vulnerability ID, severity level, and a description of the issue.
+The report will also provide recommendations for mitigating the vulnerabilities, such as updating to a newer version of the affected package or applying patches.
+
+### Prioritizing vulnerabilities
+When reviewing the `grype` report, it is important to prioritize the vulnerabilities based on their severity level and potential impact on the project.
+Recommendations for mitigating the vulnerabilities may not always be straightforward. Some packages may not have a newer version available that addresses the vulnerability, or updating to a newer version may introduce compatibility issues with other dependencies in the project. 
+In such cases, it is important to carefully evaluate the risks and benefits of each mitigation strategy and choose the one that best fits the project's needs and constraints.
+
+### Checking for transitive dependencies and relevance of vulnerabilities
+Sometimes, vulnerabilities that are reported may not arise from a direct dependency of the project but from a transitive dependency (i.e., a dependency of a dependency). In such cases, it is important to investigate the issue further to determine if it can be safely ignored or if it requires action to be taken.
+To investigate the issue, you can check the dependency tree of the project to identify which package is causing the vulnerability and whether it is a direct or transitive dependency. 
+Inside a pixi environment, you can use the following command to check the dependency tree:
+
+    pixi tree <package_name>
+
+Additionally, you can also check the `grype.json` report and check the `location` field to identify the path of the vulnerable package and determine if it is a direct or transitive dependency.
+
+### Reviewing if security patches have already been applied
+Certain vulnerabilities may have already been addressed by security patches that have been applied to the packages. These can be verified by checking the package's release notes or changelog for any mentions of security fixes.
