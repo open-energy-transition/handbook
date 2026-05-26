@@ -34,6 +34,10 @@ Whilst, the above command will print the report in the terminal, you can also ex
 The `grype` report will list the vulnerabilities found in the scanned directory, along with details such as the package name, version, vulnerability ID, severity level, and a description of the issue.
 The report will also provide recommendations for mitigating the vulnerabilities, such as updating to a newer version of the affected package or applying patches.
 
+### Vulnerability id
+The vulnerability ID is a unique identifier assigned to each vulnerability, which can be used to look up more information about the issue and its potential impact.
+For example, the vulnerability ID `CVE-2026-6100` can be looked up in the [National Vulnerability Database](https://nvd.nist.gov/) to find more details about the vulnerability, nature of the issue, including its severity level, affected versions, and recommended mitigation strategies.
+
 ### Prioritizing vulnerabilities
 When reviewing the `grype` report, it is important to prioritize the vulnerabilities based on their severity level and potential impact on the project.
 Recommendations for mitigating the vulnerabilities may not always be straightforward. Some packages may not have a newer version available that addresses the vulnerability, or updating to a newer version may introduce compatibility issues with other dependencies in the project. 
