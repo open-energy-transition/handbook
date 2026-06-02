@@ -67,3 +67,16 @@ To summarize, the following steps can be taken to check for security vulnerabili
 4. If a vulnerability is found in a transitive dependency, investigate the issue further to determine if it can be safely ignored or if it requires action to be taken.
 5. Check for any security patches that may have already been applied to the packages to ensure that the vulnerabilities have been addressed.
 6. If none of the above steps can be taken to mitigate the vulnerabilities, carefully evaluate if the vulnerable package can be safely ignored based on the context of its usage in the project. Document the rationale for ignoring the vulnerability and monitor for any updates or patches that may address the issue in the future.
+
+
+## Comparing Vulnerability reports over time / branches
+To track the security of the codebase over time, it can be helpful to compare vulnerability reports across different branches or time periods. This can be done by generating `grype` reports for each branch or time period and comparing the results to identify any new vulnerabilities that may have been introduced or any existing vulnerabilities that have been resolved.
+
+To compare the reports `sarif-tools` can be used to identify the differences between two `grype` reports in `sarif` format. The following command can be used to compare two reports:
+
+    git checkout feature-branch1
+    grype ... -o sarif --file vuln-branch1.sarif
+    git checkout feature-branch2
+    grype ... -o sarif --file vuln-branch2.sarif
+
+    pixi exec --with sarif-tools sarif diff -o sarif-diff.json vuln-branch1.sarif vuln-branch2.sarif
