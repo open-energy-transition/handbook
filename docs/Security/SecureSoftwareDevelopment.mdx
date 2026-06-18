@@ -33,7 +33,7 @@ Identify which "bucket" your project falls into to determine your security requi
 The goal of this policy is to ensure that OET code is resilient, dependencies are safe, and sensitive data remains protected. 
 
 ### Core technical standards
-Regardless of the project category, all OET code (except internal prototypes, see table above) must adhere to these baseline standards (see our [Coding guidelines](docs/Engineering/CodingGuidelines)):
+Regardless of the project category, all OET code (except internal prototypes, see table above) must adhere to these baseline standards (see our [Coding guidelines](/docs/Engineering/CodingGuidelines)):
 * **No Hardcoded Secrets:** Credentials, API keys, and tokens must never be committed to Git. Use environment variables (`.env`) or Secret Managers (e.g. GitHub Secrets, see [Tooling](#tooling)).
 * **Dependency Management:** All projects must use a lockfile (e.g., `poetry.lock`, `requirements.txt` with hashes, or `conda-lock`) to ensure reproducible and auditable environments.
 * **Peer Review:** All code changes must be reviewed by at least one other person before merging to a main branch.
@@ -44,10 +44,10 @@ The following table lists the standard applicable for each type of software deve
 | :--- | :--- |
 | **Internal prototypes** | N/A
 | **Forks of open-source repos** | Follow the security standards of the upstream project. |
-| **Open models** | Follow OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
-| **Dashboards of public data** | Follow OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
-| **Open tools** | Follow OpenSSF Scorecard, OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
-| **Products & platforms** | Follow OpenSSF Scorecard, OWASP for web applications, OET's [Coding guidelines](docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Open models** | Follow OET's [Coding guidelines](/docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Dashboards of public data** | Follow OET's [Coding guidelines](/docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Open tools** | Follow OpenSSF Scorecard, OET's [Coding guidelines](/docs/Engineering/CodingGuidelines) for a secure repository. |
+| **Products & platforms** | Follow OpenSSF Scorecard, OWASP for web applications, OET's [Coding guidelines](/docs/Engineering/CodingGuidelines) for a secure repository. |
 
 ### Tooling
 
@@ -155,9 +155,10 @@ To meet ISO requirements, OET employees should complete training that matches th
 
 | Category | Recommended Course / Resource |
 | :--- | :--- |
-| **Open Models & Public Dashboards** | [GitHub Skills: Maintain a Secure Repo](https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/) (35 mins) + OET Secrets Checklist. |
+| **Open Models & Public Dashboards** | [GitHub Skills: Maintain a Secure Repo](https://learn.microsoft.com/en-us/training/modules/maintain-secure-repository-github/) (35 mins) + [OET Security Best Practices](/docs/Engineering/CodingGuidelines#security-best-practices). |
 | **Open Tools (Libraries)** | The above + [Snyk Learn: OWASP Top 10 for OSS](https://learn.snyk.io/learning-paths/owasp-top-10-open-source-software-risks/) (2.5 hrs). |
 | **Products & Platforms** | The above + **[OpenSSF LFD121](https://training.linuxfoundation.org/training/developing-secure-software-lfd121/)** (Full course) + [Hacksplaining](https://www.hacksplaining.com/lessons) for Web Vulnerabilities. |
+| **Secure AI/ML-Driven Software Development** | [Linux Foundation LFEL1012](https://training.linuxfoundation.org/express-learning/secure-ai-ml-driven-software-development-lfel1012/)  (90 mins Online) (Self Paced) |
 
 ## 📚 Policy overviews
 
