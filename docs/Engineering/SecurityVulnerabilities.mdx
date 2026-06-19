@@ -18,17 +18,17 @@ The installation and usage of `grype` can be found in the [Grype documentation](
 ## Running grype on the project
 To run `grype` on the project, you can use the following command in the terminal:
 
-    grype <directory_to_scan>
+    grype DIRECTORY-TO-SCAN
 
 For example, if using a pixi environment, you can run:
 
-    grype .\.pixi\envs\<env_name>\Lib\
+    grype .\.pixi\envs\{env_name}\
 
 This command will scan the specified directory for vulnerabilities in the dependencies and provide a report of the issues found, including the severity and recommended actions to mitigate them.
 
 Whilst, the above command will print the report in the terminal, you can also export the report to a file using the `-o` flag followed by the desired output format (e.g., `json`) and the output file name. For example:
 
-    grype <directory_to_scan> -o json > grype_report.json
+    grype DIRECTORY-TO-SCAN -o json > grype_report.json
 
 ## Interpreting the grype report
 The `grype` report will list the vulnerabilities found in the scanned directory, along with details such as the package name, version, vulnerability ID, severity level, and a description of the issue.
@@ -51,7 +51,7 @@ Sometimes, vulnerabilities that are reported may not arise from a direct depende
 To investigate the issue, you can check the dependency tree of the project to identify which package is causing the vulnerability and whether it is a direct or transitive dependency. 
 Inside a pixi environment, you can use the following command to check the dependency tree:
 
-    pixi tree <package_name>
+    pixi tree PACKAGE-NAME
 
 Additionally, you can also check the `grype.json` report and check the `location` field to identify the path of the vulnerable package and determine if it is a direct or transitive dependency.
 
