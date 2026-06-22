@@ -1,0 +1,425 @@
+---
+sidebar_label: "Acceptable Use of the Information System Policy"
+---
+#Acceptable Use of the Information System Policy
+
+### **Purpose**
+
+This standard defines the information security requirements applicable to all employees and external associates of OET. Adhering to these requirements ensures that all users understand how to handle information and IT assets securely, and how to respond appropriately in various security-related situations.
+
+### **Scope**
+
+This document covers the entire scope of the information security management system, i.e., all information systems and other information resources.
+
+- Information resources, in the context of this standard, include:
+- Documentation - contracts, technical specifications, diagrams, completed forms, certificates, documents, standards, operating procedures, audit results, and similar documentation.
+- Software components - applications, databases, operating systems, utilities, configurations, log files.
+- Computer equipment - computers, auxiliary equipment, communication equipment.
+- Protected intellectual property - patents and licenses.
+- Services - power supply, leasing of optical and digital lines, computer network maintenance, air conditioning, environmental monitoring.
+- Competencies - employees’ knowledge, experience, and skills.
+- Verbal communication
+
+The users of this document are all employees of the Company and external associates working for the Company (hereinafter referred to as “user(s)”).
+If any of the requirements specified in this standard conflict with applicable laws or regulations, the legal and regulatory provisions shall prevail.
+
+### **Definitions and abbreviations**
+- Information Asset - All data, systems, applications, equipment, services, and competencies used by the Organization to perform its business processes.
+- Information System - A collection of hardware, software, and network components, databases, and applications that enable the processing, transmission, and storage of information.
+- CIA Triad - A core information security model based on three principles: Confidentiality, Integrity, and Availability.
+- Confidentiality - Ensuring that information is accessible only to authorized people.
+- Integrity - Guaranteeing that information has not been altered or deleted in an unauthorized manner and remains accurate and complete.
+- Availability - Ensuring that information and systems are accessible to authorized users when needed.
+- Cloud Service - Computing resources or applications delivered over the internet that allow data storage, processing, or access outside the Organization’s infrastructure.
+- AI (Artificial Intelligence) - Technologies that enable computers to learn, reason, or generate content based on data.
+- Incident - Any event that threatens confidentiality, integrity, or availability of information or information systems (e.g., data loss, unauthorized access, malware infection).
+- Encryption - The process of converting data into an unreadable format to prevent unauthorized access during storage or transmission.
+- Antivirus / Endpoint Protection - Software designed to detect, block, and remove malicious software (malware) from computers and mobile devices.
+- Download - The transfer of files or data from the internet or another remote system to a local device.
+- ISO ( Information Security Officer) - The individual responsible for establishing, implementing, and maintaining the Organization’s information security management system (ISMS) and ensuring compliance with applicable standards and regulations.
+- MFA (Multi-Factor Authentication) - A security mechanism that requires two or more independent forms of verification (e.g., password + mobile app confirmation or biometric factor) to confirm a user’s identity.
+- MDM (Mobile Device Management) - A system used to manage and protect mobile and portable devices by enforcing encryption, security policies, and remote wipe capabilities for Company data.
+- BYOD (Bring Your Own Device) - A policy allowing employees to use personal devices (e.g., laptops, smartphones) for business purposes under defined security controls.
+- Password Manager - A secure application that stores and manages user credentials, helping to create strong, unique passwords for different systems.
+- Passphrase - A long, easy-to-remember password composed of multiple words, used instead of complex character combinations to increase security.
+- Zero Trust - A security model that assumes no user or device should be trusted by default and requires continuous verification of identity and device compliance.
+- Data Breach - An incident involving unauthorized access, disclosure, alteration, or destruction of personal or confidential information.
+- Access Control - A mechanism or process used to grant, restrict, or revoke user access to systems and information resources based on their role and authorization level.
+- Security Awareness - Continuous education of users on safe behavior, recognizing phishing attempts, handling data properly, and responding to incidents.
+
+## Roles and Responsibilities
+
+#
+| Role | Responsibilities 
+| : ---| :--- |
+| **ISO (Information Security Officer) | Provides advisory and oversight support for this policy from an ISMS perspective. Ensures alignment with ISO 27001 requirements and information security best practices. Advises OET management and the ISM on improvements, exceptions, and policy compliance.
+Monitoring compliance with this standard and coordinating corrective actions.
+Organizing awareness sessions and promoting a culture of responsible system use.
+Defining and maintaining the information classification framework and ensuring its consistent application across the organization. |
+| Departmental Information Owners / Application Owners | Each department that operates or manages its own systems or tools is responsible for ensuring their secure and compliant use and are creator of the information. Responsibilities include:
+- Managing user access and ensuring permissions are granted and revoked appropriately.
+- Maintaining an overview of assets and applications used within the department.
+- Ensuring that systems and data under their control are used in accordance with the Company’s Acceptable Use Standard and ISMS requirements.
+- Reporting incidents or suspected misuse to the ISO without delay.
+- Coordinating with external IT providers (if applicable) for secure maintenance and configuration. |
+| Human Resources Department (HR) | HR integrates acceptable use requirements into employee processes by:
+- Ensuring all employees acknowledge and sign the Acceptable Use Policy during onboarding.
+- Coordinating with Department Owners and the ISO to ensure access is revoked at offboarding.
+- Supporting enforcement through disciplinary measures in case of policy violations.
+- Collaborating with the ISO to deliver security awareness programs.
+| External IT Service Provider (if applicable) | External providers supporting company infrastructure or systems must:
+- Implement technical controls in accordance with the Company’s security requirements.
+- Ensure that maintenance, updates, and system configurations follow secure practices.
+- Promptly report any identified vulnerabilities, breaches, or irregularities.
+- Act in accordance with contractual clauses and the Company’s ISMS requirements.
+| Heads of Departments | Heads of Departments ensure compliance with acceptable use rules within their teams. They are responsible for:
+- Promoting user awareness and good security practices.
+- Approving requests for access, tools, or systems used within the department.
+- Reporting and escalating policy violations to the ISO or HR.
+- Supporting investigations and implementing corrective measures.
+| All Users | All users must:
+- Use company systems and assets responsibly and solely for authorized purposes.
+- Protect access credentials and prevent unauthorized use.
+- Avoid downloading or using unapproved software, tools, or services.
+- Report any security incidents, suspicious behavior, or potential breaches immediately.
+- Follow all guidance provided by their Department Owner or the ISO.
+
+
+### **Basic Concepts of Information Resource Use**
+
+## User Responsibility / Self-Responsibility
+
+All system users are responsible for protecting information resources and information systems within their areas of responsibility. This includes:
+- Careful handling and processing of information within their area of responsibility.
+- Protection of information resources and equipment from all threats (e.g., loss, destruction, damage).
+- Compliance with the Information Security Policy.
+- Reporting any actual or potential irregularities and violations of internal regulations.
+
+Failure to comply with the concepts and rules described in this document, as well as in other ISMS documents, may be considered a breach of work obligations. In such cases, disciplinary procedures may be initiated in accordance with the Company’s internal labor regulations, including disciplinary action and termination of employment.
+
+## Key Principles Governing the Use of Information Assets
+
+The use of the Organization’s information assets is based on several core principles aimed at protecting the confidentiality, integrity, and availability of information. These principles help all employees and associates understand their role in maintaining security and using resources responsibly.
+             
+                1.CIA Triangle (Confidentiality, Integrity, Availability)
+
+1. User Responsibility
+
+All system users (regular, temporary, and guest) are responsible for protecting the information assets and information systems to which they have access. Their responsibilities include:
+- Handling and processing information carefully within their area of responsibility.
+- Protecting information resources and equipment from loss, damage, destruction, or unauthorized access.
+- Complying with information security policies, standards, and related procedures.
+
+Promptly reporting any identified system vulnerability, security incident, or event indicating a potential information security breach, including violations of internal regulations.
+Failure to comply with the rules defined in this document shall be considered a breach of work obligations and may result in the initiation of disciplinary proceedings in accordance with applicable internal regulations and legal provisions, including disciplinary measures and possible termination of employment. Depending on the severity of the breach, administrative or criminal consequences may also apply.
+
+2. Principle of Least Privilege
+
+Access rights shall be granted only to the extent necessary for the performance of work duties. Employees must not request or use access beyond their legitimate business needs.
+
+3. Clear desk and clear screen
+
+Employees and contractors must ensure that confidential or sensitive information is protected from unauthorized access in both physical and remote work environments.
+
+The following rules apply:
+- Devices must be locked when unattended (automatic screen lock should be enabled). 
+- Confidential information must not be visible to unauthorized persons (e.g. in shared or public spaces). 
+- Printing of confidential information should be avoided. Where printing is necessary, documents must be securely stored and disposed of after use.
+- Work must not be performed on shared or public computers.
+- Access credentials must not be written down or left visible.
+
+4. Protection against physical and environmental threats
+
+As a fully remote, cloud-native organization, OET does not operate physical office locations or on-premise infrastructure. Protection against physical and environmental threats is therefore achieved through a combination of secure device usage and reliance on established cloud service providers.
+Employees and contractors must take reasonable precautions to protect devices and information from physical risks, including:
+- Protecting devices from loss, theft, or accidental damage. 
+- Protecting devices from environmental damage (e.g. liquids, excessive heat, humidity). 
+- Ensuring devices are not left unattended in unsecured locations. 
+- OET relies on the built-in resilience and physical security controls of its cloud providers (e.g. Google Workspace, GitHub) to mitigate infrastructure-related risks such as power outages, hardware failure, or environmental incidents.
+
+## Information Management
+
+1. Information Classification
+
+A very important first step is to become familiar with the information classification and clearly understand the classification of the information the user handles, as the classification itself determines the value of the information to the organization. 
+
+Each information asset must have an assigned Information Owner.
+
+The Information Owner is typically the creator of the information, project lead, or responsible Head of Department.
+
+The Information Owner is responsible for:
+- Assigning the appropriate classification (Public, Internal, Confidential)
+- Reviewing and updating the classification where necessary
+- Ensuring appropriate protection and sharing rules are applied based on the classification
+- All users must handle information in accordance with its assigned classification.
+
+Asset Owners must determine the appropriate classification level based on the potential impact of unauthorized disclosure, modification, or loss of the information.
+All employees and externals must handle information in accordance with the classification assigned by the Asset Owners.
+
+1.1  Information Classification and Handling
+To ensure an appropriate level of protection, all information within the Organization must be classified into one of the following categories:
+- **Public:** Information intended for unrestricted distribution, where disclosure would not cause harm to the Organization.
+- **Internal:** Information intended for employees and associates of the Organization, where unauthorized disclosure could cause minor operational or reputational impact.
+- **Confidential:** Information where unauthorized disclosure could result in significant business, legal, or reputational damage.
+
+2. Label Information
+
+A classification label clearly indicates which protective measures must be applied when handling information. All users are expected to label information resources in accordance with the information classification. Regardless of the format in which information is recorded, media containing information must be labeled with the appropriate classification. The classification applied should correspond to the highest classification level of the content.
+All formal OET documents created using company templates must include the appropriate security classification label (Public, Internal, or Confidential).If information is not explicitly labelled, it shall be treated as Internal by default.
+Information Owners are responsible for ensuring that information is correctly labeled in accordance with its classification.
+
+### Share Information Carefully
+Information must be transferred in a secure manner appropriate to its classification to ensure confidentiality, integrity, and availability.
+Only approved communication channels may be used for transferring business information. These include:
+- Company email accounts
+- Google Drive
+- Discord, for internal day-to-day communication. Confidential information must not be posted in general channels.
+- Other tools formally approved by Management or the Information Security Officer (ISO)
+The use of personal accounts or unapproved file-sharing services is prohibited.
+
+## **Transfer based on classification**
+- Public / Internal information may be shared using the approved tools above.
+- Confidential information must only be shared via:
+-- Encrypted file transfer (e.g. encrypted ZIP archive). The password must be communicated via a separate communication channel.
+-- Google Drive with restricted access to named recipients only.
+
+Public or anonymous sharing links are prohibited for Confidential information. Access must be revoked when no longer required.
+Before transferring Confidential information to external parties:
+- A valid confidentiality agreement (e.g. NDA or contractual clause) must be in place
+- The appropriate Information Owner must approve the transfer where required
+- The ISO or Management shall be involved if additional protection measures are necessary
+- Folder naming convention (Google Drive)
+- To reduce the risk of unintentional disclosure:
+- Prefix folders with [External] for content shared outside OET
+- Prefix folders with [Public] for publicly accessible content
+This naming convention helps users recognize when information may be accessed outside OET and reduces the risk of accidental disclosure.
+
+### **User Obligations Related to Information Security**
+
+The Organization’s information assets shall be used exclusively for business purposes.
+Any misuse of resources is strictly prohibited, for example, installing unauthorized software, using corporate accounts for private purposes in an insecure manner, or accessing high-risk websites.
+Only approved software is allowed to be installed on company owned computers. 
+See [OET Software Register] (https://docs.google.com/spreadsheets/d/1Wi2NC5j8kE5gbRLfGLDxjD5UmMDhkNvaWf9LvthdSYU/edit?usp=sharing)
+
+Semi-anually review of installed software needs to be performed by dedicated resource and document in: [OET Installed Application Review Registry] (https://docs.google.com/spreadsheets/d/1h5WCaTvFmWbpHedBiso_ImfTGDaEgl2oP3XGPRhMR4U/edit?usp=sharing)
+If employees use personal devices (BYOD) to access organizational systems, networks, or data, they are required to:
+- ensure that such devices meet the Organization’s minimum security requirements (e.g., password protection, encryption, antivirus, regular updates),
+- separate business and personal use to prevent data leakage or unauthorized access, and
+- immediately report any loss, theft, or compromise of a personal device used for business purposes.
+
+Failure to comply with these requirements may be considered a breach of the Information Security Policy and may result in disciplinary action in accordance with internal regulations.
+
+## Use Of the Internet and Electronic Mail
+
+Use of the Internet, email, and online resources must be responsible and consistent with the Organization’s security policies.
+
+1. General Rules
+- Business information must not be sent via private email accounts or unapproved cloud services.
+- Suspicious or unknown content or attachments must be verified (e.g., antivirus) and reported to or designated person responsible for IT matters or the ISO/ISM.
+- All users must follow issued security instructions and act in accordance with them.
+
+2. BYOD
+- Personal devices used for business must meet minimum security requirements (password/PIN, encryption, antivirus, regular updates).
+- Business data must not be stored or shared through personal apps or cloud services.
+- Loss or compromise of a personal device used for business must be reported immediately.
+
+3. Prohibited Activities
+- Accessing, downloading, or sharing illegal, pornographic, violent, or discriminatory content.
+- Using unlicensed software or pirated materials.
+- Gambling, cryptocurrency mining, or activities that may disrupt IT services.
+- Bypassing or disabling security controls.
+
+4. Web Filtering and Endpoint Protection
+OET operates fully remotely without a corporate network. Protection against malicious web
+content is implemented at the endpoint and application layer:
+- CrowdStrike Falcon detects and blocks access to known malicious domains, command-and-control infrastructure, and phishing sites on all enrolled devices.
+- Devices used for OET work must have default safe-browsing features enabled (e.g., Chrome Safe Browsing).
+- Google Workspace filters phishing attempts and malicious links in Gmail and other applications.
+
+In addition to the prohibited activities listed above, users must not access anonymizer or unauthorized proxy services, peer-to-peer file sharing services, or sites hosting hate speech or extremist content from any device used for OET work.
+
+Prohibited content and services::
+- **Malware & Spyware Sites:** Known domains hosting malicious payloads.
+- **Phishing & Fraud:** Sites mimicking login portals for Microsoft 365, GitHub, or banking.
+- **Command & Control (C2) Centers:** Known IP addresses/domains used by botnets to communicate with infected hosts.
+- **Anonymizers & Proxies:** Tools like Tor or unapproved VPNs used to bypass corporate security controls and mask data exfiltration.
+- **Cryptocurrency Mining: Prevents "cryptojacking," where unauthorized scripts use OET’s cloud or local CPU power to mine coins.
+- **Peer-to-Peer (P2P) & File Sharing:** High risk for malware and potential legal liability regarding copyright infringement (e.g., BitTorrent).
+- **Illegal Content:** Child abuse material, illegal drugs, and other criminal activities.
+- **Hate Speech & Extremism:** Reduces corporate liability and ensures a professional environment aligned with non-profit values.
+- **Adult Content:** Standard practice for professional organizations to mitigate sexual harassment risks and maintain workplace standards.
+
+##Use Of Cloud and AI Technologies
+
+The Company operates fully remotely and relies exclusively on cloud-based infrastructure and services for its business operations.
+To ensure information security, data protection, and compliance with ISO/IEC 27001:2022 requirements, the following principles apply:
+
+1. Approved Cloud Services
+- Only cloud platforms and services formally approved by the Company’s Management and the Information Security Manager (ISM) or Information Security Officer (ISO) may be used.
+- The list of approved services must be maintained, periodically reviewed, and updated as necessary.
+
+2. Cloud Service Providers (CSPs)
+- CSPs must be reliable and contractually regulated partners. Contracts and Service Level Agreements (SLAs) must include clear provisions regarding:
+- information security and data protection requirements,
+- confidentiality and business continuity,
+- incident response and escalation procedures,
+- and compliance with applicable laws and regulations.
+
+3. Data Classification and Storage
+- All data stored or processed in the cloud must comply with the Company’s Information Classification and Handling Policy.
+- Sensitive or confidential information may be stored only within secure, access-controlled environments provided by approved CSPs.
+
+4. Access Control and Authentication
+- Access to cloud systems must follow the principle of least privilege and use strong authentication methods (e.g., multi-factor authentication).
+- Access rights must be reviewed regularly and revoked when no longer required.
+
+5. Encryption and Backup
+- Cloud environments must ensure encryption of data both in transit and at rest.
+- Regular, automated backups must be performed and securely stored in line with the Company’s Data Retention and Disaster Recovery requirements.
+
+6. Logging and Monitoring
+- Cloud systems must provide centralized logging and monitoring capabilities to detect unauthorized access, data leakage, or other security events.
+- Logs must be protected, retained, and periodically reviewed by ISM or designated personnel.
+
+7. AI Services
+- AI-based services must meet the same security, confidentiality, and privacy requirements as cloud services.
+- Data retention or learning functions based on confidential or personal information must be disabled.
+- Employees are prohibited from entering confidential, proprietary, or personal data into public or consumer-grade AI tools.
+- Only approved AI solutions assessed for compliance and data protection may be used for business purposes.
+
+8. Use of Personal Accounts
+- Employees must not use personal or unapproved cloud accounts (e.g., Google Drive, Dropbox, iCloud, etc.) for storing or sharing business information.
+
+9. Regulatory Compliance
+- All use of cloud and AI technologies must comply with applicable EU and national laws and regulations, including the General Data Protection Regulation (GDPR) and emerging EU Artificial Intelligence Act requirements.
+
+## Obligations For the Use of User Accounts and Associated Passwords
+
+All users with active accounts must follow good security practices when creating, using, and managing their passwords and credentials.
+
+- Passwords must remain strictly confidential and must not be disclosed to anyone, including supervisors, administrators, or technical personnel.
+- Users must not share or delegate their access privileges, usernames, passwords, or any other credentials to third parties, nor use credentials belonging to others to access information resources.
+- Passwords must not be written down anywhere unless explicitly permitted under specific circumstances (e.g., not writing a password on a post it notes and leaving it at the workstation).
+- If there is any suspicion that a password or part of the information system has been compromised, the password must be changed and the information security incident reported in accordance with the document Information Security Incident Management Procedure.
+- Passwords must not be stored in browsers, macros, or auto-login tools unless such functionality has been specifically approved.
+- The approved password manager for OET is 1Password. Shared and company-wide credentials must be stored in 1Password. For individual use, employees may also use Bitwarden, Proton Pass, or another reputable password manager with end-to-end encryption. Storing passwords in browsers, plaintext files, or unencrypted tools is prohibited.
+- Users are encouraged to use the approved password manager to generate and securely store strong, unique passwords.
+- Passwords already used for accessing other systems must not be reused.
+
+Password requirements: 
+- Users must ensure the quality of their passwords as follows:
+- Minimum of 12 characters.
+- A mix of character types (uppercase, lowercase, digits, symbols).
+- Must not be based on personal information (e.g., date of birth, address, phone number, first name 123, etc.).
+- Password changes are required when compromise is suspected or confirmed, or during an annual access review, if deemed necessary.
+- Where supported, multi-factor authentication (MFA) must be enabled to enhance account protection.
+
+The Company supports the use of password-less or hardware-based authentication methods (e.g., biometric verification or security keys) where available.
+
+## Acceptable Use of Computers, Including BYOD Computers
+
+1. General Rules
+Each user is responsible for the security and proper use of their assigned or personal (BYOD) computer when accessing Company resources.
+
+Users must adhere to the following requirements:
+- Performing regular business activities using an administrator account is prohibited. Daily tasks such as email correspondence, document management, internal resource access, and web browsing must be performed using a standard user account.
+- Granting access or allowing the use of a computer to unauthorized individuals (including family members, friends, or external parties) is strictly prohibited.
+- Users must ensure that the operating system and all installed software are regularly updated and patched. Automatic update functionality must remain enabled and must not be disabled by the user.
+- An approved endpoint protection solution (e.g., antivirus, anti-malware, or EDR software) must always be active and up to date.
+- Full-disk encryption must be enabled on all computers used for business purposes to protect data at rest.
+- Users must comply with the Company’s Information Classification and Handling Policy when storing, processing, or transmitting information.
+- Business data must not be synchronized or backed up to personal or unapproved cloud storage accounts.
+- Users must immediately report any loss, theft, or suspected compromise of a device to the ISM/ISO or designated contact.
+
+2. Rules for BYOD (Bring Your Own Device)
+
+When personal devices are used for business purposes, the following additional requirements apply:
+
+- All authorized personal devices must be registered in the Company’s asset inventory.
+- Devices handling confidential or client data must additionally be enrolled in CrowdStrike Falcon and Fleet.
+- Multi-factor authentication (MFA) is mandatory for all remote or corporate system access.
+- Corporate data must be stored only within approved cloud platforms (Google Workspace, GitHub) and must not be saved to local personal storage, personal cloud accounts, or unapproved services.
+The Company will not access or interfere with the user’s personal data or applications, except for actions required to protect or remove Company-owned information.
+Users are encouraged to:
+- Use a strong password or biometric authentication (e.g., fingerprint, face recognition).
+- Lock the device when not in use.
+- Avoid connecting to unsecured public Wi-Fi networks when accessing Company systems.
+- All remote access to company data and cloud platforms must occur through secure, encrypted channels (e.g., HTTPS, TLS, or Zero Trust access solutions).
+
+3. Acceptable Use of Portable and Mobile Devices (Including BYOD)
+
+Portable devices (e.g., laptops, smartphones, tablets, USB drives) must be used responsibly to protect Company data, especially when outside Company premises.
+General rules:
+- Keep devices secure and never leave them unattended.
+- Do not share or lend devices to unauthorized people.
+- Prevent others from viewing information on your screen in public areas.
+- Report any loss or theft immediately.
+- Return unused devices to IT for secure data erasure.
+
+Personal (BYOD) devices:
+- Must be approved and registered before use.
+- Only devices meeting security requirements may connect (encryption, passcode, auto-lock, updated OS, no rooting/jailbreaking).
+- Access Company data only via approved, encrypted apps protected by MFA.
+- Do not use personal cloud or messaging apps (e.g., Gmail, WhatsApp, Dropbox) for business data.
+- Access to business data can be revoked remotely through Google Workspace session termination and CrowdStrike Falcon device isolation.
+
+Smartphones and tablets:
+- Install apps only from official stores (Google Play, Apple App Store).
+- Keep devices updated and secure.
+- Do not use rooted/jailbroken devices or charge via public USB ports.
+
+Removable and external storage:
+- The use of removable storage devices (USB flash drives, external hard drives, SD cards) for storing or transferring OET business data is not permitted. Exceptions require prior approval from the Information Security Manager and are limited to specific operational needs - for example, a bootable USB used for secure device wipe during offboarding. The associated procedure is documented in the OET Handbook.
+
+Offboarding and Device Return:
+- Upon offboarding or device replacement, Google Workspace access is revoked and active sessions terminated. Company-owned devices are securely wiped per the procedure documented in the OET Handbook, under supervision of the ISM. For BYOD devices, the user confirms deletion of any locally cached business data. The ISO verifies completion as part of the offboarding checklist.
+
+## Antivirus Solutions
+Malicious software (malware) poses a threat to information systems, endangering network functionality, data confidentiality, and overall business operations. Antivirus or endpoint protection solutions are implemented to prevent, detect, and remove such threats.
+
+The ISM or other designated person responsible for IT systems shall ensure that approved antivirus or endpoint protection software is installed on all Company devices and configured to update automatically without user intervention.
+
+Users must not disable or alter antivirus protection.
+If antivirus definitions are out of date (e.g., due to lack of connectivity), users must reconnect to the internet and update them as soon as possible.
+
+## Storage Of Business Data
+Business data must be stored on centralized systems managed by the Company. Cloud solutions that have not been approved by the ISM/ISO or other designated people responsible for IT systems must not be used for storing business data.
+
+## Remote Work
+The Company operates fully remotely, and all employees and external collaborators perform their work using information and communication equipment outside traditional office premises.
+
+All users are responsible for protecting Company information and systems while working from home or any other remote location.
+They must comply with all applicable requirements defined in this standard and the Company’s Information Security Management System (ISMS), including:
+- Use of approved and secure devices (e.g., encrypted laptops, managed mobile phones).
+- Access to Company systems through authorized, secure channels protected by multi-factor authentication (MFA).
+- Protection of devices and information from unauthorized access by other household members or third parties.
+- Proper handling of confidential information in line with the Information Classification and Handling Policy.
+- Ensuring a secure work environment (e.g., screen privacy, device lock, and no use of public Wi-Fi without encryption).
+- Remote work is considered the Company’s regular operational model and must uphold the same level of information security as any on-premises environment.
+
+### **Monitoring**
+
+## Monitoring The Use of Information and Communication Systems
+All data created, stored, or transmitted via Company systems or devices are Company property.
+Authorized personnel may access or monitor such data for security, operational, or compliance purposes.
+Monitoring tools may be used to detect or block unauthorized activity or prohibited content.
+
+## Monitoring of BYOD (Bring Your Own Device) Usage
+For approved personal devices, monitoring is limited to Company-related data and activities (e.g., device compliance, system access, data transfer).
+Personal content and private use remain outside monitoring scope.
+All monitoring follows applicable privacy laws and Company policies.
+
+
+### **Reporting Information Security Incidents**
+
+It is the duty of every employee to report any identified system weakness, incident, or event that may indicate a possible security incident or breach.
+Incidents must be reported in accordance with the standard Incident Management.
+
+### **Final Provisions**
+
+Requests for amendments to this manual or for exemptions from the rules defined herein must be submitted in writing to the ISM/ISO, including the justification and scope of the requested change or exemption.
+The ISM/ISO is responsible for the periodic review at least annually, or upon significant changes, in accordance with changes in business processes, technology, and applicable regulatory requirements.
+This manual enters into force on the date of its publication and is binding for all users of the Organization’s information assets.
+All confidentiality and information security obligations defined in this policy continue to apply after termination of employment or engagement.
+
+
