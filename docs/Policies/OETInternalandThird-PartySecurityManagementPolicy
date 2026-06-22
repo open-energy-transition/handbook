@@ -1,0 +1,259 @@
+---
+sidebar_label: "OET Internal and Third-Party Security Management policy"
+---
+
+## Purpose
+
+The purpose of this policy is to establish security requirements and responsibilities related to employees, contractors, and third parties throughout the entire employment lifecycle: before hiring, during employment, and after termination.
+It ensures that individuals and external service providers who have access to the organization’s information and systems understand their security responsibilities, comply with confidentiality obligations, and support the protection of the company’s information assets in accordance with ISO/IEC 27001 and applicable legal requirements.
+
+## Scope
+This policy covers all activities related to the management of employees, contractors and third parties that have access to the organization’s information, systems or facilities.
+It includes security requirements and responsibilities during the full lifecycle of engagement: recruitment, onboarding, employment, role change, termination and post-employment obligations.
+
+The scope extends to:
+- All personnel working for or on behalf of the organization, including full-time and part-time employees (both via OET’s direct entity and via Employers of Record / EoRs), freelancers, contractors, interns, and students (research partners).
+- Third-party service providers, suppliers and partners who process or have access to company data, systems, platforms or intellectual property.
+- All forms of work, regardless of geographical location.
+- All information assets, including source code, confidential data, cloud platforms, collaboration tools, and documentation.
+
+## References
+
+## Definitions and Abbreviations
+Confidentiality Agreement / NDA - A legally binding agreement that requires employees or third parties to protect confidential information during and after engagement.
+ 
+EoR (Employer of Record) - A third-party company (e.g., Remote.com) that legally employs staff on behalf of the organization and manages payroll, contracts, and compliance.
+ 
+Least Privilege Principle - Granting users only the minimum level of access required to perform their duties.
+
+Onboarding - Process of granting access, providing equipment, and communicating security responsibilities to new employees or third parties.
+ 
+Offboarding- Formal process of removing access, recovering assets, and terminating contracts when employment or engagement ends.
+ 
+DPA (Data Processing Agreement) - A legally required agreement under GDPR that defines how a third party processes personal data on behalf of the organization, including security, confidentiality and compliance requirements.
+ 
+Disciplinary Action - Measures taken in response to violations of security policies or procedures. These may include verbal/written warnings, suspension of access or termination of contract.
+ 
+Non-Disclosure Agreement (NDA) - A legally binding agreement under which an employee, contractor or third party agrees to protect confidential information they gain access to during or after their engagement with the organization.
+Roles and Responsibilities
+
+Interested Parties
+
+
+#
+| Role | Responsibilities |
+| :--- | :--- |
+| **OET Management: Heads of relevant Departments and CEO (Senior Leadership Team)** | - Approves this policy and ensures adequate resources for the ISMS, specially for security awareness, training, and third-party management. 
+- Ensures that the requirements of the ISMS are integrated into OET's business processes |
+| **Information Security Officer (ISO)** | - Building processes and structures to maintain information security and Ensuring compliance with the legal requirements;
+- Stay aware of evolving security threats & help stakeholders to understand potential security issues that may arise;
+- Training of employees on IT security
+- Identify & analyse information security risks;
+- Establish and maintain an information security risk management;
+- Define and apply an information security risk treatment process by selecting appropriate treatment options.  
+- Identify, monitor and assess applicable legal, regulatory and contractual requirements related to information security and ensure these requirements are considered within the ISMS.
+- Design of the Business Continuity Plan.
+- Coordination of Business Continuity Management activities.
+- Resolution of conflicting or unforeseen situations.
+- Initiation and supervision of Business Continuity Plan testing. |
+| **Head of People** | Ensures employment contracts include confidentiality and security clauses, coordinates onboarding and offboarding processes, maintains training records, manages formal misconduct and breach of contract processes, and manages access to OET platforms. |
+| **Heads of Departments** | Ensure team members follow security policies, report incidents, and complete required training. |
+| **Head of Finance** | Responsible for overseeing supplier procurement and third-party financial controls. Approves procurement requests per the tiered thresholds defined in the Supplier Control & Procurement Procedure. Ensures supplier due diligence is completed for new vendors, reviews pre-approved workshop budgets, and monitors project spending against donor requirements. |
+| **Head of Software Engineering** | Implements and revokes access rights not managed by the Head of People, manages device provisioning and deprovisioning, and ensures secure configuration and logging. |
+| **Employees and Contractors** | Must comply with this policy, protect confidential information, complete required training, and report suspected incidents or breaches. |
+| **Project Leads** | Ensure client-specific confidentiality and security requirements are implemented in projects. |
+| **Third-Party Providers / Vendors** | Must sign NDAs or contractual security agreements, follow agreed security measures, and ensure their personnel comply with confidentiality obligations. |
+| **Data Protection officer (DPO)** | - Monitors compliance with applicable data protection laws (e.g., GDPR) and OET’s Data Protection Policy
+- Advises on personal data processing activities and related risks;
+- Acts as the point of contact for data subjects and supervisory authorities;
+- Supports the assessment and handling of personal data breaches;
+- Provides guidance on data protection requirements in projects and contracts. |
+
+### Required Skills for Roles within ISMS
+
+Information Security Officer
+
+**Professional and Technical Expertise:**
+- **Knowledge of Information Security Standards:** Deep understanding of frameworks like ISO27001, including implementation and compliance
+- **Cybersecurity Expertise:** Familiarity with cybersecurity concepts, risk management, threat mitigation, and response strategies
+- **Data Protection Knowledge:** Awareness of GDPR and other applicable data protection regulations to ensure compliance
+- **Technical Systems Understanding:** Knowledge of IT systems, networks and security controls to identify vulnerabilities and recommend solutions
+- **Process Development Skills:** Ability to design, implement and improve security policies, procedures, and protocols
+- **Monitoring and Auditing Competence:** Skilled in evaluating and auditing security processes to identify weaknesses and ensure continuous improvement
+
+**Personal and Social Skills:**
+- **Critical Thinking:** Evaluate facts and evidence critically to make informed decisions
+- **Resilience:** Stay focused and determined even in challenging situations
+- **Responsibility:** Diligent and conscientious approach to work
+- **Communication & Teamwork:** Effective interaction with diverse groups, team integration, and conflict resolution
+- **Social Sensitivity:** Understand and balance the needs of employees and external stakeholders
+
+**Operational Project Manager / Team Leads**
+
+- **Legal Compliance Expertise:** Awareness of legal risks and compliance obligations within the organization
+- **Project Management Skills:** Ability to manage operational projects across various departments and ensure timely compliance 
+- **Process Development:** Ability to design and improve internal processes 
+
+**Competencies for Other Employees**
+
+- Basics of **information security**, data protection, and internal ISMS guidelines.
+Awareness of **risks associated with non-compliance.**
+
+## People Operations Security - Lifecycle Process
+
+An [onboarding and offboarding checklist]( https://docs.google.com/spreadsheets/d/1Ub30MK0rYHgk836fS5pqxBcTt_7wZXxorBuW2XT4gbA/edit?usp=drive_web&ouid=101348371767690974837) maintained and securely stored by the People & Culture Department for each employee and contractor. 
+
+### **Before Employment (Hiring & Screening)**
+
+1. Hiring & Confidentiality
+Candidates are informed that information security obligations apply to all roles. Before any access is granted, employees and  contractors must sign an employment or service contract that includes confidentiality, intellectual property, and data protection clauses. For EoR hires (e.g. via Remote.com), these clauses are handled through their compliance process.
+
+2. Background Screening
+Where legally permitted and appropriate to the role, background checks (e.g. criminal record, references, education verification) are conducted prior to employment. For EoR personnel, Remote.com may perform these checks using a vetted, preferred provider. The depth of screening depends on position seniority, data sensitivity, and role criticality. Re-screening is not yet in place but may be introduced if required.
+
+3. Role Definition & Access Preparation
+Security responsibilities and access needs are defined per role, following the principle of least privilege. Accounts and devices (or secure BYOD setups) are prepared before the start date. No system access is granted until contracts are signed, and all relevant onboarding steps are completed. Platform access is managed by the Head of People.
+
+Standard access for reach role type is as follows:
+| All roles | - Space |
+| :--- | :---|
+- Google Workspace
+- Discord
+- Navan
+- GitHub
+- Remote HRIS
+- OpenProject
+- 1Password |
+| Energy System Modeler roles - ZIB - Monday (ACER project only) |
+| Finance roles | - Addison - Remote (admin) - DocuSign - Odoo (admin) |
+| People & Culture roles | - Greenhouse - Remote (admin) - DocuSign |
+| Marketing roles | - Figma - LinkedIn - HubSpot |
+| Research & market development roles | - HubSpot - DocuSign - LinkedIn |
+| All HoD roles | Greenhouse |
+| Head of People | Admin for all standard platforms, to manage user access during onboarding, employment/engagement, and offboarding |
+| Only certain roles | - ChatGPT - Claude - Greenhouse (as hiring manager) - Proton |
+
+4. Remote work facilitation
+OET is a remote-first organization, and does not maintain offices or any other kind of fixed premises for the conducting of official business. As such, during hiring, all potential new joiners are screened for the ability to successfully work fully remotely.
+
+All employees, contractors, and the like are expected to work in keeping with the following OET policies:
+- Acceptable Use of the Information System Policy
+- Information Security Incident Management Procedure
+
+### **During Employment**
+
+1. Confidentiality & Acceptable Use
+Employees, contractors and third parties must comply with confidentiality obligations, acceptable use rules and information security policies throughout their engagement.
+
+2. Security Awareness & Training
+A formal information security awareness and training program is implemented as part of the ISO 27001 implementation. All employees and contractors must complete onboarding training and periodic refresher training. Training content is designed and delivered by the ISO. Completion is recorded and monitored by the Head of People.
+
+3. Access Management
+Access rights are granted based on role and least privilege. Any changes in role or responsibility trigger a review of access rights.
+Access rights are reviewed periodically (at least annually or upon role change) 
+to ensure continued alignment with the principle of least privilege.
+
+4. Disciplinary Process
+Any suspected or confirmed breach of information security policies must be reported to the relevant Head of Department, the Head of People, and the designated Security Responsible.
+Security violations are handled through a formal, fair and documented process led by the Head of People and the Head of Software Engineering (or equivalent). The objective is not only to determine accountability, but also to apply corrective measures and prevent recurrence.
+
+The process includes the following steps:
+
+a. Incident reporting and initial assessment
+The incident is reported and reviewed by the Head of People and Head of Software Engineering (or Security Responsible) to confirm whether a breach has occurred. If it has, the rest of this process is followed.
+b. Clarification and investigation
+Relevant facts are collected, and the involved employee or contractor is given the opportunity to provide their explanation. Accurate record keeping is maintained and documentation is securely stored for future reference.
+
+c. Evaluation of intent or negligence
+It is assessed whether the incident was accidental, due to lack of awareness, or intentional/malicious.
+
+d. Corrective or disciplinary action
+Measures may include coaching, additional training, verbal or written warnings, suspension of access, contract termination, or legal action – depending on severity, the individual’s specific contract terms, and respective local employment law. OET strives to follow a process that is not punitive, but rather uplifting in nature, wherever possible. An ideal outcome would be, for example, coaching and retention.
+
+e. Documentation and follow-up
+All actions and conclusions are documented. If necessary, security procedures, controls or training are updated to reduce the likelihood of similar incidents in the future.
+
+### **Termination or Role Change**
+
+1. Offboarding
+Upon termination or contract end, access to systems is revoked, accounts are disabled, and company-owned devices are returned and/or securely wiped. For BYOD devices, access is removed and local data must be deleted. This process is managed by the People & Culture Department, with access changes implemented by the Head of People or Head of Software..
+
+2. Continuing Obligations
+Confidentiality and intellectual property protection obligations remain in force after employment or contract termination.
+
+3. Role Change
+When roles change internally, access rights are reviewed and adjusted by the Head of People, in keeping with this policy. Increased responsibilities may require signing additional confidentiality or data protection agreements.
+Role changes must follow the same controlled process as offboarding and onboarding. 
+The offboarding checklist is used to remove previous access rights, 
+and onboarding steps are applied to grant new access.
+
+## Third-Party Security Management
+
+### **Third-Party Selection & Onboarding**
+
+Before engaging third parties (vendors, contractors, EoR providers, cloud services, etc.), basic due diligence is performed to confirm they can meet confidentiality, data protection and security requirements.
+
+Suppliers (including contractors with access to OET systems or data) are identified and classified based on the level of risk they pose to OET. This assessment considers the sensitivity of data accessed, the level of system access, and the potential impact on business operations.
+
+Supplier classification is aligned with OET’s information classification and asset register (e.g. internal, confidential). Based on this classification, appropriate due diligence, approval, and control measures are applied.
+
+Security requirements for suppliers are defined prior to engagement and may include confidentiality and data protection obligations, access control (least privilege), secure data handling, and compliance with applicable legal and regulatory requirements.
+
+Where applicable, supplier onboarding follows the defined software approval process and procurement workflow.
+
+For new suppliers, the Supplier Due Diligence Checklist must be completed and approved by the Head of Finance before contract signing. One-off, low-value service bookings (e.g. hotels, venues, catering, flights) do not require a due diligence checklist — they are handled through the standard procurement workflow defined in the Supplier Control & Procurement Procedure. For high-risk suppliers with access to OET systems or data, the full checklist and a risk classification per the Third-Party Management Procedure apply.
+
+The operational procurement workflow, including approval thresholds and quotation requirements, is defined in the Supplier Control & Procurement Procedure.
+
+### **Contracts & Confidentiality**
+
+All third parties must sign a contract or agreement containing confidentiality, data protection, and intellectual property clauses. For EoR employees (e.g. via Remote.com), these terms are included within the provider’s framework. Where applicable, Data Processing Agreements (DPAs) or NDAs are also required.
+
+### **Access Control**
+
+Access for third parties is granted only when necessary, and is limited to the minimum required (least privilege). Accounts must be time-limited and removed after the service ends.
+
+### **Monitoring & Termination**
+
+Access, performance, and compliance of third parties are reviewed annually or based on their risk classification. When the contract terminates, all access rights are revoked, and any company data or assets must be returned and/or securely deleted.
+
+Where applicable and contractually agreed, third parties are required to notify OET of information security incidents that may affect OET data, systems, or services. Relevant incidents are handled in accordance with the OET Incident Management Process.
+
+Records of supplier classification, due diligence, and approvals are maintained as documented information.
+
+## Confidentiality and NDA Management
+
+- All employees, contractors and relevant third parties must sign confidentiality or NDA clauses before accessing company information.
+- NDAs remain valid after employment or contract termination.
+- For roles with higher sensitivity (e.g. system administrators, security staff, developers), additional or extended confidentiality clauses may be applied.
+- NDAs and other confidentiality clauses must remain in keeping with an individual’s local labor laws.
+- NDAs are reviewed when a person changes role or when legal or regulatory conditions change.
+
+## Training and Awareness
+
+A structured Information Security Awareness and Training Program is implemented. Completion of training will be recorded, securely stored, and periodically reviewed for effectiveness.
+
+## Documentation, Monitoring and Review
+
+Documentation and evidence of onboarding, access provisioning, role changes, and offboarding activities for employees and third parties are maintained by the designated Technical Responsible (e.g. System Owner, DevOps or Engineering Team) in cooperation with the People & Culture Department.
+Review of access should be performed on a quarterly basis and documented in [OET Access Review Registry](https://docs.google.com/spreadsheets/d/1EzsffpzqFnQsRbg1-q6y4rfn9BiQlz0BVCTO6o5FkY4/edit?usp=sharing)
+
+The Information Security Officer (or appointed Security Responsible) monitors compliance with this policy and ensures that required records exist for each stage of the user lifecycle. If deviations are identified, corrective actions or process improvements may be recommended.
+
+This policy is reviewed annually or when significant legal, organisational, or technical changes occur. The Information Security Officer, together with the Technical Responsible and Head of People, ensures it remains up to date and effective. Any major changes to this policy shall be communicated publicly by the Head of People or Head of Engineering.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
