@@ -1,0 +1,64 @@
+---
+sidebar_label: "Data Protection policy"
+---
+## Purpose
+The purpose of this policy is to establish binding internal rules for the lawful, fair, transparent, secure and accountable processing of personal data by Open Energy Transition (“OET”) in accordance with Regulation (EU) 2016/679 (“GDPR”), applicable national data protection law, and OET internal governance requirements. This policy defines minimum organizational and technical requirements for all processing of personal data carried out by or on behalf of OET. 
+
+## Scope
+This policy applies to all employees, contractors, temporary staff, external service providers and other persons who process personal data under OET’s responsibility. It applies to all processing activities involving personal data, irrespective of whether the data are processed in electronic systems, cloud services, paper records or other media. OET acts as controller and remains responsible for ensuring compliance with applicable data protection law for the processing activities under its responsibility. 
+
+## Legal and Regulatory Framework
+OET shall process personal data in compliance with the GDPR, applicable national data protection laws, and binding contractual or regulatory requirements relevant to the respective processing activity. External transparency information for data subjects shall be provided through the applicable privacy notices. This policy supplements such external notices by defining the internal governance and control requirements for data protection compliance. 
+Each processing activity shall be reviewed against an identified legal basis before processing starts. Where special categories of personal data or criminal offence data are processed, OET shall also verify and document the specific condition permitting such processing under applicable law. 
+*Legal references: Articles 5, 6, 9, 13, 14, 24 GDPR.*
+
+## Roles and Responsibilities
+### **Management**
+
+Management shall ensure that appropriate resources, governance structures and control mechanisms are in place to enable compliance with this policy and applicable data protection law. Management remains accountable for ensuring that processing under OET’s responsibility complies with the GDPR. 
+Information Security Function
+The information security function shall support the implementation and maintenance of technical and organizational measures and shall coordinate with the responsible 
+privacy governance roles to ensure consistent alignment between data protection requirements and the ISMS. Information security responsibility does not replace controller accountability for data protection compliance. 
+
+### **Data Protection Governance**
+OET shall assign clear responsibility for privacy governance and compliance oversight. Where legally required, OET shall designate a Data Protection Officer (“DPO”). The DPO, where appointed, shall perform the tasks set out in Article 39 GDPR, including informing and advising OET, monitoring compliance, advising on data protection impact assessments, and cooperating with supervisory authorities. The appointment of a DPO does not transfer the controller’s legal responsibility for compliance. 
+
+### **Employees and Contractors**
+Employees and contractors may process personal data only to the extent required for their assigned tasks, in accordance with documented instructions, applicable internal policies and the need-to-know principle. They shall promptly report suspected personal data breaches, unauthorized disclosures, security incidents, or policy deviations through the designated escalation channels. 
+*Legal references: Articles 5(2), 24, 29, 37–39 GDPR.* 
+
+## Core Data Protection Requirements
+OET shall process personal data in accordance with the principles of lawfulness, fairness and transparency; purpose limitation; data minimization; accuracy; storage limitation; integrity and confidentiality; and accountability. These principles apply to the full lifecycle of personal data, including collection, use, disclosure, storage, archiving and deletion. 
+Before introducing a new processing activity or materially changing an existing one, OET shall assess the applicable legal basis, transparency requirements, retention period, recipient structure, transfer implications, security requirements and whether a Data Protection Impact Assessment **(“DPIA”)** is required. Where processing is likely to result in a high risk to the rights and freedoms of natural persons, a DPIA shall be completed before processing starts and reviewed when relevant changes occur. OET shall implement privacy by design and by default by integrating data protection requirements into the design, procurement, configuration and operation of processes and systems. 
+OET shall maintain records of processing activities to the extent required by Article 30 GDPR. Process owners shall ensure that records remain accurate, complete and up to date, including the purpose of processing, categories of data subjects and personal data, recipients, retention periods, technical and organizational measures, and any transfers to third countries. 
+OET shall maintain internal procedures for handling data subject requests, including requests for access, rectification, erasure, restriction of processing, data portability, objection and withdrawal of consent, and shall ensure that such requests are identified, documented and answered within the applicable statutory deadlines. 
+*Legal references: Articles 5, 12–23, 25, 30, 35 GDPR.* 
+
+## Technical and Organizational Measures
+OET shall implement and maintain appropriate technical and organizational measures, taking into account the nature, scope, context and purposes of processing as well as the risk to the rights and freedoms of natural persons. Such measures shall be documented where appropriate and aligned with the ISMS, while specifically addressing the protection of personal data under Article 32 GDPR. 
+Access to personal data shall be restricted on the basis of business need, role and authorization. Authentication controls proportionalproportionate to risk, including strong passwords and multi-factor authentication where appropriate, shall be implemented and reviewed periodically. 
+Personal data shall be protected during transmission and, where appropriate, during storage through measures such as transport encryption, encryption at rest, secure file transfer procedures and key or password separation. Confidential or high-risk personal data shall only be shared via approved secure channels. 
+Devices and endpoints that access OET systems shall meet documented minimum security requirements. Personal data shall be stored only in approved systems and services. Local storage and duplication of personal data shall be minimized, and unauthorized tools or shadow IT may not be used for processing personal data. Backup, restoration and resilience measures shall be implemented in a manner consistent with confidentiality, integrity and availability requirements. 
+*Legal references: Articles 5(1)(f), 24, 25, 32 GDPR.*
+
+## Controller / Processor Management and Third-Party Processing 
+Before sharing personal data with an external party, OET shall determine whether the receiving party acts as an independent controller, joint controller or processor. Where personal data are processed on behalf of OET, OET shall conclude a data processing agreement meeting the requirements of Article 28 GDPR before the processing starts. OET shall only engage processors that provide sufficient guarantees to implement appropriate technical and organizational measures, and OET shall assess and document the necessity and proportionality of data access granted to such parties. 
+Where processing involves joint controllership or transfers to other controllers, responsibilities, transparency obligations and data sharing arrangements shall be documented as required by law. Transfers of personal data to recipients outside the European Economic Area shall only take place where the requirements of Chapter V GDPR are met and the relevant transfer mechanism has been documented. 
+*Legal references: Articles 26, 28, 44–49 GDPR.*
+
+## Personal Data Breaches 
+All suspected or confirmed personal data breaches shall be reported immediately through the designated incident management channels. OET shall document and assess all personal data breaches without undue delay, determine whether notification to a supervisory authority or communication to affected data subjects is required, and implement remediation measures. Where a breach is likely to result in a risk to the rights and freedoms of natural persons, OET shall notify the competent supervisory authority without undue delay and, where feasible, no later than 72 hours after becoming aware of the breach. 
+*Legal references: Articles 33 and 34 GDPR.* 
+
+## Training, Awareness and Monitoring
+OET shall provide regular and role-appropriate data protection and information security training. Compliance with this policy shall be monitored through governance, control and review mechanisms appropriate to OET’s operations. This policy shall be reviewed periodically and updated where necessary to reflect legal, operational or organizational changes. 
+*Legal references: Articles 24, 32, 39 GDPR.* 
+
+
+
+
+
+
+
+
+
