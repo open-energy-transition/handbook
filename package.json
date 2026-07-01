@@ -49,5 +49,11 @@
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "allowScripts": {
+    "@tsparticles/engine@3.9.1": true,
+    "core-js@3.49.0": true,
+    "core-js-pure@3.49.0": true,
+    "fsevents@2.3.3": true
   }
 }
