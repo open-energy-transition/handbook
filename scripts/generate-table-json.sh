@@ -30,7 +30,8 @@ generate_json() {
                         local nice_name=""
                         nice_name=$(grep '^sidebar_label: ' "$item" \
                           | head -n 1 \
-                          | sed -E 's/^sidebar_label:\s*"(.*)"/\1/' \
+                          | sed 's/^sidebar_label: *//' \
+                          | sed 's/^"\(.*\)"$/\1/' \
                           | tr -d '\r\n')
 
                         # If no sidebar_label was found, default to the link_name
