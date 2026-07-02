@@ -15,7 +15,12 @@ const config = {
   projectName: "Handbook",
 
   onBrokenLinks: "ignore",
-  onBrokenMarkdownLinks: "ignore",
+
+  markdown: {
+    hooks: {
+      onBrokenMarkdownLinks: "ignore",
+    },
+  },
 
   i18n: {
     defaultLocale: "en",
