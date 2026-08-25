@@ -51,6 +51,6 @@ npm run build
 
 ## Contributing
 
-We welcome contributions from the community. To contribute, please follow the instructions available in [Editing the Handbook](docs/Handbook/EditingTheHandbook.mdx)
+We welcome contributions from the community. To contribute, please follow the instructions available in [Editing the Handbook](/docs/Handbook/EditingTheHandbook.mdx)
 
 Thank you for contributing to the Open Energy Transition Handbook!
