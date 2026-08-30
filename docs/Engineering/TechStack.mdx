@@ -1,0 +1,86 @@
+---
+sidebar_label: "Technology stack"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+
+<MaintainerTag maintainerEmails={["siddharth.krishna@openenergytransition.org","johannes.hampp@openenergytransition.org"]} />
+
+# Technology stack that we use
+
+Recommended, not enforced.
+Projects may deviate, especially in case of projects based on soft forks.
+
+
+* Version control:
+    * `git`
+    * Host repositories on: `github`
+    * Repositories should belong to [Open Energy Transition GitHub organization](https://github.com/open-energy-transition)
+    * No force pushes
+    * Use pull requests for all changes
+    * Merge branches instead of rebasing
+    * Squash and merge pull requests to keep the commit history clean
+* Continuous integration:
+    * For public repositories / open source projects: `github actions`
+    * For private repositories / internal projects: ?
+    * Use a pinned environment for the CI to ensure continuity and reproducibility
+* Programming languages:
+    * `python`
+    * whereever possible, including for static analysis, plotting, etc.
+    * `pandas`, `numpy`, `xarray` with `matplotlib`/`seaborn`/`hvplot`
+* Package management:
+    * `uv` for new projects
+    * always use virtual environments (better reproducibility, isolation, and dependency management)
+    * `uv init` to create a new project with default structure
+    * `uv add <package>` to add a package to the project
+    * `uv pip install <package>` to install a package in the virtual environment without adding it as a dependency
+    * `uv run <command>` to run a command in the virtual environment
+    * `source .venv/bin/activate` to activate the virtual environment (default location)
+    * `uv sync` to install all dependencies from `pyproject.toml` or `uv.lock`
+    * Share your environment with others using `pyproject.toml` and `uv.lock`
+    * some projects use `conda` because of specific dependencies, where installing the packages via `pip` requires additional steps to install the required binaries separately.
+      Installations with `conda` using `conda-forge` on the other hand proide the binaries automatically.
+      Can be especially important for projects that work with geospatial packages or on windows.
+* Documentation:
+    * doc strings follow [numpydoc style](https://numpydoc.readthedocs.io/en/latest/format.html)
+    * Framework: `mkdocs-material`
+    * Hosting: `readthedocs`
+* Repositories should use pre-commit framework: `pre-commit`
+    * To ensure code styles and checks are run consistently on PRs / commits
+    * Public repositories: use `pre-commit.ci` for automatic checks (instead of integrating `pre-commit` into CI)
+    * Private repositories: use `pre-commit` in CI
+* Code style:
+    * `black`
+    * `ruff` for implementation
+    * recommended to use inside `pre-commit`
+* Code linting:
+    * `ruff` for implementation
+    * recommended to use inside `pre-commit`
+* Static code analysis:
+    * `mypy`
+    * Use type annotations in code please, more infomation [here](https://docs.python.org/3/library/typing.html) and [example here](https://github.com/PyPSA/technology-data/blob/40ca61b9aaf8c3019fa264a35ca999e6c41ef562/scripts/compile_cost_assumptions_usa.py#L198)
+    * recommended to use inside `pre-commit`
+* Code testing:
+    * `pytest`
+    * unit and integration tests
+    * recommended to use inside your CI
+    * use `pytest-cov` to measure code coverage
+    * for faster, parallel tests, use `pytest-xdist` with `pytest -n auto`
+* Workflow management:
+    * `snakemake` for modeling and data processing workflows
+    * 
+* Data sharing:
+    * `Zenodo` for sharing data publicly with a DOI
+    * `Google Drive` for sharing data internally or temporarily with externals
+* Licensing and copyright:
+    * Technical: Follow the [reuse](https://reuse.software/) specification
+    * Use `reuse annotate` to add license and copyright information and `reuse lint` to check for compliance of a repository
+    * recommended to use inside `pre-commit`
+    * Licenses:
+        * `MIT` for code
+        * `CC-BY-4.0` for documentation
+        * `CC-BY-4.0` for data
+        * `CC0-1.0` for metadata and general repository configuration files
+        * For details, see handbook entry on [Licensing and copyright](../Handbook/CopyrightAndAttribution.mdx)
