@@ -1,0 +1,65 @@
+---
+sidebar_label: "Solver Configuration"
+---
+
+import MaintainerTag from "@site/src/components/MaintainerTag";
+import ControlledDocBanner from "@site/src/components/ControlledDocBanner";
+
+<MaintainerTag maintainerEmails={["will.usher@openenergytransition.org"]} />
+
+# Solver Configuration
+
+At OET, we use both open source and proprietary solvers. 
+Proprietary solvers require a license. Users must configure the details of the solver license before using them.
+
+## Configuring Gurobi
+
+Our gurobi license is limited to 15 users in parallel. 
+If a project is running multiple solves in parallel, we can run out of available licenses.
+As OET expands, license contention will become an increasing problem, some coordination is happening on [discord](https://discord.com/channels/1097854148965306470/1432376105205104700/1432376109789479044) and [Google Calendar](https://calendar.google.com/calendar/embed?src=c_4243181a0a7ef461e50a85319cd931c0c404ad8289b35be066063d9d6e71aaa8%40group.calendar.google.com&ctz=Europe%2FBerlin).
+
+There are multiple ways to configure Gurobi. 
+Snakemake before version 9.14.6 acquired configured licenses whenever you started it, so please make sure to update it to at least >=9.14.6.
+
+### Standard Approach
+
+Rename and copy the `gurobi.lic` file in your `/home/<you>` folder. Get solving...
+
+### Discouraged Approach
+:::warning
+
+This added the Gurobi license key as part of the config into created PyPSA network files.
+Therefore this approach is now discouraged, please move to the Standard Approach and *remove* the key from your configuration files.
+
+:::
+
+We used to include the license key as part of the PyPSA configuration file by editing the `config/config.yaml` file (which is not tracked in version control)
+to include:
+
+```
+solving:
+  solver_options:
+    gurobi-default:
+      env:
+        WLSACCESSID: "..."
+        WLSSECRET: "..."
+        LICENSEID: ...
+```
+
+
+## FAQ
+
+Q. What if I already have a gurobi.lic file in my home folder? Will the environment variable entries take precedence?
+
+A. No, you must remove the Gurobi license file from your home folder.
+
+Q. How do I prevent license secrets from being included in a Pull Request?
+
+A. The `config/config.yaml` file is not tracked - it is ignored by git. [This PR](https://github.com/open-energy-transition/open-tyndp/pull/111) adds gitleaks to the pre-commit, 
+   and warns of any secrets about to be added to the git history.
+
+
+## Further reading
+
+- Linopy Pull Request: [allow passing a parameter dict to gurobi's env creation PyPSA/linopy#469](https://github.com/PyPSA/linopy/pull/469)
+- [Gurobi Support Article](https://support.gurobi.com/hc/en-us/articles/13232844297489-How-do-I-set-up-a-Web-License-Service-WLS-license)
