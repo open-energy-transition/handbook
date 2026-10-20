@@ -186,6 +186,93 @@ Below are additional suggestions for configuring your GitHub repository:
   For example, `.github/ISSUE_TEMPLATE/bug_report.yaml` and `.github/pull_request_template.md`.
   Add a guideline to specify what issue to report in which repository, e.g., [`bug_report.yaml`](https://github.com/open-energy-transition/open-tyndp/blob/master/.github/ISSUE_TEMPLATE/bug_report.yaml?plain=1#L19-L26) from Open-TYNDP.
 
+## OSS license compliance
+
+OET uses open source software and open data extensively.
+We therefore need to make licensing information clear for users, contributors and customers.
+Our main focus is always transparency: every repository should state which licenses apply and should keep this information up to date as the repository changes.
+
+:::info
+
+    The [openTYNDP project](https://github.com/open-energy-transition/open-tyndp) is a good example of how we implement these guidelines in practice.
+
+:::
+
+For standard OET projects, we usually use the licensing framework described in [Open source](OpenSource):
+
+- Software: MIT License
+- Generic configuration files: CC0 1.0 Universal
+- Data: CC BY 4.0 License
+- Metadata: CC0 1.0 Universal
+
+Some projects may require a different licensing approach.
+In those cases, the project README and documentation should clearly explain which licenses apply to which parts of the repository.
+
+### Using third-party open source software
+
+Most OET projects use third-party open source dependencies.
+These dependencies are commonly referenced through package managers or environment files rather than copied into the repository.
+In those cases, the dependency's license terms usually apply to the dependency itself, but the dependency is not necessarily incorporated into OET's own source code.
+
+If third-party code, data, documentation or configuration is copied into an OET repository, the original license and copyright information must be preserved.
+The file must also be covered by the repository's REUSE information, either through SPDX headers or through `REUSE.toml` (described in detail below).
+This is especially important for licenses with copyleft obligations, such as the GPL, that are then required to be fulfilled:
+
+When a project modifies or distributes GPL-licensed work, the GPL may require the modified work to be shared under the same license.
+For OET projects, this is usually manageable because we generally publish our code openly or provide the relevant code and license information to customers when required.
+If a project plans to include GPL-licensed code in a private repository, or to distribute software based on GPL-licensed code, the team must discuss the licensing implications before the code is added.
+
+:::info
+If you are uncertain whether a third-party license is compatible with the intended use of a project, ask before adding the material to the repository.
+Do not assume that a license is acceptable only because the material is publicly available.
+:::
+
+### Private and customer projects
+
+Private repositories still need clear licensing information.
+A repository being private does not remove the need to comply with the licenses of third-party material used in the repository.
+
+For private or customer-specific repositories:
+
+- keep the license information in the README, documentation and REUSE metadata up to date;
+- preserve copyright and license notices for any third-party material included directly in the repository;
+- avoid copying third-party code into the repository unless the license has been checked;
+- share code and license information with customers when the applicable license requires it;
+- ask for guidance when using material under GPL or other licenses with strong distribution requirements.
+
+In many OET projects, the main deliverables are models, workflows, reports, data or analysis outputs rather than compiled software shipped to customers.
+This often means that package dependencies are used to run the project but are not incorporated into a distributed software product, i.e. standard open source license conditions are already fulfilled.
+Nevertheless, repository-level license documentation should still be maintained.
+
+### Checking compliance
+
+License compliance can be checked through a combination of project documentation, REUSE metadata and repository automation.
+
+Every repository should:
+
+- use REUSE to record licensing information for code, data, documentation, configuration and other files;
+- include all license texts used in the repository under `LICENSES/`;
+- run `reuse lint` locally or through pre-commit before changes are merged;
+- enable CI checks for REUSE where possible;
+- include a pull request checklist item reminding contributors to add licensing information for new or modified files;
+- keep the project README and documentation consistent with the repository's actual license information.
+
+GitHub can help by running REUSE checks in CI and by making license information visible in the repository.
+However, automated checks do not replace project judgement.
+They can verify whether files have license metadata, but they do not decide whether a specific license is appropriate for a project or customer use case.
+
+### Interpreting license restrictions
+
+Some licenses or terms restrict who may use the material, for example non-commercial-use restrictions or jurisdiction-specific restrictions.
+We can't stress this enough - these restrictions are not compatible with the open source definition and are not considered open source by the Open Source Initiative (OSI).
+Nevertheless such software and data licenses are often considered "open source" in a more general sense, and may be used in some contexts.
+However OET cannot interpret these restrictions on behalf of unknown downstream users of public repositories.
+It is therefore our responsibility to make the applicable licenses transparent so that users can evaluate whether they are allowed to use the project in their own context.
+
+For public repositories, this means that license information should be easy to find and complete.
+For private or customer repositories, the project team should ensure that the customer receives the relevant license information when required.
+
+
 ## REUSE tool
 
 The [REUSE tool](https://reuse.software/) from the Free Software Foundation Europe simplifies the licensing significantly.
