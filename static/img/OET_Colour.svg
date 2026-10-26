@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 594.28 231.12">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ec1b36;
+      }
+
+      .cls-2 {
+        fill: #969696;
+      }
+    </style>
+  </defs>
+  <g id="Layer_15" data-name="Layer 15">
+    <g>
+      <g id="line2d_1" data-name="line2d 1">
+        <rect class="cls-2" x="262.41" y="94.19" width="94.3" height="42.64"/>
+      </g>
+      <g id="line2d_2" data-name="line2d 2">
+        <rect class="cls-1" x="262.41" y="1.21" width="145.96" height="42.64"/>
+      </g>
+      <g id="line2d_3" data-name="line2d 3">
+        <rect class="cls-1" x="262.41" y="187.17" width="145.96" height="42.64"/>
+      </g>
+      <g id="line2d_4" data-name="line2d 4">
+        <rect class="cls-1" x="448.32" y="1.21" width="145.96" height="42.64"/>
+      </g>
+      <g id="line2d_5" data-name="line2d 5">
+        <rect class="cls-1" x="448.32" y="94.19" width="42.64" height="135.63"/>
+      </g>
+      <g>
+        <path class="cls-1" d="M85.96,187.93c-23.77-10.94-34.92-38.92-34.92-73.41s11.18-60.69,34.92-71.34V.05C30.59,9.98,0,54,0,115.52c0,55.18,30.1,104.08,85.96,115.22v-42.81Z"/>
+        <path class="cls-1" d="M134.34,0v42.21c25.76,10.23,36.32,38.75,36.32,73.15,0,32.18-10.32,61.9-36.32,72.96v42.79c58.45-10.39,87.36-59.89,87.36-116.38,0-61.38-33.89-104.97-87.36-114.74Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
