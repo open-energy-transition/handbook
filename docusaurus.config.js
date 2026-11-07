@@ -6,7 +6,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Handbook",
-  favicon: "img/favicon.ico",
+  favicon: "img/OET_Colour.svg",
 
   url: `https://${organizationName}.github.io`,
   baseUrl: `/${projectName}/`,
@@ -63,12 +63,15 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: "img/oet-no-text-logo.svg",
+      image: "img/OET_Colour.svg",
       navbar: {
         title: "Handbook",
         logo: {
-          alt: "oet-handbook Logo",
-          src: "img/oet-no-text-logo.svg",
+          alt: "Open Energy Transition (OET)",
+          src: "img/OET_Colour.svg",
+          srcDark: "img/OET_White.svg",
+          width: 82,
+          height: 32,
         },
         items: [
           { to: "/docs", label: "Home", position: "left" },
