@@ -84,11 +84,11 @@ The use of removable and external storage devices such as USB flash drives and e
 
 ## Secure wipe
 
-The recommended tool for securely wiping company devices is [ShredOS](https://github.com/PartialVolume/shredos.x86_64). ShredOS boots from USB and includes `nwipe` for HDD overwrites, `hdparm` for SATA SSD secure erase, and `nvme-cli` for NVMe sanitize/format operations.
+The recommended tool for securely wiping company devices is [ShredOS](https://github.com/PartialVolume/shredos.x86_64). ShredOS boots from external media (e.g., USB flash drive or an external hard drive) and includes `nwipe` for HDD overwrites, `hdparm` for SATA SSD secure erase, and `nvme-cli` for NVMe sanitize/format operations.
 
 Use this procedure when offboarding, or returning/replacing a company device:
 
-1. Preparation: Create a ShredOS bootable USB using [Rufus](https://rufus.ie/) (Windows) or `dd` (Linux).
+1. Preparation: Write the ShredOS image to bootable external media (USB flash drive or external hard drive) using [Rufus](https://rufus.ie/) (Windows) or `dd` (Linux).
 2. Witness call: The employee starts a video call with the Head of People or Information Security Manager from their phone.
 3. Device identification:
     - Show the laptop screen with the serial number. On Linux: `sudo dmidecode -s system-serial-number`. On Windows (PowerShell): `(Get-CimInstance Win32_BIOS).SerialNumber`. Alternatively, show the BIOS/UEFI screen.
@@ -105,7 +105,7 @@ Use this procedure when offboarding, or returning/replacing a company device:
         - Fallback (if sanitize not supported): `nvme format /dev/nvmeX -n 0xffffffff --ses=2` (crypto erase) or `--ses=1` (user data erase)
     - For detailed command syntax, see the [ShredOS SSD/NVMe wipe guide](https://github.com/PartialVolume/shredos.x86_64#wipe-ssd-and-nvme-using-hdparm-and-nvme-cli).
 5. Evidence:
-    - For `nwipe`: capture the success screen. ShredOS automatically saves a PDF certificate and log file to the USB drive.
+    - For `nwipe`: capture the success screen. ShredOS automatically saves a PDF certificate and log file to the boot media.
     - For `hdparm`/`nvme`: capture screenshots or photos showing the device identifier, the wipe command, and the completion status output.
     - Optionally: a photo of the employee next to the screen during the witness call.
 6. Recordkeeping: Store the evidence alongside the employee name, asset tag/serial number, date, witness name, wipe method, and outcome.
