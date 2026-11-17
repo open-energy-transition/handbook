@@ -42,7 +42,7 @@ jobs:
 
       - name: update change log mdx
         if: github.event_name != 'pull_request' && steps.changelog.outcome == 'success'
-        run: bash scripts/sync-changelog.shh 
+        run: bash scripts/sync-changelog.sh
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
